@@ -1,0 +1,72 @@
+{
+  "_schema_version": "1.0",
+  "_category": "standing-desks",
+  "standing_desks": [
+    {
+      "id": "example-brand-model",
+      "meta": {
+        "last_updated": "2026-07-25",
+        "data_source": "official_site",
+        "data_completeness": 0
+      },
+      "identity": {
+        "brand": "Example Brand",
+        "model": "Model Name",
+        "variant": null,
+        "product_url": "https://example.com",
+        "image_url": null,
+        "price_usd": null,
+        "price_range": "under_300",
+        "availability_region": ["US"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica"],
+        "primary_need": ["sit_stand_alternation", "reduce_sitting_time"],
+        "use_case": ["home_office", "corporate_office"],
+        "filter_pages": ["under-300", "for-lower-back-pain"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": null,
+        "user_height_max_cm": null,
+        "user_elbow_height_standing_min_cm": null,
+        "user_elbow_height_standing_max_cm": null
+      },
+      "desk_dimensions": {
+        "height_min_cm": null,
+        "height_max_cm": null,
+        "surface_width_cm": null,
+        "surface_depth_cm": null,
+        "weight_capacity_kg": null
+      },
+      "motor": {
+        "motor_type": null,
+        "motor_stages": null,
+        "speed_cm_per_sec": null,
+        "noise_db": null,
+        "programmable_presets": null,
+        "anti_collision": null
+      },
+      "stability": {
+        "wobble_rating": null,
+        "crossbar_present": null,
+        "frame_material": null,
+        "surface_material": null
+      },
+      "assembly": {
+        "assembly_time_min": null,
+        "tools_required": null
+      },
+      "build": {
+        "certifications": [],
+        "warranty_years_frame": null,
+        "warranty_years_motor": null,
+        "warranty_years_surface": null
+      },
+      "editorial": {
+        "best_for_summary": null,
+        "not_recommended_for": null,
+        "tags": []
+      }
+    }
+  ]
+}
