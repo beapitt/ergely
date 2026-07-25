@@ -1034,6 +1034,15 @@
       }
     });
 
+    // Update all card links to pass h and w as URL params
+    document.querySelectorAll('.product-card').forEach(card => {
+      const base = card.getAttribute('href').split('?')[0];
+      const params = [];
+      if (h) params.push('h=' + h);
+      if (w) params.push('w=' + w);
+      card.setAttribute('href', base + (params.length ? '?' + params.join('&') : ''));
+    });
+
     const result = document.getElementById('ff-result');
     if (h || w) {
       result.textContent = `${goodCount} good fit, ${partialCount} partial fit found.`;
