@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪑</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Base -->
+  <title>Ergely | Ergonomic Chair Database by Body Size</title>
+  <meta name="description" content="Find the right ergonomic chair for your body. Filter our database by height, weight, and back pain needs. Verified specs, no sponsored rankings.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ergely.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ergely | Ergonomic Chair Database by Body Size">
+  <meta property="og:description" content="Find the right ergonomic chair for your body. Filter our database by height, weight, and back pain needs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ergely.com/">
+  <meta property="og:image" content="https://ergely.com/hero.webp">
+  <meta property="og:image:alt" content="Ergonomic chair and standing desk workspace">
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ergely | Ergonomic Chair Database by Body Size">
+  <meta name="twitter:description" content="Find the right ergonomic chair for your body. Filter our database by height, weight, and back pain needs.">
+  <meta name="twitter:image" content="https://ergely.com/hero.webp">
+
+  <!-- GEO / Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ergely",
+    "url": "https://ergely.com/",
+    "description": "Database of ergonomic chairs with filters for height, weight, and back pain. Verified manufacturer specifications.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ergely.com/chairs/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ergely",
+    "url": "https://ergely.com/",
+    "logo": "https://ergely.com/hero.webp"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Ergely | Ergonomic Chair Database by Body Size",
+    "url": "https://ergely.com/",
+    "description": "Find the right ergonomic chair for your body. Filter our database by height, weight, and back pain needs. Verified specs, no sponsored rankings.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Ergely",
+      "url": "https://ergely.com/"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #1B1B1B;
+      --accent:   #E05A2B;
+      --white:    #FFFFFF;
+      --offwhite: #F7F7F5;
+      --border:   #E4E4E0;
+      --muted:    #6B6B6B;
+      --green:    #2A7D4F;
+      --font:     'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--white);
+      color: var(--black);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAVBAR ── */
+    nav {
+      background: #ffffff;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      gap: 32px;
+      border-bottom: 1px solid #e4e4e0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #1B1B1B;
+      flex-shrink: 0;
+    }
+
+    .logo span { color: #E05A2B; }
+
+    .nav-links {
+      display: flex;
+      gap: 2px;
+      flex: 1;
+    }
+
+    .nav-links a {
+      color: #1B1B1B;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 5px;
+      transition: color 0.12s, background 0.12s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover { color: #E05A2B; background: #fff5f2; }
+    .nav-links a.active { color: #E05A2B; font-weight: 600; }
+    .nav-links a.soon, .nav-links span.soon { color: #666666; pointer-events: none; padding: 5px 12px; font-size: 13px; font-weight: 500; }
+
+    .nav-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-right a {
+      color: #6B6B6B;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 5px;
+      transition: color 0.12s;
+    }
+
+    .nav-right a:hover { color: #1B1B1B; }
+
+
+    /* ── HAMBURGER MOBILE ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      margin-left: auto;
+      background: none;
+      border: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #1B1B1B;
+      border-radius: 2px;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #E4E4E0;
+      padding: 12px 0;
+      z-index: 199;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .mobile-menu.open { display: block; }
+
+    .mobile-menu a {
+      display: block;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #1B1B1B;
+      border-bottom: 1px solid #F7F7F5;
+    }
+
+    .mobile-menu a.active { color: #E05A2B; font-weight: 600; }
+    .mobile-menu a.soon, .mobile-menu span.soon { color: #aaaaaa; pointer-events: none; display: block; padding: 12px 24px; font-size: 15px; font-weight: 500; border-bottom: 1px solid #F7F7F5; }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .nav-right { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('hero.webp');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.38);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 80px 32px 64px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+
+    .search-wrap {
+      background: #ffffff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      height: 52px;
+      gap: 12px;
+      max-width: 620px;
+      margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+
+    .search-wrap svg { color: #aaa; flex-shrink: 0; width: 18px; height: 18px; }
+
+    .search-wrap input {
+      border: none;
+      outline: none;
+      font-family: var(--font);
+      font-size: 15px;
+      color: #1B1B1B;
+      flex: 1;
+      background: transparent;
+    }
+
+    .search-wrap input::placeholder { color: #aaa; }
+
+    .search-btn {
+      background: #E05A2B;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-family: var(--font);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.12s;
+    }
+
+    .search-btn:hover { background: #c44e24; }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 16px;
+      justify-content: center;
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .quick-links a {
+      font-size: 11px;
+      font-weight: 700;
+      color: #ffffff;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 5px 12px;
+      border-radius: 99px;
+      transition: background 0.12s;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+
+    }
+
+    .quick-links a:hover { background: rgba(255,255,255,0.28); }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: #222222;
+      padding: 22px 32px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 0 48px;
+      border-right: 1px solid #333;
+    }
+
+    .stat:last-child { border-right: none; }
+
+    .stat-num {
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #cccccc;
+      font-weight: 700;
+      margin-top: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    /* ── CATEGORIES ── */
+    .cat-section {
+      padding: 56px 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #E05A2B;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #1B1B1B;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .cat-card {
+      border: 1.5px solid #E4E4E0;
+      border-radius: 10px;
+      padding: 22px 16px 18px;
+      text-align: center;
+      background: #ffffff;
+      position: relative;
+      display: block;
+    }
+
+    a.cat-card {
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s;
+      cursor: pointer;
+    }
+
+    a.cat-card:hover {
+      border-color: #E05A2B;
+      box-shadow: 0 4px 16px rgba(224,90,43,0.1);
+      transform: translateY(-2px);
+    }
+
+    .cat-card.soon { opacity: 0.45; }
+    div.cat-card.soon { display: block; }
+
+    .cat-icon { font-size: 30px; margin-bottom: 10px; display: block; }
+
+    .cat-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1B1B1B;
+      margin-bottom: 4px;
+    }
+
+    .cat-desc { font-size: 11px; color: #6B6B6B; line-height: 1.4; }
+
+    .cat-soon-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #6B6B6B;
+      background: #F7F7F5;
+      padding: 2px 7px;
+      border-radius: 99px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how-section {
+      background: #F7F7F5;
+      border-top: 1px solid #E4E4E0;
+      border-bottom: 1px solid #E4E4E0;
+      padding: 56px 32px;
+    }
+
+    .how-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+
+    .how-num {
+      font-size: 11px;
+      font-weight: 700;
+      color: #E05A2B;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .how-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1B1B1B;
+      margin-bottom: 8px;
+    }
+
+    .how-body { font-size: 13px; color: #6B6B6B; line-height: 1.65; }
+
+    /* ── DIFF SECTION ── */
+    .diff-section {
+      padding: 56px 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid #E4E4E0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 32px;
+    }
+
+    .diff-col { padding: 28px 32px; }
+    .diff-col:first-child { background: #fff8f5; border-right: 1px solid #E4E4E0; }
+
+    .diff-col-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .diff-col:first-child .diff-col-label { color: #E05A2B; }
+    .diff-col:last-child .diff-col-label { color: #6B6B6B; }
+
+    .diff-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .diff-col:first-child .diff-item { color: #1B1B1B; }
+    .diff-col:last-child .diff-item { color: #6B6B6B; }
+
+    .diff-item svg { flex-shrink: 0; margin-top: 2px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111111;
+      padding: 48px 32px 0;
+    }
+
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .footer-logo {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .footer-logo span { color: #E05A2B; }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: #999999;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .footer-copy { font-size: 12px; color: #666666; }
+
+    .footer-col h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #aaaaaa;
+      margin-bottom: 16px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 13px;
+      color: #999999;
+      margin-bottom: 9px;
+      transition: color 0.12s;
+    }
+
+    .footer-col a:hover { color: #ffffff; }
+    .footer-col a.soon, .footer-col span.soon { color: #888888; pointer-events: none; display: block; font-size: 13px; margin-bottom: 9px; }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #666666;
+      gap: 24px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .cat-grid { grid-template-columns: repeat(3, 1fr); }
+      .how-grid { grid-template-columns: 1fr; gap: 28px; }
+      .diff-grid { grid-template-columns: 1fr; }
+      .diff-col:first-child { border-right: none; border-bottom: 1px solid #E4E4E0; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .nav-links { display: none; }
+      .hero-content { padding: 60px 20px 48px; }
+      .hero h1 { font-size: 30px; }
+      .stats-bar { padding: 16px; flex-wrap: wrap; }
+      .stat { padding: 8px 20px; }
+      .cat-grid { grid-template-columns: 1fr 1fr; }
+      .cat-section, .diff-section { padding: 40px 20px; }
+      .how-section { padding: 40px 20px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="/" class="logo">Erge<span>ly</span></a>
+  <div class="nav-links">
+    <a href="/chairs/" class="active">Chairs</a>
+    <span class="soon">Standing Desks</span>
+    <span class="soon">Lumbar Supports</span>
+    <span class="soon">Cushions</span>
+    <span class="soon">Mattresses</span>
+  </div>
+  <div class="nav-right">
+    <a href="/guides/">Guides</a>
+    <a href="/tools/chair-size-finder/">Size Finder</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/chairs/" class="active">Chairs</a>
+  <span class="soon">Standing Desks</span>
+  <span class="soon">Lumbar Supports</span>
+  <span class="soon">Cushions</span>
+  <span class="soon">Mattresses</span>
+  <a href="/guides/">Guides</a>
+  <a href="/tools/chair-size-finder/">Size Finder</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Find ergonomic products that fit you.</h1>
+    <p class="hero-sub">Compare verified specifications. Not opinions.</p>
+    <div class="search-wrap">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/>
+      </svg>
+      <input type="text" placeholder="Search chairs, brands, features…" id="search-input" aria-label="Search chairs" onkeydown="if(event.key==='Enter')doSearch()">
+      <button class="search-btn" onclick="doSearch()">Search</button>
+    </div>
+    <div class="quick-links">
+      <a href="/chairs/for-tall-people/">Tall users</a>
+      <a href="/chairs/for-heavy-people/">Heavy users</a>
+      <a href="/chairs/with-adjustable-lumbar/">Lumbar support</a>
+      <a href="/chairs/under-300/">Under $300</a>
+      <a href="/chairs/with-headrest/">Headrest</a>
+      <a href="/chairs/for-lower-back-pain/">Back pain</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-bar">
+  <div class="stat"><div class="stat-num">10</div><div class="stat-label">Chairs verified</div></div>
+  <div class="stat"><div class="stat-num">30+</div><div class="stat-label">Specs per chair</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Independent</div></div>
+  <div class="stat"><div class="stat-num">0</div><div class="stat-label">Sponsored results</div></div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="cat-section">
+  <div class="section-eyebrow">Browse by category</div>
+  <h2 class="section-title">Select a product category</h2>
+  <div class="cat-grid">
+    <a href="/chairs/" class="cat-card">
+      <span class="cat-icon">🪑</span>
+      <div class="cat-name">Ergonomic Chairs</div>
+      <div class="cat-desc">10 chairs with verified specs</div>
+    </a>
+    <div class="cat-card soon">
+      <span class="cat-soon-badge">Soon</span>
+      <span class="cat-icon">🖥️</span>
+      <div class="cat-name">Standing Desks</div>
+      <div class="cat-desc">Height ranges, motor specs</div>
+    </div>
+    <div class="cat-card soon">
+      <span class="cat-soon-badge">Soon</span>
+      <span class="cat-icon">🔲</span>
+      <div class="cat-name">Lumbar Supports</div>
+      <div class="cat-desc">Depth, material, strap system</div>
+    </div>
+    <div class="cat-card soon">
+      <span class="cat-soon-badge">Soon</span>
+      <span class="cat-icon">💺</span>
+      <div class="cat-name">Seat Cushions</div>
+      <div class="cat-desc">Memory foam, density, cutout</div>
+    </div>
+    <div class="cat-card soon">
+      <span class="cat-soon-badge">Soon</span>
+      <span class="cat-icon">🛏️</span>
+      <div class="cat-name">Mattresses</div>
+      <div class="cat-desc">Firmness, material, position</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div style="text-align:center;margin-bottom:36px;">
+    <div class="section-eyebrow">How it works</div>
+    <h2 class="section-title">Built like a database, not a blog</h2>
+  </div>
+  <div class="how-grid">
+    <div>
+      <div class="how-num">Step 01</div>
+      <div class="how-title">Set your height and weight</div>
+      <div class="how-body">Every chair is matched against its published fit range. Chairs that won't fit your body are flagged — no guessing.</div>
+    </div>
+    <div>
+      <div class="how-num">Step 02</div>
+      <div class="how-title">Filter by what matters</div>
+      <div class="how-body">Budget, lumbar type, seat depth, headrest, material. Every filter is based on verified manufacturer specs.</div>
+    </div>
+    <div>
+      <div class="how-num">Step 03</div>
+      <div class="how-title">Go directly to the brand</div>
+      <div class="how-body">No purchases here. When you find the right chair, we send you straight to the manufacturer. Zero middlemen.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DIFFERENT -->
+<section class="diff-section">
+  <div style="text-align:center;">
+    <div class="section-eyebrow">Why Ergely</div>
+    <h2 class="section-title">What makes this different</h2>
+  </div>
+  <div class="diff-grid">
+    <div class="diff-col">
+      <div class="diff-col-label">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8l3 3 7-7"/></svg>
+        Ergely
+      </div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"><path d="M3 8l3 3 7-7"/></svg>Filters by your actual height and weight</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"><path d="M3 8l3 3 7-7"/></svg>Shows lumbar depth adjustability — the key spec for back pain</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"><path d="M3 8l3 3 7-7"/></svg>Tells you who a chair is NOT suitable for</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"><path d="M3 8l3 3 7-7"/></svg>Shows data completeness — you know when info is missing</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#2A7D4F" stroke-width="2.5" stroke-linecap="round"><path d="M3 8l3 3 7-7"/></svg>No paid placements or sponsored rankings</div>
+    </div>
+    <div class="diff-col">
+      <div class="diff-col-label">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+        Other sites
+      </div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>"Best ergonomic chairs" lists with no sizing data</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>Lumbar described as "adjustable" with no range</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>Only tells you what a chair does well</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>No indication of data quality or source</div>
+      <div class="diff-item"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>Affiliate rankings disguised as editorial content</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">Erge<span>ly</span></span>
+      <p class="footer-tagline">The ergonomic equipment database. Real specs, verified data, no sponsored rankings.</p>
+      <p class="footer-copy">© 2025 Ergely. Independent. Not affiliated with any brand.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="/chairs/">Ergonomic Chairs</a>
+      <span class="soon">Standing Desks</span>
+      <span class="soon">Lumbar Supports</span>
+      <span class="soon">Cushions</span>
+      <span class="soon">Mattresses</span>
+    </div>
+    <div class="footer-col">
+      <h4>Tools & Guides</h4>
+      <a href="/tools/chair-size-finder/">Chair Size Finder</a>
+      <a href="/guides/ergonomic-chair-sizing-guide/">Sizing Guide</a>
+      <a href="/guides/what-is-lumbar-support/">What is Lumbar Support?</a>
+      <a href="/guides/how-to-set-up-ergonomic-chair/">Chair Setup Guide</a>
+      <a href="/guides/ergonomic-vs-gaming-chair/">Ergonomic vs Gaming</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="/about/">About Ergely</a>
+      <a href="/about/methodology/">How We Rate Chairs</a>
+      <a href="/about/data-sources/">Data Sources</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Ergely is reader-supported. When you click a brand link, you visit the manufacturer directly. We may earn a referral fee at no cost to you.</span>
+    <span>Not medical advice.</span>
+  </div>
+</footer>
+
+<script>
+function doSearch() {
+  const q = document.getElementById('search-input').value.trim();
+  if (q) window.location.href = '/chairs/?q=' + encodeURIComponent(q);
+}
+
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('open');
+}
+
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('mobile-menu');
+  const hamburger = document.querySelector('.hamburger');
+  if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>
