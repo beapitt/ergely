@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  
+  <title>Example Brand Model Name Review — Standing Desk for Back Pain | Ergely</title>
+  <meta name="description" content="" />
+  <link rel="canonical" href="https://ergely.com/standing-desks/example-brand-model/" />
+
+  <meta property="og:type" content="product" />
+  <meta property="og:title" content="Example Brand Model Name Review — Standing Desk for Back Pain | Ergely" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="https://ergely.com/standing-desks/example-brand-model/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Example Brand Model Name",
+    "description": "",
+    "brand": {
+      "@type": "Brand",
+      "name": "Example Brand"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "",
+      "availability": "https://schema.org/InStock",
+      "url": "https://example.com"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-text:       #1B1B1B;
+      --color-accent:     #E05A2B;
+      --color-bg:         #FFFFFF;
+      --color-bg-alt:     #F7F7F5;
+      --color-border:     #E4E4E0;
+      --color-secondary:  #6B6B6B;
+      --color-good:       #2A7D4F;
+      --color-poor:       #C0392B;
+      --color-partial:    #B07D1A;
+    }
+
+    body { font-family: 'Inter', sans-serif; color: var(--color-text); background: var(--color-bg); font-size: 16px; line-height: 1.6; }
+
+    .navbar { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--color-border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 60px; }
+    .navbar-logo { font-weight: 700; font-size: 1.2rem; text-decoration: none; color: var(--color-text); }
+    .navbar-logo span { color: var(--color-accent); }
+    .navbar-links { display: flex; gap: 24px; list-style: none; }
+    .navbar-links a { text-decoration: none; color: var(--color-text); font-size: 0.9rem; font-weight: 500; }
+    .navbar-links a:hover { color: var(--color-accent); }
+
+    .breadcrumb { padding: 12px 24px; font-size: 0.82rem; color: var(--color-secondary); max-width: 1200px; margin: 0 auto; }
+    .breadcrumb a { color: var(--color-secondary); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--color-accent); }
+    .breadcrumb span { margin: 0 6px; }
+
+    .product-page { max-width: 1200px; margin: 0 auto; padding: 24px 24px 64px; display: grid; grid-template-columns: 420px 1fr; gap: 48px; align-items: start; }
+
+    .product-gallery { position: sticky; top: 84px; }
+    .product-image-wrap { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; }
+    .product-image-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 16px; }
+    .product-image-wrap .img-placeholder { color: var(--color-secondary); font-size: 0.9rem; text-align: center; }
+
+    .price-box { margin-top: 20px; padding: 20px; border: 1px solid var(--color-border); border-radius: 12px; background: var(--color-bg-alt); }
+    .price-value { font-size: 1.8rem; font-weight: 700; color: var(--color-text); }
+    .price-label { font-size: 0.82rem; color: var(--color-secondary); margin-bottom: 4px; }
+
+    .btn-primary { display: block; width: 100%; margin-top: 14px; padding: 14px 20px; background: var(--color-accent); color: #fff; font-weight: 600; font-size: 0.95rem; text-align: center; text-decoration: none; border-radius: 8px; transition: opacity 0.15s; }
+    .btn-primary:hover { opacity: 0.88; }
+
+    .key-specs-list { margin-top: 20px; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .key-specs-list li { display: flex; justify-content: space-between; font-size: 0.88rem; padding: 8px 12px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 6px; }
+    .key-specs-list li .spec-label { color: var(--color-secondary); }
+    .key-specs-list li .spec-val { font-weight: 600; }
+
+    .product-content { min-width: 0; }
+    .product-brand { font-size: 0.88rem; color: var(--color-secondary); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+    h1.product-title { font-size: 1.75rem; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+    .product-summary { font-size: 1rem; color: var(--color-secondary); margin-bottom: 24px; line-height: 1.6; }
+
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .tag { font-size: 0.78rem; font-weight: 500; padding: 4px 10px; border-radius: 20px; background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text); text-transform: uppercase; letter-spacing: 0.04em; }
+
+    .fit-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .fit-box { padding: 16px; border-radius: 10px; font-size: 0.9rem; line-height: 1.5; }
+    .fit-box-good { background: #EAF4EE; border: 1px solid #A8D5B5; }
+    .fit-box-poor { background: #FAEAEA; border: 1px solid #E8A8A8; }
+    .fit-box-title { font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+    .fit-box-good .fit-box-title { color: var(--color-good); }
+    .fit-box-poor .fit-box-title { color: var(--color-poor); }
+
+    .fit-calculator { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
+    .fit-calculator h2 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .fit-calculator .calc-hint { font-size: 0.82rem; color: var(--color-secondary); margin-bottom: 16px; }
+
+    .calc-inputs { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+    .calc-field { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 120px; }
+    .calc-field label { font-size: 0.82rem; color: var(--color-secondary); font-weight: 500; }
+    .calc-field .calc-optional { font-size: 0.75rem; color: var(--color-accent); font-weight: 400; }
+    .calc-field input { padding: 8px 12px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.95rem; font-family: 'Inter', sans-serif; background: #fff; width: 100%; }
+    .calc-field input:focus { outline: 2px solid var(--color-accent); border-color: transparent; }
+
+    .btn-calc { padding: 10px 24px; background: var(--color-accent); color: #fff; font-weight: 600; font-size: 0.9rem; border: none; border-radius: 6px; cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.15s; }
+    .btn-calc:hover { opacity: 0.88; }
+
+    .calc-result { display: none; margin-top: 16px; padding: 14px 16px; border-radius: 8px; font-size: 0.9rem; line-height: 1.5; font-weight: 500; }
+    .calc-result.good    { background: #EAF4EE; border: 1px solid #A8D5B5; color: var(--color-good); }
+    .calc-result.partial { background: #FFF8E7; border: 1px solid #E0C96A; color: var(--color-partial); }
+    .calc-result.poor    { background: #FAEAEA; border: 1px solid #E8A8A8; color: var(--color-poor); }
+
+    .elbow-guide { margin-top: 12px; font-size: 0.8rem; color: var(--color-secondary); border-top: 1px solid var(--color-border); padding-top: 12px; }
+    .elbow-guide strong { color: var(--color-text); }
+
+    .specs-section { margin-bottom: 32px; }
+    .specs-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
+
+    .accordion-item { border: 1px solid var(--color-border); border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+    .accordion-header { width: 100%; background: var(--color-bg-alt); border: none; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--color-text); text-align: left; }
+    .accordion-header:hover { background: #ececea; }
+    .accordion-arrow { font-size: 0.75rem; transition: transform 0.2s; color: var(--color-secondary); }
+    .accordion-header[aria-expanded="true"] .accordion-arrow { transform: rotate(180deg); }
+    .accordion-body { display: none; padding: 16px; background: #fff; }
+    .accordion-body.open { display: block; }
+
+    .spec-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .spec-table tr { border-bottom: 1px solid var(--color-border); }
+    .spec-table tr:last-child { border-bottom: none; }
+    .spec-table td { padding: 8px 4px; }
+    .spec-table td:first-child { color: var(--color-secondary); width: 55%; }
+    .spec-table td:last-child { font-weight: 500; text-align: right; }
+
+    .related-section { margin-top: 48px; }
+    .related-section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .related-card { border: 1px solid var(--color-border); border-radius: 10px; padding: 16px; text-decoration: none; color: var(--color-text); transition: border-color 0.15s, box-shadow 0.15s; background: var(--color-bg-alt); }
+    .related-card:hover { border-color: var(--color-accent); box-shadow: 0 2px 12px rgba(224,90,43,0.1); }
+    .related-card-brand { font-size: 0.75rem; color: var(--color-secondary); font-weight: 500; text-transform: uppercase; margin-bottom: 2px; }
+    .related-card-model { font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; }
+    .related-card-summary { font-size: 0.8rem; color: var(--color-secondary); line-height: 1.4; }
+
+    footer { background: var(--color-bg-alt); border-top: 1px solid var(--color-border); text-align: center; padding: 32px 24px; font-size: 0.82rem; color: var(--color-secondary); }
+    footer a { color: var(--color-secondary); text-decoration: none; }
+    footer a:hover { color: var(--color-accent); }
+
+    @media (max-width: 768px) {
+      .product-page { grid-template-columns: 1fr; gap: 24px; padding: 16px 16px 48px; }
+      .product-gallery { position: static; }
+      .fit-boxes { grid-template-columns: 1fr; }
+      .related-grid { grid-template-columns: 1fr; }
+      h1.product-title { font-size: 1.4rem; }
+      .calc-inputs { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-logo">Erg<span>ely</span></a>
+  <ul class="navbar-links">
+    <li><a href="/chairs/">Chairs</a></li>
+    <li><a href="/standing-desks/">Standing Desks</a></li>
+    <li><a href="/lumbar-supports/">Lumbar Supports</a></li>
+    <li><a href="/cushions/">Cushions</a></li>
+    <li><a href="/mattresses/">Mattresses</a></li>
+  </ul>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">Home</a><span>›</span>
+  <a href="/standing-desks/">Standing Desks</a><span>›</span>
+  Example Brand Model Name
+</div>
+
+<div class="product-page">
+
+  <!-- LEFT: GALLERY + CTA -->
+  <aside class="product-gallery">
+    <div class="product-image-wrap">
+      
+        <div class="img-placeholder">Image coming soon</div>
+      
+    </div>
+
+    <div class="price-box">
+      <div class="price-label">Price (approx.)</div>
+      
+        <div class="price-value">—</div>
+      
+      <a href="https://example.com" target="_blank" rel="noopener sponsored" class="btn-primary">
+        Check price at Example Brand →
+      </a>
+    </div>
+
+    <ul class="key-specs-list">
+      <li>
+        <span class="spec-label">Height range</span>
+        <span class="spec-val">
+          —
+        </span>
+      </li>
+      <li>
+        <span class="spec-label">Surface size</span>
+        <span class="spec-val">
+          —
+        </span>
+      </li>
+      <li>
+        <span class="spec-label">Weight capacity</span>
+        <span class="spec-val">—</span>
+      </li>
+      <li>
+        <span class="spec-label">Motor</span>
+        <span class="spec-val">—</span>
+      </li>
+      <li>
+        <span class="spec-label">Presets</span>
+        <span class="spec-val">—</span>
+      </li>
+      <li>
+        <span class="spec-label">Warranty (frame)</span>
+        <span class="spec-val">—</span>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- RIGHT: CONTENT -->
+  <main class="product-content">
+    <div class="product-brand">Example Brand</div>
+    <h1 class="product-title">Model Name</h1>
+    <p class="product-summary"></p>
+
+    
+    <div class="tag-list">
+      
+    </div>
+    
+
+    <div class="fit-boxes">
+      <div class="fit-box fit-box-good">
+        <div class="fit-box-title">✓ Best for</div>
+        
+      </div>
+      <div class="fit-box fit-box-poor">
+        <div class="fit-box-title">✗ Not recommended for</div>
+        No limitations noted.
+      </div>
+    </div>
+
+    <!-- FIT CALCULATOR -->
+    <div class="fit-calculator">
+      <h2>Does this desk fit you?</h2>
+      <p class="calc-hint">Enter your height for a quick check, or add your standing elbow height for a more precise result.</p>
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label for="calc-height">Your height <span class="calc-optional">(cm)</span></label>
+          <input type="number" id="calc-height" placeholder="e.g. 178" min="140" max="220" />
+        </div>
+        <div class="calc-field">
+          <label for="calc-elbow">Standing elbow height <span class="calc-optional">(cm, optional)</span></label>
+          <input type="number" id="calc-elbow" placeholder="e.g. 107" min="80" max="160" />
+        </div>
+        <div style="display:flex;align-items:flex-end;">
+          <button class="btn-calc" onclick="calcFit()">Check fit</button>
+        </div>
+      </div>
+      <div class="calc-result" id="calc-result"></div>
+      <div class="elbow-guide">
+        <strong>How to measure your standing elbow height:</strong> stand upright with your arms relaxed at your sides, bend your elbows to 90°, then measure from the floor to the bottom of your elbow. This is the ideal desk height for you.
+      </div>
+    </div>
+
+    <!-- SPECS ACCORDION -->
+    <div class="specs-section">
+      <h2>Full specifications</h2>
+
+      <!-- DIMENSIONS -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="true" onclick="toggleAcc(this)">
+          Dimensions <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body open">
+          <table class="spec-table">
+            <tr><td>Height range</td><td>
+              —
+            </td></tr>
+            <tr><td>Surface width</td><td>—</td></tr>
+            <tr><td>Surface depth</td><td>—</td></tr>
+            <tr><td>Weight capacity</td><td>—</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- MOTOR -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" onclick="toggleAcc(this)">
+          Motor <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <table class="spec-table">
+            <tr><td>Motor type</td><td>—</td></tr>
+            <tr><td>Motor stages</td><td>—</td></tr>
+            <tr><td>Speed</td><td>—</td></tr>
+            <tr><td>Noise level</td><td>—</td></tr>
+            <tr><td>Programmable presets</td><td>—</td></tr>
+            <tr><td>Anti-collision</td><td>—</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- STABILITY & BUILD -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" onclick="toggleAcc(this)">
+          Stability & build <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <table class="spec-table">
+            <tr><td>Wobble rating</td><td>—</td></tr>
+            <tr><td>Crossbar</td><td>—</td></tr>
+            <tr><td>Frame material</td><td>—</td></tr>
+            <tr><td>Surface material</td><td>—</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- ASSEMBLY -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" onclick="toggleAcc(this)">
+          Assembly <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <table class="spec-table">
+            <tr><td>Assembly time</td><td>—</td></tr>
+            <tr><td>Tools required</td><td>—</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- WARRANTY -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" onclick="toggleAcc(this)">
+          Warranty & certifications <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <table class="spec-table">
+            <tr><td>Frame warranty</td><td>—</td></tr>
+            <tr><td>Motor warranty</td><td>—</td></tr>
+            <tr><td>Surface warranty</td><td>—</td></tr>
+            <tr><td>Certifications</td><td>None published</td></tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RELATED DESKS -->
+    <div class="related-section">
+      <h2>Similar standing desks</h2>
+      <div class="related-grid">
+        
+        
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <p>© 2026 Ergely · <a href="/about/">About</a> · <a href="/about/how-we-rate/">How we rate</a> · <a href="/standing-desks/">All standing desks</a></p>
+  <p style="margin-top:8px;">Ergely is independent. We may earn a commission on purchases made through our links.</p>
+</footer>
+
+<script>
+  function toggleAcc(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    body.classList.toggle('open', !isOpen);
+  }
+
+  const DESK = {
+    heightMin:   null,
+    heightMax:   null,
+    elbowMin:    null,
+    elbowMax:    null,
+    deskMin:     null,
+    deskMax:     null
+  };
+
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const h = params.get('h');
+    const e = params.get('e');
+    if (h) document.getElementById('calc-height').value = h;
+    if (e) document.getElementById('calc-elbow').value = e;
+    if (h || e) calcFit();
+  })();
+
+  function calcFit() {
+    const h = parseFloat(document.getElementById('calc-height').value);
+    const e = parseFloat(document.getElementById('calc-elbow').value);
+    const result = document.getElementById('calc-result');
+
+    if (!h && !e) { result.style.display = 'none'; return; }
+
+    let verdict, cls, msg = '';
+
+    if (e && DESK.elbowMin && DESK.elbowMax) {
+      // Precise: elbow height vs desk range
+      if (e >= DESK.elbowMin && e <= DESK.elbowMax) {
+        verdict = 'Good fit'; cls = 'good';
+        msg = `Your standing elbow height (${e} cm) falls within this desk's range of ${DESK.elbowMin}–${DESK.elbowMax} cm. The desk can be set to your ideal ergonomic height.`;
+      } else if (Math.abs(e - DESK.elbowMin) <= 3 || Math.abs(e - DESK.elbowMax) <= 3) {
+        verdict = 'Partial fit'; cls = 'partial';
+        msg = `Your standing elbow height (${e} cm) is just outside this desk's range of ${DESK.elbowMin}–${DESK.elbowMax} cm. It may still work but won't reach your ideal ergonomic position.`;
+      } else {
+        verdict = 'Poor fit'; cls = 'poor';
+        msg = `Your standing elbow height (${e} cm) is outside this desk's range of ${DESK.elbowMin}–${DESK.elbowMax} cm. This desk cannot be adjusted to your ideal ergonomic height.`;
+      }
+    } else if (h && DESK.heightMin && DESK.heightMax) {
+      // Approximate: user height vs supported height range
+      if (h >= DESK.heightMin && h <= DESK.heightMax) {
+        verdict = 'Good fit'; cls = 'good';
+        msg = `Your height (${h} cm) is within the supported range for this desk (${DESK.heightMin}–${DESK.heightMax} cm). For a more precise result, enter your standing elbow height above.`;
+      } else if (Math.abs(h - DESK.heightMin) <= 5 || Math.abs(h - DESK.heightMax) <= 5) {
+        verdict = 'Partial fit'; cls = 'partial';
+        msg = `Your height (${h} cm) is just outside the typical range for this desk (${DESK.heightMin}–${DESK.heightMax} cm). For a more precise result, enter your standing elbow height above.`;
+      } else {
+        verdict = 'Poor fit'; cls = 'poor';
+        msg = `Your height (${h} cm) is outside the supported range for this desk (${DESK.heightMin}–${DESK.heightMax} cm). Consider a desk with a wider height adjustment range.`;
+      }
+    } else if (e && DESK.deskMin && DESK.deskMax) {
+      // Elbow vs raw desk height range (no anthropometric data in JSON)
+      if (e >= DESK.deskMin && e <= DESK.deskMax) {
+        verdict = 'Good fit'; cls = 'good';
+        msg = `Your standing elbow height (${e} cm) is within this desk's height range of ${DESK.deskMin}–${DESK.deskMax} cm.`;
+      } else {
+        verdict = 'Poor fit'; cls = 'poor';
+        msg = `Your standing elbow height (${e} cm) is outside this desk's height range of ${DESK.deskMin}–${DESK.deskMax} cm.`;
+      }
+    } else {
+      result.style.display = 'none';
+      return;
+    }
+
+    result.className = `calc-result ${cls}`;
+    result.innerHTML = `<strong>${verdict}.</strong> ${msg}`;
+    result.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>

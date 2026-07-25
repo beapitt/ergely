@@ -1,0 +1,475 @@
+{
+  "_schema_version": "1.2",
+  "chairs": [
+    {
+      "id": "branch-ergonomic-chair",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 78 },
+      "identity": {
+        "brand": "Branch", "model": "Ergonomic Chair", "variant": null,
+        "product_url": "https://www.branchfurniture.com/products/ergonomic-chair",
+        "price_usd": 359, "price_range": "300_600", "availability_region": ["US"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica"],
+        "primary_need": ["better_lumbar_support"],
+        "use_case": ["home_office", "corporate_office", "long_hours"],
+        "filter_pages": ["with-adjustable-lumbar", "for-lower-back-pain", "300-to-600"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": 157, "user_height_max_cm": 188,
+        "weight_capacity_kg": 124.7, "body_type_fit": ["average", "tall"]
+      },
+      "seat": {
+        "seat_height_min_cm": 43.2, "seat_height_max_cm": 53.3,
+        "seat_depth_min_cm": 45.7, "seat_depth_max_cm": 55.9,
+        "seat_depth_adjustable": true, "seat_width_cm": 63.5,
+        "seat_tilt": null, "seat_tilt_angle_max_deg": null,
+        "seat_material": "mesh", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": 96.5, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": 10.2, "recline_max_deg": 20,
+        "recline_lockable": true, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": null, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "height_depth_adjustable",
+        "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Height and depth adjustable lumbar. Specific range not published."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": null },
+      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": null, "base_material": "aluminium_alloy", "certifications": ["BIFMA", "Greenguard_Gold"], "warranty_years": 7 },
+      "editorial": {
+        "best_for_summary": "Best mid-range pick for users 5ft2–6ft2 wanting height+depth lumbar and a 7-year warranty.",
+        "not_recommended_for": "No headrest — not suitable for users with neck or shoulder pain.",
+        "tags": ["mesh_back", "height_depth_lumbar", "3d_armrests", "greenguard_gold", "bifma", "7yr_warranty"]
+      }
+    },
+    {
+      "id": "sunaofe-atlas",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 80 },
+      "identity": {
+        "brand": "Sunaofe", "model": "Atlas", "variant": "Black / Grey",
+        "product_url": "https://sunaofe.com/products/sunaofe-atlas-ergonomic-office-chair-adjustable-headrest-dynamic-lumbar-2d-armrests",
+        "price_usd": 499.99, "price_range": "300_600", "availability_region": ["US", "global"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica", "neck_pain"],
+        "primary_need": ["better_lumbar_support", "neck_support"],
+        "use_case": ["home_office", "long_hours"],
+        "filter_pages": ["with-adjustable-lumbar", "with-headrest", "for-lower-back-pain", "300-to-600"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": 150, "user_height_max_cm": 190,
+        "weight_capacity_kg": 136, "body_type_fit": ["average", "tall"]
+      },
+      "seat": {
+        "seat_height_min_cm": 45.0, "seat_height_max_cm": 54.0,
+        "seat_depth_min_cm": 44.5, "seat_depth_max_cm": 53.0,
+        "seat_depth_adjustable": false, "seat_width_cm": 51.0,
+        "seat_tilt": true, "seat_tilt_angle_max_deg": 3,
+        "seat_material": "foam+mesh", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": 79.0, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": 101,
+        "recline_lockable": null, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": false, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "dynamic",
+        "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true,
+        "lumbar_height_range_cm": 15.5, "lumbar_depth_range_cm": 4.2,
+        "lumbar_dynamic": true, "lumbar_notes": "Dynamic lumbar with 6.1in height range and 1.65in depth travel."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": null },
+      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "rotation"] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": 107.4, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": "nylon", "base_material": "nylon", "certifications": [], "warranty_years": null },
+      "editorial": {
+        "best_for_summary": "Good value for users 4ft11–6ft3 wanting dynamic lumbar with height+depth adjustment and headrest.",
+        "not_recommended_for": "Only 2D armrests and recline limited to 101° — not ideal for users who work long hours reclined.",
+        "tags": ["dynamic_lumbar", "headrest", "foam_seat", "mesh_back", "mid_range"]
+      }
+    },
+    {
+      "id": "tralt-yx001-4",
+      "meta": { "last_updated": "2026-07-24", "data_source": "amazon_listing", "data_completeness": 45 },
+      "identity": {
+        "brand": "TRALT", "model": "Ergonomic Office Chair", "variant": "Angel White — Imitation Leather",
+        "product_url": "https://www.amazon.com/TRALT-Ergonomic-Office-Chair-Adjustable/dp/B0F8VKWRNQ/ref=sr_1_13_sspa",
+        "price_usd": 105.40, "price_range": "under_300", "availability_region": ["US"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain"],
+        "primary_need": ["better_lumbar_support"],
+        "use_case": ["home_office", "part_time"],
+        "filter_pages": ["with-adjustable-lumbar", "under-300", "for-lower-back-pain"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": 155, "user_height_max_cm": 190,
+        "weight_capacity_kg": 149.7, "body_type_fit": ["average", "tall"]
+      },
+      "seat": {
+        "seat_height_min_cm": 47.0, "seat_height_max_cm": 54.1,
+        "seat_depth_min_cm": 43.9, "seat_depth_max_cm": 43.9,
+        "seat_depth_adjustable": false, "seat_width_cm": 50.8,
+        "seat_tilt": null, "seat_tilt_angle_max_deg": null,
+        "seat_material": "leather", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": null, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": null,
+        "recline_lockable": null, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": false, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "height_adjustable",
+        "lumbar_height_adjustable": true, "lumbar_depth_adjustable": null,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Height-adjustable lumbar. No range published."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": null },
+      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": 50.0, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": "steel", "base_material": "steel", "certifications": [], "warranty_years": null },
+      "editorial": {
+        "best_for_summary": "Budget pick under $110 for average to tall users needing basic height-adjustable lumbar.",
+        "not_recommended_for": "Fixed armrests, no recline data published, imitation leather — not suitable for long hours or serious back issues.",
+        "tags": ["budget", "imitation_leather", "mesh_back", "height_lumbar", "under_150"]
+      }
+    },
+    {
+      "id": "haworth-fern",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 62 },
+      "identity": {
+        "brand": "Haworth", "model": "Fern", "variant": "Aluminium base (coloured) / Plastic base (black)",
+        "product_url": "https://shopping.haworth.com/en-gb/products/fern-ergonomic-office-chair-uk",
+        "price_usd": null, "price_range": "600_1000", "availability_region": ["UK", "EU"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica"],
+        "primary_need": ["better_lumbar_support"],
+        "use_case": ["corporate_office", "long_hours"],
+        "filter_pages": ["with-adjustable-lumbar", "for-lower-back-pain", "600-to-1000"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": null, "user_height_max_cm": null,
+        "weight_capacity_kg": 150, "body_type_fit": ["average"]
+      },
+      "seat": {
+        "seat_height_min_cm": 42.0, "seat_height_max_cm": 54.0,
+        "seat_depth_min_cm": 39.5, "seat_depth_max_cm": 48.3,
+        "seat_depth_adjustable": true, "seat_width_cm": 50.7,
+        "seat_tilt": true, "seat_tilt_angle_max_deg": null,
+        "seat_material": "mesh", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": null, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": null,
+        "recline_lockable": true, "recline_positions": 5,
+        "synchro_tilt": null, "liveback_or_dynamic_back": null, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "height_adjustable",
+        "lumbar_height_adjustable": true, "lumbar_depth_adjustable": null,
+        "lumbar_height_range_cm": 10.0, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Optional height-adjustable lumbar, 100mm vertical range."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "4D", "armrests_removable": null },
+      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
+      "total_dimensions": { "total_height_min_cm": 106.0, "total_height_max_cm": 119.0, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": null, "base_material": "aluminium_alloy", "certifications": [], "warranty_years": null },
+      "editorial": {
+        "best_for_summary": "Premium UK/EU pick with 5-position recline lock, forward tilt, seat depth adjustment and 10cm lumbar range.",
+        "not_recommended_for": "No published user height range — verify fit before buying. UK/EU market only.",
+        "tags": ["mesh_back", "height_lumbar", "forward_tilt", "4d_armrests", "5_recline_positions", "premium", "uk_eu"]
+      }
+    },
+    {
+      "id": "flexispot-c7-morpher",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 82 },
+      "identity": {
+        "brand": "FlexiSpot", "model": "C7 Morpher", "variant": "Standard / with footrest option",
+        "product_url": "https://flexispot.co.uk/ergonomic-office-chair-c7-morpher.html",
+        "price_usd": null, "price_range": "600_1000", "availability_region": ["UK", "EU"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica", "hip_pain"],
+        "primary_need": ["better_lumbar_support", "more_recline", "tall_users"],
+        "use_case": ["home_office", "corporate_office", "long_hours"],
+        "filter_pages": ["for-tall-people", "with-adjustable-lumbar", "for-lower-back-pain", "600-to-1000"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": 160, "user_height_max_cm": 195,
+        "weight_capacity_kg": 163, "body_type_fit": ["average", "tall"]
+      },
+      "seat": {
+        "seat_height_min_cm": 45.0, "seat_height_max_cm": 54.0,
+        "seat_depth_min_cm": 43.5, "seat_depth_max_cm": 48.0,
+        "seat_depth_adjustable": true, "seat_width_cm": 53.0,
+        "seat_tilt": true, "seat_tilt_angle_max_deg": 10,
+        "seat_material": "mesh", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": null, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": 143,
+        "recline_lockable": true, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": true, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "dynamic",
+        "lumbar_height_adjustable": null, "lumbar_depth_adjustable": true,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": true, "lumbar_notes": "DynaFollow adaptive lumbar. Flexlean 10° forward tilt. Recline 110°–143°."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": null },
+      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "depth"] },
+      "total_dimensions": { "total_height_min_cm": 109.0, "total_height_max_cm": 142.5, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": "aluminium_alloy", "base_material": "aluminium_alloy", "certifications": ["EN1335", "SGS", "Greenguard"], "warranty_years": 5 },
+      "editorial": {
+        "best_for_summary": "Best UK/EU pick for tall users 160–195cm wanting dynamic lumbar, 143° recline and 10° forward tilt.",
+        "not_recommended_for": "Price in GBP only — limited US availability.",
+        "tags": ["dynamic_lumbar", "dynafollow", "forward_tilt", "headrest", "tall_users", "mesh", "en1335", "sgs", "uk_eu"]
+      }
+    },
+    {
+      "id": "flexispot-bs5",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 72 },
+      "identity": {
+        "brand": "FlexiSpot", "model": "BS5", "variant": "Black / Apricot / Green / Pink / Grey",
+        "product_url": "https://flexispot.co.uk/colorful-ergonomic-chair-bs5",
+        "price_usd": null, "price_range": "under_300", "availability_region": ["UK", "EU"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain"],
+        "primary_need": ["better_lumbar_support", "neck_support"],
+        "use_case": ["home_office", "part_time"],
+        "filter_pages": ["for-short-people", "with-headrest", "for-lower-back-pain", "under-300"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": 155, "user_height_max_cm": 180,
+        "weight_capacity_kg": 136, "body_type_fit": ["petite", "average"]
+      },
+      "seat": {
+        "seat_height_min_cm": 42.0, "seat_height_max_cm": 53.5,
+        "seat_depth_min_cm": 41.5, "seat_depth_max_cm": 41.5,
+        "seat_depth_adjustable": false, "seat_width_cm": 49.5,
+        "seat_tilt": false, "seat_tilt_angle_max_deg": null,
+        "seat_material": "foam", "foam_density_kg_m3": 50
+      },
+      "backrest": {
+        "backrest_height_cm": 58.0, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": 135,
+        "recline_lockable": true, "recline_positions": 3,
+        "synchro_tilt": null, "liveback_or_dynamic_back": false, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "fixed",
+        "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Fixed lumbar. 50D high-density foam seat."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": null },
+      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "rotation"] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": null, "base_material": "nylon", "certifications": ["SGS", "BIFMA", "EN1335"], "warranty_years": 3 },
+      "editorial": {
+        "best_for_summary": "Best colourful budget pick for shorter users 155–180cm with triple certification and published foam density.",
+        "not_recommended_for": "Fixed lumbar only — not suitable for users needing specific lumbar positioning or over 180cm.",
+        "tags": ["fixed_lumbar", "50d_foam", "headrest", "sgs", "bifma", "en1335", "petite_friendly", "uk_eu"]
+      }
+    },
+    {
+      "id": "ergohuman-swivel-headrest",
+      "meta": { "last_updated": "2026-07-24", "data_source": "amazon_listing", "data_completeness": 52 },
+      "identity": {
+        "brand": "Ergohuman", "model": "Swivel Chair with Headrest", "variant": "Grey / Chrome",
+        "product_url": "https://www.amazon.com/Ergohuman-Swivel-Chair-Headrest-Chrome/dp/B002LK1YNO?ref_=ast_sto_dp&th=1",
+        "price_usd": 795, "price_range": "600_1000", "availability_region": ["US", "global"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica", "neck_pain"],
+        "primary_need": ["better_lumbar_support", "neck_support"],
+        "use_case": ["home_office", "corporate_office", "long_hours"],
+        "filter_pages": ["with-adjustable-lumbar", "with-headrest", "for-lower-back-pain", "600-to-1000"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": null, "user_height_max_cm": null,
+        "weight_capacity_kg": 124.7, "body_type_fit": ["average"]
+      },
+      "seat": {
+        "seat_height_min_cm": 39.5, "seat_height_max_cm": 45.0,
+        "seat_depth_min_cm": null, "seat_depth_max_cm": null,
+        "seat_depth_adjustable": true, "seat_width_cm": 51.5,
+        "seat_tilt": null, "seat_tilt_angle_max_deg": null,
+        "seat_material": "mesh", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": 69.0, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": 7.0, "recline_max_deg": null,
+        "recline_lockable": true, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": false, "backrest_material": "mesh"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "height_depth_adjustable",
+        "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Height and depth adjustable lumbar. Specific ranges not published."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": null },
+      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "depth", "rotation"] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": "aluminium_alloy", "base_material": "aluminium_alloy", "certifications": [], "warranty_years": null },
+      "editorial": {
+        "best_for_summary": "Classic ergonomic mesh chair with height+depth lumbar and full 3D headrest at mid-premium price.",
+        "not_recommended_for": "No published user height range. Low seat height max — may not suit tall users. Verify before buying.",
+        "tags": ["mesh", "height_depth_lumbar", "headrest", "3d_armrests", "aluminium_base"]
+      }
+    },
+    {
+      "id": "posturite-homeworker-black",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 62 },
+      "identity": {
+        "brand": "Posturite", "model": "Homeworker Black Ergonomic Chair", "variant": "Black",
+        "product_url": "https://www.posturite.co.uk/homeworker-black-ergonomic-chair",
+        "price_usd": 435, "price_range": "300_600", "availability_region": ["UK"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain"],
+        "primary_need": ["better_lumbar_support"],
+        "use_case": ["home_office", "long_hours"],
+        "filter_pages": ["with-adjustable-lumbar", "for-lower-back-pain", "300-to-600"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": null, "user_height_max_cm": null,
+        "weight_capacity_kg": 150, "body_type_fit": ["average"]
+      },
+      "seat": {
+        "seat_height_min_cm": 45.0, "seat_height_max_cm": 54.0,
+        "seat_depth_min_cm": 49.0, "seat_depth_max_cm": 49.0,
+        "seat_depth_adjustable": false, "seat_width_cm": 49.0,
+        "seat_tilt": false, "seat_tilt_angle_max_deg": null,
+        "seat_material": "fabric", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": 50.0, "backrest_height_adjustable": true,
+        "backrest_height_range_cm": 4.0, "recline_max_deg": null,
+        "recline_lockable": true, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": false, "backrest_material": "fabric"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "height_adjustable",
+        "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Backrest height adjustable 480–520mm via screw. FIRA certified."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": null },
+      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": "steel", "base_material": null, "certifications": ["FIRA"], "warranty_years": 5 },
+      "editorial": {
+        "best_for_summary": "Solid UK home office pick with FIRA certification, adjustable backrest height and 5-year warranty.",
+        "not_recommended_for": "No headrest, no seat depth adjustment, fabric seat only. UK market.",
+        "tags": ["fabric_seat", "height_lumbar", "fira_certified", "5yr_warranty", "2d_armrests", "uk_only"]
+      }
+    },
+    {
+      "id": "libernovo-omni-se",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 70 },
+      "identity": {
+        "brand": "LiberNovo / Relax The Back", "model": "Omni SE Dynamic Ergonomic Chair", "variant": "SE",
+        "product_url": "https://relaxtheback.com/products/libernovo-omni-se-dynamic-ergonomic-chair",
+        "price_usd": 629, "price_range": "600_1000", "availability_region": ["US"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica", "herniated_disc"],
+        "primary_need": ["better_lumbar_support", "more_recline"],
+        "use_case": ["home_office", "long_hours"],
+        "filter_pages": ["with-adjustable-lumbar", "for-lower-back-pain", "for-sciatica", "600-to-1000"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": 155, "user_height_max_cm": 188,
+        "weight_capacity_kg": 136, "body_type_fit": ["average", "tall"]
+      },
+      "seat": {
+        "seat_height_min_cm": 48.5, "seat_height_max_cm": 59.5,
+        "seat_depth_min_cm": 45.0, "seat_depth_max_cm": 48.0,
+        "seat_depth_adjustable": true, "seat_width_cm": 54.5,
+        "seat_tilt": null, "seat_tilt_angle_max_deg": null,
+        "seat_material": "fabric", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": 54.0, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": 160,
+        "recline_lockable": true, "recline_positions": 4,
+        "synchro_tilt": null, "liveback_or_dynamic_back": true, "backrest_material": "fabric"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "dynamic",
+        "lumbar_height_adjustable": null, "lumbar_depth_adjustable": true,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": true, "lumbar_notes": "Dynamic backrest-following lumbar. 4-position recline: 105°, 120°, 135°, 160°."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": null },
+      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "rotation"] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": 5 },
+      "editorial": {
+        "best_for_summary": "Best US pick for users 5ft1–6ft2 wanting 160° recline, dynamic lumbar and headrest at mid-premium price.",
+        "not_recommended_for": "Fabric seat — not ideal for warm climates or users who prefer breathable mesh. No certifications published.",
+        "tags": ["dynamic_lumbar", "160deg_recline", "4_recline_positions", "headrest", "3d_armrests", "seat_depth_adjustable", "5yr_warranty"]
+      }
+    },
+    {
+      "id": "office-chairs-uk-advocate",
+      "meta": { "last_updated": "2026-07-24", "data_source": "official_site", "data_completeness": 38 },
+      "identity": {
+        "brand": "Office Chairs UK", "model": "Advocate Medium Back Executive Chair", "variant": "Black Bonded Leather",
+        "product_url": "https://office-chairs.co.uk/product/advocate-medium-back-bonded-leather-executive-office-chair-with-arms/",
+        "price_usd": 395, "price_range": "300_600", "availability_region": ["UK"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain"],
+        "primary_need": ["better_lumbar_support"],
+        "use_case": ["corporate_office"],
+        "filter_pages": ["for-lower-back-pain", "300-to-600"]
+      },
+      "anthropometric_fit": {
+        "user_height_min_cm": null, "user_height_max_cm": null,
+        "weight_capacity_kg": null, "body_type_fit": ["average"]
+      },
+      "seat": {
+        "seat_height_min_cm": 49.0, "seat_height_max_cm": 56.0,
+        "seat_depth_min_cm": 52.0, "seat_depth_max_cm": 52.0,
+        "seat_depth_adjustable": false, "seat_width_cm": 49.0,
+        "seat_tilt": false, "seat_tilt_angle_max_deg": null,
+        "seat_material": "leather", "foam_density_kg_m3": null
+      },
+      "backrest": {
+        "backrest_height_cm": 60.0, "backrest_height_adjustable": null,
+        "backrest_height_range_cm": null, "recline_max_deg": null,
+        "recline_lockable": true, "recline_positions": null,
+        "synchro_tilt": null, "liveback_or_dynamic_back": false, "backrest_material": "leather"
+      },
+      "lumbar": {
+        "lumbar_present": true, "lumbar_type": "fixed",
+        "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false,
+        "lumbar_height_range_cm": null, "lumbar_depth_range_cm": null,
+        "lumbar_dynamic": false, "lumbar_notes": "Fixed lumbar only. Traditional executive chair design."
+      },
+      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": null },
+      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
+      "total_dimensions": { "total_height_min_cm": null, "total_height_max_cm": null, "total_width_cm": null, "total_depth_cm": null, "product_weight_kg": null },
+      "build": { "frame_material": "steel", "base_material": "steel", "certifications": [], "warranty_years": null },
+      "editorial": {
+        "best_for_summary": "Traditional UK executive chair in bonded leather — suitable for corporate offices wanting a classic look.",
+        "not_recommended_for": "Fixed lumbar, fixed armrests, no published weight capacity or user height range — not recommended for users with active back pain needs.",
+        "tags": ["leather", "fixed_lumbar", "executive_style", "uk_only", "corporate"]
+      }
+    }
+  ]
+}
