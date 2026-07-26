@@ -482,29 +482,45 @@
   };
   (function() {
     const p = new URLSearchParams(window.location.search);
-    const h = p.get('h'), w = p.get('w');
-    if (h) document.getElementById('calc-height').value = h;
-    if (w) document.getElementById('calc-weight').value = w;
-    if (h || w) {
-      const calculator = document.querySelector('.fit-calculator');
-      const inputs = calculator.querySelector('.calc-inputs');
-      const btnCalc = calculator.querySelector('.btn-calc');
-      const h2 = calculator.querySelector('h2');
-      h2.style.marginBottom = '12px';
-      const editLink = document.createElement('button');
-      editLink.textContent = 'Change measurements';
-      editLink.style.cssText = 'font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--font);text-decoration:underline;padding:0;margin-top:8px;display:block;';
-      editLink.onclick = function() {
-        inputs.style.display = 'flex';
-        btnCalc.style.display = 'inline-block';
-        editLink.style.display = 'none';
-      };
-      calculator.appendChild(editLink);
-      calcFit();
-      inputs.style.display = 'none';
-      btnCalc.style.display = 'none';
+    const h = parseFloat(p.get('h'));
+    const w = parseFloat(p.get('w'));
+    if (!h && !w) return;
+
+    // Calculate fit directly from URL params without using the form
+    let heightFit = null, weightFit = null;
+    if (CHAIR.heightMin && CHAIR.heightMax && h) {
+      if (h >= CHAIR.heightMin && h <= CHAIR.heightMax) heightFit = 'good';
+      else if (Math.abs(h - CHAIR.heightMin) <= 5 || Math.abs(h - CHAIR.heightMax) <= 5) heightFit = 'partial';
+      else heightFit = 'poor';
+    } else { heightFit = h ? 'unknown' : null; }
+    if (CHAIR.weightMax && w) weightFit = w <= CHAIR.weightMax ? 'good' : 'poor';
+    else weightFit = w ? 'unknown' : null;
+    const fits = [heightFit, weightFit].filter(Boolean);
+    let verdict, cls, msg = '';
+    if (fits.includes('poor')) { verdict = 'Poor fit'; cls = 'poor'; }
+    else if (fits.includes('partial') || fits.includes('unknown')) { verdict = 'Partial fit'; cls = 'partial'; }
+    else if (fits.length > 0) { verdict = 'Good fit'; cls = 'good'; }
+    else return;
+    if (h) {
+      if (CHAIR.heightMin && CHAIR.heightMax) msg += 'Your height (' + h + ' cm) ' + (heightFit === 'good' ? 'falls within' : heightFit === 'partial' ? 'is just outside' : 'is outside') + ' this chair's supported range of ' + CHAIR.heightMin + '–' + CHAIR.heightMax + ' cm. ';
+      else msg += 'No height range published for this chair. ';
     }
+    if (w) {
+      if (CHAIR.weightMax) msg += 'Your weight (' + w + ' kg) is ' + (weightFit === 'good' ? 'within' : 'above') + ' the ' + CHAIR.weightMax + ' kg capacity.';
+      else msg += 'No weight capacity published for this chair.';
+    }
+
+    // Replace entire calculator box with compact result
+    const calculator = document.querySelector('.fit-calculator');
+    calculator.innerHTML =
+      '<h2 style="font-size:15px;font-weight:700;margin-bottom:12px;">Does this chair fit you?</h2>' +
+      '<div class="calc-result ' + cls + '" style="display:block;"><strong>' + verdict + '.</strong> ' + msg + '</div>' +
+      '<button onclick="this.closest('.fit-calculator').innerHTML = originalCalcHTML; restoreCalc();" style="font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--font);text-decoration:underline;padding:0;margin-top:10px;display:block;">Change measurements</button>';
   })();
+
+  // Store original calculator HTML for restore
+  const originalCalcHTML = document.querySelector('.fit-calculator').innerHTML;
+  function restoreCalc() {}
   function calcFit() {
     const h = parseFloat(document.getElementById('calc-height').value);
     const w = parseFloat(document.getElementById('calc-weight').value);
