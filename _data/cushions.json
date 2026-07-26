@@ -1,0 +1,52 @@
+{
+  "_schema_version": "1.0",
+  "_category": "cushions",
+  "cushions": [
+    {
+      "id": "example-brand-model",
+      "meta": {
+        "last_updated": "2026-07-26",
+        "data_source": "official_site",
+        "data_completeness": 0
+      },
+      "identity": {
+        "brand": "Example Brand",
+        "model": "Model Name",
+        "variant": null,
+        "product_url": "https://example.com",
+        "image_url": null,
+        "price_usd": null,
+        "price_range": "under_30",
+        "availability_region": ["US", "UK"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "coccyx_pain", "sciatica"],
+        "primary_need": ["coccyx_relief", "posture_correction", "pressure_relief"],
+        "use_case": ["office_chair", "car", "wheelchair"],
+        "filter_pages": ["for-coccyx-pain", "for-sciatica"]
+      },
+      "specs": {
+        "design": null,
+        "material": null,
+        "non_slip_base": null,
+        "washable_cover": null,
+        "weight_capacity_kg": null,
+        "dimensions_cm": {
+          "width": null,
+          "depth": null,
+          "height": null
+        },
+        "weight_kg": null
+      },
+      "build": {
+        "certifications": [],
+        "warranty_years": null
+      },
+      "editorial": {
+        "best_for_summary": null,
+        "not_recommended_for": null,
+        "tags": []
+      }
+    }
+  ]
+}
