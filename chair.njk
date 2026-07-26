@@ -458,7 +458,25 @@ permalink: "chairs/{{ chair.id }}/index.html"
     const h = p.get('h'), w = p.get('w');
     if (h) document.getElementById('calc-height').value = h;
     if (w) document.getElementById('calc-weight').value = w;
-    if (h || w) calcFit();
+    if (h || w) {
+      const calculator = document.querySelector('.fit-calculator');
+      const inputs = calculator.querySelector('.calc-inputs');
+      const btnCalc = calculator.querySelector('.btn-calc');
+      const h2 = calculator.querySelector('h2');
+      inputs.style.display = 'none';
+      btnCalc.style.display = 'none';
+      h2.style.marginBottom = '12px';
+      const editLink = document.createElement('button');
+      editLink.textContent = 'Change measurements';
+      editLink.style.cssText = 'font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--font);text-decoration:underline;padding:0;margin-top:8px;display:block;';
+      editLink.onclick = function() {
+        inputs.style.display = 'flex';
+        btnCalc.style.display = 'inline-block';
+        editLink.style.display = 'none';
+      };
+      calculator.appendChild(editLink);
+      calcFit();
+    }
   })();
   function calcFit() {
     const h = parseFloat(document.getElementById('calc-height').value);
