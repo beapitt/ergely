@@ -1,0 +1,57 @@
+{
+  "_schema_version": "1.0",
+  "_category": "mattresses",
+  "mattresses": [
+    {
+      "id": "example-brand-model",
+      "meta": {
+        "last_updated": "2026-07-26",
+        "data_source": "official_site",
+        "data_completeness": 0
+      },
+      "identity": {
+        "brand": "Example Brand",
+        "model": "Model Name",
+        "variant": null,
+        "product_url": "https://example.com",
+        "image_url": null,
+        "price_usd": null,
+        "price_range": "under_500",
+        "availability_region": ["US", "UK"]
+      },
+      "seo": {
+        "conditions": ["lower_back_pain", "sciatica", "hip_pain"],
+        "primary_need": ["pressure_relief", "spinal_alignment", "motion_isolation"],
+        "use_case": ["back_sleeper", "side_sleeper", "stomach_sleeper"],
+        "filter_pages": ["for-lower-back-pain", "for-side-sleepers"]
+      },
+      "fit": {
+        "best_for_sleep_position": [],
+        "weight_range_kg": {
+          "min": null,
+          "max": null
+        }
+      },
+      "specs": {
+        "mattress_type": null,
+        "firmness_level": null,
+        "firmness_scale": null,
+        "thickness_cm": null,
+        "motion_isolation": null,
+        "edge_support": null,
+        "cooling": null,
+        "sleep_trial_nights": null,
+        "size_options": []
+      },
+      "build": {
+        "certifications": [],
+        "warranty_years": null
+      },
+      "editorial": {
+        "best_for_summary": null,
+        "not_recommended_for": null,
+        "tags": []
+      }
+    }
+  ]
+}
