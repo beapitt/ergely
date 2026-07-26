@@ -1,0 +1,495 @@
+---
+permalink: "standing-desks/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standing Desks for Back Pain — Filter by Height & Budget | Ergely</title>
+  <meta name="description" content="Find the right standing desk for your height. Filter by desk height range, motor type, budget and features. Verified specs, no sponsored rankings.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ergely.com/standing-desks/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Standing Desks for Back Pain | Ergely">
+  <meta property="og:url" content="https://ergely.com/standing-desks/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Standing Desks for Back Pain",
+    "url": "https://ergely.com/standing-desks/",
+    "itemListElement": [
+      {% for desk in standingDesks.standing_desks %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": "{{ desk.identity.brand }} {{ desk.identity.model }}",
+        "url": "https://ergely.com/standing-desks/{{ desk.id }}/"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #1B1B1B; --accent: #E05A2B; --white: #FFFFFF;
+      --offwhite: #F7F7F5; --border: #E4E4E0; --muted: #6B6B6B;
+      --green: #2A7D4F; --red: #C0392B; --partial: #B07D1A;
+      --font: 'Inter', system-ui, sans-serif;
+    }
+    body { font-family: var(--font); background: var(--white); color: var(--black); font-size: 15px; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    nav { background: #fff; height: 56px; display: flex; align-items: center; padding: 0 32px; position: sticky; top: 0; z-index: 200; gap: 32px; border-bottom: 1px solid #e4e4e0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .logo { font-size: 19px; font-weight: 800; letter-spacing: -0.03em; color: #1B1B1B; flex-shrink: 0; }
+    .logo span { color: #E05A2B; }
+    .nav-links { display: flex; gap: 2px; flex: 1; }
+    .nav-links a { color: #1B1B1B; font-size: 13px; font-weight: 500; padding: 5px 12px; border-radius: 5px; transition: color 0.12s, background 0.12s; white-space: nowrap; }
+    .nav-links a:hover { color: #E05A2B; background: #fff5f2; }
+    .nav-links a.active { color: #E05A2B; font-weight: 600; }
+    .nav-links span.soon { color: #666; pointer-events: none; padding: 5px 12px; font-size: 13px; font-weight: 500; }
+    .nav-right { margin-left: auto; display: flex; gap: 8px; }
+    .nav-right a { color: #6B6B6B; font-size: 13px; font-weight: 500; padding: 5px 12px; border-radius: 5px; }
+    .nav-right a:hover { color: #1B1B1B; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; margin-left: auto; background: none; border: none; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: #1B1B1B; border-radius: 2px; }
+    .mobile-menu { display: none; position: fixed; top: 56px; left: 0; right: 0; background: #fff; border-bottom: 1px solid #E4E4E0; padding: 12px 0; z-index: 199; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a { display: block; padding: 12px 24px; font-size: 15px; font-weight: 500; color: #1B1B1B; border-bottom: 1px solid #F7F7F5; }
+    .mobile-menu a.active { color: #E05A2B; font-weight: 600; }
+    .mobile-menu span.soon { color: #aaa; pointer-events: none; display: block; padding: 12px 24px; font-size: 15px; border-bottom: 1px solid #F7F7F5; }
+    .page-header { background: var(--offwhite); border-bottom: 1px solid var(--border); padding: 28px 32px; }
+    .page-header-inner { max-width: 1100px; margin: 0 auto; }
+    .page-header h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px; }
+    .page-header p { font-size: 13px; color: var(--muted); }
+    .listing-wrap { max-width: 1100px; margin: 0 auto; padding: 28px 32px 64px; display: grid; grid-template-columns: 260px 1fr; gap: 32px; align-items: start; }
+    .sidebar { position: sticky; top: 76px; display: flex; flex-direction: column; gap: 6px; }
+    .fit-finder { background: #fff8f5; border: 1.5px solid #f0c4b0; border-radius: 10px; padding: 16px; margin-bottom: 8px; }
+    .fit-finder-title { font-size: 13px; font-weight: 700; color: var(--black); margin-bottom: 12px; }
+    .fit-finder-inputs { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+    .fit-finder-field { display: flex; flex-direction: column; gap: 3px; }
+    .fit-finder-field label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .fit-finder-field input { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; font-family: var(--font); background: #fff; width: 100%; }
+    .fit-finder-field input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+    .fit-finder-hint { font-size: 11px; color: var(--muted); margin-top: 4px; }
+    .btn-find { width: 100%; padding: 10px; background: var(--accent); color: #fff; font-weight: 700; font-size: 13px; border: none; border-radius: 6px; cursor: pointer; font-family: var(--font); transition: background 0.12s; }
+    .btn-find:hover { background: #c44e24; }
+    .fit-finder-result { display: none; margin-top: 10px; font-size: 12px; color: var(--muted); }
+    .fit-finder-result.active { display: block; }
+    .filter-section { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .filter-header { padding: 12px 14px; background: var(--offwhite); font-size: 12px; font-weight: 700; color: var(--black); text-transform: uppercase; letter-spacing: 0.07em; display: flex; justify-content: space-between; align-items: center; cursor: pointer; border: none; width: 100%; font-family: var(--font); }
+    .filter-header:hover { background: #ececea; }
+    .filter-arrow { font-size: 10px; color: var(--muted); transition: transform 0.2s; }
+    .filter-header[aria-expanded="false"] .filter-arrow { transform: rotate(-90deg); }
+    .filter-body { padding: 12px 14px; background: #fff; }
+    .filter-body.hidden { display: none; }
+    .pill-group { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill { font-size: 12px; font-weight: 500; padding: 5px 11px; border-radius: 99px; border: 1px solid var(--border); background: #fff; color: var(--black); cursor: pointer; transition: all 0.12s; font-family: var(--font); }
+    .pill:hover { border-color: var(--accent); color: var(--accent); }
+    .pill.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .toggle-group { display: flex; flex-direction: column; gap: 8px; }
+    .toggle-item { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+    .toggle-switch { position: relative; width: 36px; height: 20px; }
+    .toggle-switch input { opacity: 0; width: 0; height: 0; }
+    .toggle-track { position: absolute; inset: 0; background: var(--border); border-radius: 99px; transition: background 0.2s; cursor: pointer; }
+    .toggle-switch input:checked + .toggle-track { background: var(--accent); }
+    .toggle-track::after { content: ''; position: absolute; width: 14px; height: 14px; background: #fff; border-radius: 50%; top: 3px; left: 3px; transition: transform 0.2s; }
+    .toggle-switch input:checked + .toggle-track::after { transform: translateX(16px); }
+    .reset-btn { font-size: 12px; color: var(--muted); background: none; border: none; cursor: pointer; font-family: var(--font); padding: 4px 0; text-decoration: underline; }
+    .reset-btn:hover { color: var(--accent); }
+    .results-area { min-width: 0; }
+    .results-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .results-count { font-size: 13px; color: var(--muted); }
+    .results-count strong { color: var(--black); }
+    .sort-select { font-size: 13px; font-family: var(--font); padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; background: #fff; cursor: pointer; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .product-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: #fff; transition: border-color 0.15s, box-shadow 0.15s, transform 0.12s; display: flex; flex-direction: column; }
+    .product-card:hover { border-color: var(--accent); box-shadow: 0 4px 16px rgba(224,90,43,0.1); transform: translateY(-2px); }
+    .product-card.hidden { display: none; }
+    .card-image { aspect-ratio: 4/3; background: var(--offwhite); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+    .card-image img { width: 100%; height: 100%; object-fit: contain; padding: 12px; }
+    .card-image .no-image { font-size: 11px; color: var(--muted); }
+    .fit-badge { position: absolute; top: 8px; right: 8px; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 99px; display: none; text-transform: uppercase; letter-spacing: 0.05em; }
+    .fit-badge.good  { background: #EAF4EE; color: var(--green); border: 1px solid #A8D5B5; display: block; }
+    .fit-badge.partial { background: #FFF8E7; color: var(--partial); border: 1px solid #E0C96A; display: block; }
+    .fit-badge.poor  { background: #FAEAEA; color: var(--red); border: 1px solid #E8A8A8; display: block; }
+    .card-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .card-brand { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .card-model { font-size: 14px; font-weight: 700; color: var(--black); line-height: 1.3; }
+    .card-summary { font-size: 12px; color: var(--muted); line-height: 1.45; flex: 1; }
+    .card-fit-range { font-size: 11px; color: var(--muted); font-weight: 500; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .card-tag { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 99px; background: var(--offwhite); border: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.04em; }
+    .card-footer { padding: 12px 14px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+    .card-price { font-size: 15px; font-weight: 800; letter-spacing: -0.02em; }
+    .card-cta { font-size: 12px; font-weight: 600; color: var(--accent); }
+    .card-cta:hover { text-decoration: underline; }
+    .no-results { display: none; text-align: center; padding: 48px 24px; color: var(--muted); }
+    .no-results.visible { display: block; }
+    .no-results h3 { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 8px; }
+    footer { background: #111; padding: 48px 32px 0; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid #2a2a2a; }
+    .footer-logo { font-size: 18px; font-weight: 800; color: #fff; margin-bottom: 12px; display: block; }
+    .footer-logo span { color: #E05A2B; }
+    .footer-tagline { font-size: 13px; color: #999; line-height: 1.6; margin-bottom: 16px; }
+    .footer-copy { font-size: 12px; color: #666; }
+    .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; margin-bottom: 16px; }
+    .footer-col a { display: block; font-size: 13px; color: #999; margin-bottom: 9px; transition: color 0.12s; }
+    .footer-col a:hover { color: #fff; }
+    .footer-col span.soon { color: #888; pointer-events: none; display: block; font-size: 13px; margin-bottom: 9px; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; padding: 18px 0; display: flex; justify-content: space-between; font-size: 12px; color: #666; gap: 24px; }
+    @media (max-width: 900px) {
+      .listing-wrap { grid-template-columns: 1fr; gap: 20px; padding: 20px 20px 48px; }
+      .sidebar { position: static; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .nav-links, .nav-right { display: none; }
+      .hamburger { display: flex; }
+      .product-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">Erge<span>ly</span></a>
+  <div class="nav-links">
+    <a href="/chairs/">Chairs</a>
+    <a href="/standing-desks/" class="active">Standing Desks</a>
+    <a href="/lumbar-supports/">Lumbar Supports</a>
+    <a href="/cushions/">Cushions</a>
+    <a href="/mattresses/">Mattresses</a>
+  </div>
+  <div class="nav-right">
+    <a href="/guides/">Guides</a>
+    <a href="/tools/chair-size-finder/">Size Finder</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/chairs/">Chairs</a>
+  <a href="/standing-desks/" class="active">Standing Desks</a>
+  <a href="/lumbar-supports/">Lumbar Supports</a>
+  <a href="/cushions/">Cushions</a>
+  <a href="/mattresses/">Mattresses</a>
+  <a href="/guides/">Guides</a>
+  <a href="/tools/chair-size-finder/">Size Finder</a>
+</div>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <h1>Standing Desks for Back Pain</h1>
+    <p>{{ standingDesks.standing_desks | length }} desks with verified specs — filter by your height and needs</p>
+  </div>
+</div>
+
+<div class="listing-wrap">
+
+  <aside class="sidebar">
+
+    <div class="fit-finder">
+      <div class="fit-finder-title">Find the right desk for you</div>
+      <div class="fit-finder-inputs">
+        <div class="fit-finder-field">
+          <label for="ff-height">Your height (cm)</label>
+          <input type="number" id="ff-height" placeholder="e.g. 178" min="140" max="220">
+        </div>
+        <div class="fit-finder-field">
+          <label for="ff-elbow">Standing elbow height (cm)</label>
+          <input type="number" id="ff-elbow" placeholder="e.g. 107" min="80" max="160">
+          <span class="fit-finder-hint">Optional — more precise</span>
+        </div>
+      </div>
+      <button class="btn-find" onclick="applyFitFinder()">Find desks</button>
+      <div class="fit-finder-result" id="ff-result"></div>
+    </div>
+
+    <button class="reset-btn" onclick="resetAll()">Reset all filters</button>
+
+    <div class="filter-section">
+      <button class="filter-header" aria-expanded="true" onclick="toggleFilter(this)">
+        Budget <span class="filter-arrow">▼</span>
+      </button>
+      <div class="filter-body">
+        <div class="pill-group" id="filter-budget">
+          <button class="pill" data-value="under_300" onclick="togglePill(this, 'budget')">Under $300</button>
+          <button class="pill" data-value="300_600" onclick="togglePill(this, 'budget')">$300–$600</button>
+          <button class="pill" data-value="600_1000" onclick="togglePill(this, 'budget')">$600–$1000</button>
+          <button class="pill" data-value="over_1000" onclick="togglePill(this, 'budget')">$1000+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <button class="filter-header" aria-expanded="true" onclick="toggleFilter(this)">
+        Motor <span class="filter-arrow">▼</span>
+      </button>
+      <div class="filter-body">
+        <div class="pill-group" id="filter-motor">
+          <button class="pill" data-value="single" onclick="togglePill(this, 'motor')">Single</button>
+          <button class="pill" data-value="dual" onclick="togglePill(this, 'motor')">Dual</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <button class="filter-header" aria-expanded="true" onclick="toggleFilter(this)">
+        Features <span class="filter-arrow">▼</span>
+      </button>
+      <div class="filter-body">
+        <div class="toggle-group">
+          <div class="toggle-item">
+            <label for="tog-presets">Programmable presets</label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="tog-presets" onchange="applyFilters()">
+              <span class="toggle-track"></span>
+            </label>
+          </div>
+          <div class="toggle-item">
+            <label for="tog-collision">Anti-collision</label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="tog-collision" onchange="applyFilters()">
+              <span class="toggle-track"></span>
+            </label>
+          </div>
+          <div class="toggle-item">
+            <label for="tog-crossbar">Crossbar</label>
+            <label class="toggle-switch">
+              <input type="checkbox" id="tog-crossbar" onchange="applyFilters()">
+              <span class="toggle-track"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+  <div class="results-area">
+    <div class="results-bar">
+      <div class="results-count"><strong id="count">{{ standingDesks.standing_desks | length }}</strong> desks found</div>
+      <select class="sort-select" onchange="applySort(this.value)">
+        <option value="default">Sort: Relevance</option>
+        <option value="price_asc">Price: Low → High</option>
+        <option value="price_desc">Price: High → Low</option>
+      </select>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+      {% for desk in standingDesks.standing_desks %}
+      <a href="/standing-desks/{{ desk.id }}/"
+         class="product-card"
+         data-id="{{ desk.id }}"
+         data-budget="{{ desk.identity.price_range }}"
+         data-price="{{ desk.identity.price_usd if desk.identity.price_usd else 0 }}"
+         data-motor="{{ desk.motor.motor_type if desk.motor.motor_type else '' }}"
+         data-presets="{{ 'true' if desk.motor.programmable_presets else 'false' }}"
+         data-collision="{{ 'true' if desk.motor.anti_collision else 'false' }}"
+         data-crossbar="{{ 'true' if desk.stability.crossbar_present else 'false' }}"
+         data-height-min="{{ desk.anthropometric_fit.user_height_min_cm if desk.anthropometric_fit.user_height_min_cm else '' }}"
+         data-height-max="{{ desk.anthropometric_fit.user_height_max_cm if desk.anthropometric_fit.user_height_max_cm else '' }}"
+         data-elbow-min="{{ desk.anthropometric_fit.user_elbow_height_standing_min_cm if desk.anthropometric_fit.user_elbow_height_standing_min_cm else '' }}"
+         data-elbow-max="{{ desk.anthropometric_fit.user_elbow_height_standing_max_cm if desk.anthropometric_fit.user_elbow_height_standing_max_cm else '' }}"
+         data-desk-min="{{ desk.desk_dimensions.height_min_cm if desk.desk_dimensions.height_min_cm else '' }}"
+         data-desk-max="{{ desk.desk_dimensions.height_max_cm if desk.desk_dimensions.height_max_cm else '' }}"
+      >
+        <div class="card-image">
+          {% if desk.identity.image_url %}
+            <img src="{{ desk.identity.image_url }}" alt="{{ desk.identity.brand }} {{ desk.identity.model }}" loading="lazy" onerror="this.style.display='none'">
+          {% else %}
+            <div class="no-image">Image coming soon</div>
+          {% endif %}
+          <span class="fit-badge" id="badge-{{ desk.id }}"></span>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">{{ desk.identity.brand }}</div>
+          <div class="card-model">{{ desk.identity.model }}{% if desk.identity.variant %} — {{ desk.identity.variant }}{% endif %}</div>
+          <div class="card-summary">{{ desk.editorial.best_for_summary }}</div>
+          {% if desk.desk_dimensions.height_min_cm and desk.desk_dimensions.height_max_cm %}
+          <div class="card-fit-range">Height range {{ desk.desk_dimensions.height_min_cm }}–{{ desk.desk_dimensions.height_max_cm }} cm</div>
+          {% endif %}
+          {% if desk.editorial.tags %}
+          <div class="card-tags">
+            {% for tag in desk.editorial.tags | slice(3) %}
+            <span class="card-tag">{{ tag | replace("_", " ") }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="card-footer">
+          <div class="card-price">{% if desk.identity.price_usd %}${{ desk.identity.price_usd }}{% else %}—{% endif %}</div>
+          <span class="card-cta">View desk →</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="no-results" id="no-results">
+      <h3>No desks match your filters</h3>
+      <p>Try removing some filters or resetting to see all desks.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">Erge<span>ly</span></span>
+      <p class="footer-tagline">The ergonomic equipment database. Real specs, verified data, no sponsored rankings.</p>
+      <p class="footer-copy">© 2026 Ergely. Independent. Not affiliated with any brand.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="/chairs/">Ergonomic Chairs</a>
+      <a href="/standing-desks/">Standing Desks</a>
+      <a href="/lumbar-supports/">Lumbar Supports</a>
+      <a href="/cushions/">Cushions</a>
+      <a href="/mattresses/">Mattresses</a>
+    </div>
+    <div class="footer-col">
+      <h4>Tools & Guides</h4>
+      <a href="/tools/chair-size-finder/">Chair Size Finder</a>
+      <a href="/guides/ergonomic-chair-sizing-guide/">Sizing Guide</a>
+      <a href="/guides/what-is-lumbar-support/">What is Lumbar Support?</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="/about/">About Ergely</a>
+      <a href="/about/methodology/">How We Rate</a>
+      <a href="/about/data-sources/">Data Sources</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Ergely is reader-supported. We may earn a referral fee at no cost to you.</span>
+    <span>Not medical advice.</span>
+  </div>
+</footer>
+
+<script>
+  const state = { height: null, elbow: null, budget: null, motor: null, presets: false, collision: false, crossbar: false };
+
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobile-menu');
+    const hamburger = document.querySelector('.hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) menu.classList.remove('open');
+  });
+  function toggleFilter(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    body.classList.toggle('hidden', isOpen);
+  }
+  function togglePill(btn, type) {
+    const group = btn.closest('.pill-group');
+    const wasActive = btn.classList.contains('active');
+    group.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    if (!wasActive) { btn.classList.add('active'); state[type] = btn.dataset.value; }
+    else { state[type] = null; }
+    applyFilters();
+  }
+  function applyFitFinder() {
+    const h = parseFloat(document.getElementById('ff-height').value);
+    const e = parseFloat(document.getElementById('ff-elbow').value);
+    state.height = h || null;
+    state.elbow = e || null;
+    const cards = document.querySelectorAll('.product-card');
+    let goodCount = 0, partialCount = 0;
+    cards.forEach(card => {
+      const badge = document.getElementById('badge-' + card.dataset.id);
+      if (!badge) return;
+      const elbowMin = parseFloat(card.dataset.elbowMin);
+      const elbowMax = parseFloat(card.dataset.elbowMax);
+      const hMin = parseFloat(card.dataset.heightMin);
+      const hMax = parseFloat(card.dataset.heightMax);
+      const dMin = parseFloat(card.dataset.deskMin);
+      const dMax = parseFloat(card.dataset.deskMax);
+      let fit = null;
+      if (e && elbowMin && elbowMax) {
+        if (e >= elbowMin && e <= elbowMax) fit = 'good';
+        else if (Math.abs(e - elbowMin) <= 3 || Math.abs(e - elbowMax) <= 3) fit = 'partial';
+        else fit = 'poor';
+      } else if (h && hMin && hMax) {
+        if (h >= hMin && h <= hMax) fit = 'good';
+        else if (Math.abs(h - hMin) <= 5 || Math.abs(h - hMax) <= 5) fit = 'partial';
+        else fit = 'poor';
+      } else if (e && dMin && dMax) {
+        if (e >= dMin && e <= dMax) fit = 'good';
+        else fit = 'poor';
+      }
+      badge.className = 'fit-badge';
+      if (fit === 'good') { badge.textContent = 'Good fit'; badge.classList.add('good'); goodCount++; card.dataset.fitScore = '2'; }
+      else if (fit === 'partial') { badge.textContent = 'Partial fit'; badge.classList.add('partial'); partialCount++; card.dataset.fitScore = '1'; }
+      else if (fit === 'poor') { badge.textContent = 'Poor fit'; badge.classList.add('poor'); card.dataset.fitScore = '0'; }
+      else { card.dataset.fitScore = '1'; }
+      // Update link with params
+      const base = card.getAttribute('href').split('?')[0];
+      const params = [];
+      if (h) params.push('h=' + h);
+      if (e) params.push('e=' + e);
+      card.setAttribute('href', base + (params.length ? '?' + params.join('&') : ''));
+    });
+    const result = document.getElementById('ff-result');
+    if (h || e) { result.textContent = goodCount + ' good fit, ' + partialCount + ' partial fit found.'; result.classList.add('active'); }
+    applyFilters();
+  }
+  function applyFilters() {
+    state.presets   = document.getElementById('tog-presets').checked;
+    state.collision = document.getElementById('tog-collision').checked;
+    state.crossbar  = document.getElementById('tog-crossbar').checked;
+    const cards = document.querySelectorAll('.product-card');
+    let visible = 0;
+    cards.forEach(card => {
+      let show = true;
+      if (state.budget && card.dataset.budget !== state.budget) show = false;
+      if (state.motor  && card.dataset.motor  !== state.motor)  show = false;
+      if (state.presets   && card.dataset.presets   !== 'true') show = false;
+      if (state.collision && card.dataset.collision !== 'true') show = false;
+      if (state.crossbar  && card.dataset.crossbar  !== 'true') show = false;
+      card.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    document.getElementById('count').textContent = visible;
+    document.getElementById('no-results').classList.toggle('visible', visible === 0);
+  }
+  function applySort(value) {
+    const grid = document.getElementById('product-grid');
+    const cards = Array.from(grid.querySelectorAll('.product-card'));
+    cards.sort((a, b) => {
+      if (value === 'price_asc')  return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+      if (value === 'price_desc') return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+      return 0;
+    });
+    cards.forEach(card => grid.appendChild(card));
+  }
+  function resetAll() {
+    state.height = null; state.elbow = null; state.budget = null; state.motor = null;
+    document.getElementById('ff-height').value = '';
+    document.getElementById('ff-elbow').value = '';
+    document.getElementById('ff-result').classList.remove('active');
+    document.getElementById('tog-presets').checked = false;
+    document.getElementById('tog-collision').checked = false;
+    document.getElementById('tog-crossbar').checked = false;
+    document.querySelectorAll('.pill.active').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.fit-badge').forEach(b => { b.className = 'fit-badge'; b.textContent = ''; });
+    document.querySelectorAll('.product-card').forEach(c => c.classList.remove('hidden'));
+    document.getElementById('count').textContent = document.querySelectorAll('.product-card').length;
+    document.getElementById('no-results').classList.remove('visible');
+  }
+</script>
+</body>
+</html>
