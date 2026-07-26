@@ -463,8 +463,6 @@ permalink: "chairs/{{ chair.id }}/index.html"
       const inputs = calculator.querySelector('.calc-inputs');
       const btnCalc = calculator.querySelector('.btn-calc');
       const h2 = calculator.querySelector('h2');
-      inputs.style.display = 'none';
-      btnCalc.style.display = 'none';
       h2.style.marginBottom = '12px';
       const editLink = document.createElement('button');
       editLink.textContent = 'Change measurements';
@@ -476,6 +474,8 @@ permalink: "chairs/{{ chair.id }}/index.html"
       };
       calculator.appendChild(editLink);
       calcFit();
+      inputs.style.display = 'none';
+      btnCalc.style.display = 'none';
     }
   })();
   function calcFit() {
