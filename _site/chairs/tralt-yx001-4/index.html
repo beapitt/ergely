@@ -497,7 +497,8 @@
     weightMax: 149.7
   };
   // ── AUTO-FILL FROM URL PARAMS (Gemini approach) ──
-  document.addEventListener('DOMContentLoaded', function() {
+  // Run immediately — script is at end of body so DOM is ready
+  (function() {
     const params = new URLSearchParams(window.location.search);
     const h = params.get('h');
     const w = params.get('w');
@@ -510,7 +511,7 @@
       document.getElementById('calc-result').style.display = 'block';
       widget.classList.add('has-params');
     }
-  });
+  })();
 
   function resetCalc() {
     const widget = document.getElementById('fit-calculator-widget');

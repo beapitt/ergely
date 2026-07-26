@@ -470,7 +470,8 @@ permalink: "chairs/{{ chair.id }}/index.html"
     weightMax: {{ chair.anthropometric_fit.weight_capacity_kg if chair.anthropometric_fit.weight_capacity_kg else 'null' }}
   };
   // ── AUTO-FILL FROM URL PARAMS (Gemini approach) ──
-  document.addEventListener('DOMContentLoaded', function() {
+  // Run immediately — script is at end of body so DOM is ready
+  (function() {
     const params = new URLSearchParams(window.location.search);
     const h = params.get('h');
     const w = params.get('w');
@@ -483,7 +484,7 @@ permalink: "chairs/{{ chair.id }}/index.html"
       document.getElementById('calc-result').style.display = 'block';
       widget.classList.add('has-params');
     }
-  });
+  })();
 
   function resetCalc() {
     const widget = document.getElementById('fit-calculator-widget');
