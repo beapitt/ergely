@@ -1,441 +1,3797 @@
 {
-  "_schema_version": "1.2",
-  "_category": "chairs",
-  "chairs": [
-    {
-      "id": "branch-ergonomic-chair",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.95 },
-      "identity": { "brand": "Branch", "model": "Ergonomic Chair", "variant": null, "product_url": "https://www.branchfurniture.com/products/ergonomic-chair", "image_url": null, "price_usd": 359, "price_range": "300_600", "availability_region": ["US", "CA"] },
-      "seo": { "conditions": ["lower_back_pain", "posture"], "primary_need": ["better_lumbar_support", "adjustability"], "use_case": ["home_office", "wfh"], "filter_pages": ["for-lower-back-pain", "under-500"] },
-      "anthropometric_fit": { "user_height_min_cm": 157, "user_height_max_cm": 188, "weight_capacity_kg": 124.7 },
-      "seat": { "seat_height_min_cm": 43.2, "seat_height_max_cm": 53.3, "seat_depth_min_cm": 45.7, "seat_depth_max_cm": 55.9, "seat_depth_adjustable": true, "seat_width_cm": 63.5, "seat_material": "mesh", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": false, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": false },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": "nylon", "base_material": "aluminum", "certifications": ["BIFMA", "GREENGUARD_GOLD"], "warranty_years": 7 },
-      "editorial": { "best_for_summary": "Best mid-range pick for users 5ft2–6ft2 wanting height+depth lumbar and a 7-year warranty.", "not_recommended_for": "No headrest — not suitable for users with neck or shoulder pain.", "tags": ["mesh_back", "height_depth_lumbar", "3D_armrests", "GREENGUARD_GOLD", "BIFMA", "7yr_warranty"] }
-    },
-    {
-      "id": "sunaofe-atlas",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.90 },
-      "identity": { "brand": "Sunaofe", "model": "Atlas", "variant": "Black / Grey", "product_url": "https://www.sunaofe.com/products/atlas", "image_url": null, "price_usd": 499.99, "price_range": "300_600", "availability_region": ["US", "EU"] },
-      "seo": { "conditions": ["lower_back_pain", "hip_pain"], "primary_need": ["better_lumbar_support", "headrest"], "use_case": ["home_office", "wfh"], "filter_pages": ["for-lower-back-pain", "with-headrest"] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 190, "weight_capacity_kg": 136 },
-      "seat": { "seat_height_min_cm": 45, "seat_height_max_cm": 54, "seat_depth_min_cm": 44.5, "seat_depth_max_cm": 53, "seat_depth_adjustable": false, "seat_width_cm": 51, "seat_material": "foam_seat", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": 101, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": false, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": null },
-      "editorial": { "best_for_summary": "Good value for users 4ft11–6ft3 wanting dynamic lumbar with height+depth adjustment and headrest.", "not_recommended_for": "Only 2D armrests and recline limited to 101° — not ideal for users who work long hours reclined.", "tags": ["dynamic_lumbar", "headrest", "foam_seat", "mesh_back", "mid_range"] }
-    },
-    {
-      "id": "tralt-yx001-4",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Tralt", "model": "Ergonomic Office Chair", "variant": "Angel White — Imitation Leather", "product_url": "https://www.tralt.com/products/yx001-4", "image_url": null, "price_usd": 105.4, "price_range": "under_300", "availability_region": ["US", "EU"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support"], "use_case": ["home_office", "wfh"], "filter_pages": ["for-lower-back-pain", "under-200", "budget"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 190, "weight_capacity_kg": null },
-      "seat": { "seat_height_min_cm": null, "seat_height_max_cm": null, "seat_depth_min_cm": null, "seat_depth_max_cm": null, "seat_depth_adjustable": false, "seat_width_cm": null, "seat_material": "leather", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": null, "backrest_material": "leather", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height"] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": null },
-      "editorial": { "best_for_summary": "Budget pick under $110 for average to tall users needing basic height-adjustable lumbar.", "not_recommended_for": "Not suitable for intensive use — imitation leather may wear quickly.", "tags": ["budget", "imitation_leather", "mesh_back", "height_lumbar", "under_150"] }
-    },
-    {
-      "id": "haworth-fern",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.90 },
-      "identity": { "brand": "Haworth", "model": "Fern", "variant": "Aluminium base (coloured) / Plastic base (black)", "product_url": "https://www.haworth.com/eu/en/products/seating/task-seating/fern.html", "image_url": null, "price_usd": null, "price_range": "over_1000", "availability_region": ["EU", "US"] },
-      "seo": { "conditions": ["lower_back_pain", "posture"], "primary_need": ["better_lumbar_support", "more_recline"], "use_case": ["home_office", "corporate_office"], "filter_pages": ["for-lower-back-pain", "premium"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 195, "weight_capacity_kg": 136 },
-      "seat": { "seat_height_min_cm": null, "seat_height_max_cm": null, "seat_depth_min_cm": null, "seat_depth_max_cm": null, "seat_depth_adjustable": true, "seat_width_cm": null, "seat_material": "mesh", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": 143, "recline_lockable": true, "recline_positions": 5, "backrest_material": "mesh", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": true, "lumbar_notes": "10cm range lumbar depth" },
-      "armrests": { "armrest_present": true, "armrest_type": "4D", "armrests_removable": false },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": "aluminum", "certifications": ["SGS", "BIFMA", "EN1335"], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "Premium UK/EU pick with 5-position recline lock, forward tilt, seat depth adjustment and 10cm lumbar range.", "not_recommended_for": "No headrest option — not ideal for neck support.", "tags": ["mesh_back", "height_lumbar", "forward_tilt", "4D_armrests", "5_recline_positions", "premium", "uk_eu"] }
-    },
-    {
-      "id": "flexispot-c7-morpher",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "FlexiSpot", "model": "C7 Morpher", "variant": "Standard / with footrest option", "product_url": "https://www.flexispot.co.uk/flexispot-ergonomic-chair-c7.html", "image_url": null, "price_usd": null, "price_range": "300_600", "availability_region": ["UK", "EU"] },
-      "seo": { "conditions": ["lower_back_pain", "sciatica"], "primary_need": ["better_lumbar_support", "more_recline"], "use_case": ["home_office", "corporate_office"], "filter_pages": ["for-lower-back-pain", "for-tall-people"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 195, "weight_capacity_kg": 136 },
-      "seat": { "seat_height_min_cm": null, "seat_height_max_cm": null, "seat_depth_min_cm": null, "seat_depth_max_cm": null, "seat_depth_adjustable": false, "seat_width_cm": null, "seat_material": "mesh", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": 143, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": true, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "4D", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": ["SGS", "BIFMA", "EN1335"], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "Best UK/EU pick for tall users 160–195cm wanting dynamic lumbar, 143° recline and 10° forward tilt.", "not_recommended_for": "No seat depth adjustment.", "tags": ["dynamic_lumbar", "dynafollow", "forward_tilt", "headrest", "tall_users", "mesh", "EN1335", "SGS", "uk_eu"] }
-    },
-    {
-      "id": "flexispot-bs5",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.90 },
-      "identity": { "brand": "FlexiSpot", "model": "BS5", "variant": "Black / Apricot / Green / Pink / Grey", "product_url": "https://www.flexispot.co.uk/flexispot-ergonomic-chair-bs5.html", "image_url": null, "price_usd": null, "price_range": "under_300", "availability_region": ["UK", "EU"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support"], "use_case": ["home_office", "wfh"], "filter_pages": ["for-lower-back-pain", "budget", "under-300"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 180, "weight_capacity_kg": 136 },
-      "seat": { "seat_height_min_cm": 42, "seat_height_max_cm": 53.5, "seat_depth_min_cm": 41.5, "seat_depth_max_cm": 41.5, "seat_depth_adjustable": false, "seat_width_cm": 49.5, "seat_material": "foam", "seat_tilt": false },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "fixed", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "50D high-density foam lumbar" },
-      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": false, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": ["SGS", "BIFMA", "EN1335"], "warranty_years": 3 },
-      "editorial": { "best_for_summary": "Best colourful budget pick for shorter users 155–180cm with triple certification and published foam density.", "not_recommended_for": "Fixed lumbar only — not suitable for users needing specific lumbar positioning or over 180cm.", "tags": ["fixed_lumbar", "50D_foam", "headrest", "SGS", "BIFMA", "EN1335", "petite_friendly", "uk_eu"] }
-    },
-    {
-      "id": "ergohuman-swivel-headrest",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Ergohuman", "model": "Swivel Chair with Headrest", "variant": null, "product_url": "https://ergohuman.com/products/ergohuman-chair-with-headrest", "image_url": null, "price_usd": null, "price_range": "600_1000", "availability_region": ["UK", "EU"] },
-      "seo": { "conditions": ["lower_back_pain", "neck_pain"], "primary_need": ["better_lumbar_support", "neck_support"], "use_case": ["home_office", "corporate_office"], "filter_pages": ["for-lower-back-pain", "with-headrest"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 190, "weight_capacity_kg": 150 },
-      "seat": { "seat_height_min_cm": null, "seat_height_max_cm": null, "seat_depth_min_cm": null, "seat_depth_max_cm": null, "seat_depth_adjustable": true, "seat_width_cm": null, "seat_material": "mesh", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": false, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": 2 },
-      "editorial": { "best_for_summary": "Solid UK/EU mesh chair with full lumbar adjustability and integrated headrest at mid-premium price.", "not_recommended_for": "Short warranty — only 2 years.", "tags": ["mesh", "headrest", "height_depth_lumbar", "uk_eu"] }
-    },
-    {
-      "id": "posturite-homeworker-black",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Posturite", "model": "Homeworker", "variant": "Black", "product_url": "https://www.posturite.co.uk/posturite-homeworker-ergonomic-chair.html", "image_url": null, "price_usd": null, "price_range": "300_600", "availability_region": ["UK"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support"], "use_case": ["home_office", "wfh"], "filter_pages": ["for-lower-back-pain", "uk-only"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 185, "weight_capacity_kg": 110 },
-      "seat": { "seat_height_min_cm": null, "seat_height_max_cm": null, "seat_depth_min_cm": null, "seat_depth_max_cm": null, "seat_depth_adjustable": true, "seat_width_cm": null, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": null, "backrest_material": "fabric", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": false },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": 3 },
-      "editorial": { "best_for_summary": "Compact UK home office chair with seat depth adjustment and height-adjustable lumbar.", "not_recommended_for": "No headrest — not suitable for neck pain.", "tags": ["fabric", "height_lumbar", "seat_depth", "uk_only"] }
-    },
-    {
-      "id": "libernovo-omni-se",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.90 },
-      "identity": { "brand": "LiberNovo / Relax The Back", "model": "Omni SE Dynamic Ergonomic Chair", "variant": "SE", "product_url": "https://www.relaxtheback.com/products/libernovo-omni-se", "image_url": null, "price_usd": 629, "price_range": "600_1000", "availability_region": ["US"] },
-      "seo": { "conditions": ["lower_back_pain", "sciatica"], "primary_need": ["more_recline", "better_lumbar_support"], "use_case": ["home_office", "wfh"], "filter_pages": ["for-lower-back-pain", "with-headrest"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 188, "weight_capacity_kg": 136 },
-      "seat": { "seat_height_min_cm": 48.5, "seat_height_max_cm": 59.5, "seat_depth_min_cm": 45, "seat_depth_max_cm": 48, "seat_depth_adjustable": true, "seat_width_cm": null, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": 160, "recline_lockable": true, "recline_positions": 4, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "dynamic", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": true, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "Best US pick for users 5ft1–6ft2 wanting 160° recline, dynamic lumbar and headrest at mid-premium price.", "not_recommended_for": "Fabric seat — not ideal for warm climates or users who prefer breathable mesh. No certifications published.", "tags": ["dynamic_lumbar", "160deg_recline", "4_recline_positions", "headrest", "3D_armrests", "seat_depth_adjustable", "5yr_warranty"] }
-    },
-    {
-      "id": "office-chairs-uk-advocate",
-      "meta": { "last_updated": "2026-07-25", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Office Chairs UK", "model": "Advocate", "variant": null, "product_url": "https://www.officechairsuk.co.uk/advocate-ergonomic-chair.html", "image_url": null, "price_usd": null, "price_range": "300_600", "availability_region": ["UK"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support"], "use_case": ["corporate_office", "home_office"], "filter_pages": ["for-lower-back-pain", "uk-only"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 190, "weight_capacity_kg": 130 },
-      "seat": { "seat_height_min_cm": null, "seat_height_max_cm": null, "seat_depth_min_cm": null, "seat_depth_max_cm": null, "seat_depth_adjustable": true, "seat_width_cm": null, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": null, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": false, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "4D", "armrests_removable": false },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": null, "base_material": null, "certifications": [], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "UK office chair with full lumbar adjustability and 4D armrests at mid-range price.", "not_recommended_for": "No headrest available.", "tags": ["mesh_back", "height_depth_lumbar", "4D_armrests", "uk_only"] }
-    },
-    {
-      "id": "hjh-office-pro-tec-200",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "hjh OFFICE", "model": "PRO-TEC 200", "variant": null, "product_url": "https://www.buerostuhl24.com/pro-tec-200-profi-buerostuhl.html", "image_url": null, "price_usd": null, "price_range": "300_600", "availability_region": ["DE", "AT", "CH", "IT", "NL", "FR", "UK", "DK", "SE", "ES", "FI"] },
-      "seo": { "conditions": [], "primary_need": ["ergonomic_seating"], "use_case": ["office", "home_office"], "filter_pages": [] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 200, "weight_capacity_kg": 120 },
-      "seat": { "seat_height_min_cm": 46, "seat_height_max_cm": 59, "seat_depth_min_cm": 45, "seat_depth_max_cm": 45, "seat_depth_adjustable": false, "seat_width_cm": 47, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": 67, "backrest_height_adjustable": true, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 5, "backrest_material": "fabric", "liveback_or_dynamic_back": null },
-      "lumbar": { "lumbar_present": null, "lumbar_type": null, "lumbar_height_adjustable": null, "lumbar_depth_adjustable": null, "lumbar_dynamic": null, "lumbar_notes": null },
-      "armrests": { "armrest_present": true, "armrest_type": "height_adjustable", "armrests_removable": null },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 126, "overall_width_cm": 60, "overall_depth_cm": 45 },
-      "build": { "frame_material": null, "base_material": "aluminum", "certifications": ["DIN_EN_1335", "GS"], "warranty_years": 2 },
-      "editorial": { "best_for_summary": "Daily commercial or home office use up to 8 hours for users 160–200cm.", "not_recommended_for": "No dedicated lumbar support.", "tags": ["fabric", "height_adjustable_back", "5_recline_positions", "EU_certified"] }
-    },
-    {
-      "id": "topstar-hjh-solution-pro",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Topstar", "model": "HJH Solution Pro AL.B2", "variant": null, "product_url": "https://www.buerostuhl24.com/hjh-solution-pro-al-b2-profi-buerostuhl.html", "image_url": null, "price_usd": null, "price_range": "under_300", "availability_region": ["DE", "AT", "CH", "IT", "NL", "FR", "UK", "DK", "SE", "ES", "FI"] },
-      "seo": { "conditions": [], "primary_need": ["ergonomic_seating"], "use_case": ["office", "home_office"], "filter_pages": [] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 195, "weight_capacity_kg": 110 },
-      "seat": { "seat_height_min_cm": 39, "seat_height_max_cm": 51, "seat_depth_min_cm": 47, "seat_depth_max_cm": 47, "seat_depth_adjustable": false, "seat_width_cm": 47, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": 59, "backrest_height_adjustable": true, "recline_max_deg": null, "recline_lockable": null, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": null },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": null, "lumbar_dynamic": null, "lumbar_notes": "Height adjustable via backrest raster mechanism" },
-      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": null },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 110, "overall_width_cm": 49, "overall_depth_cm": 52 },
-      "build": { "frame_material": null, "base_material": "polyamide", "certifications": [], "warranty_years": 3 },
-      "editorial": { "best_for_summary": "Lightweight mesh-back chair with height-adjustable lumbar for users 150–195cm on a budget.", "not_recommended_for": "Fixed armrests — no adjustability.", "tags": ["mesh_back", "height_lumbar", "budget", "lightweight", "EU"] }
-    },
-    {
-      "id": "hjh-office-ergo-line-ii",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "hjh OFFICE", "model": "ERGO LINE II", "variant": null, "product_url": "https://www.buerostuhl24.com/ergo-line-ii-profi-buerostuhl.html", "image_url": null, "price_usd": null, "price_range": "300_600", "availability_region": ["DE", "AT", "CH", "IT", "NL", "FR", "UK", "DK", "SE", "ES", "FI"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support"], "use_case": ["office", "home_office"], "filter_pages": [] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 185, "weight_capacity_kg": 120 },
-      "seat": { "seat_height_min_cm": 45, "seat_height_max_cm": 55, "seat_depth_min_cm": 46, "seat_depth_max_cm": 50, "seat_depth_adjustable": true, "seat_width_cm": 49, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": 56, "backrest_height_adjustable": null, "recline_max_deg": null, "recline_lockable": null, "recline_positions": null, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "depth_adjustable", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": true, "lumbar_dynamic": null, "lumbar_notes": "Integrated depth-adjustable lordosis support" },
-      "armrests": { "armrest_present": true, "armrest_type": "height_adjustable", "armrests_removable": null },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 115, "overall_width_cm": 65, "overall_depth_cm": 50 },
-      "build": { "frame_material": null, "base_material": "polished_aluminum", "certifications": ["DIN_EN_1335", "TUV_SUD"], "warranty_years": 2 },
-      "editorial": { "best_for_summary": "Organic-design chair with flexible backrest ribs and depth-adjustable lumbar for users 150–185cm.", "not_recommended_for": "Users taller than 185cm.", "tags": ["fabric", "dynamic_back", "depth_lumbar", "seat_depth", "EU_certified"] }
-    },
-    {
-      "id": "rovo-chair-xp",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Rovo Chair", "model": "ROVO XP", "variant": "Executive Black", "product_url": "https://www.buerostuhl24.com/rovo-xp-luxus-chefsessel.html", "image_url": null, "price_usd": null, "price_range": "300_600", "availability_region": ["DE", "AT", "CH", "IT", "NL", "FR", "UK", "DK", "SE", "ES", "FI"] },
-      "seo": { "conditions": [], "primary_need": ["ergonomic_seating"], "use_case": ["office", "executive"], "filter_pages": [] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 195, "weight_capacity_kg": 130 },
-      "seat": { "seat_height_min_cm": 42, "seat_height_max_cm": 54, "seat_depth_min_cm": 45, "seat_depth_max_cm": 50, "seat_depth_adjustable": true, "seat_width_cm": 47, "seat_material": "fabric", "seat_tilt": null },
-      "backrest": { "backrest_height_cm": 68, "backrest_height_adjustable": true, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 4, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "anatomic", "lumbar_height_adjustable": null, "lumbar_depth_adjustable": null, "lumbar_dynamic": null, "lumbar_notes": "Anatomically shaped cushioning" },
-      "armrests": { "armrest_present": true, "armrest_type": "height_width_adjustable", "armrests_removable": null },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 126, "overall_width_cm": 57, "overall_depth_cm": 42 },
-      "build": { "frame_material": null, "base_material": "plastic", "certifications": [], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "Executive chair with dynamic back and seat depth adjustment for long hours 160–195cm.", "not_recommended_for": "No certifications published.", "tags": ["executive", "dynamic_back", "seat_depth", "4_recline_positions", "EU"] }
-    },
-    {
-      "id": "herman-miller-aeron",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Herman Miller", "model": "Aeron", "variant": "Size B", "product_url": "https://store.hermanmiller.com/office-chairs-aeron/aeron-chair/2195348.html", "image_url": "https://s7d2.scene7.com/is/image/hermanmiller/Aeron_Chair_1", "price_usd": 1275, "price_range": "over_1000", "availability_region": ["US", "EU", "UK"] },
-      "seo": { "conditions": ["back_pain", "posture"], "primary_need": ["better_lumbar_support", "cooling"], "use_case": ["office", "wfh"], "filter_pages": ["for-lower-back-pain", "premium"] },
-      "anthropometric_fit": { "user_height_min_cm": 157, "user_height_max_cm": 198, "weight_capacity_kg": 159 },
-      "seat": { "seat_height_min_cm": 40.6, "seat_height_max_cm": 52.1, "seat_depth_min_cm": 43.2, "seat_depth_max_cm": 43.2, "seat_depth_adjustable": false, "seat_width_cm": 51.4, "seat_material": "mesh", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 58.4, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 3, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "PostureFit_SL", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": true, "lumbar_dynamic": true, "lumbar_notes": "Two separate pads for lumbar and sacral support" },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": false },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 104.1, "overall_width_cm": 68.6, "overall_depth_cm": 42.5 },
-      "build": { "frame_material": "aluminum_plastic", "base_material": "aluminum", "certifications": ["BIFMA", "GREENGUARD", "Cradle_to_Cradle"], "warranty_years": 12 },
-      "editorial": { "best_for_summary": "The gold standard for mesh seating and prolonged work.", "not_recommended_for": "Those who prefer padded seats or need seat depth adjustment.", "tags": ["premium", "mesh", "PostureFit_SL", "12yr_warranty", "iconic"] }
-    },
-    {
-      "id": "steelcase-leap",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Steelcase", "model": "Leap", "variant": "V2", "product_url": "https://store.steelcase.com/seating/office-chairs/leap", "image_url": "https://store.steelcase.com/dw/image/v2/Leap_Chair.jpg", "price_usd": 1159, "price_range": "over_1000", "availability_region": ["US", "EU", "UK"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support", "adjustability"], "use_case": ["office", "wfh"], "filter_pages": ["for-lower-back-pain", "premium"] },
-      "anthropometric_fit": { "user_height_min_cm": 152, "user_height_max_cm": 193, "weight_capacity_kg": 181 },
-      "seat": { "seat_height_min_cm": 39.4, "seat_height_max_cm": 52.1, "seat_depth_min_cm": 40.0, "seat_depth_max_cm": 47.6, "seat_depth_adjustable": true, "seat_width_cm": 48.9, "seat_material": "fabric", "seat_tilt": false },
-      "backrest": { "backrest_height_cm": 63.5, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 5, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_tension_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": true, "lumbar_notes": "LiveBack system that changes shape to mimic the spine" },
-      "armrests": { "armrest_present": true, "armrest_type": "4D", "armrests_removable": true },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 109.8, "overall_width_cm": 68.6, "overall_depth_cm": 62.9 },
-      "build": { "frame_material": "plastic_steel", "base_material": "aluminum_plastic", "certifications": ["BIFMA", "SCS_Indoor_Advantage"], "warranty_years": 12 },
-      "editorial": { "best_for_summary": "The best universal ergonomic chair for extreme adjustability and LiveBack lumbar.", "not_recommended_for": "Those who sweat heavily or want a sofa-like soft seat.", "tags": ["premium", "LiveBack", "4D_armrests", "12yr_warranty", "highly_adjustable"] }
-    },
-    {
-      "id": "herman-miller-embody",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Herman Miller", "model": "Embody", "variant": null, "product_url": "https://store.hermanmiller.com/office-chairs-embody/embody-chair/4737.html", "image_url": "https://s7d2.scene7.com/is/image/hermanmiller/Embody_Chair_1", "price_usd": 1895, "price_range": "over_1000", "availability_region": ["US", "EU", "UK"] },
-      "seo": { "conditions": ["spine_health", "posture"], "primary_need": ["pressure_relief", "movement"], "use_case": ["wfh", "executive"], "filter_pages": ["premium", "dynamic_backrest"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 195, "weight_capacity_kg": 136 },
-      "seat": { "seat_height_min_cm": 40.6, "seat_height_max_cm": 52.1, "seat_depth_min_cm": 38.1, "seat_depth_max_cm": 45.7, "seat_depth_adjustable": true, "seat_width_cm": 53.3, "seat_material": "fabric", "seat_tilt": false },
-      "backrest": { "backrest_height_cm": 57.1, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 4, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "Backfit_integrated", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": true, "lumbar_dynamic": true, "lumbar_notes": "Adapts to natural curvature via Backfit adjustment" },
-      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": false },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 114.3, "overall_width_cm": 74.9, "overall_depth_cm": 73.7 },
-      "build": { "frame_material": "aluminum", "base_material": "aluminum_graphite", "certifications": ["BIFMA", "GREENGUARD_GOLD"], "warranty_years": 12 },
-      "editorial": { "best_for_summary": "Maximum freedom of movement and weight distribution with pixelated back support.", "not_recommended_for": "Those who need 4D armrests or an integrated headrest.", "tags": ["premium", "pixelated_support", "dynamic_back", "12yr_warranty"] }
-    },
-    {
-      "id": "steelcase-gesture",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Steelcase", "model": "Gesture", "variant": null, "product_url": "https://store.steelcase.com/seating/office-chairs/gesture", "image_url": "https://store.steelcase.com/dw/image/v2/Gesture_Chair.jpg", "price_usd": 1399, "price_range": "over_1000", "availability_region": ["US", "EU", "UK"] },
-      "seo": { "conditions": ["neck_pain", "shoulder_pain"], "primary_need": ["arm_mobility", "better_lumbar_support"], "use_case": ["office", "wfh"], "filter_pages": ["premium", "for-neck-pain"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 198, "weight_capacity_kg": 181 },
-      "seat": { "seat_height_min_cm": 40.6, "seat_height_max_cm": 53.3, "seat_depth_min_cm": 39.4, "seat_depth_max_cm": 46.4, "seat_depth_adjustable": true, "seat_width_cm": 50.8, "seat_material": "fabric", "seat_tilt": false },
-      "backrest": { "backrest_height_cm": 61.0, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 4, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable_integrated", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": true, "lumbar_notes": "Support designed to accommodate lateral movements" },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": true },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": null, "overall_width_cm": null, "overall_depth_cm": null },
-      "build": { "frame_material": "plastic_steel", "base_material": "aluminum", "certifications": ["BIFMA"], "warranty_years": 12 },
-      "editorial": { "best_for_summary": "Best for multi-device users needing 360° arm mobility and dynamic lumbar.", "not_recommended_for": "Those who prefer mesh or need headrest.", "tags": ["premium", "3D_armrests", "dynamic_back", "multi_device", "12yr_warranty"] }
-    },
-    {
-      "id": "sihoo-m59as",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Sihoo", "model": "M59AS", "variant": null, "product_url": "https://de.sihoooffice.com/it/products/sihoo-m59as-ergonomic-office-chair-with-dual-section-backrest-3d-flip-up-armrests", "image_url": null, "price_usd": 220, "price_range": "under_300", "availability_region": ["EU", "US"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support"], "use_case": ["wfh", "office"], "filter_pages": ["for-lower-back-pain", "budget"] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 185, "weight_capacity_kg": 150 },
-      "seat": { "seat_height_min_cm": 43.0, "seat_height_max_cm": 53.0, "seat_depth_min_cm": 45.0, "seat_depth_max_cm": 45.0, "seat_depth_adjustable": false, "seat_width_cm": 50.0, "seat_material": "mesh", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 58.0, "backrest_height_adjustable": false, "recline_max_deg": 120, "recline_lockable": true, "recline_positions": 3, "backrest_material": "mesh", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "dual_section_adaptive", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false, "lumbar_dynamic": true, "lumbar_notes": "Automatically adjusts with body movement via split back structure" },
-      "armrests": { "armrest_present": true, "armrest_type": "3D_flipup", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": 120.0, "overall_width_cm": 65.0, "overall_depth_cm": 65.0 },
-      "build": { "frame_material": "nylon_plastic", "base_material": "polyethylene_metal", "certifications": ["BIFMA", "SGS"], "warranty_years": 3 },
-      "editorial": { "best_for_summary": "Affordable dual-back support with space-saving flip-up armrests and headrest.", "not_recommended_for": "Tall users over 6'1\" or those needing seat depth adjustment.", "tags": ["budget", "dual_back", "flip_armrests", "headrest", "mesh"] }
-    },
-    {
-      "id": "ikea-markus",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "IKEA", "model": "Markus", "variant": null, "product_url": "https://www.ikea.com/it/it/p/markus-sedia-da-ufficio-vissle-grigio-chiaro-10521858/", "image_url": null, "price_usd": 180, "price_range": "under_300", "availability_region": ["EU", "US"] },
-      "seo": { "conditions": ["upper_back_fatigue"], "primary_need": ["high_backrest"], "use_case": ["wfh", "home_office"], "filter_pages": ["budget", "for-tall-people"] },
-      "anthropometric_fit": { "user_height_min_cm": 170, "user_height_max_cm": 200, "weight_capacity_kg": 110 },
-      "seat": { "seat_height_min_cm": 47.0, "seat_height_max_cm": 60.0, "seat_depth_min_cm": 47.0, "seat_depth_max_cm": 47.0, "seat_depth_adjustable": false, "seat_width_cm": 53.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 68.0, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 1, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "fixed", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Built into the lower frame structure" },
-      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": true },
-      "headrest": { "headrest_present": true, "headrest_adjustable": false, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 140.0, "overall_width_cm": 62.0, "overall_depth_cm": 60.0 },
-      "build": { "frame_material": "steel", "base_material": "steel_plastic", "certifications": ["EN_1335"], "warranty_years": 10 },
-      "editorial": { "best_for_summary": "Tall users on a tight budget who need a high backrest and 10-year warranty.", "not_recommended_for": "Short individuals or anyone requiring armrest adjustability.", "tags": ["tall_user", "budget", "iconic", "high_back", "10yr_warranty"] }
-    },
-    {
-      "id": "diablo-x-gamer-2-0",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Diablo Chairs", "model": "X-Gamer 2.0", "variant": "Normal Size", "product_url": "https://diablochairs.com/it/3646-sedia-da-gaming-diablo-x-gamer-2-0-normal-size-snow-white", "image_url": null, "price_usd": 150, "price_range": "under_300", "availability_region": ["EU"] },
-      "seo": { "conditions": ["general_back_fatigue"], "primary_need": ["gaming_comfort"], "use_case": ["gaming", "wfh"], "filter_pages": ["gaming", "budget"] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 180, "weight_capacity_kg": 120 },
-      "seat": { "seat_height_min_cm": 45.0, "seat_height_max_cm": 55.0, "seat_depth_min_cm": 48.0, "seat_depth_max_cm": 48.0, "seat_depth_adjustable": false, "seat_width_cm": 52.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 81.0, "backrest_height_adjustable": false, "recline_max_deg": 115, "recline_lockable": true, "recline_positions": 1, "backrest_material": "fabric", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "removable_pillow", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Strap-on memory foam pillow" },
-      "armrests": { "armrest_present": true, "armrest_type": "fixed", "armrests_removable": true },
-      "headrest": { "headrest_present": true, "headrest_adjustable": false, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 126.0, "overall_width_cm": 68.0, "overall_depth_cm": 70.0 },
-      "build": { "frame_material": "metal", "base_material": "nylon", "certifications": ["BIFMA"], "warranty_years": 2 },
-      "editorial": { "best_for_summary": "Gamers looking for soft fabric upholstery and basic memory foam lumbar pillow.", "not_recommended_for": "Professional office setups requiring multi-adjustable armrests.", "tags": ["gaming", "fabric", "pillow_lumbar", "budget", "EU"] }
-    },
-    {
-      "id": "diablo-v-basic",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Diablo Chairs", "model": "V-Basic", "variant": null, "product_url": "https://diablochairs.com/it/sedia-ergonomica-diablo-v-basic-nero-e-arancione", "image_url": null, "price_usd": 310, "price_range": "300_600", "availability_region": ["EU"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["better_lumbar_support", "more_recline"], "use_case": ["office", "wfh"], "filter_pages": ["for-lower-back-pain", "mesh"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 190, "weight_capacity_kg": 140 },
-      "seat": { "seat_height_min_cm": 45.0, "seat_height_max_cm": 55.0, "seat_depth_min_cm": 49.0, "seat_depth_max_cm": 49.0, "seat_depth_adjustable": false, "seat_width_cm": 49.0, "seat_material": "mesh", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 60.0, "backrest_height_adjustable": false, "recline_max_deg": 135, "recline_lockable": true, "recline_positions": 3, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Dedicated profile section for lower spine support" },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": false },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": 133.0, "overall_width_cm": 68.0, "overall_depth_cm": 64.0 },
-      "build": { "frame_material": "metal_plastic", "base_material": "aluminum_nylon", "certifications": ["BIFMA"], "warranty_years": 2 },
-      "editorial": { "best_for_summary": "Solid ergonomic mesh chair with 135° recline, adjustable lumbar and headrest.", "not_recommended_for": "Users needing seat depth adjustment.", "tags": ["mesh", "headrest", "135deg_recline", "height_lumbar", "EU"] }
-    },
-    {
-      "id": "generic-executive-ergonomic",
-      "meta": { "last_updated": "2026-07-26", "data_source": "retail_partner", "data_completeness": 0.75 },
-      "identity": { "brand": "Unbranded", "model": "Ergonomic Executive Task Chair", "variant": null, "product_url": "https://www.amazon.co.uk/Ergonomic-Executive-Adjustable-Armrests-Function/dp/B0FPCVYGH6/", "image_url": null, "price_usd": 130, "price_range": "under_300", "availability_region": ["UK", "EU"] },
-      "seo": { "conditions": ["general_back_discomfort"], "primary_need": ["better_lumbar_support"], "use_case": ["home_office", "wfh"], "filter_pages": ["budget", "uk"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 185, "weight_capacity_kg": 120 },
-      "seat": { "seat_height_min_cm": 44.0, "seat_height_max_cm": 54.0, "seat_depth_min_cm": 46.0, "seat_depth_max_cm": 46.0, "seat_depth_adjustable": false, "seat_width_cm": 50.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 55.0, "backrest_height_adjustable": false, "recline_max_deg": 120, "recline_lockable": true, "recline_positions": 1, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Basic plastic support attached to rear frame" },
-      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": true },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height"] },
-      "total_dimensions": { "overall_height_max_cm": 120.0, "overall_width_cm": 64.0, "overall_depth_cm": 60.0 },
-      "build": { "frame_material": "plastic", "base_material": "nylon", "certifications": [], "warranty_years": 1 },
-      "editorial": { "best_for_summary": "Budget entry-level chair for home workers needing basic lumbar and headrest.", "not_recommended_for": "Heavy-duty commercial usage or long-term durability expectations.", "tags": ["budget", "entry_level", "headrest", "uk"] }
-    },
-    {
-      "id": "kinnarps-capella-x-energy",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Kinnarps", "model": "Capella X Energy", "variant": null, "product_url": "https://www.kinnarps.com/products/seating/task-chairs/capella-x-energy/", "image_url": null, "price_usd": null, "price_range": "over_1000", "availability_region": ["EU"] },
-      "seo": { "conditions": ["general_back_fatigue"], "primary_need": ["better_lumbar_support", "movement"], "use_case": ["executive", "office"], "filter_pages": ["premium", "nordic"] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 190, "weight_capacity_kg": 120 },
-      "seat": { "seat_height_min_cm": 40.0, "seat_height_max_cm": 53.0, "seat_depth_min_cm": 40.0, "seat_depth_max_cm": 48.0, "seat_depth_adjustable": true, "seat_width_cm": 48.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 58.0, "backrest_height_adjustable": true, "recline_max_deg": null, "recline_lockable": false, "recline_positions": null, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable_dynamic", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": true, "lumbar_notes": "FreeMotion or SyncMotion mechanism for continuous micro-movements" },
-      "armrests": { "armrest_present": true, "armrest_type": "5D", "armrests_removable": true },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "depth"] },
-      "total_dimensions": { "overall_height_max_cm": 125.0, "overall_width_cm": 68.0, "overall_depth_cm": 68.0 },
-      "build": { "frame_material": "aluminum_plastic", "base_material": "polished_aluminum", "certifications": ["Mobelfakta", "EU_Ecolabel"], "warranty_years": 10 },
-      "editorial": { "best_for_summary": "High-end Scandinavian chair with FreeMotion dynamic lumbar and 5D armrests.", "not_recommended_for": "Budget-focused buyers — no price list published.", "tags": ["nordic", "premium", "dynamic_lumbar", "5D_armrests", "headrest", "sustainable"] }
-    },
-    {
-      "id": "kinnarps-capella-x-classic",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.85 },
-      "identity": { "brand": "Kinnarps", "model": "Capella X Classic", "variant": null, "product_url": "https://www.kinnarps.com/products/seating/task-chairs/capella-x-classic/", "image_url": null, "price_usd": null, "price_range": "over_1000", "availability_region": ["EU"] },
-      "seo": { "conditions": ["lower_back_strain"], "primary_need": ["better_lumbar_support"], "use_case": ["office", "wfh"], "filter_pages": ["premium", "nordic"] },
-      "anthropometric_fit": { "user_height_min_cm": 150, "user_height_max_cm": 190, "weight_capacity_kg": 120 },
-      "seat": { "seat_height_min_cm": 40.0, "seat_height_max_cm": 53.0, "seat_depth_min_cm": 40.0, "seat_depth_max_cm": 48.0, "seat_depth_adjustable": true, "seat_width_cm": 48.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 58.0, "backrest_height_adjustable": true, "recline_max_deg": null, "recline_lockable": false, "recline_positions": null, "backrest_material": "fabric", "liveback_or_dynamic_back": true },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable_dynamic", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": true, "lumbar_notes": "FreeMotion technology for active sitting" },
-      "armrests": { "armrest_present": true, "armrest_type": "4D", "armrests_removable": true },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 115.0, "overall_width_cm": 68.0, "overall_depth_cm": 68.0 },
-      "build": { "frame_material": "aluminum_plastic", "base_material": "aluminum", "certifications": ["Mobelfakta", "EU_Ecolabel"], "warranty_years": 10 },
-      "editorial": { "best_for_summary": "Classic Scandinavian ergonomic with FreeMotion lumbar and sustainable build.", "not_recommended_for": "Users requiring a fixed upright lock for the seat.", "tags": ["nordic", "sustainable", "dynamic_lumbar", "4D_armrests", "premium"] }
-    },
-    {
-      "id": "kinnarps-fenix",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Kinnarps", "model": "Fenix", "variant": null, "product_url": "https://www.kinnarps.com/products/seating/task-chairs/fenix/", "image_url": null, "price_usd": null, "price_range": "600_1000", "availability_region": ["EU"] },
-      "seo": { "conditions": ["general_office_fatigue"], "primary_need": ["better_lumbar_support"], "use_case": ["office", "corporate_office"], "filter_pages": ["task_chairs", "nordic"] },
-      "anthropometric_fit": { "user_height_min_cm": 155, "user_height_max_cm": 185, "weight_capacity_kg": 110 },
-      "seat": { "seat_height_min_cm": 42.0, "seat_height_max_cm": 54.0, "seat_depth_min_cm": 42.0, "seat_depth_max_cm": 46.0, "seat_depth_adjustable": true, "seat_width_cm": 47.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 55.0, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 3, "backrest_material": "fabric", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "fixed_contour", "lumbar_height_adjustable": false, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Built-in ergonomic back contour" },
-      "armrests": { "armrest_present": true, "armrest_type": "2D", "armrests_removable": true },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 110.0, "overall_width_cm": 65.0, "overall_depth_cm": 65.0 },
-      "build": { "frame_material": "steel_plastic", "base_material": "aluminum_nylon", "certifications": ["Mobelfakta"], "warranty_years": 10 },
-      "editorial": { "best_for_summary": "Versatile Scandinavian task chair for clean office environments with 10-year warranty.", "not_recommended_for": "Intensive 24/7 heavy duty operations.", "tags": ["nordic", "minimalist", "task_chair", "10yr_warranty", "EU"] }
-    },
-    {
-      "id": "nautilus-ergo-luxury-mesh-24hr",
-      "meta": { "last_updated": "2026-07-26", "data_source": "retail_partner", "data_completeness": 0.85 },
-      "identity": { "brand": "Nautilus Designs", "model": "Ergo Luxury Mesh 24 Hour Executive", "variant": null, "product_url": "https://www.office-furniture-direct.co.uk/nautilus-ergo-luxury-mesh-24-hour-executive-chair?cat=11575", "image_url": null, "price_usd": 450, "price_range": "300_600", "availability_region": ["UK"] },
-      "seo": { "conditions": ["severe_back_pain"], "primary_need": ["24hr_use", "high_weight_capacity"], "use_case": ["office", "call_center"], "filter_pages": ["24hr_chairs", "uk"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 195, "weight_capacity_kg": 154 },
-      "seat": { "seat_height_min_cm": 46.0, "seat_height_max_cm": 56.0, "seat_depth_min_cm": 46.0, "seat_depth_max_cm": 51.0, "seat_depth_adjustable": true, "seat_width_cm": 52.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 65.0, "backrest_height_adjustable": false, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 4, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_depth_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": true, "lumbar_dynamic": false, "lumbar_notes": "Chiropractor approved multi-adjustable lower back support" },
-      "armrests": { "armrest_present": true, "armrest_type": "height_adjustable", "armrests_removable": true },
-      "headrest": { "headrest_present": true, "headrest_adjustable": true, "headrest_axes": ["height", "angle"] },
-      "total_dimensions": { "overall_height_max_cm": 125.0, "overall_width_cm": 70.0, "overall_depth_cm": 70.0 },
-      "build": { "frame_material": "steel_plastic", "base_material": "chrome", "certifications": ["24hr_certified", "Chiropractor_Approved"], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "Heavy-duty 24/7 certified executive chair with high weight capacity and chiropractor endorsement.", "not_recommended_for": "Minimalist or small spaces.", "tags": ["24hr", "heavy_duty", "chiropractor_approved", "high_capacity", "uk"] }
-    },
-    {
-      "id": "dams-senza-ergo-24hr",
-      "meta": { "last_updated": "2026-07-26", "data_source": "retail_partner", "data_completeness": 0.80 },
-      "identity": { "brand": "Dams", "model": "Senza Ergo 24hr Asynchro", "variant": null, "product_url": "https://www.office-furniture-direct.co.uk/dams-senza-ergo-24hr-ergonomic-asynchro-task-chair-black?cat=11575", "image_url": null, "price_usd": 320, "price_range": "300_600", "availability_region": ["UK"] },
-      "seo": { "conditions": ["lower_back_pain"], "primary_need": ["24hr_use", "better_lumbar_support"], "use_case": ["office", "call_center"], "filter_pages": ["24hr_chairs", "uk"] },
-      "anthropometric_fit": { "user_height_min_cm": 160, "user_height_max_cm": 190, "weight_capacity_kg": 135 },
-      "seat": { "seat_height_min_cm": 47.0, "seat_height_max_cm": 59.0, "seat_depth_min_cm": 45.0, "seat_depth_max_cm": 49.0, "seat_depth_adjustable": true, "seat_width_cm": 51.0, "seat_material": "fabric", "seat_tilt": true },
-      "backrest": { "backrest_height_cm": 66.0, "backrest_height_adjustable": true, "recline_max_deg": null, "recline_lockable": true, "recline_positions": 5, "backrest_material": "fabric", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "height_adjustable", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Asynchronous mechanism for independent seat and back angle" },
-      "armrests": { "armrest_present": true, "armrest_type": "height_adjustable", "armrests_removable": true },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 125.0, "overall_width_cm": 65.0, "overall_depth_cm": 65.0 },
-      "build": { "frame_material": "steel_plastic", "base_material": "nylon", "certifications": ["BS_5459", "24hr_use"], "warranty_years": 5 },
-      "editorial": { "best_for_summary": "Robust 24-hour asynchro task chair for heavy office or shift work.", "not_recommended_for": "Users looking for a modern all-mesh aesthetic.", "tags": ["24hr", "asynchro", "heavy_duty", "uk"] }
-    },
-    {
-      "id": "branch-ergonomic",
-      "meta": { "last_updated": "2026-07-26", "data_source": "official_site", "data_completeness": 0.80 },
-      "identity": { "brand": "Branch", "model": "Ergonomic Chair", "variant": "Standard", "product_url": "https://www.branchfurniture.com/products/ergonomic-chair", "image_url": null, "price_usd": 359, "price_range": "300_600", "availability_region": ["US", "CA"] },
-      "seo": { "conditions": ["spine_health"], "primary_need": ["better_lumbar_support"], "use_case": ["wfh", "home_office"], "filter_pages": ["for-lower-back-pain", "budget"] },
-      "anthropometric_fit": { "user_height_min_cm": 157, "user_height_max_cm": 188, "weight_capacity_kg": 125 },
-      "seat": { "seat_height_min_cm": 43.2, "seat_height_max_cm": 53.3, "seat_depth_min_cm": 41.0, "seat_depth_max_cm": 48.0, "seat_depth_adjustable": true, "seat_width_cm": 50.0, "seat_material": "fabric", "seat_tilt": false },
-      "backrest": { "backrest_height_cm": 55.0, "backrest_height_adjustable": false, "recline_max_deg": 20, "recline_lockable": true, "recline_positions": null, "backrest_material": "mesh", "liveback_or_dynamic_back": false },
-      "lumbar": { "lumbar_present": true, "lumbar_type": "removable_pad", "lumbar_height_adjustable": true, "lumbar_depth_adjustable": false, "lumbar_dynamic": false, "lumbar_notes": "Firm removable lumbar support pad" },
-      "armrests": { "armrest_present": true, "armrest_type": "3D", "armrests_removable": true },
-      "headrest": { "headrest_present": false, "headrest_adjustable": null, "headrest_axes": [] },
-      "total_dimensions": { "overall_height_max_cm": 106.7, "overall_width_cm": 63.5, "overall_depth_cm": 61.0 },
-      "build": { "frame_material": "nylon", "base_material": "anodized_aluminum", "certifications": ["BIFMA", "GREENGUARD_GOLD"], "warranty_years": 7 },
-      "editorial": { "best_for_summary": "Clean modern entry-level ergonomic chair that fits home aesthetics.", "not_recommended_for": "Users needing depth-adjustable lumbar or significantly shorter than 5'2\".", "tags": ["budget", "wfh", "clean_design", "3D_armrests", "GREENGUARD_GOLD", "7yr_warranty", "US"] }
-    }
-  ]
+"_schema_version": "1.3",
+"_category": "chairs",
+"chairs": [
+{
+"id": "haworth-fern-x-halo-gaming-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Fern x Halo Gaming Chair",
+"color_options": [
+"Olive Green"
+],
+"price_usd": 1600.0,
+"price_range": "over_1000",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/haworth-fern-x-halo-gaming-chair",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Haworth-Fern-x-Halo-Gaming-Chair-green.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 190,
+"weight_capacity_kg": 148
+},
+"seat": {
+"seat_width_cm": 50,
+"seat_height_min_cm": 41,
+"seat_height_max_cm": 53,
+"seat_depth_adjustable": true,
+"seat_material": "leather",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": 123,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"Indoor Advantage Gold",
+"GREENGUARD Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "Long gaming or working sessions requiring continuous adaptive support and distinctive collector aesthetics.",
+"not_recommended_for": "Users seeking a rigid, fixed-angle backrest lock or a plush, soft headrest cushion.",
+"tags": []
+}
+},
+{
+"id": "humanscale-freedom-ocean-task-chair-with-headrest",
+"identity": {
+"brand": "Humanscale",
+"model": "Freedom Ocean Task Chair with Headrest",
+"color_options": [
+"Black Polished Aluminum",
+"Autumn"
+],
+"price_usd": 1939.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/freedom-ocean-task-chair-headrest?variant=43023986655322",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 181.4
+},
+"seat": {
+"seat_width_cm": 67.95,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 51.4,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered contoured cushion with foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered cushion",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Weight-sensitive automatic recline and pivot support"
+},
+"armrests": {
+"armrest_type": "Adjustable height synchronous armrests"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"CDPH",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Long workdays requiring dynamic posture support and sustainable materials made from recycled ocean plastic.",
+"not_recommended_for": "Users looking for manual lockable multi-position tilt mechanisms or budget-friendly options.",
+"tags": []
+}
+},
+{
+"id": "vitra-acx-softknit",
+"identity": {
+"brand": "Vitra",
+"model": "ACX Softknit",
+"color_options": [
+"stone grey",
+"nero",
+"terracotta",
+"dark red",
+"dark blue",
+"pine green",
+"carbon",
+"coral",
+"sand"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/acx-softknit",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": null
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Grid Knit recycled polyester fabric",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Softknit 100% recycled polyester",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-regulating integrated lumbar support"
+},
+"armrests": {
+"armrest_type": "3D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Dynamic office environments, collaborative workspaces, and modern home offices seeking sustainable design and intuitive self-adjusting ergonomics.",
+"not_recommended_for": "Users requiring heavy-duty industrial seating or manual tension control adjustments.",
+"tags": []
+}
+},
+{
+"id": "branch-ergonomic-chair-pro",
+"identity": {
+"brand": "Branch",
+"model": "Ergonomic Chair Pro",
+"color_options": [
+"Shore",
+"Mineral",
+"Boulder",
+"Black",
+"Spark",
+"Everglade",
+"Merlot",
+"Glacier",
+"Ivory Boucle",
+"Black Boucle",
+"Limestone Vegan Leather",
+"Canyon Vegan Leather",
+"Black Vegan Leather",
+"Saddle Leather",
+"Black Leather"
+],
+"price_usd": 499.0,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/ergonomic-chair-pro",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 157.5,
+"user_height_max_cm": 198.1,
+"weight_capacity_kg": 124.7
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": 43.2,
+"seat_height_max_cm": 58.2,
+"seat_depth_adjustable": true,
+"seat_material": "High-density foam",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Performance Mesh",
+"recline_max_degrees": 26,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height and depth adjustable"
+},
+"armrests": {
+"armrest_type": "5D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 7,
+"certifications": [
+"BIFMA",
+"Greenguard Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Full workday comfort, maximum posture adjustability, and a wide range of body types",
+"not_recommended_for": null,
+"tags": []
+}
+},
+{
+"id": "flexispot-c7-max",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C7 Max",
+"color_options": [
+"Grey",
+"Black"
+],
+"price_usd": 429.99,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/flexispot-professional-ergonomic-office-chair-c7m?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 170.2,
+"user_height_max_cm": 205.7,
+"weight_capacity_kg": 158.8
+},
+"seat": {
+"seat_width_cm": 51.1,
+"seat_height_min_cm": 47.0,
+"seat_height_max_cm": 53.1,
+"seat_depth_adjustable": true,
+"seat_material": "Foam Cushion with Latex Layer / DuPont Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "DuPont Mesh",
+"recline_max_degrees": 135,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Dynamic Adaptive Lumbar Support"
+},
+"armrests": {
+"armrest_type": "5D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"SGS",
+"CA Prop 65"
+]
+},
+"editorial": {
+"best_for_summary": "Extended work sessions and users seeking customizable lumbar and armrest support",
+"not_recommended_for": "Shorter individuals under 170 cm",
+"tags": []
+}
+},
+{
+"id": "ikea-markus",
+"identity": {
+"brand": "IKEA",
+"model": "MARKUS",
+"color_options": [
+"Vissle dark gray"
+],
+"price_usd": 249.99,
+"price_range": "under_300",
+"availability": [],
+"product_url": "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 125
+},
+"seat": {
+"seat_width_cm": 53.0,
+"seat_height_min_cm": 46.0,
+"seat_height_max_cm": 57.0,
+"seat_depth_adjustable": false,
+"seat_material": "Polyester fabric and polyurethane foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Polyester mesh",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Fixed built-in lumbar support"
+},
+"armrests": {
+"armrest_type": "Fixed"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"ANSI/BIFMA x5.1",
+"EN 1335"
+]
+},
+"editorial": {
+"best_for_summary": "Tall users looking for affordable ergonomic support, a high backrest, and breathable mesh.",
+"not_recommended_for": "Users who require adjustable armrests or prefer soft seat cushioning.",
+"tags": []
+}
+},
+{
+"id": "sihoo-doro-c300",
+"identity": {
+"brand": "Sihoo",
+"model": "Doro C300",
+"color_options": [
+"Black",
+"White"
+],
+"price_usd": 279.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.sihoo.com/products/sihoo-doro-c300-ergonomic-office-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 180,
+"weight_capacity_kg": 136
+},
+"seat": {
+"seat_width_cm": 49.5,
+"seat_height_min_cm": 47,
+"seat_height_max_cm": 55,
+"seat_depth_adjustable": true,
+"seat_material": "mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": 130,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "self-adaptive dynamic"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA",
+"TÜV Rheinland",
+"SGS",
+"EN1335"
+]
+},
+"editorial": {
+"best_for_summary": "Users seeking automatic dynamic lumbar support and weight-sensing recline without manual adjustments",
+"not_recommended_for": "Users over 180 cm (5'11") tall or those who prefer dense foam seating over full mesh",
+"tags": []
+}
+},
+{
+"id": "diablo-chairs-v-light",
+"identity": {
+"brand": "Diablo Chairs",
+"model": "V-Light",
+"color_options": [
+"Grey",
+"Black"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [],
+"product_url": "https://diablochairs.com/en/diablo-v-light-ergonomic-office-chair-grey",
+"image_url": "https://diablochairs.com/media/catalog/product/V/-/V-Light_packshot_09d24.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 165,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 110
+},
+"seat": {
+"seat_width_cm": 52,
+"seat_height_min_cm": 49,
+"seat_height_max_cm": 58.5,
+"seat_depth_adjustable": false,
+"seat_material": "Fabric",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "V-Mesh Ultra",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Dynamic LumbarCare"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": null,
+"certifications": [
+"BIFMA",
+"EN 1335"
+]
+},
+"editorial": {
+"best_for_summary": "Office work, remote working, and users looking for budget-friendly ergonomic seating with active lumbar support and breathable mesh.",
+"not_recommended_for": "Users weighing over 110 kg or individuals requiring seat depth adjustment.",
+"tags": []
+}
+},
+{
+"id": "haworth-fern-digital-knit-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Fern Digital Knit Office Chair",
+"color_options": [
+"Emberglow",
+"Dune",
+"Rose",
+"Waterside",
+"Mariner",
+"Charcoal",
+"Black"
+],
+"price_usd": 1450.0,
+"price_range": "over_1000",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/fern-ergonomic-office-chair-digital-knit",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Fern-Digital-Knit-Office-Chair-Emberglow.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 145
+},
+"seat": {
+"seat_width_cm": 50.7,
+"seat_height_min_cm": 42,
+"seat_height_max_cm": 54,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 5
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"Indoor Advantage Gold",
+"GREENGUARD Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "Professional long-hour computer work requiring continuous spinal flexibility and breathable knit comfort.",
+"not_recommended_for": "Very tall users over 185 cm or those requiring a rigid, fixed backrest lock.",
+"tags": []
+}
+},
+{
+"id": "humanscale-freedom-ocean-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Freedom Ocean Task Chair",
+"color_options": [
+"Black Polished Aluminum",
+"Autumn"
+],
+"price_usd": 1699.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/freedom-ocean-task-chair?variant=43023934423130",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 181.4
+},
+"seat": {
+"seat_width_cm": 67.95,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 51.4,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered contoured cushion with foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered cushion",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Weight-sensitive automatic recline and pivot support"
+},
+"armrests": {
+"armrest_type": "Adjustable height synchronous armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"CDPH",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Dynamic tasks requiring intuitive self-adjusting support and sustainable materials crafted from recycled ocean plastic without a headrest.",
+"not_recommended_for": "Users requiring a headrest or manual tension control settings.",
+"tags": []
+}
+},
+{
+"id": "vitra-acx-softknit-high",
+"identity": {
+"brand": "Vitra",
+"model": "ACX Softknit High",
+"color_options": [
+"stone grey",
+"nero",
+"terracotta",
+"dark red",
+"dark blue",
+"pine green",
+"carbon",
+"coral",
+"sand"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/acx-softknit-high",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": null
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Grid Knit recycled polyester fabric",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Softknit 100% recycled polyester",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-regulating integrated lumbar support"
+},
+"armrests": {
+"armrest_type": "3D adjustable"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Executive offices, task-intensive workstations, and modern workspaces requiring neck and upper back support with automated weight-sensing mechanics.",
+"not_recommended_for": "Users needing a dedicated manual recline lock mechanism or heavy-duty industrial environments.",
+"tags": []
+}
+},
+{
+"id": "branch-ergonomic-chair",
+"identity": {
+"brand": "Branch",
+"model": "Ergonomic Chair",
+"color_options": [
+"Black / Black",
+"Black / White",
+"Pebble / White",
+"Sand / White",
+"Graphite / White",
+"Light Blue / White",
+"Poppy / White",
+"Baltic / White"
+],
+"price_usd": 359.0,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/ergonomic-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 157.5,
+"user_height_max_cm": 190.5,
+"weight_capacity_kg": 124.7
+},
+"seat": {
+"seat_width_cm": 50.8,
+"seat_height_min_cm": 43.2,
+"seat_height_max_cm": 53.3,
+"seat_depth_adjustable": true,
+"seat_material": "High-density foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Double-layer Mesh",
+"recline_max_degrees": 20,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height adjustable"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 7,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Everyday office work, sleek design aesthetics, and versatile adjustments at an accessible price point",
+"not_recommended_for": null,
+"tags": []
+}
+},
+{
+"id": "flexispot-c7-morpher",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C7 Morpher",
+"color_options": [
+"All Black"
+],
+"price_usd": 649.99,
+"price_range": "600_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/flexispot-premium-back-support-ergo-chair-c7-morpher?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 167.6,
+"user_height_max_cm": 204.2,
+"weight_capacity_kg": 172.4
+},
+"seat": {
+"seat_width_cm": 53.0,
+"seat_height_min_cm": 45.0,
+"seat_height_max_cm": 54.0,
+"seat_depth_adjustable": true,
+"seat_material": "Skin-friendly Foam / Mesh",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Mesh",
+"recline_max_degrees": 135,
+"recline_positions": 4
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-Adaptive Dynamic Air Lumbar Support"
+},
+"armrests": {
+"armrest_type": "5D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"EN 1335",
+"SGS",
+"GreenGuard",
+"Wintex",
+"Bureau Veritas"
+]
+},
+"editorial": {
+"best_for_summary": "Users needing advanced dynamic spine tracking, forward tilt desk work, and inflatable air lumbar customization",
+"not_recommended_for": "Users on a tight budget or those looking for a lightweight, minimalistic office chair",
+"tags": []
+}
+},
+{
+"id": "ikea-grönfjäll",
+"identity": {
+"brand": "IKEA",
+"model": "GRÖNFJÄLL",
+"color_options": [
+"Letafors gray-green/white",
+"Black",
+"Beige"
+],
+"price_usd": 379.99,
+"price_range": "300_600",
+"availability": [],
+"product_url": "https://www.ikea.com/us/en/p/groenfjaell-office-chair-with-armrests-letafors-gray-green-white-20532922/",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 125
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 46.0,
+"seat_height_max_cm": 57.0,
+"seat_depth_adjustable": true,
+"seat_material": "Polyester fabric with polyurethane foam padding",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Polyester fabric and polyurethane foam",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Adjustable lumbar support"
+},
+"armrests": {
+"armrest_type": "3D (height, width, pivot)"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"ANSI/BIFMA x5.1",
+"EN 1335"
+]
+},
+"editorial": {
+"best_for_summary": "Users seeking comprehensive ergonomic adjustability including seat depth, 3D armrests, and removable/washable fabric covers.",
+"not_recommended_for": "Users who prefer a built-in or optional headrest for full neck support.",
+"tags": []
+}
+},
+{
+"id": "sihoo-doro-c300-pro",
+"identity": {
+"brand": "Sihoo",
+"model": "Doro C300 Pro",
+"color_options": [
+"Black",
+"White"
+],
+"price_usd": 399.99,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.sihoo.com/products/sihoo-doro-c300-pro-ergonomic-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 136
+},
+"seat": {
+"seat_width_cm": 51,
+"seat_height_min_cm": 47,
+"seat_height_max_cm": 55,
+"seat_depth_adjustable": true,
+"seat_material": "mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": 135,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "self-adaptive dynamic"
+},
+"armrests": {
+"armrest_type": "6D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA",
+"TÜV Rheinland",
+"SGS"
+]
+},
+"editorial": {
+"best_for_summary": "Users needing ultra-adjustable 6D armrests and wider seat depth adjustments compared to the standard C300",
+"not_recommended_for": "Users looking for traditional firm leather or foam seating cushion options",
+"tags": []
+}
+},
+{
+"id": "diablo-chairs-v-commander",
+"identity": {
+"brand": "Diablo Chairs",
+"model": "V-Commander",
+"color_options": [
+"Black-Black",
+"Black-Grey"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [],
+"product_url": "https://diablochairs.com/en/3743-ergonomic-chair-diablo-v-commander-black-black",
+"image_url": "https://diablochairs.com/media/catalog/product/c/o/commander_01.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 150
+},
+"seat": {
+"seat_width_cm": 50,
+"seat_height_min_cm": 44,
+"seat_height_max_cm": 53,
+"seat_depth_adjustable": true,
+"seat_material": "V-Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "V-Mesh",
+"recline_max_degrees": 140,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 2,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Long work hours, posture correction, and users seeking full breathability with full mesh design and seat depth customization.",
+"not_recommended_for": "Users shorter than 150 cm or those who prefer plush foam padding over breathable mesh seating.",
+"tags": []
+}
+},
+{
+"id": "haworth-fern-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Fern Office Chair",
+"color_options": [
+"Black",
+"Charcoal",
+"Grey",
+"Custom Palette"
+],
+"price_usd": 1250.0,
+"price_range": "over_1000",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/fern-office-chair",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Fern-Office-Chair.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 145
+},
+"seat": {
+"seat_width_cm": 50.7,
+"seat_height_min_cm": 42,
+"seat_height_max_cm": 54,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 5
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"Indoor Advantage Gold",
+"GREENGUARD Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "All-day office tasks demanding responsive spinal movement and high adjustability.",
+"not_recommended_for": "Users seeking a rigid backrest stop or individuals significantly taller than 185 cm.",
+"tags": []
+}
+},
+{
+"id": "humanscale-liberty-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Liberty Task Chair",
+"color_options": [],
+"price_usd": 1259.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/liberty-task-chair?variant=42981721178202",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Form-sensa tri-panel mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Tri-panel mesh",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting form-sensing mesh backrest"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Minimalist office spaces requiring intuitive weight-compensating recline and automatic lumbar support.",
+"not_recommended_for": "Users who prefer manual tension knobs or fixed non-mesh backrests.",
+"tags": []
+}
+},
+{
+"id": "vitra-acx-pad",
+"identity": {
+"brand": "Vitra",
+"model": "ACX Pad",
+"color_options": [
+"nero",
+"stone grey",
+"terracotta",
+"dark red",
+"dark blue",
+"pine green",
+"carbon",
+"coral",
+"sand"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/acx-pad",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": null
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Upholstered cushion pad",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-regulating integrated lumbar support"
+},
+"armrests": {
+"armrest_type": "3D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Corporate offices and modern home workspaces requiring a clean, upholstered aesthetic with automated weight-adaptive recline mechanics.",
+"not_recommended_for": "Users preferring traditional mesh-backed chairs or manual multi-position recline locks.",
+"tags": []
+}
+},
+{
+"id": "branch-softside-chair",
+"identity": {
+"brand": "Branch",
+"model": "Softside Chair",
+"color_options": [
+"Bone Fabric",
+"Skylight Fabric",
+"Overcast Fabric",
+"Sunflower Fabric",
+"Blush Velvet",
+"Taupe Velvet",
+"Indigo Velvet",
+"Ivory Boucle",
+"Oatmeal Boucle",
+"Limestone Vegan Leather",
+"Canyon Vegan Leather",
+"Black Vegan Leather"
+],
+"price_usd": 299.0,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/softside-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 157.5,
+"user_height_max_cm": 190.5,
+"weight_capacity_kg": 124.7
+},
+"seat": {
+"seat_width_cm": 53.3,
+"seat_height_min_cm": 45.7,
+"seat_height_max_cm": 53.3,
+"seat_depth_adjustable": false,
+"seat_material": "Multi-density foam with nested micro-coils",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered fabric, velvet, bouclé, or vegan leather",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Integrated non-adjustable lumbar curve"
+},
+"armrests": {
+"armrest_type": "Removable fixed height"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 5,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Home offices seeking a lounge-style aesthetic with cloud-like micro-coil seat cushioning",
+"not_recommended_for": "Users needing deep fine-tuned ergonomic adjustments like multi-directional armrests or adjustable lumbar",
+"tags": []
+}
+},
+{
+"id": "flexispot-c7",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C7",
+"color_options": [
+"All Black"
+],
+"price_usd": 299.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/flexispot-best-ergonomic-office-chair-c7?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 162.6,
+"user_height_max_cm": 188.0,
+"weight_capacity_kg": 136.1
+},
+"seat": {
+"seat_width_cm": 51.1,
+"seat_height_min_cm": 49.0,
+"seat_height_max_cm": 57.4,
+"seat_depth_adjustable": true,
+"seat_material": "High-Resilience Foam / DuPont Mesh",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "DuPont Mesh",
+"recline_max_degrees": 128,
+"recline_positions": 5
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-Adaptive Dynamic Lumbar Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"GRS",
+"Oeko-Tex"
+]
+},
+"editorial": {
+"best_for_summary": "Everyday office work, users who lean forward frequently, and those seeking active self-adaptive lumbar support",
+"not_recommended_for": "Very tall individuals over 190 cm who require ultra-wide 5D armrest adjustments",
+"tags": []
+}
+},
+{
+"id": "ikea-styrspel",
+"identity": {
+"brand": "IKEA",
+"model": "STYRSPEL",
+"color_options": [
+"Red",
+"Grey/Red",
+"Blue",
+"Black"
+],
+"price_usd": 249.99,
+"price_range": "under_300",
+"availability": [],
+"product_url": "https://www.ikea.com/us/en/p/styrspel-gaming-chair-red-70613058/",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 125
+},
+"seat": {
+"seat_width_cm": 50.0,
+"seat_height_min_cm": 48.0,
+"seat_height_max_cm": 59.0,
+"seat_depth_adjustable": true,
+"seat_material": "Nylon and elastic polyester mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Nylon and elastic polyester mesh",
+"recline_max_degrees": null,
+"recline_positions": 4
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height-adjustable lumbar support"
+},
+"armrests": {
+"armrest_type": "3D (height, depth, pivot)"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"ANSI/BIFMA x5.1",
+"EN 1335"
+]
+},
+"editorial": {
+"best_for_summary": "Gamers and remote workers seeking a breathable full-mesh chair with extensive adjustability (headrest, lumbar, 3D armrests, seat depth).",
+"not_recommended_for": "Users looking for traditional thick foam padding or a long 10-year warranty standard on typical IKEA office chairs.",
+"tags": []
+}
+},
+{
+"id": "sihoo-m18",
+"identity": {
+"brand": "Sihoo",
+"model": "M18",
+"color_options": [
+"Black",
+"Grey",
+"Blue",
+"Orange"
+],
+"price_usd": 189.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.sihoo.com/products/m18-ergonomic-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 165,
+"user_height_max_cm": 188,
+"weight_capacity_kg": 150
+},
+"seat": {
+"seat_width_cm": 51,
+"seat_height_min_cm": 44,
+"seat_height_max_cm": 54,
+"seat_depth_adjustable": false,
+"seat_material": "high-density foam with fabric cover",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": 126,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "manual height and depth adjustable"
+},
+"armrests": {
+"armrest_type": "1D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA",
+"SGS"
+]
+},
+"editorial": {
+"best_for_summary": "Budget-conscious users seeking an entry-level task chair with a comfortable foam seat and customizable lumbar support",
+"not_recommended_for": "Users needing full mesh seats, 3D/4D armrest adjustments, or seat depth adjustments",
+"tags": []
+}
+},
+{
+"id": "diablo-chairs-v-basic",
+"identity": {
+"brand": "Diablo Chairs",
+"model": "V-Basic",
+"color_options": [
+"Black",
+"Black-Grey",
+"Black-Orange",
+"White-Grey"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [],
+"product_url": "https://diablochairs.com/en/3548-ergonomic-chair-diablo-v-basic-black",
+"image_url": "https://diablochairs.com/media/catalog/product/v/_/v_basic_black_01.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 165,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 140
+},
+"seat": {
+"seat_width_cm": 50,
+"seat_height_min_cm": 44,
+"seat_height_max_cm": 52,
+"seat_depth_adjustable": false,
+"seat_material": "V-Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "V-Mesh",
+"recline_max_degrees": 135,
+"recline_positions": 4
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 2,
+"certifications": [
+"EN 1335"
+]
+},
+"editorial": {
+"best_for_summary": "Daily office work, study sessions, and users looking for a breathable full-mesh ergonomic chair with height-adjustable backrest.",
+"not_recommended_for": "Users requiring seat depth adjustment or individuals outside the 165-185 cm height range.",
+"tags": []
+}
+},
+{
+"id": "haworth-zody-ergonomic-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Zody Ergonomic Office Chair",
+"color_options": [
+"Paddle",
+"Riptide",
+"Neptune",
+"Black",
+"Comfort",
+"Light Blue"
+],
+"price_usd": 1000.0,
+"price_range": "600_1000",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/zody-ergonomic-office-chair-europe",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Zody-Ergonomic-Office-Chair-Paddle.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 190,
+"weight_capacity_kg": 150
+},
+"seat": {
+"seat_width_cm": 49.5,
+"seat_height_min_cm": 41.2,
+"seat_height_max_cm": 54.4,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 5
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height+depth"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"GREENGUARD Gold",
+"Indoor Advantage Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "Users needing targeted, independently adjustable asymmetrical lower back support and clinical ergonomic backing.",
+"not_recommended_for": "Individuals who prefer a completely uniform lumbar pressure across both sides of the spine.",
+"tags": []
+}
+},
+{
+"id": "humanscale-liberty-task-chair-with-fabric-backrest",
+"identity": {
+"brand": "Humanscale",
+"model": "Liberty Task Chair with Fabric Backrest",
+"color_options": [],
+"price_usd": 1259.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/liberty-task-chair-fabric-backrest?variant=42973424910426",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion with foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered fabric",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting pivot support"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Users seeking the automatic recline mechanisms of the Liberty line combined with a softer upholstered fabric backrest.",
+"not_recommended_for": "Users who prefer standard mesh backrests or manual locking recline positions.",
+"tags": []
+}
+},
+{
+"id": "vitra-acx-pad-high",
+"identity": {
+"brand": "Vitra",
+"model": "ACX Pad High",
+"color_options": [
+"nero",
+"stone grey",
+"terracotta",
+"dark red",
+"dark blue",
+"pine green",
+"carbon",
+"coral",
+"sand"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/acx-pad-high",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": null
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Upholstered cushion pad",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-regulating integrated lumbar support"
+},
+"armrests": {
+"armrest_type": "3D adjustable"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Executive spaces and private offices requiring enhanced upper back and neck support combined with tailored upholstered cushioning.",
+"not_recommended_for": "Environments requiring highly breathable mesh backrests or manual recline tension adjustments.",
+"tags": []
+}
+},
+{
+"id": "branch-daily-chair",
+"identity": {
+"brand": "Branch",
+"model": "Daily Chair",
+"color_options": [
+"Sky Blue",
+"Slate",
+"Linden Green",
+"Black",
+"Dune Vegan Leather",
+"Mahogany Vegan Leather",
+"Black Vegan Leather"
+],
+"price_usd": 259.0,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/daily-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 152.4,
+"user_height_max_cm": 182.9,
+"weight_capacity_kg": 102.1
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": 43.2,
+"seat_height_max_cm": 53.3,
+"seat_depth_adjustable": false,
+"seat_material": "High-density foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Double woven nylon mesh or vegan leather",
+"recline_max_degrees": 20,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Integrated light lumbar support"
+},
+"armrests": {
+"armrest_type": "1D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 5,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Light to moderate daily desk work (6-8 hours) and residential aesthetics",
+"not_recommended_for": "Taller individuals over 6'0" or users needing extensive ergonomic tuning like 3D/4D armrests",
+"tags": []
+}
+},
+{
+"id": "flexispot-apollo",
+"identity": {
+"brand": "FlexiSpot",
+"model": "Apollo",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 699.99,
+"price_range": "600_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/premium-butterfly-back-ergonomic-chair-apollo?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 160.0,
+"user_height_max_cm": 195.6,
+"weight_capacity_kg": 149.7
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 50.5,
+"seat_height_max_cm": 59.5,
+"seat_depth_adjustable": true,
+"seat_material": "Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Mesh",
+"recline_max_degrees": 156,
+"recline_positions": 15
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "SyncGlide Adaptive Lumbar Support"
+},
+"armrests": {
+"armrest_type": "4D Dual-axis"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 10,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Users looking for deep recline positions, synchronized seat-back motion (SyncGlide), and highly adjustable 4D headrest support",
+"not_recommended_for": "Users needing active forward seat tilt or backrest height adjustment",
+"tags": []
+}
+},
+{
+"id": "sihoo-m59as",
+"identity": {
+"brand": "Sihoo",
+"model": "M59AS",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 159.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.sihoo.com/products/sihoo-m59as-ergonomic-office-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 178,
+"weight_capacity_kg": 136
+},
+"seat": {
+"seat_width_cm": 48,
+"seat_height_min_cm": 44,
+"seat_height_max_cm": 52,
+"seat_depth_adjustable": false,
+"seat_material": "foam cushion with fabric cover",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": 120,
+"recline_positions": 1
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "flip-up"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA",
+"SGS"
+]
+},
+"editorial": {
+"best_for_summary": "Small home offices, tight workspaces, and guitarists or musicians who need flip-up armrests to tuck the chair fully under desks",
+"not_recommended_for": "Tall users or those requiring headrests, deep recline lock angles, or advanced armrest mobility",
+"tags": []
+}
+},
+{
+"id": "diablo-chairs-v-flash",
+"identity": {
+"brand": "Diablo Chairs",
+"model": "V-Flash",
+"color_options": [
+"Black",
+"Black-Grey"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [],
+"product_url": "https://diablochairs.com/en/ergonomic-office-chair-black-v-flash-ultra-black",
+"image_url": "https://diablochairs.com/media/catalog/product/f/l/flash_01.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 180,
+"weight_capacity_kg": 130
+},
+"seat": {
+"seat_width_cm": 51,
+"seat_height_min_cm": 47,
+"seat_height_max_cm": 55,
+"seat_depth_adjustable": true,
+"seat_material": "V-Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "V-Mesh",
+"recline_max_degrees": 135,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 2,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Dynamic office work, modern workspaces, and users looking for full mesh breathability with seat depth adjustment.",
+"not_recommended_for": "Taller individuals over 180 cm or users requiring high backrest height.",
+"tags": []
+}
+},
+{
+"id": "haworth-very-ergonomic-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Very Ergonomic Office Chair",
+"color_options": [
+"Grey",
+"Slate Grey",
+"Black",
+"Grey Pink",
+"Blue",
+"Paddle"
+],
+"price_usd": 800.0,
+"price_range": "600_1000",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/very-office-chair-eu",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Very-Ergonomic-Office-Chair-Grey.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 120
+},
+"seat": {
+"seat_width_cm": 48.5,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 52.0,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height+depth"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"GREENGUARD Gold",
+"BIFMA Level 2"
+]
+},
+"editorial": {
+"best_for_summary": "Workspaces requiring refined aesthetics and independent asymmetrical lumbar fine-tuning.",
+"not_recommended_for": "Users needing a weight capacity exceeding 120 kg or a heavy-duty executive frame.",
+"tags": []
+}
+},
+{
+"id": "humanscale-liberty-ocean-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Liberty Ocean Task Chair",
+"color_options": [
+"Black Polished Aluminum",
+"Autumn"
+],
+"price_usd": 1599.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/liberty-ocean-task-chair?variant=42981846188122",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion with recycled ocean plastic components",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Tri-panel mesh",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting form-sensing mesh backrest"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"CDPH",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Eco-conscious professionals looking for intuitive weight-compensating recline and sustainable materials crafted from recycled ocean plastic.",
+"not_recommended_for": "Users requiring a headrest or manual locking recline adjustments.",
+"tags": []
+}
+},
+{
+"id": "vitra-acx-light",
+"identity": {
+"brand": "Vitra",
+"model": "ACX Light",
+"color_options": [
+"nero",
+"stone grey",
+"terracotta",
+"dark red",
+"dark blue",
+"pine green",
+"carbon",
+"coral",
+"sand"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/acx-light",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": null
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Breathable mesh",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-regulating integrated lumbar support"
+},
+"armrests": {
+"armrest_type": "2D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Collaborative workspaces and home offices looking for a lightweight, streamlined task chair with breathable mesh backing and simplified controls.",
+"not_recommended_for": "Users requiring advanced 3D/4D armrest adjustments or intensive multi-shift seating conditions.",
+"tags": []
+}
+},
+{
+"id": "branch-verve-chair",
+"identity": {
+"brand": "Branch",
+"model": "Verve Chair",
+"color_options": [
+"Galaxy",
+"Coral",
+"Mist",
+"Mint",
+"Cobalt",
+"Wheat",
+"Lunar"
+],
+"price_usd": 599.0,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/verve-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 152.4,
+"user_height_max_cm": 182.9,
+"weight_capacity_kg": 124.7
+},
+"seat": {
+"seat_width_cm": 49.5,
+"seat_height_min_cm": 41.9,
+"seat_height_max_cm": 52.1,
+"seat_depth_adjustable": true,
+"seat_material": "High-density foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "3D Knit (100% polyester)",
+"recline_max_degrees": 20,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height-adjustable padded cushion"
+},
+"armrests": {
+"armrest_type": "1D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 7,
+"certifications": [
+"BIFMA",
+"Greenguard Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Full workday comfort (8+ hours) and modern design-forward workspaces",
+"not_recommended_for": "Users taller than 6'0" or those requiring multi-directional 3D/4D armrest adjustments",
+"tags": []
+}
+},
+{
+"id": "flexispot-c5-ergonomic-standard-office-chair",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C5 Ergonomic Standard Office Chair",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 239.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/ergonomics-lumbar-support-office-chair-C5?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 161.5,
+"user_height_max_cm": 198.1,
+"weight_capacity_kg": 136.1
+},
+"seat": {
+"seat_width_cm": 52.8,
+"seat_height_min_cm": 47.0,
+"seat_height_max_cm": 55.0,
+"seat_depth_adjustable": false,
+"seat_material": "High Elastic Sponge Cushion Foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Mesh",
+"recline_max_degrees": 115,
+"recline_positions": 2
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "2D Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "2D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Budget-conscious users seeking standard ergonomic support and mid-range recline capabilities",
+"not_recommended_for": "Users needing deep recline positions, adjustable seat depth, or highly customizable 4D/5D armrests",
+"tags": []
+}
+},
+{
+"id": "sihoo-b100",
+"identity": {
+"brand": "Sihoo",
+"model": "B100",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 179.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.sihoo.com/products/sihoo-b100-ergonomic-office-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 140,
+"user_height_max_cm": 190,
+"weight_capacity_kg": 150
+},
+"seat": {
+"seat_width_cm": 50,
+"seat_height_min_cm": 46.5,
+"seat_height_max_cm": 55.5,
+"seat_depth_adjustable": false,
+"seat_material": "mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": 135,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "adaptive elastic zoned support"
+},
+"armrests": {
+"armrest_type": "2D flip-up"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA",
+"TÜV Rheinland",
+"SGS"
+]
+},
+"editorial": {
+"best_for_summary": "Users seeking space-saving flip-up armrests combined with adaptive zoned lumbar support for home offices",
+"not_recommended_for": "Users needing seat depth slide adjustments or advanced 4D armrest mobility",
+"tags": []
+}
+},
+{
+"id": "diablo-chairs-v-basic-2",
+"identity": {
+"brand": "Diablo Chairs",
+"model": "V-Basic",
+"color_options": [
+"Black-Grey",
+"Black",
+"Black-Orange",
+"White-Grey"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [],
+"product_url": "https://diablochairs.com/en/3540-ergonomic-chair-diablo-v-basic-black-grey",
+"image_url": "https://diablochairs.com/media/catalog/product/v/_/v_basic_grey_01.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 165,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 140
+},
+"seat": {
+"seat_width_cm": 50,
+"seat_height_min_cm": 44,
+"seat_height_max_cm": 52,
+"seat_depth_adjustable": false,
+"seat_material": "V-Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "V-Mesh",
+"recline_max_degrees": 135,
+"recline_positions": 4
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 2,
+"certifications": [
+"EN 1335"
+]
+},
+"editorial": {
+"best_for_summary": "Daily office work, study sessions, and users looking for a breathable full-mesh ergonomic chair with height-adjustable backrest.",
+"not_recommended_for": "Users requiring seat depth adjustment or individuals outside the 165-185 cm height range.",
+"tags": []
+}
+},
+{
+"id": "haworth-soji-ergonomic-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Soji Ergonomic Office Chair",
+"color_options": [
+"Black",
+"Grey",
+"Blue",
+"Green",
+"Red"
+],
+"price_usd": 650.0,
+"price_range": "600_1000",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/soji-office-chair-eu",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Soji-Ergonomic-Office-Chair.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 135
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 52.0,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 4
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "4D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"GREENGUARD Gold",
+"Indoor Advantage Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "Value-conscious buyers looking for reliable, highly adjustable ergonomic support from a trusted brand.",
+"not_recommended_for": "Users requiring advanced dynamic synchro-tilt mechanisms or forward seat tilt.",
+"tags": []
+}
+},
+{
+"id": "humanscale-liberty-ocean-task-chair-with-fabric-backrest",
+"identity": {
+"brand": "Humanscale",
+"model": "Liberty Ocean Task Chair with Fabric Backrest",
+"color_options": [
+"Black Polished Aluminum",
+"Autumn"
+],
+"price_usd": 1599.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/liberty-ocean-task-chair-fabric-backrest?variant=42973470785626",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion with recycled ocean plastic components",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered fabric",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting pivot support"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"CDPH",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Sustainable workspaces requiring automatic weight-compensating recline and a softer upholstered fabric backrest built from recycled ocean plastic.",
+"not_recommended_for": "Users preferring mesh backrests or manual tilt locks.",
+"tags": []
+}
+},
+{
+"id": "vitra-id-soft-l",
+"identity": {
+"brand": "Vitra",
+"model": "ID Soft L",
+"color_options": [
+"nero",
+"dark grey",
+"brown",
+"avocado",
+"poppy red",
+"asphalt",
+"dimgrey",
+"soft grey",
+"ice grey",
+"brick"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/id-soft-l",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 150.0
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": null,
+"seat_height_max_cm": null,
+"seat_depth_adjustable": true,
+"seat_material": "Polyurethane foam upholstery",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Polyurethane foam cushioning with fabric upholstery",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Adjustable lumbar support"
+},
+"armrests": {
+"armrest_type": "3D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": null,
+"certifications": [
+"EN 1335",
+"GREENGUARD Indoor Air Quality Certified",
+"Blauer Engel"
+]
+},
+"editorial": {
+"best_for_summary": "Executive offices, management spaces, and conference areas requiring high-back upholstered comfort, refined design, and advanced ergonomic synchronization mechanics.",
+"not_recommended_for": "Users needing a dedicated integrated headrest or highly breathable mesh backrests.",
+"tags": []
+}
+},
+{
+"id": "branch-ergonomic-chair-pro-sega-edition",
+"identity": {
+"brand": "Branch",
+"model": "Ergonomic Chair Pro: SEGA Edition",
+"color_options": [
+"Sonic the Hedgehog",
+"SEGA Genesis",
+"SEGA Dreamcast"
+],
+"price_usd": 549.0,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/ergonomic-chair-pro-sega-edition",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 157.5,
+"user_height_max_cm": 198.1,
+"weight_capacity_kg": 124.7
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": 43.2,
+"seat_height_max_cm": 58.2,
+"seat_depth_adjustable": true,
+"seat_material": "High-density foam with vegan leather",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Vegan leather",
+"recline_max_degrees": 26,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height and depth adjustable"
+},
+"armrests": {
+"armrest_type": "5D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 7,
+"certifications": [
+"BIFMA",
+"Greenguard Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Gamers and SEGA enthusiasts wanting high-end ergonomic support with custom retro gaming aesthetics",
+"not_recommended_for": "Users preferring ultra-breathable full-mesh designs over vegan leather upholstery",
+"tags": []
+}
+},
+{
+"id": "flexispot-c4",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C4",
+"color_options": [
+"Black",
+"Beige"
+],
+"price_usd": 199.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/standard-ergo-office-chair-c4?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 160.0,
+"user_height_max_cm": 188.0,
+"weight_capacity_kg": 136.1
+},
+"seat": {
+"seat_width_cm": 49.8,
+"seat_height_min_cm": 45.5,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": false,
+"seat_material": "Foam / Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Mesh",
+"recline_max_degrees": 135,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 5,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Budget-conscious everyday office use and resting with the optional footrest",
+"not_recommended_for": "Users needing advanced seat depth adjustments or heavy-duty ergonomic customization",
+"tags": []
+}
+},
+{
+"id": "sihoo-doro-s100",
+"identity": {
+"brand": "Sihoo",
+"model": "Doro S100",
+"color_options": [
+"Black",
+"White"
+],
+"price_usd": 359.99,
+"price_range": "300_600",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.sihoo.com/products/sihoo-doro-s100-ergonomic-office-chair-with-dual-dynamic-lumbar-support",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 190,
+"weight_capacity_kg": 136
+},
+"seat": {
+"seat_width_cm": 51,
+"seat_height_min_cm": 46,
+"seat_height_max_cm": 54,
+"seat_depth_adjustable": true,
+"seat_material": "high-elasticity wave mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "high-elasticity wave mesh",
+"recline_max_degrees": 135,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "dual dynamic wing with 4-spring system"
+},
+"armrests": {
+"armrest_type": "4D coordinated"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA",
+"SGS"
+]
+},
+"editorial": {
+"best_for_summary": "Users seeking double dynamic spring-loaded lumbar support and an enlarged seat surface across a wide height range (150-190 cm)",
+"not_recommended_for": "Users who prefer traditional high-density foam padding over full mesh construction",
+"tags": []
+}
+},
+{
+"id": "haworth-nia-ergonomic-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Nia Ergonomic Office Chair",
+"color_options": [
+"Black",
+"Grey",
+"White"
+],
+"price_usd": 550.0,
+"price_range": "300_600",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/nia-office-chair-with-height-adjustable-arms-europe",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Nia-Office-Chair.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 135
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 52.0,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "fixed"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"GREENGUARD Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "Budget-focused workspace setups requiring straightforward ergonomics and a clean aesthetic.",
+"not_recommended_for": "Users needing multi-directional armrest adjustment or advanced active balance mechanisms.",
+"tags": []
+}
+},
+{
+"id": "humanscale-smart-ocean-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Smart Ocean Task Chair",
+"color_options": [
+"Black Polished Aluminum",
+"Autumn"
+],
+"price_usd": 1599.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/smart-ocean-task-chair?variant=42981896552538",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion with recycled ocean plastic components",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Tri-panel mesh",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting form-sensing mesh backrest"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"CDPH",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Eco-friendly office environments needing dynamic weight-compensating recline, automatic lumbar support, and a supportive breathable mesh backrest built from recycled ocean plastic.",
+"not_recommended_for": "Users needing a headrest or manual tension locking mechanisms.",
+"tags": []
+}
+},
+{
+"id": "vitra-id-trim",
+"identity": {
+"brand": "Vitra",
+"model": "ID Trim",
+"color_options": [
+"nero",
+"dark grey",
+"asphalt",
+"dimgrey",
+"soft grey",
+"ice grey",
+"brick",
+"brown",
+"avocado",
+"poppy red"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/id-trim",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 150.0
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": null,
+"seat_height_max_cm": null,
+"seat_depth_adjustable": true,
+"seat_material": "Polyurethane foam upholstery",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Hollow chamber plastic backrest shell with integrated slim cushion",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height-adjustable lumbar support"
+},
+"armrests": {
+"armrest_type": "2D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": null,
+"certifications": [
+"EN 1335",
+"GREENGUARD Indoor Air Quality Certified",
+"Blauer Engel"
+]
+},
+"editorial": {
+"best_for_summary": "Modern offices and workstations requiring a sleek, slim-profile task chair with active ergonomic support and customizable aesthetic options.",
+"not_recommended_for": "Users preferring heavy plush padding or full mesh-backed transparency.",
+"tags": []
+}
+},
+{
+"id": "branch-multitask-chair",
+"identity": {
+"brand": "Branch",
+"model": "Multitask Chair",
+"color_options": [
+"Black"
+],
+"price_usd": 279.0,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.branchfurniture.com/products/multitask-chair",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": null
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": 45.7,
+"seat_height_max_cm": 54.9,
+"seat_depth_adjustable": false,
+"seat_material": "Durable fabric over foam cushion",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Breathable mesh",
+"recline_max_degrees": 25,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Weight-activated self-adjusting lumbar support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 5,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Budget-conscious professionals wanting essential ergonomic features like 3D armrests and weight-activated tilt",
+"not_recommended_for": "Users needing manual seat depth or dedicated lumbar depth adjustments",
+"tags": []
+}
+},
+{
+"id": "flexispot-oc3b",
+"identity": {
+"brand": "FlexiSpot",
+"model": "OC3B",
+"color_options": [
+"Gray",
+"Black"
+],
+"price_usd": 149.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/ergonomic-office-chair-oc3b?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 165.0,
+"user_height_max_cm": 190.0,
+"weight_capacity_kg": 136.1
+},
+"seat": {
+"seat_width_cm": 51.8,
+"seat_height_min_cm": 47.0,
+"seat_height_max_cm": 56.9,
+"seat_depth_adjustable": false,
+"seat_material": "Elastic Fabric Foam / Mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Mesh",
+"recline_max_degrees": 130,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "1.9 Inch Height Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "2D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 5,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Budget-conscious buyers and daily home office tasks requiring reliable basic ergonomic support",
+"not_recommended_for": "Users needing adjustable seat depth, 3D/4D armrest customization, or advanced forward tilt functionality",
+"tags": []
+}
+},
+{
+"id": "haworth-nia-ergonomic-office-chair-2",
+"identity": {
+"brand": "Haworth",
+"model": "Nia Ergonomic Office Chair",
+"color_options": [
+"Black",
+"Grey",
+"White"
+],
+"price_usd": 500.0,
+"price_range": "300_600",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/nia-office-chair",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Nia-Office-Chair.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 135
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 52.0,
+"seat_depth_adjustable": true,
+"seat_material": "foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "height adjustable"
+},
+"armrests": {
+"armrest_type": "fixed"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 10,
+"certifications": [
+"GREENGUARD Gold",
+"European Level 3"
+]
+},
+"editorial": {
+"best_for_summary": "Minimalist home offices and streamlined workspaces needing essential ergonomic adjustments at an entry-level price.",
+"not_recommended_for": "Users requiring multi-axis armrests or advanced active dynamic lumbar systems.",
+"tags": []
+}
+},
+{
+"id": "humanscale-path-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Path Task Chair",
+"color_options": [],
+"price_usd": 1299.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/path-task-chair?variant=42980158636122",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion with sustainable knit or fabric",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Sustainable knit",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Gravity-neutral intelligent counter-balance recline support"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Sustainable workspaces requiring automatic gravity-neutral weight-compensating recline and a knit backrest.",
+"not_recommended_for": "Users needing a headrest or manual tension locking knobs.",
+"tags": []
+}
+},
+{
+"id": "vitra-id-trim-l",
+"identity": {
+"brand": "Vitra",
+"model": "ID Trim L",
+"color_options": [
+"nero",
+"dark grey",
+"asphalt",
+"dimgrey",
+"soft grey",
+"ice grey",
+"brick",
+"brown",
+"avocado",
+"poppy red"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/id-trim-l",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 150.0
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": null,
+"seat_height_max_cm": null,
+"seat_depth_adjustable": true,
+"seat_material": "Polyurethane foam upholstery",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "High-back hollow chamber plastic shell with integrated slim cushion",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height-adjustable lumbar support"
+},
+"armrests": {
+"armrest_type": "2D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": null,
+"certifications": [
+"EN 1335",
+"GREENGUARD Indoor Air Quality Certified",
+"Blauer Engel"
+]
+},
+"editorial": {
+"best_for_summary": "Executive offices and professional conference rooms requiring a high-back profile with sleek proportions and dynamic ergonomic adjustments.",
+"not_recommended_for": "Users needing a dedicated integrated headrest or maximum lumbar flexibility from a full mesh design.",
+"tags": []
+}
+},
+{
+"id": "flexispot-ergostretch",
+"identity": {
+"brand": "FlexiSpot",
+"model": "ErgoStretch",
+"color_options": [
+"Black"
+],
+"price_usd": 249.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/advanced-ergonomic-chair-for-stretching-ergostretch?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 154.9,
+"user_height_max_cm": 188.0,
+"weight_capacity_kg": 122.5
+},
+"seat": {
+"seat_width_cm": 49.0,
+"seat_height_min_cm": 44.5,
+"seat_height_max_cm": 54.5,
+"seat_depth_adjustable": true,
+"seat_material": "Foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Piano String-Inspired Vertical-Slatted Elastic Backrest",
+"recline_max_degrees": 125,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Adaptive Flexible Backrest Support"
+},
+"armrests": {
+"armrest_type": "3D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 5,
+"certifications": []
+},
+"editorial": {
+"best_for_summary": "Users looking for active stretching, spine extension, and effortless back relaxation directly at their workstation",
+"not_recommended_for": "Users who require a dedicated headrest or heavy-duty weight support over 122 kg",
+"tags": []
+}
+},
+{
+"id": "haworth-aloha-pro-ergonomic-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Aloha Pro Ergonomic Office Chair",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 400.0,
+"price_range": "300_600",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/aloha-pro-ergonomic-office-chair",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Aloha-Pro-Office-Chair.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 120
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 52.0,
+"seat_depth_adjustable": false,
+"seat_material": "foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "fixed"
+},
+"armrests": {
+"armrest_type": "2D"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 5,
+"certifications": [
+"GREENGUARD Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Entry-level home offices requiring reliable daily seating from an established brand.",
+"not_recommended_for": "Users needing deep adjustments like seat depth sliding, 4D arms, or heavy-duty weight support.",
+"tags": []
+}
+},
+{
+"id": "humanscale-path-task-chair-with-wrapped-back",
+"identity": {
+"brand": "Humanscale",
+"model": "Path Task Chair with Wrapped Back",
+"color_options": [],
+"price_usd": 1299.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/path-task-chair-wrapped-back?variant=42980237738074",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Upholstered cushion with sustainable fabric",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered wrapped fabric",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Gravity-neutral intelligent counter-balance recline support"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Sustainable workspaces requiring automatic gravity-neutral weight-compensating recline and a fully wrapped upholstered fabric backrest.",
+"not_recommended_for": "Users needing a headrest or manual tension locking knobs.",
+"tags": []
+}
+},
+{
+"id": "vitra-id-air",
+"identity": {
+"brand": "Vitra",
+"model": "ID Air",
+"color_options": [
+"nero",
+"dark grey",
+"asphalt",
+"dimgrey",
+"soft grey",
+"ice grey",
+"brick",
+"brown",
+"avocado",
+"poppy red"
+],
+"price_usd": null,
+"price_range": null,
+"availability": [
+"Global"
+],
+"product_url": "https://www.vitra.com/en-it/product/details/id-air",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 150.0
+},
+"seat": {
+"seat_width_cm": null,
+"seat_height_min_cm": null,
+"seat_height_max_cm": null,
+"seat_depth_adjustable": true,
+"seat_material": "Polyurethane foam upholstery",
+"forward_seat_tilt": true
+},
+"backrest": {
+"backrest_material": "Perforated plastic backrest shell (FlowProfile)",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Integrated perforated backrest contouring"
+},
+"armrests": {
+"armrest_type": "2D adjustable"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": null,
+"certifications": [
+"EN 1335",
+"GREENGUARD Indoor Air Quality Certified",
+"Blauer Engel"
+]
+},
+"editorial": {
+"best_for_summary": "Open-plan offices, conference areas, and collaborative workspaces requiring a lightweight, highly breathable plastic backrest and robust synchronization mechanics.",
+"not_recommended_for": "Users seeking plush upholstered backrests or soft fabric-covered padding.",
+"tags": []
+}
+},
+{
+"id": "flexispot-c2",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C2",
+"color_options": [
+"Black"
+],
+"price_usd": 159.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/ergonomic-office-mesh-chair-c2?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 155.0,
+"user_height_max_cm": 185.0,
+"weight_capacity_kg": 113.4
+},
+"seat": {
+"seat_width_cm": 49.0,
+"seat_height_min_cm": 42.0,
+"seat_height_max_cm": 50.0,
+"seat_depth_adjustable": false,
+"seat_material": "High-Density Foam Cushion",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Breathable Mesh",
+"recline_max_degrees": 120,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height-Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "Flip-up / 1D"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 3,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Compact work spaces, budget-conscious buyers, and users needing space-saving flip-up armrests",
+"not_recommended_for": "Heavy-duty users, tall individuals over 185 cm, or those requiring 3D/4D armrest adjustments",
+"tags": []
+}
+},
+{
+"id": "haworth-aloha-ergonomic-office-chair",
+"identity": {
+"brand": "Haworth",
+"model": "Aloha Ergonomic Office Chair",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 350.0,
+"price_range": "300_600",
+"availability": [
+"EU"
+],
+"product_url": "https://shopping.haworth.com/en-it/products/aloha-ergonomic-office-chair",
+"image_url": "https://shopping.haworth.com/cdn/shop/files/Aloha-Office-Chair.jpg"
+},
+"anthropometric_fit": {
+"user_height_min_cm": 150,
+"user_height_max_cm": 185,
+"weight_capacity_kg": 120
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 40.0,
+"seat_height_max_cm": 52.0,
+"seat_depth_adjustable": false,
+"seat_material": "foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "mesh",
+"recline_max_degrees": null,
+"recline_positions": 3
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "fixed"
+},
+"armrests": {
+"armrest_type": "fixed"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": false
+},
+"build": {
+"warranty_years": 5,
+"certifications": [
+"GREENGUARD Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Budget-constrained basic workstations requiring standard ergonomic support and brand reliability.",
+"not_recommended_for": "Users requiring adjustable armrests, seat depth customization, or extended heavy-duty daily use.",
+"tags": []
+}
+},
+{
+"id": "humanscale-diffrient-world-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Diffrient World Task Chair",
+"color_options": [],
+"price_usd": 1159.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/world-task-chair?variant=42982052364378",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Form-sensa tri-panel mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Tri-panel mesh",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting form-sensing mesh backrest"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Minimalist office environments requiring a lightweight, all-mesh design with weight-compensating recline and automatic lumbar support.",
+"not_recommended_for": "Users requiring a headrest or manual tension adjustment mechanisms.",
+"tags": []
+}
+},
+{
+"id": "flexispot-c3",
+"identity": {
+"brand": "FlexiSpot",
+"model": "C3",
+"color_options": [
+"Black",
+"Grey"
+],
+"price_usd": 199.99,
+"price_range": "under_300",
+"availability": [
+"In Stock"
+],
+"product_url": "https://www.flexispot.com/big-and-tall-office-chair-5127?ref=category_products",
+"image_url": null
+},
+"anthropometric_fit": {
+"user_height_min_cm": 165.0,
+"user_height_max_cm": 198.0,
+"weight_capacity_kg": 226.8
+},
+"seat": {
+"seat_width_cm": 55.0,
+"seat_height_min_cm": 50.0,
+"seat_height_max_cm": 57.4,
+"seat_depth_adjustable": false,
+"seat_material": "High-Density Foam",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Breathable Mesh",
+"recline_max_degrees": 120,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Height-Adjustable Lumbar Support"
+},
+"armrests": {
+"armrest_type": "Flip-up"
+},
+"headrest": {
+"headrest_present": true,
+"headrest_adjustable": true
+},
+"build": {
+"warranty_years": 5,
+"certifications": [
+"BIFMA"
+]
+},
+"editorial": {
+"best_for_summary": "Big and tall individuals up to 500 lbs (226.8 kg) looking for a wide, high-density foam seat and space-saving flip-up armrests",
+"not_recommended_for": "Users needing 3D/4D armrest adjustment or advanced seat depth sliding capabilities",
+"tags": []
+}
+},
+{
+"id": "humanscale-diffrient-world-task-chair-with-fabric-backrest",
+"identity": {
+"brand": "Humanscale",
+"model": "Diffrient World Task Chair with Fabric Backrest",
+"color_options": [],
+"price_usd": 1159.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/world-task-chair-fabric-backrest?variant=42983864926298",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Form-sensa tri-panel mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Upholstered fabric",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting pivot support"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Users seeking the lightweight, all-mesh seat platform of the Diffrient World line paired with a softer upholstered fabric backrest and automatic weight-compensating recline.",
+"not_recommended_for": "Users requiring a headrest or manual locking recline positions.",
+"tags": []
+}
+},
+{
+"id": "humanscale-diffrient-world-lm-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Diffrient World LM Task Chair",
+"color_options": [],
+"price_usd": 1259.0,
+"price_range": "over_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/world-lm-task-chair?variant=43003183431770",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 52.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": true,
+"seat_material": "Form-sensa tri-panel mesh",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Tri-panel mesh with leather or specialized accent details",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Self-adjusting form-sensing mesh backrest"
+},
+"armrests": {
+"armrest_type": "Height-adjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Professional workspaces requiring the lightweight, minimalist design of the Diffrient World chair enhanced with premium leather or special materials.",
+"not_recommended_for": "Users needing a headrest or manual tension adjustment mechanisms.",
+"tags": []
+}
+},
+{
+"id": "humanscale-trea-lite-task-chair",
+"identity": {
+"brand": "Humanscale",
+"model": "Trea Lite Task Chair",
+"color_options": [],
+"price_usd": 699.0,
+"price_range": "600_1000",
+"availability": [
+"In Stock"
+],
+"product_url": "https://shop.humanscale.com/products/trea-lite-task-chair?variant=43041935163482",
+"image_url": ""
+},
+"anthropometric_fit": {
+"user_height_min_cm": null,
+"user_height_max_cm": null,
+"weight_capacity_kg": 136.0
+},
+"seat": {
+"seat_width_cm": 48.0,
+"seat_height_min_cm": 41.0,
+"seat_height_max_cm": 53.0,
+"seat_depth_adjustable": false,
+"seat_material": "Molded plastic shell",
+"forward_seat_tilt": false
+},
+"backrest": {
+"backrest_material": "Molded plastic shell",
+"recline_max_degrees": null,
+"recline_positions": null
+},
+"lumbar": {
+"lumbar_present": true,
+"lumbar_type": "Flexible shell recline mechanism"
+},
+"armrests": {
+"armrest_type": "Fixed or unadjustable armrests"
+},
+"headrest": {
+"headrest_present": false,
+"headrest_adjustable": null
+},
+"build": {
+"warranty_years": 15,
+"certifications": [
+"DECLARE® - Red List Approved",
+"BIFMA LEVEL®",
+"SCS Indoor Advantage Gold"
+]
+},
+"editorial": {
+"best_for_summary": "Conference rooms, collaborative areas, or minimalist workspaces requiring a clean, lightweight, and durable shell chair with gentle flex.",
+"not_recommended_for": "Users requiring full ergonomic adjustability, adjustable armrests, or deep plush cushioning for all-day task work.",
+"tags": []
+}
+}
+]
 }
