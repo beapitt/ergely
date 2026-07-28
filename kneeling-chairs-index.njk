@@ -1,4 +1,8 @@
 ---
+pagination:
+  data: kneeling_chairs.chairs
+  size: 1000
+  alias: kneeling_chairs_page
 permalink: "kneeling-chairs/index.html"
 ---
 <!DOCTYPE html>
@@ -17,7 +21,7 @@ permalink: "kneeling-chairs/index.html"
     "name": "Kneeling Chairs for Back Pain",
     "url": "https://ergely.com/kneeling-chairs/",
     "itemListElement": [
-      {% for chair in kneeling_chairs.chairs %}
+      {% for chair in kneeling_chairs_page %}
       { "@type": "ListItem", "position": {{ loop.index }}, "name": "{{ chair.identity.brand }} {{ chair.identity.model }}", "url": "https://ergely.com/kneeling-chairs/{{ chair.id }}/" }{% if not loop.last %},{% endif %}
       {% endfor %}
     ]
@@ -155,7 +159,7 @@ permalink: "kneeling-chairs/index.html"
 <div class="page-header">
   <div class="page-header-inner">
     <h1>🧎 Kneeling Chairs for Back Pain</h1>
-    <p>{{ kneeling_chairs.chairs | length }} chairs with verified specs — filter by your body and needs</p>
+    <p>{{ kneeling_chairs_page | length }} chairs with verified specs — filter by your body and needs</p>
   </div>
 </div>
 
@@ -230,7 +234,7 @@ permalink: "kneeling-chairs/index.html"
 
   <div class="results-area">
     <div class="results-bar">
-      <div class="results-count"><strong id="count">{{ kneeling_chairs.chairs | length }}</strong> chairs found</div>
+      <div class="results-count"><strong id="count">{{ kneeling_chairs_page | length }}</strong> chairs found</div>
       <select class="sort-select" onchange="applySort(this.value)">
         <option value="">Sort: Relevance</option>
         <option value="price_asc">Price: Low to High</option>
@@ -239,7 +243,7 @@ permalink: "kneeling-chairs/index.html"
     </div>
 
     <div class="product-grid" id="product-grid">
-      {% for chair in kneeling_chairs.chairs %}
+      {% for chair in kneeling_chairs_page %}
       <a class="product-card"
          href="/kneeling-chairs/{{ chair.id }}/"
          data-id="{{ chair.id }}"
