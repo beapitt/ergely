@@ -11,13 +11,14 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 205,
-        "weight_capacity_kg": 180
+        "user_height_min_cm": 162,
+        "user_height_max_cm": 200,
+        "weight_capacity_kg": 180,
+        "height_estimated": true
       },
       "seat": {
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 42,
+        "seat_height_max_cm": 52,
         "seat_depth_adjustable": false,
         "seat_material": "SoftWeave Fabric"
       },
@@ -38,7 +39,11 @@
       "editorial": {
         "best_for_summary": "Budget-conscious gamers wanting Secretlab quality with a lighter build.",
         "not_recommended_for": "Users needing advanced lumbar adjustment.",
-        "tags": ["gaming", "budget", "secretlab"]
+        "tags": [
+          "gaming",
+          "budget",
+          "secretlab"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -57,13 +62,14 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 205,
-        "weight_capacity_kg": 180
+        "user_height_min_cm": 162,
+        "user_height_max_cm": 200,
+        "weight_capacity_kg": 180,
+        "height_estimated": true
       },
       "seat": {
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 42,
+        "seat_height_max_cm": 52,
         "seat_depth_adjustable": true,
         "seat_material": "SoftWeave Fabric"
       },
@@ -84,7 +90,12 @@
       "editorial": {
         "best_for_summary": "Serious gamers and remote workers needing all-day lumbar support.",
         "not_recommended_for": "Users on a tight budget.",
-        "tags": ["gaming", "mid-range", "secretlab", "lumbar"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "secretlab",
+          "lumbar"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -103,13 +114,14 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 205,
-        "weight_capacity_kg": 180
+        "user_height_min_cm": 162,
+        "user_height_max_cm": 200,
+        "weight_capacity_kg": 180,
+        "height_estimated": true
       },
       "seat": {
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 42,
+        "seat_height_max_cm": 52,
         "seat_depth_adjustable": true,
         "seat_material": "NanoGen Fabric"
       },
@@ -130,7 +142,11 @@
       "editorial": {
         "best_for_summary": "Premium gamers wanting Secretlab's best fabric technology.",
         "not_recommended_for": "Users who prefer leather or faux leather.",
-        "tags": ["gaming", "premium", "secretlab"]
+        "tags": [
+          "gaming",
+          "premium",
+          "secretlab"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -149,9 +165,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 192,
+        "weight_capacity_kg": 136,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 40,
@@ -176,7 +193,11 @@
       "editorial": {
         "best_for_summary": "Entry-level gamers wanting Razer quality at a lower price.",
         "not_recommended_for": "Users needing advanced armrest or lumbar adjustment.",
-        "tags": ["gaming", "budget", "razer"]
+        "tags": [
+          "gaming",
+          "budget",
+          "razer"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -195,13 +216,14 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136
+        "user_height_min_cm": 166,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136,
+        "height_estimated": true
       },
       "seat": {
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 43,
+        "seat_height_max_cm": 53,
         "seat_depth_adjustable": false,
         "seat_material": "Faux leather"
       },
@@ -222,7 +244,11 @@
       "editorial": {
         "best_for_summary": "Mid-range gamers wanting 4D armrests and Razer's ergonomic design.",
         "not_recommended_for": "Users needing adjustable lumbar support.",
-        "tags": ["gaming", "mid-range", "razer"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "razer"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -268,7 +294,12 @@
       "editorial": {
         "best_for_summary": "Gamers with back pain needing built-in adjustable lumbar support.",
         "not_recommended_for": "Users under 160 cm or over 136 kg.",
-        "tags": ["gaming", "premium", "razer", "lumbar"]
+        "tags": [
+          "gaming",
+          "premium",
+          "razer",
+          "lumbar"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -287,9 +318,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 188,
-        "weight_capacity_kg": 120
+        "user_height_min_cm": 173,
+        "user_height_max_cm": 212,
+        "weight_capacity_kg": 120,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 45,
@@ -314,7 +346,11 @@
       "editorial": {
         "best_for_summary": "Budget gamers under 188 cm wanting a relaxed recline position.",
         "not_recommended_for": "Tall users over 188 cm or heavy users over 120 kg.",
-        "tags": ["gaming", "budget", "corsair"]
+        "tags": [
+          "gaming",
+          "budget",
+          "corsair"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -333,9 +369,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 188,
-        "weight_capacity_kg": 120
+        "user_height_min_cm": 162,
+        "user_height_max_cm": 200,
+        "weight_capacity_kg": 120,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 42,
@@ -360,7 +397,11 @@
       "editorial": {
         "best_for_summary": "Mid-range gamers wanting 4D armrests and premium leatherette finish.",
         "not_recommended_for": "Tall users over 188 cm.",
-        "tags": ["gaming", "mid-range", "corsair"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "corsair"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -379,9 +420,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 188,
-        "weight_capacity_kg": 120
+        "user_height_min_cm": 169,
+        "user_height_max_cm": 208,
+        "weight_capacity_kg": 120,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 44,
@@ -406,7 +448,12 @@
       "editorial": {
         "best_for_summary": "Gamers wanting fabric breathability with 180° flat recline.",
         "not_recommended_for": "Tall users over 188 cm.",
-        "tags": ["gaming", "mid-range", "corsair", "fabric"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "corsair",
+          "fabric"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -425,13 +472,14 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 180,
-        "weight_capacity_kg": 90
+        "user_height_min_cm": 166,
+        "user_height_max_cm": 196,
+        "weight_capacity_kg": 90,
+        "height_estimated": true
       },
       "seat": {
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 43,
+        "seat_height_max_cm": 51,
         "seat_depth_adjustable": false,
         "seat_material": "PU Leather"
       },
@@ -452,7 +500,11 @@
       "editorial": {
         "best_for_summary": "Entry-level gamers under 180 cm wanting the classic DXRacer racing style.",
         "not_recommended_for": "Tall or heavy users — low weight capacity.",
-        "tags": ["gaming", "budget", "dxracer"]
+        "tags": [
+          "gaming",
+          "budget",
+          "dxracer"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -471,9 +523,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 125
+        "user_height_min_cm": 169,
+        "user_height_max_cm": 208,
+        "weight_capacity_kg": 125,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 44,
@@ -498,7 +551,11 @@
       "editorial": {
         "best_for_summary": "Mid-range gamers wanting DXRacer's sporty style with 3D armrests.",
         "not_recommended_for": "Users needing high recline angles.",
-        "tags": ["gaming", "mid-range", "dxracer"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "dxracer"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -517,9 +574,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": 201,
-        "weight_capacity_kg": 181
+        "user_height_min_cm": 187,
+        "user_height_max_cm": 223,
+        "weight_capacity_kg": 181,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 48.5,
@@ -544,7 +602,11 @@
       "editorial": {
         "best_for_summary": "Big and tall gamers needing a heavy-duty chair up to 181 kg.",
         "not_recommended_for": "Users who prefer fabric or high recline angles.",
-        "tags": ["gaming", "big-and-tall", "dxracer"]
+        "tags": [
+          "gaming",
+          "big-and-tall",
+          "dxracer"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -563,9 +625,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 120
+        "user_height_min_cm": 191,
+        "user_height_max_cm": 229,
+        "weight_capacity_kg": 120,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 49.5,
@@ -590,7 +653,11 @@
       "editorial": {
         "best_for_summary": "Gamers and office workers wanting a premium European-designed chair.",
         "not_recommended_for": "Users needing high recline or seat depth adjustment.",
-        "tags": ["gaming", "mid-range", "noblechairs"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "noblechairs"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -609,9 +676,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150
+        "user_height_min_cm": 185,
+        "user_height_max_cm": 216,
+        "weight_capacity_kg": 150,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 48,
@@ -636,7 +704,12 @@
       "editorial": {
         "best_for_summary": "Heavier users up to 150 kg wanting a wide, sturdy German-engineered chair.",
         "not_recommended_for": "Users needing high recline angles.",
-        "tags": ["gaming", "premium", "noblechairs", "heavy-duty"]
+        "tags": [
+          "gaming",
+          "premium",
+          "noblechairs",
+          "heavy-duty"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -655,9 +728,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150
+        "user_height_min_cm": 185,
+        "user_height_max_cm": 223,
+        "weight_capacity_kg": 150,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 48,
@@ -682,7 +756,12 @@
       "editorial": {
         "best_for_summary": "Premium gamers wanting real Napa leather and German craftsmanship.",
         "not_recommended_for": "Users on a budget or needing high recline.",
-        "tags": ["gaming", "luxury", "noblechairs", "leather"]
+        "tags": [
+          "gaming",
+          "luxury",
+          "noblechairs",
+          "leather"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -701,13 +780,14 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 100
+        "user_height_min_cm": 166,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 100,
+        "height_estimated": true
       },
       "seat": {
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 43,
+        "seat_height_max_cm": 53,
         "seat_depth_adjustable": false,
         "seat_material": "PVC Leather"
       },
@@ -728,7 +808,11 @@
       "editorial": {
         "best_for_summary": "Budget gamers wanting a stylish chair with good recline.",
         "not_recommended_for": "Heavy users over 100 kg or those needing multi-directional armrests.",
-        "tags": ["gaming", "budget", "andaseat"]
+        "tags": [
+          "gaming",
+          "budget",
+          "andaseat"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -774,7 +858,12 @@
       "editorial": {
         "best_for_summary": "Tall and heavy gamers up to 203 cm and 180 kg wanting premium features.",
         "not_recommended_for": "Users on a tight budget.",
-        "tags": ["gaming", "premium", "andaseat", "big-and-tall"]
+        "tags": [
+          "gaming",
+          "premium",
+          "andaseat",
+          "big-and-tall"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -793,9 +882,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 159
+        "user_height_min_cm": 146,
+        "user_height_max_cm": 216,
+        "weight_capacity_kg": 159,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 38,
@@ -820,7 +910,12 @@
       "editorial": {
         "best_for_summary": "Serious gamers wanting Herman Miller quality with gaming aesthetics.",
         "not_recommended_for": "Budget-conscious buyers.",
-        "tags": ["gaming", "luxury", "herman-miller", "mesh"]
+        "tags": [
+          "gaming",
+          "luxury",
+          "herman-miller",
+          "mesh"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -839,9 +934,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 200,
+        "weight_capacity_kg": 136,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 41,
@@ -866,7 +962,12 @@
       "editorial": {
         "best_for_summary": "Elite gamers wanting the best ergonomic gaming chair on the market.",
         "not_recommended_for": "Budget buyers or users needing 4D armrests.",
-        "tags": ["gaming", "luxury", "herman-miller", "mesh"]
+        "tags": [
+          "gaming",
+          "luxury",
+          "herman-miller",
+          "mesh"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
@@ -885,9 +986,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150
+        "user_height_min_cm": 192,
+        "user_height_max_cm": 223,
+        "weight_capacity_kg": 150,
+        "height_estimated": true
       },
       "seat": {
         "seat_height_min_cm": 50,
@@ -912,7 +1014,12 @@
       "editorial": {
         "best_for_summary": "Gamers wanting Alcantara fabric, 180° recline and 4D armrests at mid-range price.",
         "not_recommended_for": "Users needing seat depth adjustment.",
-        "tags": ["gaming", "mid-range", "cooler-master", "fabric"]
+        "tags": [
+          "gaming",
+          "mid-range",
+          "cooler-master",
+          "fabric"
+        ]
       },
       "seo": {
         "primary_need": "gaming posture support",
