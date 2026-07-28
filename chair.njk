@@ -12,7 +12,7 @@ permalink: "chairs/{{ chair.id }}/index.html"
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪑</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% set pageTitle = chair.identity.brand + " " + chair.identity.model + " Review — Ergonomic Chair for Back Pain | Ergely" %}
-  {% set pageDesc = chair.editorial.best_for_summary %}
+  {%- set pageDesc -%}{{ chair.identity.brand }} {{ chair.identity.model }} ergonomic chair. Best for {{ chair.editorial.best_for_summary }}.{% if chair.anthropometric_fit.user_height_min_cm %} Fits {{ chair.anthropometric_fit.user_height_min_cm }}-{{ chair.anthropometric_fit.user_height_max_cm }} cm.{% endif %}{% if chair.anthropometric_fit.weight_capacity_kg %} Up to {{ chair.anthropometric_fit.weight_capacity_kg }} kg.{% endif %}{% if chair.identity.price_usd %} From ${{ chair.identity.price_usd }}.{% endif %}{%- endset -%}
   <title>{{ pageTitle }}</title>
   <meta name="description" content="{{ pageDesc }}">
   <meta name="robots" content="index, follow">
