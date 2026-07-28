@@ -97,10 +97,15 @@ permalink: "chairs/index.html"
     .card-image { aspect-ratio:4/3;background:#ffffff;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;border-bottom:1px solid var(--border); }
     .card-image img { width:100%;height:100%;object-fit:cover; }
     .card-image .no-image { font-size:11px;color:var(--muted); }
-    .fit-badge { position:absolute;top:8px;right:8px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;display:none;text-transform:uppercase;letter-spacing:0.05em; }
-    .fit-badge.good  { background:#EAF4EE;color:var(--green);border:1px solid #A8D5B5;display:block; }
-    .fit-badge.partial { background:#FFF8E7;color:var(--partial);border:1px solid #E0C96A;display:block; }
-    .fit-badge.poor  { background:#FAEAEA;color:var(--red);border:1px solid #E8A8A8;display:block; }
+    .fit-badge { position:absolute;top:8px;right:8px;display:none;flex-direction:column;align-items:center;border-radius:10px;padding:7px 11px;min-width:90px;text-align:center; }
+    .fit-badge.visible { display:flex; }
+    .fit-badge-label { font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2px;opacity:0.8; }
+    .fit-badge-score { font-size:17px;font-weight:800;line-height:1;letter-spacing:-0.02em; }
+    .fit-badge-match { font-size:9px;font-weight:600;margin-top:2px; }
+    .fit-badge.excellent { background:#EAF4EE;color:#1E6B3A;border:1px solid #A8D5B5; }
+    .fit-badge.good-match { background:#E8F4FF;color:#1A5FA8;border:1px solid #A8CBF0; }
+    .fit-badge.fair { background:#FFF8E7;color:#8A6000;border:1px solid #E0C96A; }
+    .fit-badge.limited { background:#FAEAEA;color:#9B2020;border:1px solid #E8A8A8; }
     .card-body { padding:14px;flex:1;display:flex;flex-direction:column;gap:6px; }
     .card-brand { font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em; }
     .card-model { font-size:14px;font-weight:700;color:var(--black);line-height:1.3; }
@@ -257,6 +262,10 @@ permalink: "chairs/index.html"
          data-height-min="{{ chair.anthropometric_fit.user_height_min_cm if chair.anthropometric_fit.user_height_min_cm else '' }}"
          data-height-max="{{ chair.anthropometric_fit.user_height_max_cm if chair.anthropometric_fit.user_height_max_cm else '' }}"
          data-weight-max="{{ chair.anthropometric_fit.weight_capacity_kg if chair.anthropometric_fit.weight_capacity_kg else '' }}"
+         data-seat-min="{{ chair.seat.seat_height_min_cm if chair.seat.seat_height_min_cm else '' }}"
+         data-seat-max="{{ chair.seat.seat_height_max_cm if chair.seat.seat_height_max_cm else '' }}"
+         data-lumbar="{{ 'adjustable' if chair.lumbar.lumbar_depth_adjustable or chair.lumbar.lumbar_height_adjustable else ('present' if chair.lumbar.lumbar_present else 'none') }}"
+         data-armrest="{{ chair.armrests.armrest_type if chair.armrests.armrest_type else 'none' }}"
       >
         <div class="card-image">
           {% if chair.identity.image_url %}
@@ -306,25 +315,98 @@ permalink: "chairs/index.html"
     if(!w){btn.classList.add('active');state[type]=btn.dataset.value;}else{state[type]=null;}
     applyFilters();
   }
+  function calcErgelyFitScore(h, w, card) {
+    const hMin=parseFloat(card.dataset.heightMin)||null;
+    const hMax=parseFloat(card.dataset.heightMax)||null;
+    const wMax=parseFloat(card.dataset.weightMax)||null;
+    const seatMin=parseFloat(card.dataset.seatMin)||null;
+    const seatMax=parseFloat(card.dataset.seatMax)||null;
+    const lumbar=card.dataset.lumbar||'none';
+    const armrest=card.dataset.armrest||'none';
+    const material=card.dataset.material||'';
+    let scores={height:null,weight:null,seat:null,lumbar:null,armrest:null,comfort:null};
+    // HEIGHT (40%)
+    if(h&&hMin&&hMax){
+      const margin=Math.max(0,Math.max(hMin-h,h-hMax));
+      if(margin===0)scores.height=100;
+      else if(margin<=3)scores.height=85;
+      else if(margin<=6)scores.height=65;
+      else if(margin<=10)scores.height=40;
+      else scores.height=10;
+    }
+    // WEIGHT (10%)
+    if(w&&wMax){
+      const pct=w/wMax;
+      if(pct<=0.7)scores.weight=100;
+      else if(pct<=0.85)scores.weight=95;
+      else if(pct<=0.95)scores.weight=80;
+      else if(pct<=1.0)scores.weight=60;
+      else scores.weight=0;
+    }
+    // SEAT HEIGHT SUITABILITY (15%) — ideal seat = h * 0.26
+    if(h&&seatMin&&seatMax){
+      const ideal=h*0.26;
+      if(ideal>=seatMin&&ideal<=seatMax)scores.seat=100;
+      else{const d=Math.min(Math.abs(ideal-seatMin),Math.abs(ideal-seatMax));scores.seat=d<=2?85:d<=4?65:40;}
+    }
+    // LUMBAR (15%)
+    if(lumbar==='adjustable'||lumbar==='true')scores.lumbar=100;
+    else if(lumbar==='fixed'||lumbar==='present')scores.lumbar=60;
+    else scores.lumbar=20;
+    // ARMREST (10%)
+    if(armrest==='4D')scores.armrest=100;
+    else if(armrest==='3D')scores.armrest=80;
+    else if(armrest==='2D')scores.armrest=55;
+    else if(armrest==='1D')scores.armrest=30;
+    else scores.armrest=10;
+    // LONG-SESSION COMFORT (10%)
+    const mat=material.toLowerCase();
+    if(mat.includes('mesh'))scores.comfort=100;
+    else if(mat.includes('fabric')||mat.includes('softweave'))scores.comfort=85;
+    else if(mat.includes('leather')&&!mat.includes('faux'))scores.comfort=75;
+    else scores.comfort=60;
+    // WEIGHTED TOTAL
+    const weights={height:0.40,weight:0.10,seat:0.15,lumbar:0.15,armrest:0.10,comfort:0.10};
+    let total=0,totalWeight=0;
+    for(const[k,wt]of Object.entries(weights)){
+      if(scores[k]!==null){total+=scores[k]*wt;totalWeight+=wt;}
+    }
+    const finalScore=totalWeight>0?Math.round(total/totalWeight):null;
+    return{score:finalScore,scores};
+  }
+  function scoreToClass(s){
+    if(s>=90)return'excellent';
+    if(s>=75)return'good-match';
+    if(s>=60)return'fair';
+    return'limited';
+  }
+  function scoreToLabel(s){
+    if(s>=90)return'Excellent Match';
+    if(s>=75)return'Good Match';
+    if(s>=60)return'Fair Match';
+    return'Limited Match';
+  }
   function applyFitFinder() {
     const h=parseFloat(document.getElementById('ff-height').value);
     const w=parseFloat(document.getElementById('ff-weight').value);
     state.height=h||null; state.weight=w||null;
+    if(!h&&!w) return;
     const cards=document.querySelectorAll('.product-card');
-    let goodCount=0,partialCount=0;
+    let excellent=0,good=0,fair=0,limited=0;
     cards.forEach(card=>{
       const badge=document.getElementById('badge-'+card.dataset.id);
       if(!badge) return;
-      const hMin=parseFloat(card.dataset.heightMin),hMax=parseFloat(card.dataset.heightMax),wMax=parseFloat(card.dataset.weightMax);
-      let heightFit=null,weightFit=null;
-      if(h&&hMin&&hMax){if(h>=hMin&&h<=hMax)heightFit='good';else if(Math.abs(h-hMin)<=5||Math.abs(h-hMax)<=5)heightFit='partial';else heightFit='poor';}else heightFit=h?'unknown':null;
-      if(w&&wMax)weightFit=w<=wMax?'good':'poor';else weightFit=w?'unknown':null;
-      const fits=[heightFit,weightFit].filter(Boolean);
-      badge.className='fit-badge';
-      if(fits.includes('poor')){badge.textContent='Poor fit';badge.classList.add('poor');card.dataset.fitScore='0';}
-      else if(fits.includes('partial')||fits.includes('unknown')){badge.textContent='Partial fit';badge.classList.add('partial');partialCount++;card.dataset.fitScore='1';}
-      else if(fits.length>0){badge.textContent='Good fit';badge.classList.add('good');goodCount++;card.dataset.fitScore='2';}
-      else card.dataset.fitScore='1';
+      const {score}=calcErgelyFitScore(h,w,card);
+      if(score===null){badge.className='fit-badge';return;}
+      const cls=scoreToClass(score);
+      const lbl=scoreToLabel(score);
+      badge.className='fit-badge visible '+cls;
+      badge.innerHTML='<span class="fit-badge-label">Ergely Fit Score™</span><span class="fit-badge-score">'+score+'/100</span><span class="fit-badge-match">'+lbl+'</span>';
+      card.dataset.fitScore=score;
+      if(cls==='excellent')excellent++;
+      else if(cls==='good-match')good++;
+      else if(cls==='fair')fair++;
+      else limited++;
       const base=card.getAttribute('href').split('?')[0];
       const params=[];
       if(h)params.push('h='+h);
@@ -332,7 +414,8 @@ permalink: "chairs/index.html"
       card.setAttribute('href',base+(params.length?'?'+params.join('&'):''));
     });
     const result=document.getElementById('ff-result');
-    if(h||w){result.textContent=goodCount+' good fit, '+partialCount+' partial fit found.';result.classList.add('active');}
+    result.textContent=excellent+' Excellent, '+good+' Good, '+fair+' Fair, '+limited+' Limited match found.';
+    result.classList.add('active');
     applyFilters();
   }
   function applyFilters() {
@@ -367,7 +450,7 @@ permalink: "chairs/index.html"
     document.getElementById('tog-depth').checked=false;
     document.getElementById('tog-tilt').checked=false;
     document.querySelectorAll('.pill.active').forEach(p=>p.classList.remove('active'));
-    document.querySelectorAll('.fit-badge').forEach(b=>{b.className='fit-badge';b.textContent='';});
+    document.querySelectorAll('.fit-badge').forEach(b=>{b.className='fit-badge';b.innerHTML='';});
     document.querySelectorAll('.product-card').forEach(c=>{c.classList.remove('hidden');delete c.dataset.fitScore;const base=c.getAttribute('href').split('?')[0];c.setAttribute('href',base);});
     document.getElementById('count').textContent=document.querySelectorAll('.product-card').length;
     document.getElementById('no-results').classList.remove('visible');
