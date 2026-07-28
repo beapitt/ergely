@@ -1,24 +1,1018 @@
 {
   "chairs": [
-    {"id":"salli-multiadjuster","identity":{"brand":"Salli","model":"MultiAdjuster","price_usd":800,"price_range":"600_plus","product_url":"https://www.salli.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":180,"weight_capacity_kg":120},"seat":{"seat_type":"split","split_seat":true,"seat_height_min_cm":57,"seat_height_max_cm":75,"seat_tilt":"multi","seat_width_cm":42,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Active sitters wanting the most adjustable split saddle seat on the market.","not_recommended_for":"Users with knee pain or those new to saddle chairs.","tags":["saddle","split","active-sitting"]},"seo":{"primary_need":"saddle posture support","use_case":"active sitting","filter_pages":[]}},
-    {"id":"salli-swingfit","identity":{"brand":"Salli","model":"SwingFit","price_usd":900,"price_range":"600_plus","product_url":"https://www.salli.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":180,"weight_capacity_kg":120},"seat":{"seat_type":"split","split_seat":true,"seat_height_min_cm":57,"seat_height_max_cm":75,"seat_tilt":"multi","seat_width_cm":42,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Users wanting a split saddle with swinging motion for core activation.","not_recommended_for":"Static sitters or beginners.","tags":["saddle","split","active-sitting"]},"seo":{"primary_need":"saddle posture support","use_case":"active sitting","filter_pages":[]}},
-    {"id":"salli-swing","identity":{"brand":"Salli","model":"Swing","price_usd":850,"price_range":"600_plus","product_url":"https://www.salli.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":180,"weight_capacity_kg":120},"seat":{"seat_type":"split","split_seat":true,"seat_height_min_cm":57,"seat_height_max_cm":75,"seat_tilt":"multi","seat_width_cm":42,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Split saddle with gentle swing for dynamic posture support.","not_recommended_for":"Users who prefer a static seat.","tags":["saddle","split","active-sitting"]},"seo":{"primary_need":"saddle posture support","use_case":"active sitting","filter_pages":[]}},
-    {"id":"salli-expert","identity":{"brand":"Salli","model":"Expert","price_usd":1000,"price_range":"600_plus","product_url":"https://www.salli.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":180,"weight_capacity_kg":120},"seat":{"seat_type":"split","split_seat":true,"seat_height_min_cm":57,"seat_height_max_cm":75,"seat_tilt":"multi","seat_width_cm":42,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"adjustable"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Professionals needing maximum adjustability and optional arm supports.","not_recommended_for":"Budget buyers.","tags":["saddle","split","professional"]},"seo":{"primary_need":"saddle posture support","use_case":"professional use","filter_pages":[]}},
-    {"id":"salli-classic","identity":{"brand":"Salli","model":"Classic","price_usd":750,"price_range":"600_plus","product_url":"https://www.salli.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":180,"weight_capacity_kg":120},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":57,"seat_height_max_cm":75,"seat_tilt":"forward","seat_width_cm":40,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Entry point to Salli quality with a classic single saddle design.","not_recommended_for":"Users who need a split seat.","tags":["saddle","single","entry-level"]},"seo":{"primary_need":"saddle posture support","use_case":"active sitting","filter_pages":[]}},
-    {"id":"salli-slim","identity":{"brand":"Salli","model":"Slim","price_usd":700,"price_range":"600_plus","product_url":"https://www.salli.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":140,"recommended_height_max_cm":165,"weight_capacity_kg":100},"seat":{"seat_type":"split","split_seat":true,"seat_height_min_cm":57,"seat_height_max_cm":75,"seat_tilt":"none","seat_width_cm":38,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Shorter and slimmer users wanting a narrow split saddle seat.","not_recommended_for":"Tall users over 165 cm.","tags":["saddle","split","slim","short-users"]},"seo":{"primary_need":"saddle posture support","use_case":"active sitting","filter_pages":[]}},
-    {"id":"bambach-original","identity":{"brand":"Bambach","model":"Original","price_usd":1100,"price_range":"600_plus","product_url":"https://www.bambach.co.uk","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":185,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":57,"seat_height_max_cm":76,"seat_tilt":"multi","seat_width_cm":38,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Medical and dental professionals needing a durable single saddle seat.","not_recommended_for":"Budget buyers or users needing a split seat.","tags":["saddle","single","medical","professional"]},"seo":{"primary_need":"saddle posture support","use_case":"professional use","filter_pages":[]}},
-    {"id":"bambach-cutaway","identity":{"brand":"Bambach","model":"Cutaway","price_usd":1100,"price_range":"600_plus","product_url":"https://www.bambach.co.uk","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":185,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":57,"seat_height_max_cm":76,"seat_tilt":"multi","seat_width_cm":36,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Users wanting reduced pressure on inner thighs with a cutaway design.","not_recommended_for":"Budget buyers.","tags":["saddle","single","cutaway","medical"]},"seo":{"primary_need":"saddle posture support","use_case":"professional use","filter_pages":[]}},
-    {"id":"bambach-small","identity":{"brand":"Bambach","model":"Small","price_usd":1100,"price_range":"600_plus","product_url":"https://www.bambach.co.uk","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":140,"recommended_height_max_cm":160,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":57,"seat_height_max_cm":76,"seat_tilt":"multi","seat_width_cm":34,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Shorter users and children needing a smaller saddle seat.","not_recommended_for":"Tall users over 160 cm.","tags":["saddle","single","small","short-users"]},"seo":{"primary_need":"saddle posture support","use_case":"professional use","filter_pages":[]}},
-    {"id":"hag-capisco-puls-8010","identity":{"brand":"HÅG","model":"Capisco Puls 8010","price_usd":650,"price_range":"600_plus","product_url":"https://www.flokk.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":185,"weight_capacity_kg":110},"seat":{"seat_type":"wide","split_seat":false,"seat_height_min_cm":47,"seat_height_max_cm":65,"seat_tilt":"multi","seat_width_cm":46,"foot_ring":false},"backrest":{"backrest_type":"full"},"armrests":{"armrest_type":"optional"},"build":{"warranty_years":5},"editorial":{"best_for_summary":"Standing desk users wanting a sit-stand saddle chair with full backrest.","not_recommended_for":"Users who prefer a split seat.","tags":["saddle","wide","standing-desk","hag"]},"seo":{"primary_need":"saddle posture support","use_case":"standing desk","filter_pages":[]}},
-    {"id":"hag-capisco-puls-8020","identity":{"brand":"HÅG","model":"Capisco Puls 8020","price_usd":700,"price_range":"600_plus","product_url":"https://www.flokk.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":185,"weight_capacity_kg":110},"seat":{"seat_type":"wide","split_seat":false,"seat_height_min_cm":47,"seat_height_max_cm":65,"seat_tilt":"multi","seat_width_cm":46,"foot_ring":false},"backrest":{"backrest_type":"full"},"armrests":{"armrest_type":"included"},"build":{"warranty_years":5},"editorial":{"best_for_summary":"Standing desk users wanting the Capisco Puls with armrests included.","not_recommended_for":"Users who prefer a split seat.","tags":["saddle","wide","standing-desk","hag"]},"seo":{"primary_need":"saddle posture support","use_case":"standing desk","filter_pages":[]}},
-    {"id":"hag-capisco-8106","identity":{"brand":"HÅG","model":"Capisco 8106","price_usd":1100,"price_range":"600_plus","product_url":"https://www.flokk.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":185,"weight_capacity_kg":110},"seat":{"seat_type":"wide","split_seat":false,"seat_height_min_cm":48,"seat_height_max_cm":66,"seat_tilt":"multi","seat_width_cm":49,"foot_ring":false},"backrest":{"backrest_type":"full"},"armrests":{"armrest_type":"optional"},"build":{"warranty_years":5},"editorial":{"best_for_summary":"Professionals wanting the iconic HÅG Capisco with premium upholstery.","not_recommended_for":"Budget buyers.","tags":["saddle","wide","standing-desk","hag","premium"]},"seo":{"primary_need":"saddle posture support","use_case":"standing desk","filter_pages":[]}},
-    {"id":"hag-capisco-8107","identity":{"brand":"HÅG","model":"Capisco 8107","price_usd":1400,"price_range":"600_plus","product_url":"https://www.flokk.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":155,"recommended_height_max_cm":185,"weight_capacity_kg":110},"seat":{"seat_type":"wide","split_seat":false,"seat_height_min_cm":48,"seat_height_max_cm":66,"seat_tilt":"multi","seat_width_cm":49,"foot_ring":false},"backrest":{"backrest_type":"full"},"armrests":{"armrest_type":"included"},"build":{"warranty_years":5},"editorial":{"best_for_summary":"Premium standing desk users wanting the top-spec HÅG Capisco with armrests.","not_recommended_for":"Budget buyers.","tags":["saddle","wide","standing-desk","hag","luxury"]},"seo":{"primary_need":"saddle posture support","use_case":"standing desk","filter_pages":[]}},
-    {"id":"focal-upright-locus-seat","identity":{"brand":"Focal Upright","model":"Locus Seat","price_usd":750,"price_range":"600_plus","product_url":"https://www.focaluprightfurniture.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":200,"weight_capacity_kg":136},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":78,"seat_height_max_cm":104,"seat_tilt":"forward","seat_width_cm":42,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Standing desk users wanting a leaning seat for active sit-stand work.","not_recommended_for":"Users who need a traditional seated position.","tags":["saddle","standing-desk","lean","active-sitting"]},"seo":{"primary_need":"saddle posture support","use_case":"standing desk","filter_pages":[]}},
-    {"id":"focal-upright-locus-work-stool","identity":{"brand":"Focal Upright","model":"Locus Work Stool","price_usd":500,"price_range":"300_600","product_url":"https://www.focaluprightfurniture.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":200,"weight_capacity_kg":136},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":78,"seat_height_max_cm":104,"seat_tilt":"forward","seat_width_cm":42,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":2},"editorial":{"best_for_summary":"Budget-friendly standing desk leaning stool for active sit-stand work.","not_recommended_for":"Traditional seated users.","tags":["saddle","standing-desk","budget","active-sitting"]},"seo":{"primary_need":"saddle posture support","use_case":"standing desk","filter_pages":[]}},
-    {"id":"jobri-betterposture-saddle","identity":{"brand":"Jobri","model":"BetterPosture Saddle","price_usd":120,"price_range":"100_300","product_url":"https://jobri.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":180,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":53,"seat_height_max_cm":71,"seat_tilt":"multi","seat_width_cm":40,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":1},"editorial":{"best_for_summary":"Budget buyers wanting an entry-level saddle chair with multi-tilt.","not_recommended_for":"Professional or heavy-duty use.","tags":["saddle","single","budget"]},"seo":{"primary_need":"saddle posture support","use_case":"active sitting","filter_pages":[]}},
-    {"id":"dr-lomilomi-saddle","identity":{"brand":"DR.LOMILOMI","model":"Saddle Chair","price_usd":90,"price_range":"under_100","product_url":"https://www.amazon.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":180,"weight_capacity_kg":180},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":51,"seat_height_max_cm":71,"seat_tilt":"none","seat_width_cm":40,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":1},"editorial":{"best_for_summary":"Budget saddle chair with high weight capacity for occasional use.","not_recommended_for":"Long professional use sessions.","tags":["saddle","single","budget","high-capacity"]},"seo":{"primary_need":"saddle posture support","use_case":"occasional use","filter_pages":[]}},
-    {"id":"vivo-saddle-seat-stool","identity":{"brand":"VIVO","model":"Saddle Seat Stool","price_usd":70,"price_range":"under_100","product_url":"https://vivo-us.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":180,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":54,"seat_height_max_cm":73,"seat_tilt":"none","seat_width_cm":38,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":1},"editorial":{"best_for_summary":"Entry-level saddle stool for users new to saddle seating on a tight budget.","not_recommended_for":"Professional or all-day use.","tags":["saddle","single","budget","entry-level"]},"seo":{"primary_need":"saddle posture support","use_case":"occasional use","filter_pages":[]}},
-    {"id":"boss-office-saddle-stool","identity":{"brand":"Boss Office","model":"Saddle Stool","price_usd":65,"price_range":"under_100","product_url":"https://www.bosschair.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":180,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":53,"seat_height_max_cm":71,"seat_tilt":"none","seat_width_cm":38,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":1},"editorial":{"best_for_summary":"Ultra-budget saddle stool for occasional home or salon use.","not_recommended_for":"All-day professional use.","tags":["saddle","single","budget"]},"seo":{"primary_need":"saddle posture support","use_case":"occasional use","filter_pages":[]}},
-    {"id":"flash-furniture-saddle","identity":{"brand":"Flash Furniture","model":"Saddle Stool","price_usd":60,"price_range":"under_100","product_url":"https://flashfurniture.com","image_url":""},"anthropometric_fit":{"recommended_height_min_cm":150,"recommended_height_max_cm":180,"weight_capacity_kg":113},"seat":{"seat_type":"single","split_seat":false,"seat_height_min_cm":50,"seat_height_max_cm":66,"seat_tilt":"none","seat_width_cm":36,"foot_ring":false},"backrest":{"backrest_type":"none"},"armrests":{"armrest_type":"none"},"build":{"warranty_years":1},"editorial":{"best_for_summary":"Cheapest saddle stool option for occasional or salon use.","not_recommended_for":"All-day professional use or back pain relief.","tags":["saddle","single","budget"]},"seo":{"primary_need":"saddle posture support","use_case":"occasional use","filter_pages":[]}}
+    {
+      "id": "salli-multiadjuster",
+      "identity": {
+        "brand": "Salli",
+        "model": "MultiAdjuster",
+        "price_usd": 800,
+        "price_range": "600_plus",
+        "product_url": "https://www.salli.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 120,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "split",
+        "split_seat": true,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 75,
+        "seat_tilt": "multi",
+        "seat_width_cm": 42,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Active sitters wanting the most adjustable split saddle seat on the market.",
+        "not_recommended_for": "Users with knee pain or those new to saddle chairs.",
+        "tags": [
+          "saddle",
+          "split",
+          "active-sitting"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "active sitting",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "salli-swingfit",
+      "identity": {
+        "brand": "Salli",
+        "model": "SwingFit",
+        "price_usd": 900,
+        "price_range": "600_plus",
+        "product_url": "https://www.salli.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 120,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "split",
+        "split_seat": true,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 75,
+        "seat_tilt": "multi",
+        "seat_width_cm": 42,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Users wanting a split saddle with swinging motion for core activation.",
+        "not_recommended_for": "Static sitters or beginners.",
+        "tags": [
+          "saddle",
+          "split",
+          "active-sitting"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "active sitting",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "salli-swing",
+      "identity": {
+        "brand": "Salli",
+        "model": "Swing",
+        "price_usd": 850,
+        "price_range": "600_plus",
+        "product_url": "https://www.salli.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 120,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "split",
+        "split_seat": true,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 75,
+        "seat_tilt": "multi",
+        "seat_width_cm": 42,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Split saddle with gentle swing for dynamic posture support.",
+        "not_recommended_for": "Users who prefer a static seat.",
+        "tags": [
+          "saddle",
+          "split",
+          "active-sitting"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "active sitting",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "salli-expert",
+      "identity": {
+        "brand": "Salli",
+        "model": "Expert",
+        "price_usd": 1000,
+        "price_range": "600_plus",
+        "product_url": "https://www.salli.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 120,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "split",
+        "split_seat": true,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 75,
+        "seat_tilt": "multi",
+        "seat_width_cm": 42,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "adjustable"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Professionals needing maximum adjustability and optional arm supports.",
+        "not_recommended_for": "Budget buyers.",
+        "tags": [
+          "saddle",
+          "split",
+          "professional"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "professional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "salli-classic",
+      "identity": {
+        "brand": "Salli",
+        "model": "Classic",
+        "price_usd": 750,
+        "price_range": "600_plus",
+        "product_url": "https://www.salli.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 120,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 75,
+        "seat_tilt": "forward",
+        "seat_width_cm": 40,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Entry point to Salli quality with a classic single saddle design.",
+        "not_recommended_for": "Users who need a split seat.",
+        "tags": [
+          "saddle",
+          "single",
+          "entry-level"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "active sitting",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "salli-slim",
+      "identity": {
+        "brand": "Salli",
+        "model": "Slim",
+        "price_usd": 700,
+        "price_range": "600_plus",
+        "product_url": "https://www.salli.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 140,
+        "recommended_height_max_cm": 165,
+        "weight_capacity_kg": 100,
+        "user_height_min_cm": 140,
+        "user_height_max_cm": 165
+      },
+      "seat": {
+        "seat_type": "split",
+        "split_seat": true,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 75,
+        "seat_tilt": "none",
+        "seat_width_cm": 38,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Shorter and slimmer users wanting a narrow split saddle seat.",
+        "not_recommended_for": "Tall users over 165 cm.",
+        "tags": [
+          "saddle",
+          "split",
+          "slim",
+          "short-users"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "active sitting",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "bambach-original",
+      "identity": {
+        "brand": "Bambach",
+        "model": "Original",
+        "price_usd": 1100,
+        "price_range": "600_plus",
+        "product_url": "https://www.bambach.co.uk",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 185,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 185
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 76,
+        "seat_tilt": "multi",
+        "seat_width_cm": 38,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Medical and dental professionals needing a durable single saddle seat.",
+        "not_recommended_for": "Budget buyers or users needing a split seat.",
+        "tags": [
+          "saddle",
+          "single",
+          "medical",
+          "professional"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "professional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "bambach-cutaway",
+      "identity": {
+        "brand": "Bambach",
+        "model": "Cutaway",
+        "price_usd": 1100,
+        "price_range": "600_plus",
+        "product_url": "https://www.bambach.co.uk",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 185,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 185
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 76,
+        "seat_tilt": "multi",
+        "seat_width_cm": 36,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Users wanting reduced pressure on inner thighs with a cutaway design.",
+        "not_recommended_for": "Budget buyers.",
+        "tags": [
+          "saddle",
+          "single",
+          "cutaway",
+          "medical"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "professional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "bambach-small",
+      "identity": {
+        "brand": "Bambach",
+        "model": "Small",
+        "price_usd": 1100,
+        "price_range": "600_plus",
+        "product_url": "https://www.bambach.co.uk",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 140,
+        "recommended_height_max_cm": 160,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 140,
+        "user_height_max_cm": 160
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 57,
+        "seat_height_max_cm": 76,
+        "seat_tilt": "multi",
+        "seat_width_cm": 34,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Shorter users and children needing a smaller saddle seat.",
+        "not_recommended_for": "Tall users over 160 cm.",
+        "tags": [
+          "saddle",
+          "single",
+          "small",
+          "short-users"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "professional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "hag-capisco-puls-8010",
+      "identity": {
+        "brand": "HÅG",
+        "model": "Capisco Puls 8010",
+        "price_usd": 650,
+        "price_range": "600_plus",
+        "product_url": "https://www.flokk.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 185,
+        "weight_capacity_kg": 110,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 185
+      },
+      "seat": {
+        "seat_type": "wide",
+        "split_seat": false,
+        "seat_height_min_cm": 47,
+        "seat_height_max_cm": 65,
+        "seat_tilt": "multi",
+        "seat_width_cm": 46,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "full"
+      },
+      "armrests": {
+        "armrest_type": "optional"
+      },
+      "build": {
+        "warranty_years": 5
+      },
+      "editorial": {
+        "best_for_summary": "Standing desk users wanting a sit-stand saddle chair with full backrest.",
+        "not_recommended_for": "Users who prefer a split seat.",
+        "tags": [
+          "saddle",
+          "wide",
+          "standing-desk",
+          "hag"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "standing desk",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "hag-capisco-puls-8020",
+      "identity": {
+        "brand": "HÅG",
+        "model": "Capisco Puls 8020",
+        "price_usd": 700,
+        "price_range": "600_plus",
+        "product_url": "https://www.flokk.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 185,
+        "weight_capacity_kg": 110,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 185
+      },
+      "seat": {
+        "seat_type": "wide",
+        "split_seat": false,
+        "seat_height_min_cm": 47,
+        "seat_height_max_cm": 65,
+        "seat_tilt": "multi",
+        "seat_width_cm": 46,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "full"
+      },
+      "armrests": {
+        "armrest_type": "included"
+      },
+      "build": {
+        "warranty_years": 5
+      },
+      "editorial": {
+        "best_for_summary": "Standing desk users wanting the Capisco Puls with armrests included.",
+        "not_recommended_for": "Users who prefer a split seat.",
+        "tags": [
+          "saddle",
+          "wide",
+          "standing-desk",
+          "hag"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "standing desk",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "hag-capisco-8106",
+      "identity": {
+        "brand": "HÅG",
+        "model": "Capisco 8106",
+        "price_usd": 1100,
+        "price_range": "600_plus",
+        "product_url": "https://www.flokk.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 185,
+        "weight_capacity_kg": 110,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 185
+      },
+      "seat": {
+        "seat_type": "wide",
+        "split_seat": false,
+        "seat_height_min_cm": 48,
+        "seat_height_max_cm": 66,
+        "seat_tilt": "multi",
+        "seat_width_cm": 49,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "full"
+      },
+      "armrests": {
+        "armrest_type": "optional"
+      },
+      "build": {
+        "warranty_years": 5
+      },
+      "editorial": {
+        "best_for_summary": "Professionals wanting the iconic HÅG Capisco with premium upholstery.",
+        "not_recommended_for": "Budget buyers.",
+        "tags": [
+          "saddle",
+          "wide",
+          "standing-desk",
+          "hag",
+          "premium"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "standing desk",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "hag-capisco-8107",
+      "identity": {
+        "brand": "HÅG",
+        "model": "Capisco 8107",
+        "price_usd": 1400,
+        "price_range": "600_plus",
+        "product_url": "https://www.flokk.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 155,
+        "recommended_height_max_cm": 185,
+        "weight_capacity_kg": 110,
+        "user_height_min_cm": 155,
+        "user_height_max_cm": 185
+      },
+      "seat": {
+        "seat_type": "wide",
+        "split_seat": false,
+        "seat_height_min_cm": 48,
+        "seat_height_max_cm": 66,
+        "seat_tilt": "multi",
+        "seat_width_cm": 49,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "full"
+      },
+      "armrests": {
+        "armrest_type": "included"
+      },
+      "build": {
+        "warranty_years": 5
+      },
+      "editorial": {
+        "best_for_summary": "Premium standing desk users wanting the top-spec HÅG Capisco with armrests.",
+        "not_recommended_for": "Budget buyers.",
+        "tags": [
+          "saddle",
+          "wide",
+          "standing-desk",
+          "hag",
+          "luxury"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "standing desk",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "focal-upright-locus-seat",
+      "identity": {
+        "brand": "Focal Upright",
+        "model": "Locus Seat",
+        "price_usd": 750,
+        "price_range": "600_plus",
+        "product_url": "https://www.focaluprightfurniture.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 200,
+        "weight_capacity_kg": 136,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 200
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 78,
+        "seat_height_max_cm": 104,
+        "seat_tilt": "forward",
+        "seat_width_cm": 42,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Standing desk users wanting a leaning seat for active sit-stand work.",
+        "not_recommended_for": "Users who need a traditional seated position.",
+        "tags": [
+          "saddle",
+          "standing-desk",
+          "lean",
+          "active-sitting"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "standing desk",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "focal-upright-locus-work-stool",
+      "identity": {
+        "brand": "Focal Upright",
+        "model": "Locus Work Stool",
+        "price_usd": 500,
+        "price_range": "300_600",
+        "product_url": "https://www.focaluprightfurniture.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 200,
+        "weight_capacity_kg": 136,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 200
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 78,
+        "seat_height_max_cm": 104,
+        "seat_tilt": "forward",
+        "seat_width_cm": 42,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 2
+      },
+      "editorial": {
+        "best_for_summary": "Budget-friendly standing desk leaning stool for active sit-stand work.",
+        "not_recommended_for": "Traditional seated users.",
+        "tags": [
+          "saddle",
+          "standing-desk",
+          "budget",
+          "active-sitting"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "standing desk",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "jobri-betterposture-saddle",
+      "identity": {
+        "brand": "Jobri",
+        "model": "BetterPosture Saddle",
+        "price_usd": 120,
+        "price_range": "100_300",
+        "product_url": "https://jobri.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 53,
+        "seat_height_max_cm": 71,
+        "seat_tilt": "multi",
+        "seat_width_cm": 40,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 1
+      },
+      "editorial": {
+        "best_for_summary": "Budget buyers wanting an entry-level saddle chair with multi-tilt.",
+        "not_recommended_for": "Professional or heavy-duty use.",
+        "tags": [
+          "saddle",
+          "single",
+          "budget"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "active sitting",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "dr-lomilomi-saddle",
+      "identity": {
+        "brand": "DR.LOMILOMI",
+        "model": "Saddle Chair",
+        "price_usd": 90,
+        "price_range": "under_100",
+        "product_url": "https://www.amazon.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 180,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 51,
+        "seat_height_max_cm": 71,
+        "seat_tilt": "none",
+        "seat_width_cm": 40,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 1
+      },
+      "editorial": {
+        "best_for_summary": "Budget saddle chair with high weight capacity for occasional use.",
+        "not_recommended_for": "Long professional use sessions.",
+        "tags": [
+          "saddle",
+          "single",
+          "budget",
+          "high-capacity"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "occasional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "vivo-saddle-seat-stool",
+      "identity": {
+        "brand": "VIVO",
+        "model": "Saddle Seat Stool",
+        "price_usd": 70,
+        "price_range": "under_100",
+        "product_url": "https://vivo-us.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 54,
+        "seat_height_max_cm": 73,
+        "seat_tilt": "none",
+        "seat_width_cm": 38,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 1
+      },
+      "editorial": {
+        "best_for_summary": "Entry-level saddle stool for users new to saddle seating on a tight budget.",
+        "not_recommended_for": "Professional or all-day use.",
+        "tags": [
+          "saddle",
+          "single",
+          "budget",
+          "entry-level"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "occasional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "boss-office-saddle-stool",
+      "identity": {
+        "brand": "Boss Office",
+        "model": "Saddle Stool",
+        "price_usd": 65,
+        "price_range": "under_100",
+        "product_url": "https://www.bosschair.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 53,
+        "seat_height_max_cm": 71,
+        "seat_tilt": "none",
+        "seat_width_cm": 38,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 1
+      },
+      "editorial": {
+        "best_for_summary": "Ultra-budget saddle stool for occasional home or salon use.",
+        "not_recommended_for": "All-day professional use.",
+        "tags": [
+          "saddle",
+          "single",
+          "budget"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "occasional use",
+        "filter_pages": []
+      }
+    },
+    {
+      "id": "flash-furniture-saddle",
+      "identity": {
+        "brand": "Flash Furniture",
+        "model": "Saddle Stool",
+        "price_usd": 60,
+        "price_range": "under_100",
+        "product_url": "https://flashfurniture.com",
+        "image_url": ""
+      },
+      "anthropometric_fit": {
+        "recommended_height_min_cm": 150,
+        "recommended_height_max_cm": 180,
+        "weight_capacity_kg": 113,
+        "user_height_min_cm": 150,
+        "user_height_max_cm": 180
+      },
+      "seat": {
+        "seat_type": "single",
+        "split_seat": false,
+        "seat_height_min_cm": 50,
+        "seat_height_max_cm": 66,
+        "seat_tilt": "none",
+        "seat_width_cm": 36,
+        "foot_ring": false
+      },
+      "backrest": {
+        "backrest_type": "none"
+      },
+      "armrests": {
+        "armrest_type": "none"
+      },
+      "build": {
+        "warranty_years": 1
+      },
+      "editorial": {
+        "best_for_summary": "Cheapest saddle stool option for occasional or salon use.",
+        "not_recommended_for": "All-day professional use or back pain relief.",
+        "tags": [
+          "saddle",
+          "single",
+          "budget"
+        ]
+      },
+      "seo": {
+        "primary_need": "saddle posture support",
+        "use_case": "occasional use",
+        "filter_pages": []
+      }
+    }
   ]
 }
