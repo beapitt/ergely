@@ -3347,7 +3347,7 @@
           "Global"
         ],
         "product_url": "https://www.vitra.com/en-it/product/details/id-air",
-        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/c_pad,w_600,h_600,b_white/v1785160024/vitra-id-air_sqjrrz.jpg"
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/vitra-id-air_ldv8fd.png"
       },
       "anthropometric_fit": {
         "user_height_min_cm": null,
@@ -3446,64 +3446,6 @@
       "editorial": {
         "best_for_summary": "Compact work spaces, budget-conscious buyers, and users needing space-saving flip-up armrests",
         "not_recommended_for": "Heavy-duty users, tall individuals over 185 cm, or those requiring 3D/4D armrest adjustments",
-        "tags": []
-      }
-    },
-    {
-      "id": "haworth-aloha-ergonomic-office-chair",
-      "identity": {
-        "brand": "Haworth",
-        "model": "Aloha Ergonomic Office Chair",
-        "color_options": [
-          "Black",
-          "Grey"
-        ],
-        "price_usd": 350.0,
-        "price_range": "300_600",
-        "availability": [
-          "EU"
-        ],
-        "product_url": "https://shopping.haworth.com/en-it/products/aloha-ergonomic-office-chair",
-        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785160024/haworth-aloha-ergonomic-office-chair_kkznkc.webp"
-      },
-      "anthropometric_fit": {
-        "user_height_min_cm": 150,
-        "user_height_max_cm": 185,
-        "weight_capacity_kg": 120
-      },
-      "seat": {
-        "seat_width_cm": 48.0,
-        "seat_height_min_cm": 40.0,
-        "seat_height_max_cm": 52.0,
-        "seat_depth_adjustable": false,
-        "seat_material": "foam",
-        "forward_seat_tilt": false
-      },
-      "backrest": {
-        "backrest_material": "mesh",
-        "recline_max_degrees": null,
-        "recline_positions": 3
-      },
-      "lumbar": {
-        "lumbar_present": true,
-        "lumbar_type": "fixed"
-      },
-      "armrests": {
-        "armrest_type": "fixed"
-      },
-      "headrest": {
-        "headrest_present": false,
-        "headrest_adjustable": false
-      },
-      "build": {
-        "warranty_years": 5,
-        "certifications": [
-          "GREENGUARD Gold"
-        ]
-      },
-      "editorial": {
-        "best_for_summary": "Budget-constrained basic workstations requiring standard ergonomic support and brand reliability.",
-        "not_recommended_for": "Users requiring adjustable armrests, seat depth customization, or extended heavy-duty daily use.",
         "tags": []
       }
     },
@@ -3619,120 +3561,6 @@
       "editorial": {
         "best_for_summary": "Big and tall individuals up to 500 lbs (226.8 kg) looking for a wide, high-density foam seat and space-saving flip-up armrests",
         "not_recommended_for": "Users needing 3D/4D armrest adjustment or advanced seat depth sliding capabilities",
-        "tags": []
-      }
-    },
-    {
-      "id": "humanscale-diffrient-world-task-chair-with-fabric-backrest",
-      "identity": {
-        "brand": "Humanscale",
-        "model": "Diffrient World Task Chair with Fabric Backrest",
-        "color_options": [],
-        "price_usd": 1159.0,
-        "price_range": "over_1000",
-        "availability": [
-          "In Stock"
-        ],
-        "product_url": "https://shop.humanscale.com/products/world-task-chair-fabric-backrest?variant=42983864926298",
-        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785160023/humanscale-diffrient-world-task-chair-with-fabric-backrest_dbpwym.webp"
-      },
-      "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
-      },
-      "seat": {
-        "seat_width_cm": 52.0,
-        "seat_height_min_cm": 41.0,
-        "seat_height_max_cm": 53.0,
-        "seat_depth_adjustable": true,
-        "seat_material": "Form-sensa tri-panel mesh",
-        "forward_seat_tilt": false
-      },
-      "backrest": {
-        "backrest_material": "Upholstered fabric",
-        "recline_max_degrees": null,
-        "recline_positions": null
-      },
-      "lumbar": {
-        "lumbar_present": true,
-        "lumbar_type": "Self-adjusting pivot support"
-      },
-      "armrests": {
-        "armrest_type": "Height-adjustable armrests"
-      },
-      "headrest": {
-        "headrest_present": false,
-        "headrest_adjustable": null
-      },
-      "build": {
-        "warranty_years": 15,
-        "certifications": [
-          "DECLARE® - Red List Approved",
-          "BIFMA LEVEL®",
-          "SCS Indoor Advantage Gold"
-        ]
-      },
-      "editorial": {
-        "best_for_summary": "Users seeking the lightweight, all-mesh seat platform of the Diffrient World line paired with a softer upholstered fabric backrest and automatic weight-compensating recline.",
-        "not_recommended_for": "Users requiring a headrest or manual locking recline positions.",
-        "tags": []
-      }
-    },
-    {
-      "id": "humanscale-diffrient-world-lm-task-chair",
-      "identity": {
-        "brand": "Humanscale",
-        "model": "Diffrient World LM Task Chair",
-        "color_options": [],
-        "price_usd": 1259.0,
-        "price_range": "over_1000",
-        "availability": [
-          "In Stock"
-        ],
-        "product_url": "https://shop.humanscale.com/products/world-lm-task-chair?variant=43003183431770",
-        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785160023/humanscale-diffrient-world-lm-task-chair_mrzwoa.webp"
-      },
-      "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
-      },
-      "seat": {
-        "seat_width_cm": 52.0,
-        "seat_height_min_cm": 41.0,
-        "seat_height_max_cm": 53.0,
-        "seat_depth_adjustable": true,
-        "seat_material": "Form-sensa tri-panel mesh",
-        "forward_seat_tilt": false
-      },
-      "backrest": {
-        "backrest_material": "Tri-panel mesh with leather or specialized accent details",
-        "recline_max_degrees": null,
-        "recline_positions": null
-      },
-      "lumbar": {
-        "lumbar_present": true,
-        "lumbar_type": "Self-adjusting form-sensing mesh backrest"
-      },
-      "armrests": {
-        "armrest_type": "Height-adjustable armrests"
-      },
-      "headrest": {
-        "headrest_present": false,
-        "headrest_adjustable": null
-      },
-      "build": {
-        "warranty_years": 15,
-        "certifications": [
-          "DECLARE® - Red List Approved",
-          "BIFMA LEVEL®",
-          "SCS Indoor Advantage Gold"
-        ]
-      },
-      "editorial": {
-        "best_for_summary": "Professional workspaces requiring the lightweight, minimalist design of the Diffrient World chair enhanced with premium leather or special materials.",
-        "not_recommended_for": "Users needing a headrest or manual tension adjustment mechanisms.",
         "tags": []
       }
     },
