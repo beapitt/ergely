@@ -79,9 +79,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785180279/humanscale-freedom-ocean-task-chair-with-headrest_yl1gop.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 181.4
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 198,
+        "weight_capacity_kg": 181.4,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 67.95,
@@ -146,9 +147,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785180040/vitra-acx-softknit_shcxdb.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": null
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": null,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 48.0,
@@ -330,9 +332,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785181484/ikea-markus_jgc8jk.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 125
+        "user_height_min_cm": 177,
+        "user_height_max_cm": 219,
+        "weight_capacity_kg": 125,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 53.0,
@@ -572,9 +575,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785182437/humanscale-freedom-ocean-task-chair_t2onmj.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 181.4
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 198,
+        "weight_capacity_kg": 181.4,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 67.95,
@@ -639,9 +643,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785182740/vitra-acx-softknit-high_dfg4uu.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": null
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": null,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 48.0,
@@ -819,9 +824,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785183285/ikea-gronfjall_ihijs2.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 125
+        "user_height_min_cm": 177,
+        "user_height_max_cm": 219,
+        "weight_capacity_kg": 125,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -1053,9 +1059,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785184145/humanscale-liberty-task-chair_dbcuip.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -1120,9 +1127,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785184393/vitra-acx-pad_wjhvvw.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": null
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": null,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 48.0,
@@ -1302,9 +1310,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785184828/ikea-styrspel_xjkgyv.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 125
+        "user_height_min_cm": 185,
+        "user_height_max_cm": 227,
+        "weight_capacity_kg": 125,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 50.0,
@@ -1541,9 +1550,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785185493/humanscale-liberty-task-chair-with-fabric-backrest_plqlyz.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -1608,9 +1618,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785185745/vitra-acx-pad-high_hdqraz.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": null
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": null,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 48.0,
@@ -1959,9 +1970,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785186801/humanscale-liberty-ocean-task-chair_dlhr1h.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -2026,9 +2038,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785222825/vitra-acx-light_iotbey.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": null
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": null,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 48.0,
@@ -2383,9 +2396,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785223918/humanscale-liberty-ocean-task-chair-with-fabric-backrest_yayv7p.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -2451,14 +2465,15 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785224089/vitra-id-soft-l_lwdg4p.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 196,
+        "weight_capacity_kg": 150.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": null,
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 41,
+        "seat_height_max_cm": 51,
         "seat_depth_adjustable": true,
         "seat_material": "Polyurethane foam upholstery",
         "forward_seat_tilt": true
@@ -2746,9 +2761,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785224878/humanscale-smart-ocean-task-chair_kkuddd.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -2814,14 +2830,15 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785224991/vitra-id-trim_ujxt7d.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150.0
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 192,
+        "weight_capacity_kg": 150.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": null,
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 40,
+        "seat_height_max_cm": 50,
         "seat_depth_adjustable": true,
         "seat_material": "Polyurethane foam upholstery",
         "forward_seat_tilt": true
@@ -2873,9 +2890,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785225121/branch-multitask-chair_lgntfh.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": null
+        "user_height_min_cm": 176,
+        "user_height_max_cm": 211,
+        "weight_capacity_kg": null,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": null,
@@ -3044,9 +3062,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785225556/humanscale-path-task-chair_yup35u.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -3112,14 +3131,15 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785225734/vitra-id-trim-l_fplben.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 196,
+        "weight_capacity_kg": 150.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": null,
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 41,
+        "seat_height_max_cm": 51,
         "seat_depth_adjustable": true,
         "seat_material": "Polyurethane foam upholstery",
         "forward_seat_tilt": true
@@ -3282,9 +3302,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785226344/humanscale-path-task-chair-with-wrapped-back_tujckw.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -3350,14 +3371,15 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/vitra-id-air_ldv8fd.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 150.0
+        "user_height_min_cm": 154,
+        "user_height_max_cm": 192,
+        "weight_capacity_kg": 150.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": null,
-        "seat_height_min_cm": null,
-        "seat_height_max_cm": null,
+        "seat_height_min_cm": 40,
+        "seat_height_max_cm": 50,
         "seat_depth_adjustable": true,
         "seat_material": "Polyurethane foam upholstery",
         "forward_seat_tilt": true
@@ -3464,9 +3486,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785160024/humanscale-diffrient-world-task-chair_ppyt4t.webp"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 52.0,
@@ -3579,9 +3602,10 @@
         "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785226934/humanscale-trea-lite-task-chair_oaazow.png"
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.0
+        "user_height_min_cm": 158,
+        "user_height_max_cm": 204,
+        "weight_capacity_kg": 136.0,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 48.0,
