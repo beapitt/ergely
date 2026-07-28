@@ -291,9 +291,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 110
+        "user_height_min_cm": 169,
+        "user_height_max_cm": 169,
+        "weight_capacity_kg": 110,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
@@ -493,9 +494,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 108.9
+        "user_height_min_cm": 196,
+        "user_height_max_cm": 196,
+        "weight_capacity_kg": 108.9,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
@@ -559,9 +561,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 91
+        "user_height_min_cm": 196,
+        "user_height_max_cm": 196,
+        "weight_capacity_kg": 91,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
@@ -757,9 +760,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 113.4
+        "user_height_min_cm": 205,
+        "user_height_max_cm": 303,
+        "weight_capacity_kg": 113.4,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
@@ -823,9 +827,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 136.1
+        "user_height_min_cm": 225,
+        "user_height_max_cm": 323,
+        "weight_capacity_kg": 136.1,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
@@ -889,9 +894,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 113.4
+        "user_height_min_cm": 205,
+        "user_height_max_cm": 303,
+        "weight_capacity_kg": 113.4,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
@@ -955,9 +961,10 @@
         "image_url": ""
       },
       "anthropometric_fit": {
-        "user_height_min_cm": null,
-        "user_height_max_cm": null,
-        "weight_capacity_kg": 110
+        "user_height_min_cm": 227,
+        "user_height_max_cm": 335,
+        "weight_capacity_kg": 110,
+        "height_estimated": true
       },
       "seat": {
         "seat_width_cm": 40,
