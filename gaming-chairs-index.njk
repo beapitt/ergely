@@ -315,7 +315,7 @@ permalink: "gaming-chairs/index.html"
       const hMin=parseFloat(card.dataset.heightMin),hMax=parseFloat(card.dataset.heightMax),wMax=parseFloat(card.dataset.weightMax);
       let heightFit=null,weightFit=null;
       if(h&&hMin&&hMax){if(h>=hMin&&h<=hMax)heightFit='good';else if(Math.abs(h-hMin)<=5||Math.abs(h-hMax)<=5)heightFit='partial';else heightFit='poor';}else heightFit=h?'unknown':null;
-      if(w&&wMax)weightFit=w<=wMax?'good':'poor';else weightFit=w?'unknown':null;
+      if(w&&wMax){if(w<=wMax*0.9)weightFit='good';else if(w<=wMax)weightFit='partial';else weightFit='poor';}else weightFit=w?'unknown':null;
       const fits=[heightFit,weightFit].filter(Boolean);
       badge.className='fit-badge';
       if(fits.includes('poor')){badge.textContent='Poor fit';badge.classList.add('poor');card.dataset.fitScore='0';}
@@ -324,7 +324,7 @@ permalink: "gaming-chairs/index.html"
       else card.dataset.fitScore='1';
     });
     const result=document.getElementById('ff-result');
-    if(h||w){result.textContent=goodCount+' good fit, '+partialCount+' partial fit found.';result.classList.add('active');}
+    if(h||w){const poorCount=document.querySelectorAll('.fit-badge.poor').length;result.textContent=goodCount+' good fit, '+partialCount+' partial fit, '+poorCount+' poor fit found.';result.classList.add('active');}
     applyFilters();
   }
   function applyFilters() {
