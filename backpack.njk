@@ -1,0 +1,296 @@
+---
+pagination:
+  data: backpacks.packs
+  size: 1
+  alias: pack
+permalink: "backpacks/{{ pack.id }}/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- set pageDesc -%}{{ pack.identity.brand }} {{ pack.identity.model }} ({{ pack.identity.size }}). {{ pack.editorial.best_for_summary }}.{% if pack.fit.torso_min_cm %} Fits torso {{ pack.fit.torso_min_cm | round(0) }}–{{ pack.fit.torso_max_cm | round(0) }} cm.{% endif %}{% if pack.identity.price_usd %} From ${{ pack.identity.price_usd }}.{% endif %}{%- endset -%}
+  <title>{{ pack.identity.brand }} {{ pack.identity.model }} {{ pack.identity.size }} Review | FitMyPack</title>
+  <meta name="description" content="{{ pageDesc }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fitmypack.com/backpacks/{{ pack.id }}/">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black:#111111;--white:#FFFFFF;--offwhite:#F7F7F7;--border:#E5E5E5;--muted:#6B6B6B;--accent:#E05A2B;--green:#2D6A4F;--green-bg:#EAF4EE;--red:#9B2020;--red-bg:#FAEAEA;--font:'Inter',system-ui,sans-serif;--mono:'DM Mono',monospace; }
+    body { font-family:var(--font);background:var(--white);color:var(--black);font-size:15px;line-height:1.6; }
+    a { color:inherit;text-decoration:none; }
+    nav { background:var(--black);height:56px;display:flex;align-items:center;padding:0 32px;position:sticky;top:0;z-index:200;gap:32px; }
+    .logo { font-size:18px;font-weight:900;color:var(--white);letter-spacing:-0.03em; }
+    .logo span { color:var(--accent); }
+    .nav-links a { color:rgba(255,255,255,0.7);font-size:13px;font-weight:500;padding:5px 12px;border-radius:5px; }
+    .nav-links a.active { color:var(--white); }
+    .nav-right { margin-left:auto; }
+    .nav-right a { color:rgba(255,255,255,0.6);font-size:13px;font-weight:500;padding:5px 12px; }
+    .breadcrumb { max-width:1100px;margin:0 auto;padding:12px 32px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px; }
+    .breadcrumb a { color:var(--muted); }
+    .breadcrumb a:hover { color:var(--accent); }
+    .product-wrap { max-width:1100px;margin:0 auto;padding:24px 32px 64px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start; }
+    .product-gallery { position:sticky;top:76px; }
+    .product-image-wrap { background:var(--offwhite);border:1px solid var(--border);border-radius:12px;overflow:hidden;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;cursor:zoom-in;position:relative; }
+    .product-image-wrap img { width:100%;height:100%;object-fit:cover;transition:transform 0.2s; }
+    .product-image-wrap:hover img { transform:scale(1.03); }
+    .img-placeholder { font-size:64px;opacity:0.2; }
+    .zoom-hint { position:absolute;bottom:10px;right:12px;font-size:11px;color:var(--muted);background:rgba(255,255,255,0.9);padding:2px 8px;border-radius:99px;border:1px solid var(--border);pointer-events:none; }
+    .lightbox { display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out; }
+    .lightbox.open { display:flex; }
+    .lightbox img { max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px; }
+    .lightbox-close { position:absolute;top:20px;right:24px;font-size:32px;color:#fff;cursor:pointer;background:none;border:none;font-family:var(--font); }
+    .price-box { margin-top:16px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px; }
+    .price-label { font-size:12px;color:var(--muted);margin-bottom:4px; }
+    .price-value { font-size:28px;font-weight:800;letter-spacing:-0.03em;margin-bottom:12px; }
+    .btn-buy { display:block;width:100%;padding:12px;background:var(--black);color:var(--white);font-weight:700;font-size:14px;border:none;border-radius:8px;cursor:pointer;font-family:var(--font);text-align:center;transition:background 0.15s; }
+    .btn-buy:hover { background:#333; }
+    .quick-specs { margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:0; }
+    .quick-spec { display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:8px 0;border-bottom:1px solid var(--border); }
+    .quick-spec:nth-last-child(-n+2) { border-bottom:none; }
+    .qs-label { color:var(--muted); }
+    .qs-value { font-weight:600;font-family:var(--mono);font-size:12px; }
+    .product-info { display:flex;flex-direction:column;gap:20px; }
+    .product-brand { font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em; }
+    .product-title { font-size:28px;font-weight:900;letter-spacing:-0.02em;line-height:1.2; }
+    .product-size-badge { display:inline-block;font-size:12px;font-weight:600;font-family:var(--mono);background:var(--offwhite);color:var(--muted);padding:3px 10px;border-radius:6px;border:1px solid var(--border);margin-top:4px; }
+    .product-summary { font-size:15px;color:var(--muted);line-height:1.6; }
+    .editorial-grid { display:grid;grid-template-columns:1fr 1fr;gap:12px; }
+    .editorial-box { border-radius:8px;padding:14px; }
+    .editorial-box.best { background:var(--green-bg);border:1px solid #c3e6d0; }
+    .editorial-box.not { background:var(--red-bg);border:1px solid #f0c4c4; }
+    .editorial-label { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px; }
+    .editorial-box.best .editorial-label { color:var(--green); }
+    .editorial-box.not .editorial-label { color:var(--red); }
+    .editorial-text { font-size:13px;line-height:1.5; }
+    .fit-checker { background:var(--offwhite);border:1px solid var(--border);border-radius:10px;padding:20px; }
+    .fit-checker-title { font-size:14px;font-weight:700;margin-bottom:14px; }
+    .fit-checker-inputs { display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px; }
+    .fit-field { display:flex;flex-direction:column;gap:4px; }
+    .fit-field label { font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em; }
+    .fit-field input { padding:8px 10px;border:1px solid var(--border);border-radius:6px;font-size:14px;font-family:var(--font);background:var(--white); }
+    .fit-field input:focus { outline:2px solid var(--accent);border-color:transparent; }
+    .btn-check { padding:10px 20px;background:var(--black);color:var(--white);font-weight:700;font-size:13px;border:none;border-radius:6px;cursor:pointer;font-family:var(--font); }
+    .fit-result-box { display:none;margin-top:12px;padding:12px 14px;border-radius:8px;font-size:13px;line-height:1.5; }
+    .fit-result-box.good { background:var(--green-bg);border:1px solid #c3e6d0;color:var(--green); }
+    .fit-result-box.poor { background:var(--red-bg);border:1px solid #f0c4c4;color:var(--red); }
+    .fit-result-box.active { display:block; }
+    .score-box { display:none;margin-top:12px;background:var(--white);border:1.5px solid var(--black);border-radius:10px;padding:16px; }
+    .score-box.active { display:block; }
+    .score-title { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent);margin-bottom:8px; }
+    .score-number { font-size:36px;font-weight:900;letter-spacing:-0.03em;font-family:var(--mono); }
+    .score-label { font-size:13px;font-weight:600;color:var(--muted);margin-top:2px; }
+    .score-rows { margin-top:12px;display:flex;flex-direction:column;gap:6px; }
+    .score-row { display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-bottom:1px solid var(--border); }
+    .score-row:last-child { border-bottom:none; }
+    .score-row span:first-child { color:var(--muted); }
+    .score-row span:last-child { font-weight:700;font-family:var(--mono); }
+    .specs-section { max-width:1100px;margin:0 auto;padding:0 32px 64px; }
+    .specs-title { font-size:18px;font-weight:800;margin-bottom:20px; }
+    .specs-group { border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:10px; }
+    .specs-group-header { padding:12px 16px;background:var(--offwhite);font-size:13px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;border:none;width:100%;font-family:var(--font);text-align:left; }
+    .specs-group-body { padding:0 16px; }
+    .specs-group-body.hidden { display:none; }
+    .spec-row { display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px; }
+    .spec-row:last-child { border-bottom:none; }
+    .spec-label { color:var(--muted); }
+    .spec-value { font-weight:600;font-family:var(--mono);font-size:12px; }
+    footer { background:var(--black);padding:40px 32px 24px; }
+    .footer-inner { max-width:1100px;margin:0 auto; }
+    .footer-logo { font-size:18px;font-weight:900;color:var(--white);letter-spacing:-0.03em; }
+    .footer-logo span { color:var(--accent); }
+    .footer-copy { font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px; }
+    .footer-bottom { font-size:12px;color:rgba(255,255,255,0.3);margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1); }
+    @media(max-width:900px){.product-wrap{grid-template-columns:1fr;gap:24px;}.product-gallery{position:static;}.editorial-grid{grid-template-columns:1fr;}.quick-specs{grid-template-columns:1fr;}.fit-checker-inputs{grid-template-columns:1fr;}.specs-section{padding:0 16px 48px;}}
+    @media(max-width:600px){nav{padding:0 16px;}.breadcrumb,.product-wrap{padding-left:16px;padding-right:16px;}.product-title{font-size:22px;}}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">FitMy<span>Pack</span></a>
+  <div class="nav-links">
+    <a href="/backpacks/" class="active">Backpacks</a>
+  </div>
+  <div class="nav-right">
+    <a href="/how-it-works/">How it works</a>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> ›
+  <a href="/backpacks/">Backpacks</a> ›
+  <span>{{ pack.identity.brand }} {{ pack.identity.model }} {{ pack.identity.size }}</span>
+</div>
+
+<div class="product-wrap">
+  <aside class="product-gallery">
+    <div class="product-image-wrap" onclick="openLightbox(this)">
+      {% if pack.identity.image_url %}
+        <img src="{{ pack.identity.image_url }}" alt="{{ pack.identity.brand }} {{ pack.identity.model }}" loading="eager">
+        <span class="zoom-hint">🔍 Click to enlarge</span>
+      {% else %}
+        <div class="img-placeholder">🎒</div>
+      {% endif %}
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <div class="price-box">
+      <div class="price-label">Price (approx.)</div>
+      <div class="price-value">{% if pack.identity.price_usd %}${{ pack.identity.price_usd }}{% else %}—{% endif %}</div>
+      <a href="{{ pack.identity.product_url }}" target="_blank" rel="noopener sponsored" class="btn-buy">
+        Check price at {{ pack.identity.brand }} →
+      </a>
+    </div>
+
+    <div class="quick-specs">
+      {% if pack.specs.volume_liters %}<div class="quick-spec"><span class="qs-label">Volume</span><span class="qs-value">{{ pack.specs.volume_liters }}L</span></div>{% endif %}
+      {% if pack.specs.weight_kg %}<div class="quick-spec"><span class="qs-label">Weight</span><span class="qs-value">{{ pack.specs.weight_kg }} kg</span></div>{% endif %}
+      {% if pack.fit.torso_min_cm and pack.fit.torso_max_cm %}<div class="quick-spec"><span class="qs-label">Fits torso</span><span class="qs-value">{{ pack.fit.torso_min_cm | round(0) }}–{{ pack.fit.torso_max_cm | round(0) }} cm</span></div>{% endif %}
+      {% if pack.fit.waist_min_cm and pack.fit.waist_max_cm %}<div class="quick-spec"><span class="qs-label">Fits waist</span><span class="qs-value">{{ pack.fit.waist_min_cm | round(0) }}–{{ pack.fit.waist_max_cm | round(0) }} cm</span></div>{% endif %}
+      {% if pack.specs.frame_type %}<div class="quick-spec"><span class="qs-label">Frame</span><span class="qs-value">{{ pack.specs.frame_type }}</span></div>{% endif %}
+      {% if pack.specs.raincover_included is not none %}<div class="quick-spec"><span class="qs-label">Raincover</span><span class="qs-value">{{ 'Included' if pack.specs.raincover_included else 'Not included' }}</span></div>{% endif %}
+    </div>
+  </aside>
+
+  <div class="product-info">
+    <div>
+      <div class="product-brand">{{ pack.identity.brand }}</div>
+      <h1 class="product-title">{{ pack.identity.model }}</h1>
+      <span class="product-size-badge">{{ pack.identity.size }} · {{ pack.identity.gender }}</span>
+      <p class="product-summary" style="margin-top:12px;">{{ pack.editorial.best_for_summary }}</p>
+    </div>
+
+    <div class="editorial-grid">
+      <div class="editorial-box best">
+        <div class="editorial-label">✓ Best for</div>
+        <div class="editorial-text">{{ pack.editorial.best_for_summary }}</div>
+      </div>
+      <div class="editorial-box not">
+        <div class="editorial-label">✕ Not recommended for</div>
+        <div class="editorial-text">{{ pack.editorial.not_recommended_for }}</div>
+      </div>
+    </div>
+
+    <div class="fit-checker">
+      <div class="fit-checker-title">Does this pack fit you?</div>
+      <div class="fit-checker-inputs">
+        <div class="fit-field">
+          <label for="fc-torso">Torso length (cm)</label>
+          <input type="number" id="fc-torso" placeholder="e.g. 46" min="30" max="70">
+        </div>
+        <div class="fit-field">
+          <label for="fc-waist">Waist circumference (cm)</label>
+          <input type="number" id="fc-waist" placeholder="e.g. 85" min="50" max="180">
+        </div>
+      </div>
+      <button class="btn-check" onclick="checkFit()">Check fit</button>
+      <div class="fit-result-box" id="fit-result"></div>
+    </div>
+
+    <div class="score-box" id="score-box">
+      <div class="score-title">FitMyPack Score™</div>
+      <div class="score-number" id="score-number">—</div>
+      <div class="score-label" id="score-label"></div>
+      <div class="score-rows">
+        <div class="score-row"><span>Torso compatibility (70%)</span><span id="score-torso">—</span></div>
+        <div class="score-row"><span>Waist compatibility (30%)</span><span id="score-waist">—</span></div>
+        <div class="score-row"><span>Overall FitMyPack Score™</span><span id="score-total">—</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="specs-section">
+  <div class="specs-title">Full specifications</div>
+  <div class="specs-group">
+    <button class="specs-group-header" onclick="toggleSpecs(this)">Fit dimensions <span>▲</span></button>
+    <div class="specs-group-body">
+      {% if pack.fit.torso_min_cm and pack.fit.torso_max_cm %}<div class="spec-row"><span class="spec-label">Fits torso length</span><span class="spec-value">{{ pack.fit.torso_min_cm | round(1) }}–{{ pack.fit.torso_max_cm | round(1) }} cm</span></div>{% endif %}
+      {% if pack.fit.waist_min_cm and pack.fit.waist_max_cm %}<div class="spec-row"><span class="spec-label">Fits waist circumference</span><span class="spec-value">{{ pack.fit.waist_min_cm | round(1) }}–{{ pack.fit.waist_max_cm | round(1) }} cm</span></div>{% endif %}
+    </div>
+  </div>
+  <div class="specs-group">
+    <button class="specs-group-header" onclick="toggleSpecs(this)">Pack specs <span>▾</span></button>
+    <div class="specs-group-body hidden">
+      {% if pack.specs.volume_liters %}<div class="spec-row"><span class="spec-label">Volume</span><span class="spec-value">{{ pack.specs.volume_liters }}L</span></div>{% endif %}
+      {% if pack.specs.weight_kg %}<div class="spec-row"><span class="spec-label">Weight</span><span class="spec-value">{{ pack.specs.weight_kg }} kg</span></div>{% endif %}
+      {% if pack.specs.frame_type %}<div class="spec-row"><span class="spec-label">Frame type</span><span class="spec-value">{{ pack.specs.frame_type }}</span></div>{% endif %}
+      {% if pack.specs.best_use %}<div class="spec-row"><span class="spec-label">Best use</span><span class="spec-value">{{ pack.specs.best_use }}</span></div>{% endif %}
+      {% if pack.specs.raincover_included is not none %}<div class="spec-row"><span class="spec-label">Raincover included</span><span class="spec-value">{{ 'Yes' if pack.specs.raincover_included else 'No' }}</span></div>{% endif %}
+      {% if pack.specs.reservoir_compatible is not none %}<div class="spec-row"><span class="spec-label">Hydration compatible</span><span class="spec-value">{{ 'Yes' if pack.specs.reservoir_compatible else 'No' }}</span></div>{% endif %}
+      {% if pack.specs.hipbelt_pockets is not none %}<div class="spec-row"><span class="spec-label">Hip belt pockets</span><span class="spec-value">{{ 'Yes' if pack.specs.hipbelt_pockets else 'No' }}</span></div>{% endif %}
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">FitMy<span>Pack</span></div>
+    <div class="footer-copy">Body-first backpack finder. Verified specs, no sponsored rankings.</div>
+    <div class="footer-bottom">FitMyPack is reader-supported. We may earn a referral fee at no cost to you.</div>
+  </div>
+</footer>
+
+<script>
+  const TORSO_MIN = {{ pack.fit.torso_min_cm if pack.fit.torso_min_cm else 'null' }};
+  const TORSO_MAX = {{ pack.fit.torso_max_cm if pack.fit.torso_max_cm else 'null' }};
+  const WAIST_MIN = {{ pack.fit.waist_min_cm if pack.fit.waist_min_cm else 'null' }};
+  const WAIST_MAX = {{ pack.fit.waist_max_cm if pack.fit.waist_max_cm else 'null' }};
+
+  function openLightbox(wrap) { const img=wrap.querySelector('img'); if(!img)return; document.getElementById('lightbox-img').src=img.src; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+  function toggleSpecs(btn) { const body=btn.nextElementSibling; const arrow=btn.querySelector('span'); const hidden=body.classList.toggle('hidden'); arrow.textContent=hidden?'▾':'▲'; }
+
+  function checkFit() {
+    const torso = parseFloat(document.getElementById('fc-torso').value);
+    const waist = parseFloat(document.getElementById('fc-waist').value);
+    if(!torso||!waist) { alert('Please enter both torso length and waist circumference.'); return; }
+    if(!TORSO_MIN||!TORSO_MAX||!WAIST_MIN||!WAIST_MAX) {
+      document.getElementById('fit-result').className='fit-result-box poor active';
+      document.getElementById('fit-result').textContent='Fit data not available for this pack.';
+      return;
+    }
+    const torsoOut = torso < TORSO_MIN || torso > TORSO_MAX;
+    const waistOut = waist < WAIST_MIN || waist > WAIST_MAX;
+    const result = document.getElementById('fit-result');
+    if(torsoOut || waistOut) {
+      result.className='fit-result-box poor active';
+      let msg = '<strong>Not Compatible.</strong> ';
+      if(torsoOut) msg += 'Your torso ('+torso+' cm) is outside this pack\'s range of '+TORSO_MIN+'–'+TORSO_MAX+' cm. ';
+      if(waistOut) msg += 'Your waist ('+waist+' cm) is outside this pack\'s range of '+WAIST_MIN+'–'+WAIST_MAX+' cm.';
+      msg += '<br><a href="/backpacks/?torso='+torso+'&waist='+waist+'" style="color:inherit;text-decoration:underline;font-size:12px;display:block;margin-top:6px;">← Find a compatible pack</a>';
+      result.innerHTML = msg;
+      document.getElementById('score-box').classList.remove('active');
+    } else {
+      const tCenter=(TORSO_MIN+TORSO_MAX)/2, tRange=(TORSO_MAX-TORSO_MIN)/2;
+      const tScore=Math.round(Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20));
+      const wCenter=(WAIST_MIN+WAIST_MAX)/2, wRange=(WAIST_MAX-WAIST_MIN)/2;
+      const wScore=Math.round(Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15));
+      const total=Math.round(tScore*0.70+wScore*0.30);
+      const label=total>=90?'Excellent Fit':total>=75?'Good Fit':'Fair Fit';
+      result.className='fit-result-box good active';
+      result.innerHTML='<strong>'+label+'.</strong> Your torso ('+torso+' cm) and waist ('+waist+' cm) fit within this pack\'s range.<br><a href="/backpacks/?torso='+torso+'&waist='+waist+'" style="color:inherit;text-decoration:underline;font-size:12px;display:block;margin-top:6px;">← Compare with other packs</a>';
+      const box=document.getElementById('score-box');
+      box.classList.add('active');
+      document.getElementById('score-number').textContent=total+'/100';
+      document.getElementById('score-label').textContent=label;
+      document.getElementById('score-torso').textContent=tScore+'/100';
+      document.getElementById('score-waist').textContent=wScore+'/100';
+      document.getElementById('score-total').textContent=total+'/100';
+    }
+  }
+
+  // Pre-fill from URL
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('torso')) document.getElementById('fc-torso').value=params.get('torso');
+  if(params.get('waist')) document.getElementById('fc-waist').value=params.get('waist');
+  if(params.get('torso')&&params.get('waist')) window.addEventListener('DOMContentLoaded', checkFit);
+</script>
+</body>
+</html>

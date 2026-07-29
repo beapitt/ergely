@@ -1,0 +1,412 @@
+---
+pagination:
+  data: backpacks.packs
+  size: 1000
+  alias: packs_page
+permalink: "backpacks/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiking & Backpacking Packs — FitMyPack Score™ | FitMyPack</title>
+  <meta name="description" content="Find a hiking pack that fits your torso and waist. FitMyPack Score™ calculates body compatibility from verified specs. No sponsored rankings.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fitmypack.com/backpacks/">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black:#111111;--white:#FFFFFF;--offwhite:#F7F7F7;--border:#E5E5E5;--muted:#6B6B6B;--accent:#E05A2B;--excellent:#2D6A4F;--excellent-bg:#EAF4EE;--good:#1A5FA8;--good-bg:#E8F4FF;--fair:#8A6000;--fair-bg:#FFF8E7;--incompatible:#9B2020;--incompatible-bg:#FAEAEA;--font:'Inter',system-ui,sans-serif;--mono:'DM Mono',monospace; }
+    body { font-family:var(--font);background:var(--white);color:var(--black);font-size:15px;line-height:1.6; }
+    a { color:inherit;text-decoration:none; }
+    nav { background:var(--black);height:56px;display:flex;align-items:center;padding:0 32px;position:sticky;top:0;z-index:200;gap:32px; }
+    .logo { font-size:18px;font-weight:900;color:var(--white);letter-spacing:-0.03em;flex-shrink:0; }
+    .logo span { color:var(--accent); }
+    .nav-links { display:flex;gap:4px;flex:1; }
+    .nav-links a { color:rgba(255,255,255,0.7);font-size:13px;font-weight:500;padding:5px 12px;border-radius:5px; }
+    .nav-links a:hover,.nav-links a.active { color:var(--white); }
+    .nav-right { margin-left:auto; }
+    .nav-right a { color:rgba(255,255,255,0.6);font-size:13px;font-weight:500;padding:5px 12px; }
+    .hamburger { display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;margin-left:auto;background:none;border:none; }
+    .hamburger span { display:block;width:22px;height:2px;background:var(--white);border-radius:2px; }
+    .mobile-menu { display:none;position:fixed;top:56px;left:0;right:0;background:var(--black);padding:12px 0;z-index:199; }
+    .mobile-menu.open { display:block; }
+    .mobile-menu a { display:block;padding:12px 24px;font-size:15px;font-weight:500;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.08); }
+    .fit-bar { background:var(--offwhite);border-bottom:1px solid var(--border);padding:16px 32px; }
+    .fit-bar-inner { max-width:1100px;margin:0 auto;display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap; }
+    .fit-bar-title { font-size:13px;font-weight:700;color:var(--black);white-space:nowrap;margin-bottom:4px; }
+    .fit-field { display:flex;flex-direction:column;gap:3px; }
+    .fit-field label { font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em; }
+    .fit-field input { padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;font-family:var(--font);background:var(--white);width:140px; }
+    .fit-field input:focus { outline:2px solid var(--accent);border-color:transparent; }
+    .btn-find { padding:9px 20px;background:var(--black);color:var(--white);font-weight:700;font-size:13px;border:none;border-radius:6px;cursor:pointer;font-family:var(--font);white-space:nowrap; }
+    .btn-find:hover { background:#333; }
+    .fit-result { font-size:12px;color:var(--muted);padding:6px 0; }
+    .page-header { background:var(--white);border-bottom:1px solid var(--border);padding:16px 32px; }
+    .page-header-inner { max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between; }
+    .page-header h1 { font-size:18px;font-weight:800;letter-spacing:-0.02em; }
+    .page-header p { font-size:13px;color:var(--muted); }
+    .sort-select { font-size:13px;font-family:var(--font);padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--white);cursor:pointer; }
+    .listing-wrap { max-width:1100px;margin:0 auto;padding:24px 32px 64px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start; }
+    .sidebar { position:sticky;top:76px;display:flex;flex-direction:column;gap:6px; }
+    .filter-section { border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--white); }
+    .filter-header { padding:10px 14px;background:var(--offwhite);font-size:11px;font-weight:700;color:var(--black);text-transform:uppercase;letter-spacing:0.07em;display:flex;justify-content:space-between;align-items:center;cursor:pointer;border:none;width:100%;font-family:var(--font); }
+    .filter-body { padding:12px 14px; }
+    .filter-body.hidden { display:none; }
+    .pill-group { display:flex;flex-wrap:wrap;gap:5px; }
+    .pill { font-size:12px;font-weight:500;padding:4px 10px;border-radius:99px;border:1px solid var(--border);background:var(--white);color:var(--black);cursor:pointer;font-family:var(--font);transition:all 0.12s; }
+    .pill:hover { border-color:var(--black);color:var(--black); }
+    .pill.active { background:var(--black);border-color:var(--black);color:var(--white); }
+    .reset-btn { font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;font-family:var(--font);padding:4px 0;text-decoration:underline; }
+    .results-area { min-width:0; }
+    .results-bar { display:flex;align-items:center;justify-content:space-between;margin-bottom:16px; }
+    .results-count { font-size:13px;color:var(--muted); }
+    .results-count strong { color:var(--black); }
+    .fit-score-header { display:none;margin-bottom:16px;padding:12px 16px;background:var(--black);border-radius:8px;color:var(--white); }
+    .fit-score-header.visible { display:flex;align-items:center;gap:12px; }
+    .fit-score-header-title { font-size:13px;font-weight:700; }
+    .fit-score-header-sub { font-size:12px;color:rgba(255,255,255,0.6); }
+    .product-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:14px; }
+    .product-card { border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--white);transition:border-color 0.15s,box-shadow 0.15s,transform 0.12s;display:flex;flex-direction:column; }
+    .product-card:hover { border-color:var(--black);box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-2px); }
+    .product-card.hidden { display:none; }
+    .card-image { aspect-ratio:4/3;background:var(--offwhite);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;border-bottom:1px solid var(--border); }
+    .card-image img { width:100%;height:100%;object-fit:cover; }
+    .card-no-image { font-size:40px;opacity:0.3; }
+    .fit-badge { position:absolute;bottom:8px;right:8px;display:none;flex-direction:column;align-items:center;border-radius:8px;padding:5px 8px;min-width:68px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+    .fit-badge.visible { display:flex; }
+    .fit-badge-score { font-size:14px;font-weight:800;line-height:1;font-family:var(--mono); }
+    .fit-badge-match { font-size:9px;font-weight:600;margin-top:2px;line-height:1.2; }
+    .fit-badge.excellent { background:var(--excellent-bg);color:var(--excellent);border:1px solid #A8D5B5; }
+    .fit-badge.good { background:var(--good-bg);color:var(--good);border:1px solid #A8CBF0; }
+    .fit-badge.fair { background:var(--fair-bg);color:var(--fair);border:1px solid #E0C96A; }
+    .fit-badge.incompatible { background:var(--incompatible-bg);color:var(--incompatible);border:1px solid #E8A8A8; }
+    .card-body { padding:12px 14px;flex:1;display:flex;flex-direction:column;gap:5px; }
+    .card-brand { font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em; }
+    .card-model { font-size:13px;font-weight:700;color:var(--black);line-height:1.3; }
+    .card-size { display:inline-block;font-size:10px;font-weight:600;font-family:var(--mono);background:var(--offwhite);color:var(--muted);padding:2px 6px;border-radius:4px;margin-top:2px;border:1px solid var(--border); }
+    .card-summary { font-size:11px;color:var(--muted);line-height:1.45;flex:1;margin-top:4px; }
+    .card-specs { display:flex;gap:5px;flex-wrap:wrap;margin-top:5px; }
+    .card-spec { font-size:10px;color:var(--muted);background:var(--offwhite);padding:2px 6px;border-radius:4px;font-family:var(--mono);border:1px solid var(--border); }
+    .card-footer { padding:10px 14px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between; }
+    .card-price { font-size:15px;font-weight:800;letter-spacing:-0.02em; }
+    .card-cta { font-size:11px;font-weight:600;color:var(--accent); }
+    .no-results { display:none;text-align:center;padding:48px 24px;color:var(--muted); }
+    .no-results.visible { display:block; }
+    .no-results h3 { font-size:16px;font-weight:700;color:var(--black);margin-bottom:8px; }
+    footer { background:var(--black);padding:40px 32px 24px; }
+    .footer-inner { max-width:1100px;margin:0 auto; }
+    .footer-logo { font-size:18px;font-weight:900;color:var(--white);letter-spacing:-0.03em; }
+    .footer-logo span { color:var(--accent); }
+    .footer-copy { font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px; }
+    .footer-bottom { font-size:12px;color:rgba(255,255,255,0.3);margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1); }
+    @media(max-width:900px){.listing-wrap{grid-template-columns:1fr;gap:16px;padding:16px 16px 48px;}.sidebar{position:static;}.product-grid{grid-template-columns:repeat(2,1fr);}.fit-bar-inner{gap:8px;}}
+    @media(max-width:600px){nav{padding:0 16px;}.nav-links,.nav-right{display:none;}.hamburger{display:flex;}.product-grid{grid-template-columns:1fr;}.fit-bar{padding:12px 16px;}.fit-field input{width:120px;}}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">FitMy<span>Pack</span></a>
+  <div class="nav-links">
+    <a href="/backpacks/" class="active">Backpacks</a>
+  </div>
+  <div class="nav-right">
+    <a href="/how-it-works/">How it works</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/backpacks/" class="active">Backpacks</a>
+  <a href="/how-it-works/">How it works</a>
+</div>
+
+<div class="fit-bar">
+  <div class="fit-bar-inner">
+    <div>
+      <div class="fit-bar-title">🎒 Find your fit</div>
+    </div>
+    <div class="fit-field">
+      <label for="ff-torso">Torso length (cm)</label>
+      <input type="number" id="ff-torso" placeholder="e.g. 46" min="30" max="70">
+    </div>
+    <div class="fit-field">
+      <label for="ff-waist">Waist circumference (cm)</label>
+      <input type="number" id="ff-waist" placeholder="e.g. 85" min="50" max="180">
+    </div>
+    <button class="btn-find" onclick="applyFitFinder()">Calculate scores →</button>
+    <div class="fit-result" id="ff-result"></div>
+  </div>
+</div>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div>
+      <h1>Hiking & Backpacking Packs</h1>
+      <p>{{ packs_page | length }} packs with verified fit specs</p>
+    </div>
+    <select class="sort-select" onchange="applySort(this.value)">
+      <option value="">Sort: Relevance</option>
+      <option value="price_asc">Price: Low → High</option>
+      <option value="price_desc">Price: High → Low</option>
+      <option value="volume_asc">Volume: Small → Large</option>
+    </select>
+  </div>
+</div>
+
+<div class="listing-wrap">
+  <aside class="sidebar">
+    <div class="filter-section">
+      <button class="filter-header" onclick="toggleFilter(this)">Gender <span>▾</span></button>
+      <div class="filter-body">
+        <div class="pill-group">
+          <button class="pill" data-value="Men" onclick="togglePill(this,'gender')">Men</button>
+          <button class="pill" data-value="Women" onclick="togglePill(this,'gender')">Women</button>
+          <button class="pill" data-value="Kids" onclick="togglePill(this,'gender')">Kids</button>
+          <button class="pill" data-value="Unisex" onclick="togglePill(this,'gender')">Unisex</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-section">
+      <button class="filter-header" onclick="toggleFilter(this)">Best use <span>▾</span></button>
+      <div class="filter-body">
+        <div class="pill-group">
+          <button class="pill" data-value="Hiking" onclick="togglePill(this,'use')">Hiking</button>
+          <button class="pill" data-value="Backpacking" onclick="togglePill(this,'use')">Backpacking</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-section">
+      <button class="filter-header" onclick="toggleFilter(this)">Volume <span>▾</span></button>
+      <div class="filter-body">
+        <div class="pill-group">
+          <button class="pill" data-value="small" onclick="togglePill(this,'volume')">Under 30L</button>
+          <button class="pill" data-value="medium" onclick="togglePill(this,'volume')">30–50L</button>
+          <button class="pill" data-value="large" onclick="togglePill(this,'volume')">50L+</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-section">
+      <button class="filter-header" onclick="toggleFilter(this)">Budget <span>▾</span></button>
+      <div class="filter-body">
+        <div class="pill-group">
+          <button class="pill" data-value="under_100" onclick="togglePill(this,'budget')">Under $100</button>
+          <button class="pill" data-value="100_200" onclick="togglePill(this,'budget')">$100–200</button>
+          <button class="pill" data-value="200_300" onclick="togglePill(this,'budget')">$200–300</button>
+          <button class="pill" data-value="300_plus" onclick="togglePill(this,'budget')">$300+</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-section">
+      <button class="filter-header" onclick="toggleFilter(this)">Brand <span>▾</span></button>
+      <div class="filter-body">
+        <div class="pill-group">
+          <button class="pill" data-value="REI Co-op" onclick="togglePill(this,'brand')">REI Co-op</button>
+          <button class="pill" data-value="Osprey" onclick="togglePill(this,'brand')">Osprey</button>
+          <button class="pill" data-value="Gregory" onclick="togglePill(this,'brand')">Gregory</button>
+          <button class="pill" data-value="NEMO" onclick="togglePill(this,'brand')">NEMO</button>
+          <button class="pill" data-value="Deuter" onclick="togglePill(this,'brand')">Deuter</button>
+          <button class="pill" data-value="Arc'teryx" onclick="togglePill(this,'brand')">Arc'teryx</button>
+          <button class="pill" data-value="Patagonia" onclick="togglePill(this,'brand')">Patagonia</button>
+        </div>
+      </div>
+    </div>
+    <div class="filter-section">
+      <button class="filter-header" onclick="toggleFilter(this)">Features <span>▾</span></button>
+      <div class="filter-body">
+        <div class="pill-group">
+          <button class="pill" data-value="raincover" onclick="togglePill(this,'feature')">☂ Raincover</button>
+          <button class="pill" data-value="hipbelt" onclick="togglePill(this,'feature')">Hip belt pockets</button>
+        </div>
+      </div>
+    </div>
+    <button class="reset-btn" onclick="resetAll()">Reset all filters</button>
+  </aside>
+
+  <div class="results-area">
+    <div class="results-bar">
+      <div class="results-count"><strong id="count">{{ packs_page | length }}</strong> packs found</div>
+    </div>
+    <div class="fit-score-header" id="fit-score-header">
+      <div>
+        <div class="fit-score-header-title">FitMyPack Score™</div>
+        <div class="fit-score-header-sub" id="fit-score-sub"></div>
+      </div>
+    </div>
+    <div class="product-grid" id="product-grid">
+      {% for pack in packs_page %}
+      <a class="product-card"
+         href="/backpacks/{{ pack.id }}/"
+         data-id="{{ pack.id }}"
+         data-brand="{{ pack.identity.brand }}"
+         data-gender="{{ pack.identity.gender }}"
+         data-use="{{ pack.specs.best_use }}"
+         data-budget="{{ pack.identity.price_range }}"
+         data-price="{{ pack.identity.price_usd if pack.identity.price_usd else 0 }}"
+         data-volume-l="{{ pack.specs.volume_liters if pack.specs.volume_liters else 0 }}"
+         data-raincover="{{ 'true' if pack.specs.raincover_included else 'false' }}"
+         data-hipbelt="{{ 'true' if pack.specs.hipbelt_pockets else 'false' }}"
+         data-torso-min="{{ pack.fit.torso_min_cm if pack.fit.torso_min_cm else '' }}"
+         data-torso-max="{{ pack.fit.torso_max_cm if pack.fit.torso_max_cm else '' }}"
+         data-waist-min="{{ pack.fit.waist_min_cm if pack.fit.waist_min_cm else '' }}"
+         data-waist-max="{{ pack.fit.waist_max_cm if pack.fit.waist_max_cm else '' }}">
+        <div class="card-image">
+          {% if pack.identity.image_url %}
+            <img src="{{ pack.identity.image_url }}" alt="{{ pack.identity.brand }} {{ pack.identity.model }}" loading="lazy">
+          {% else %}
+            <div class="card-no-image">🎒</div>
+          {% endif %}
+          <span class="fit-badge" id="badge-{{ pack.id }}"></span>
+        </div>
+        <div class="card-body">
+          <div class="card-brand">{{ pack.identity.brand }}</div>
+          <div class="card-model">{{ pack.identity.model }}</div>
+          <span class="card-size">{{ pack.identity.size }}{% if pack.identity.gender %} · {{ pack.identity.gender }}{% endif %}</span>
+          <div class="card-summary">{{ pack.editorial.best_for_summary }}</div>
+          <div class="card-specs">
+            {% if pack.specs.volume_liters %}<span class="card-spec">{{ pack.specs.volume_liters }}L</span>{% endif %}
+            {% if pack.specs.weight_kg %}<span class="card-spec">{{ pack.specs.weight_kg }} kg</span>{% endif %}
+            {% if pack.fit.torso_min_cm and pack.fit.torso_max_cm %}<span class="card-spec">Torso {{ pack.fit.torso_min_cm | round(0) }}–{{ pack.fit.torso_max_cm | round(0) }} cm</span>{% endif %}
+            {% if pack.specs.raincover_included %}<span class="card-spec">☂ Raincover</span>{% endif %}
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">{% if pack.identity.price_usd %}${{ pack.identity.price_usd }}{% else %}—{% endif %}</div>
+          <span class="card-cta">View pack →</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="no-results" id="no-results"><h3>No packs match your filters</h3><p>Try removing some filters.</p></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">FitMy<span>Pack</span></div>
+    <div class="footer-copy">Body-first backpack finder. Verified specs, no sponsored rankings.</div>
+    <div class="footer-bottom">FitMyPack is reader-supported. We may earn a referral fee at no cost to you. Not medical advice.</div>
+  </div>
+</footer>
+
+<script>
+  const state = { gender:null, use:null, volume:null, budget:null, brand:null, feature:null };
+
+  // Pre-fill from URL params
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('torso')) document.getElementById('ff-torso').value = params.get('torso');
+  if(params.get('waist')) document.getElementById('ff-waist').value = params.get('waist');
+  if(params.get('torso') && params.get('waist')) { window.addEventListener('DOMContentLoaded', applyFitFinder); }
+
+  function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+  function toggleFilter(btn) { const b=btn.nextElementSibling; b.classList.toggle('hidden'); btn.querySelector('span').textContent=b.classList.contains('hidden')?'▾':'▴'; }
+
+  function togglePill(btn, type) {
+    const g=btn.closest('.pill-group'), w=btn.classList.contains('active');
+    g.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
+    if(!w){btn.classList.add('active');state[type]=btn.dataset.value;}else{state[type]=null;}
+    applyFilters();
+  }
+
+  function calcScore(torso, waist, card) {
+    const tMin=parseFloat(card.dataset.torsoMin);
+    const tMax=parseFloat(card.dataset.torsoMax);
+    const wMin=parseFloat(card.dataset.waistMin);
+    const wMax=parseFloat(card.dataset.waistMax);
+    if(!tMin||!tMax||!wMin||!wMax) return null;
+    if(torso<tMin||torso>tMax) return 0;
+    if(waist<wMin||waist>wMax) return 0;
+    const tCenter=(tMin+tMax)/2, tRange=(tMax-tMin)/2;
+    const tScore=Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20);
+    const wCenter=(wMin+wMax)/2, wRange=(wMax-wMin)/2;
+    const wScore=Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15);
+    return Math.round(tScore*0.70+wScore*0.30);
+  }
+
+  function scoreClass(s){ if(s===null)return null; if(s===0)return'incompatible'; if(s>=90)return'excellent'; if(s>=75)return'good'; return'fair'; }
+  function scoreLabel(s){ if(s===null)return null; if(s===0)return'Not Compatible'; if(s>=90)return'Excellent Fit'; if(s>=75)return'Good Fit'; return'Fair Fit'; }
+
+  function applyFitFinder() {
+    const torso=parseFloat(document.getElementById('ff-torso').value);
+    const waist=parseFloat(document.getElementById('ff-waist').value);
+    if(!torso||!waist) return;
+    const cards=document.querySelectorAll('.product-card');
+    let excellent=0,good=0,fair=0,incompatible=0;
+    cards.forEach(card=>{
+      const badge=document.getElementById('badge-'+card.dataset.id);
+      if(!badge) return;
+      const score=calcScore(torso,waist,card);
+      const cls=scoreClass(score);
+      const lbl=scoreLabel(score);
+      if(cls===null){badge.className='fit-badge';return;}
+      badge.className='fit-badge visible '+cls;
+      badge.innerHTML=cls==='incompatible'
+        ?'<span class="fit-badge-match">Not Compatible</span>'
+        :'<span class="fit-badge-score">'+score+'/100</span><span class="fit-badge-match">'+lbl+'</span>';
+      card.dataset.fitScore=score;
+      if(cls==='excellent')excellent++;
+      else if(cls==='good')good++;
+      else if(cls==='fair')fair++;
+      else incompatible++;
+      const base=card.getAttribute('href').split('?')[0];
+      card.setAttribute('href',base+'?torso='+torso+'&waist='+waist);
+    });
+    document.getElementById('ff-result').textContent=excellent+' Excellent · '+good+' Good · '+fair+' Fair · '+incompatible+' Not Compatible';
+    const hdr=document.getElementById('fit-score-header');
+    hdr.classList.add('visible');
+    document.getElementById('fit-score-sub').textContent='Scores for torso '+torso+' cm · waist '+waist+' cm';
+    const g=document.getElementById('product-grid');
+    const allCards=Array.from(g.querySelectorAll('.product-card'));
+    allCards.sort((a,b)=>(parseInt(b.dataset.fitScore)||−1)−(parseInt(a.dataset.fitScore)||−1));
+    allCards.forEach(c=>g.appendChild(c));
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const cards=document.querySelectorAll('.product-card');let visible=0;
+    cards.forEach(card=>{
+      let show=true;
+      if(state.gender&&card.dataset.gender!==state.gender)show=false;
+      if(state.use&&card.dataset.use!==state.use)show=false;
+      if(state.budget&&card.dataset.budget!==state.budget)show=false;
+      if(state.brand&&card.dataset.brand!==state.brand)show=false;
+      if(state.feature==='raincover'&&card.dataset.raincover!=='true')show=false;
+      if(state.feature==='hipbelt'&&card.dataset.hipbelt!=='true')show=false;
+      if(state.volume){
+        const vol=parseFloat(card.dataset.volumeL);
+        if(state.volume==='small'&&vol>=30)show=false;
+        if(state.volume==='medium'&&(vol<30||vol>50))show=false;
+        if(state.volume==='large'&&vol<=50)show=false;
+      }
+      card.classList.toggle('hidden',!show);if(show)visible++;
+    });
+    document.getElementById('count').textContent=visible;
+    document.getElementById('no-results').classList.toggle('visible',visible===0);
+  }
+
+  function applySort(v) {
+    const g=document.getElementById('product-grid'),cards=Array.from(g.querySelectorAll('.product-card'));
+    cards.sort((a,b)=>{
+      if(v==='price_asc')return parseFloat(a.dataset.price)-parseFloat(b.dataset.price);
+      if(v==='price_desc')return parseFloat(b.dataset.price)-parseFloat(a.dataset.price);
+      if(v==='volume_asc')return parseFloat(a.dataset.volumeL)-parseFloat(b.dataset.volumeL);
+      return 0;
+    });
+    cards.forEach(c=>g.appendChild(c));
+  }
+
+  function resetAll() {
+    Object.keys(state).forEach(k=>state[k]=null);
+    document.getElementById('ff-torso').value='';
+    document.getElementById('ff-waist').value='';
+    document.getElementById('ff-result').textContent='';
+    document.getElementById('fit-score-header').classList.remove('visible');
+    document.querySelectorAll('.pill.active').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.fit-badge').forEach(b=>{b.className='fit-badge';b.innerHTML='';});
+    document.querySelectorAll('.product-card').forEach(c=>{c.classList.remove('hidden');const base=c.getAttribute('href').split('?')[0];c.setAttribute('href',base);});
+    document.getElementById('count').textContent=document.querySelectorAll('.product-card').length;
+    document.getElementById('no-results').classList.remove('visible');
+  }
+</script>
+</body>
+</html>
