@@ -292,11 +292,15 @@ permalink: "backpacks/index.html"
 <script>
   const state = { gender:null, use:null, volume:null, budget:null, brand:null, feature:null };
 
-  // Pre-fill from URL params
+  // Pre-fill from URL params and auto-apply
   const params = new URLSearchParams(window.location.search);
   if(params.get('torso')) document.getElementById('ff-torso').value = params.get('torso');
   if(params.get('waist')) document.getElementById('ff-waist').value = params.get('waist');
-  if(params.get('torso') && params.get('waist')) { window.addEventListener('DOMContentLoaded', applyFitFinder); }
+  if(params.get('torso') && params.get('waist')) {
+    window.addEventListener('load', function() {
+      applyFitFinder();
+    });
+  }
 
   function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
   function toggleFilter(btn) { const b=btn.nextElementSibling; b.classList.toggle('hidden'); btn.querySelector('span').textContent=b.classList.contains('hidden')?'▾':'▴'; }
@@ -357,7 +361,7 @@ permalink: "backpacks/index.html"
     document.getElementById('fit-score-sub').textContent='Scores for torso '+torso+' cm · waist '+waist+' cm';
     const g=document.getElementById('product-grid');
     const allCards=Array.from(g.querySelectorAll('.product-card'));
-    allCards.sort((a,b)=>(parseInt(b.dataset.fitScore)||−1)−(parseInt(a.dataset.fitScore)||−1));
+    allCards.sort((a,b)=>(parseInt(b.dataset.fitScore)||-1)-(parseInt(a.dataset.fitScore)||-1));
     allCards.forEach(c=>g.appendChild(c));
     applyFilters();
   }
