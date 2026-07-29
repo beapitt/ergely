@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Find a hiking or backpacking pack that fits your torso and waist. FitMyPack Score™ calculates compatibility from verified manufacturer specs. No sponsored rankings.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fitmypack.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitMyPack — Find a Backpack That Fits Your Body</title>
+  <title>FitMyPack — Find a Backpack That Fits Your Body | Body-First Pack Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -143,10 +146,10 @@
 <nav>
   <div class="logo">FitMy<span>Pack</span></div>
   <div class="nav-links">
-    <a href="#" class="active">Backpacks</a>
+    <a href="/backpacks/" class="active">Backpacks</a>
   </div>
   <div class="nav-right">
-    <a href="#">How it works</a>
+    <a href="/how-it-works/">How it works</a>
   </div>
 </nav>
 
@@ -168,7 +171,7 @@
       </div>
     </div>
     <div class="hero-hint">Don't know your torso length? <a href="#" style="color:rgba(255,255,255,0.6);text-decoration:underline;">How to measure →</a></div>
-    <button class="btn-find" onclick="applyFitFinder()">Find my pack →</button>
+    <button class="btn-find" onclick="findMyPack()">Find my pack →</button>
     <div class="hero-result" id="ff-result"></div>
   </div>
 </div>
@@ -177,14 +180,9 @@
   <div class="page-header-inner">
     <div>
       <h2>🎒 Trekking & Hiking Backpacks</h2>
-      <p>14 packs with verified fit specs — sorted by compatibility with your body</p>
+      <p>50 packs with verified fit specs — sorted by compatibility with your body</p>
     </div>
-    <select class="sort-select" onchange="applySort(this.value)">
-      <option value="">Sort: Relevance</option>
-      <option value="price_asc">Price: Low → High</option>
-      <option value="price_desc">Price: High → Low</option>
-      <option value="volume_asc">Volume: Small → Large</option>
-    </select>
+    <a href="/backpacks/" style="font-size:13px;font-weight:600;color:var(--accent);">Browse all packs →</a>
   </div>
 </div>
 
@@ -694,6 +692,16 @@
 </footer>
 
 <script>
+  function findMyPack() {
+    const torso = document.getElementById('ff-torso').value;
+    const waist = document.getElementById('ff-waist').value;
+    if (!torso || !waist) {
+      alert('Please enter both your torso length and waist circumference.');
+      return;
+    }
+    window.location.href = '/backpacks/?torso=' + torso + '&waist=' + waist;
+  }
+
   const state = { gender:null, use:null, volume:null, budget:null, brand:null };
 
   function toggleFilter(btn) {
