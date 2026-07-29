@@ -5,23 +5,23 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO Base -->
-  <title>Ergely | Standing Desk Finder — Match Your Height</title>
+  <title>Ergely | Standing Desk Finder — Ergely Fit Score™</title>
   <meta name="description" content="Find the right standing desk for your height. Filter by height range, budget and brand. Verified specs, no sponsored rankings.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ergely.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Ergely | Standing Desk Finder — Match Your Height">
-  <meta property="og:description" content="Find the right ergonomic chair for your body. Filter our database by height, weight, and back pain needs.">
+  <meta property="og:title" content="Ergely | Standing Desk Finder — Ergely Fit Score™">
+  <meta property="og:description" content="Find the right standing desk for your height. Ergely Fit Score™ calculates compatibility for your body.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ergely.com/">
   <meta property="og:image" content="https://ergely.com/hero.webp">
-  <meta property="og:image:alt" content="Ergonomic chair and standing desk workspace">
+  <meta property="og:image:alt" content="Standing desk workspace">
 
   <!-- Twitter/X Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ergely | Standing Desk Finder — Match Your Height">
-  <meta name="twitter:description" content="Find the right ergonomic chair for your body. Filter our database by height, weight, and back pain needs.">
+  <meta name="twitter:title" content="Ergely | Standing Desk Finder — Ergely Fit Score™">
+  <meta name="twitter:description" content="Find the right standing desk for your height. Ergely Fit Score™ calculates compatibility for your body.">
   <meta name="twitter:image" content="https://ergely.com/hero.webp">
 
   <!-- GEO / Structured Data JSON-LD -->
@@ -52,7 +52,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Ergely | Standing Desk Finder — Match Your Height",
+    "name": "Ergely | Standing Desk Finder — Ergely Fit Score™",
     "url": "https://ergely.com/",
     "description": "Find the right standing desk for your height. Filter by height range, budget and brand. Verified specs, no sponsored rankings.",
     "isPartOf": {
@@ -616,13 +616,10 @@
   <a href="/" class="logo">Erge<span>ly</span></a>
   <div class="nav-links">
     <a href="/standing-desks/" class="active">Standing Desks</a>
-    <span class="soon">Ergonomic Chairs</span>
-    <span class="soon">Mattresses</span>
-    <span class="soon">Backpacks</span>
   </div>
   <div class="nav-right">
     <a href="/guides/">Guides</a>
-    <a href="/tools/chair-size-finder/">Size Finder</a>
+    <a href="/tools/desk-size-finder/">Size Finder</a>
   </div>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -632,11 +629,8 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu">
   <a href="/standing-desks/" class="active">Standing Desks</a>
-  <span class="soon">Ergonomic Chairs</span>
-  <span class="soon">Mattresses</span>
-  <span class="soon">Backpacks</span>
   <a href="/guides/">Guides</a>
-  <a href="/tools/chair-size-finder/">Size Finder</a>
+  <a href="/tools/desk-size-finder/">Size Finder</a>
 </div>
 
 <main>
@@ -683,24 +677,9 @@
       <div class="cat-name">Standing Desks</div>
       <div class="cat-desc">40+ desks with verified height specs</div>
     </a>
-    <div class="cat-card soon">
-      <span class="cat-soon-badge">Soon</span>
-      <span class="cat-icon">🪑</span>
-      <div class="cat-name">Ergonomic Chairs</div>
-      <div class="cat-desc">Height range, lumbar, armrests</div>
-    </div>
-    <div class="cat-card soon">
-      <span class="cat-soon-badge">Soon</span>
-      <span class="cat-icon">🛏️</span>
-      <div class="cat-name">Mattresses</div>
-      <div class="cat-desc">Firmness, weight, sleep position</div>
-    </div>
-    <div class="cat-card soon">
-      <span class="cat-soon-badge">Soon</span>
-      <span class="cat-icon">🎒</span>
-      <div class="cat-name">Hiking Backpacks</div>
-      <div class="cat-desc">Torso length, load, back fit</div>
-    </div>
+    
+    
+    
   </div>
 </section>
 
@@ -774,17 +753,16 @@
     <div class="footer-col">
       <h4>Categories</h4>
       <a href="/standing-desks/">Standing Desks</a>
-      <span class="soon">Ergonomic Chairs</span>
-      <span class="soon">Mattresses</span>
-      <span class="soon">Backpacks</span>
+        
+      
     </div>
     <div class="footer-col">
       <h4>Tools & Guides</h4>
-      <a href="/tools/chair-size-finder/">Chair Size Finder</a>
-      <a href="/guides/ergonomic-chair-sizing-guide/">Sizing Guide</a>
-      <a href="/guides/what-is-lumbar-support/">What is Lumbar Support?</a>
+      <a href="/tools/desk-size-finder/">Desk Size Finder</a>
+      <a href="/guides/standing-desk-sizing-guide/">Sizing Guide</a>
+      <a href="/guides/standing-desk-height-guide/">Standing Desk Height Guide</a>
       <a href="/guides/how-to-set-up-ergonomic-chair/">Chair Setup Guide</a>
-      <a href="/guides/ergonomic-vs-gaming-chair/">Ergonomic vs Gaming</a>
+      
     </div>
     <div class="footer-col">
       <h4>About</h4>
@@ -803,7 +781,7 @@
 <script>
 function doSearch() {
   const q = document.getElementById('search-input').value.trim();
-  if (q) window.location.href = '/chairs/?q=' + encodeURIComponent(q);
+  if (q) window.location.href = '/standing-desks/?q=' + encodeURIComponent(q);
 }
 
 function toggleMenu() {
