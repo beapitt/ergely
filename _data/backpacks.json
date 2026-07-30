@@ -6,10 +6,10 @@
         "brand": "REI Co-op",
         "model": "Trail 40 Pack",
         "gender": "Women",
-        "price_usd": 159.00,
+        "price_usd": 159.0,
         "price_range": "100_200",
         "product_url": "https://www.rei.com/product/231777/rei-co-op-trail-40-pack-womens",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785395730/rei-co-op-trail-40-pack-womens_ui3rlr.png"
       },
       "sizes": [
         {
@@ -25,7 +25,7 @@
           "size": "M/XL",
           "torso_min_cm": 40.64,
           "torso_max_cm": 45.72,
-          "waist_min_cm": 88.90,
+          "waist_min_cm": 88.9,
           "waist_max_cm": 119.38,
           "volume_liters": 41,
           "weight_kg": 1.25
@@ -37,7 +37,7 @@
           "waist_min_cm": 111.76,
           "waist_max_cm": 147.32,
           "volume_liters": 41,
-          "weight_kg": 1.30
+          "weight_kg": 1.3
         }
       ],
       "specs": {
@@ -50,7 +50,13 @@
       "editorial": {
         "best_for_summary": "Women hikers needing a lightweight 40L pack with raincover included, available in standard and plus sizes.",
         "not_recommended_for": "Men or users needing more than 41L capacity.",
-        "tags": ["hiking", "women", "lightweight", "raincover", "plus-size"]
+        "tags": [
+          "hiking",
+          "women",
+          "lightweight",
+          "raincover",
+          "plus-size"
+        ]
       }
     },
     {
@@ -59,15 +65,15 @@
         "brand": "REI Co-op",
         "model": "Trailmade 60 Pack",
         "gender": "Women",
-        "price_usd": 189.00,
+        "price_usd": 189.0,
         "price_range": "100_200",
         "product_url": "https://www.rei.com/product/C01916/rei-co-op-trailmade-60-pack-womens",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785395210/rei-co-op-trailmade-60-pack-womens_xhciyi.png"
       },
       "sizes": [
         {
           "size": "XS-L",
-          "torso_min_cm": 38.10,
+          "torso_min_cm": 38.1,
           "torso_max_cm": 48.26,
           "waist_min_cm": 78.74,
           "waist_max_cm": 104.14,
@@ -76,12 +82,12 @@
         },
         {
           "size": "XL-3X",
-          "torso_min_cm": 38.10,
+          "torso_min_cm": 38.1,
           "torso_max_cm": 48.26,
           "waist_min_cm": 104.14,
           "waist_max_cm": 137.16,
           "volume_liters": 60,
-          "weight_kg": 1.50
+          "weight_kg": 1.5
         }
       ],
       "specs": {
@@ -94,7 +100,13 @@
       "editorial": {
         "best_for_summary": "Women backpackers needing a spacious 60L pack for multi-day trips, available in standard and plus sizes.",
         "not_recommended_for": "Men or users needing under 60L.",
-        "tags": ["backpacking", "women", "60L", "multi-day", "plus-size"]
+        "tags": [
+          "backpacking",
+          "women",
+          "60L",
+          "multi-day",
+          "plus-size"
+        ]
       }
     },
     {
@@ -106,7 +118,7 @@
         "price_usd": 259.95,
         "price_range": "200_300",
         "product_url": "https://www.rei.com/product/243974/nemo-persist-45-l-endless-promise-all-adventure-pack-mens",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785394420/nemo-persist-45-mens_p0it6h.png"
       },
       "sizes": [
         {
@@ -129,7 +141,12 @@
       "editorial": {
         "best_for_summary": "Men with medium-long torso wanting a sustainable 45L all-adventure pack.",
         "not_recommended_for": "Men with torso under 43 cm or over 53 cm.",
-        "tags": ["backpacking", "men", "sustainable", "45L"]
+        "tags": [
+          "backpacking",
+          "men",
+          "sustainable",
+          "45L"
+        ]
       }
     },
     {
@@ -138,10 +155,10 @@
         "brand": "Osprey",
         "model": "Talon 22",
         "gender": "Men",
-        "price_usd": 175.00,
+        "price_usd": 175.0,
         "price_range": "100_200",
         "product_url": "https://www.rei.com/product/237541/osprey-talon-22-pack-mens",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785394575/osprey-talon-22-mens_cgb5pk.png"
       },
       "sizes": [
         {
@@ -149,7 +166,7 @@
           "torso_min_cm": 43.18,
           "torso_max_cm": 55.88,
           "waist_min_cm": 73.66,
-          "waist_max_cm": 127.00,
+          "waist_max_cm": 127.0,
           "volume_liters": 22,
           "weight_kg": 1.08
         },
@@ -157,8 +174,8 @@
           "size": "EF One Size",
           "torso_min_cm": 43.18,
           "torso_max_cm": 55.88,
-          "waist_min_cm": 101.60,
-          "waist_max_cm": 177.80,
+          "waist_min_cm": 101.6,
+          "waist_max_cm": 177.8,
           "volume_liters": 22,
           "weight_kg": 1.35
         }
@@ -173,7 +190,13 @@
       "editorial": {
         "best_for_summary": "Men wanting a lightweight 22L day hiking pack, available in standard and extended fit.",
         "not_recommended_for": "Men with torso under 43 cm or needing over 22L.",
-        "tags": ["hiking", "men", "daypack", "lightweight", "plus-size"]
+        "tags": [
+          "hiking",
+          "men",
+          "daypack",
+          "lightweight",
+          "plus-size"
+        ]
       }
     },
     {
@@ -185,7 +208,7 @@
         "price_usd": 49.95,
         "price_range": "under_100",
         "product_url": "https://www.rei.com/product/234943/rei-co-op-tarn-12-pack-kids",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785394705/rei-co-op-tarn-12-kids_grw51j.png"
       },
       "sizes": [
         {
@@ -208,7 +231,13 @@
       "editorial": {
         "best_for_summary": "Kids needing a lightweight 12L frameless day pack for short hikes.",
         "not_recommended_for": "Multi-day hikes or kids needing lumbar support.",
-        "tags": ["hiking", "kids", "daypack", "lightweight", "frameless"]
+        "tags": [
+          "hiking",
+          "kids",
+          "daypack",
+          "lightweight",
+          "frameless"
+        ]
       }
     },
     {
@@ -220,7 +249,7 @@
         "price_usd": 239.93,
         "price_range": "200_300",
         "product_url": "https://www.rei.com/product/C03315/gregory-baltoro-75-pack-closeout-mens",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785394806/gregory-baltoro-75-mens_y12xpv.png"
       },
       "sizes": [
         {
@@ -235,7 +264,7 @@
         {
           "size": "Medium",
           "torso_min_cm": 45.72,
-          "torso_max_cm": 50.80,
+          "torso_max_cm": 50.8,
           "waist_min_cm": 73.66,
           "waist_max_cm": 121.92,
           "volume_liters": 75,
@@ -243,10 +272,10 @@
         },
         {
           "size": "Large",
-          "torso_min_cm": 50.80,
+          "torso_min_cm": 50.8,
           "torso_max_cm": 55.88,
           "waist_min_cm": 78.74,
-          "waist_max_cm": 127.00,
+          "waist_max_cm": 127.0,
           "volume_liters": 75,
           "weight_kg": 2.39
         }
@@ -261,7 +290,13 @@
       "editorial": {
         "best_for_summary": "Men needing a serious 75L expedition pack with raincover, available in Small, Medium and Large.",
         "not_recommended_for": "Men with torso under 41 cm or over 56 cm.",
-        "tags": ["backpacking", "men", "75L", "expedition", "raincover"]
+        "tags": [
+          "backpacking",
+          "men",
+          "75L",
+          "expedition",
+          "raincover"
+        ]
       }
     },
     {
@@ -270,10 +305,10 @@
         "brand": "Osprey",
         "model": "Atmos AG 65",
         "gender": "Men",
-        "price_usd": 340.00,
+        "price_usd": 340.0,
         "price_range": "300_plus",
         "product_url": "https://www.osprey.com/atmos-ag-65-atmos65s22-415",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785394944/osprey-atmos-ag-65-mens_v86unx.png"
       },
       "sizes": [
         {
@@ -305,7 +340,14 @@
       "editorial": {
         "best_for_summary": "Men wanting Osprey's best anti-gravity suspension in a 65L pack, available in S/M and L/XL.",
         "not_recommended_for": "Men with torso under 41 cm or over 58 cm.",
-        "tags": ["backpacking", "men", "65L", "anti-gravity", "premium", "raincover"]
+        "tags": [
+          "backpacking",
+          "men",
+          "65L",
+          "anti-gravity",
+          "premium",
+          "raincover"
+        ]
       }
     }
   ]
