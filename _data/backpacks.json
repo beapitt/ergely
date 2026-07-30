@@ -359,7 +359,7 @@
         "price_usd": 175.0,
         "price_range": "100_200",
         "product_url": "https://www.osprey.com/talontm-1?size=O%2FS&color=Frosty+Mint%2FGreen+Night+Shift",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437941/osprey-talon-22-unisex_orb0i7.png"
       },
       "sizes": [
         {
@@ -394,7 +394,7 @@
         "price_usd": 125.0,
         "price_range": "100_200",
         "product_url": "https://www.osprey.com/hikelite-18l?size=O%2FS&color=Tungsten-Yellow#reviews",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/osprey-hikelite-18-o-s_w2cxbh.png"
       },
       "sizes": [
         {
@@ -429,7 +429,7 @@
         "price_usd": 195.0,
         "price_range": "100_200",
         "product_url": "https://www.osprey.com/talontm-velocity-20?size=S%2FM&color=Dark+Charcoal+Tumbleweed+Yellow",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/osprey-talon-velocity-20-s-m_g0lwxp.png"
       },
       "sizes": [
         {
@@ -464,7 +464,7 @@
         "price_usd": 250.0,
         "price_range": "200_300",
         "product_url": "https://www.osprey.com/talontm-pro-30-2?size=O%2FS&color=Mars+Orange",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/osprey-talon-pro-30-o-s_bmlm8i.png"
       },
       "sizes": [
         {
@@ -499,7 +499,7 @@
         "price_usd": 195.0,
         "price_range": "100_200",
         "product_url": "https://www.osprey.com/tempest-velocity-20?size=WM%2FL&color=Sevres+Blue",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/osprey-tempest-velocity-20-m-l_cfg0eb.png"
       },
       "sizes": [
         {
@@ -534,7 +534,7 @@
         "price_usd": 215.0,
         "price_range": "200_300",
         "product_url": "https://www.osprey.com/tempest-velocity-30?size=WXS%2FS&color=Pashmina+Melon",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437939/osprey-tempest-velocity-30-xs-s_te9coq.png"
       },
       "sizes": [
         {
@@ -569,7 +569,7 @@
         "price_usd": 95.0,
         "price_range": "under_100",
         "product_url": "https://www.osprey.com/daylite-tote-pack-daylttotpks21-779?size=O%2FS&color=Black",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/osprey-daylite-tote-pack-o-s_g6bgg5.png"
       },
       "sizes": [
         {
@@ -604,7 +604,7 @@
         "price_usd": 80.0,
         "price_range": "under_100",
         "product_url": "https://www.osprey.com/daylite-plus-dayltpluss21-795?size=O%2FS&color=Sunlit+Lichen+Print+Gravel+Tan",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/osprey-daylite-plus-o-s_jxib3t.png"
       },
       "sizes": [
         {
@@ -639,7 +639,7 @@
         "price_usd": null,
         "price_range": null,
         "product_url": "https://eu.gregorypacks.com/uk-en/-stout-45-rc--compass-blue/149379-A267.html?cgid=packs-backpacking#",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/gregory-stout-45-rc-one-size_ytulh0.png"
       },
       "sizes": [
         {
@@ -674,7 +674,7 @@
         "price_usd": null,
         "price_range": null,
         "product_url": "https://eu.gregorypacks.com/it-it/-zulu-40-rc-md-lg--desert-tan/145667-D436.html?cgid=packs-backpacking",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/gregory-zulu-40-rc-md-lg_eghhmr.png"
       },
       "sizes": [
         {
@@ -709,7 +709,7 @@
         "price_usd": null,
         "price_range": null,
         "product_url": "https://eu.gregorypacks.com/it-it/y-wander-50--redrock/149328-3380.html?cgid=packs-backpacking",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437940/gregory-wander-50-one-size_a0xmpe.png"
       },
       "sizes": [
         {
@@ -744,7 +744,7 @@
         "price_usd": null,
         "price_range": null,
         "product_url": "https://eu.gregorypacks.com/it-it/maya-20--sunset-grey/145279-5586.html?cgid=packs-day-packs",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437941/gregory-maya-20-one-size_wgn7a6.jpg"
       },
       "sizes": [
         {
@@ -779,7 +779,7 @@
         "price_usd": null,
         "price_range": null,
         "product_url": "https://eu.gregorypacks.com/it-it/kiro-20-rc-lava-red/153038-4222.html?cgid=packs-day-packs",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437939/gregory-kiro-20-rc-one-size_j9omnx.png"
       },
       "sizes": [
         {
@@ -814,7 +814,7 @@
         "price_usd": null,
         "price_range": null,
         "product_url": "https://www.campsaver.com/petzl-bug-climbing-backpack-18l.html",
-        "image_url": ""
+        "image_url": "https://res.cloudinary.com/q83hsnhl/image/upload/v1785437939/petzl-bug-o-s_nq9pzl.png"
       },
       "sizes": [
         {
