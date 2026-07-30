@@ -1,0 +1,210 @@
+---
+permalink: "how-it-works/index.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How FitMyPack Score™ Works — Backpack Fit Algorithm Explained | FitMyPack</title>
+  <meta name="description" content="Learn how FitMyPack Score™ calculates backpack compatibility from your torso length and waist circumference. Transparent algorithm, verified manufacturer specs.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fitmypack.com/how-it-works/">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black:#111111;--white:#FFFFFF;--offwhite:#F7F7F7;--border:#E5E5E5;--muted:#6B6B6B;--accent:#E05A2B;--font:'Inter',system-ui,sans-serif;--mono:'DM Mono',monospace; }
+    body { font-family:var(--font);background:var(--white);color:var(--black);font-size:15px;line-height:1.6; }
+    a { color:inherit;text-decoration:none; }
+    nav { background:var(--black);height:56px;display:flex;align-items:center;padding:0 32px;gap:32px; }
+    .logo { font-size:18px;font-weight:900;color:var(--white);letter-spacing:-0.03em; }
+    .logo span { color:var(--accent); }
+    .nav-right { margin-left:auto;display:flex;gap:8px; }
+    .nav-right a { color:rgba(255,255,255,0.6);font-size:13px;font-weight:500;padding:5px 12px;border-radius:5px;transition:color 0.12s; }
+    .nav-right a:hover { color:var(--white); }
+    .page-hero { background:var(--offwhite);border-bottom:1px solid var(--border);padding:56px 32px;text-align:center; }
+    .page-eyebrow { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--accent);margin-bottom:16px; }
+    .page-hero h1 { font-size:40px;font-weight:900;letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px;max-width:640px;margin-left:auto;margin-right:auto; }
+    .page-hero p { font-size:17px;color:var(--muted);max-width:520px;margin:0 auto; }
+    .content { max-width:760px;margin:0 auto;padding:64px 32px; }
+    .section { margin-bottom:56px; }
+    .section-label { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:12px; }
+    .section h2 { font-size:24px;font-weight:800;letter-spacing:-0.02em;margin-bottom:16px; }
+    .section p { font-size:15px;color:var(--black);line-height:1.7;margin-bottom:16px; }
+    .section p:last-child { margin-bottom:0; }
+    .formula-box { background:var(--black);color:var(--white);border-radius:12px;padding:28px;margin:24px 0;font-family:var(--mono); }
+    .formula-title { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:16px; }
+    .formula-line { font-size:14px;line-height:2;color:rgba(255,255,255,0.9); }
+    .formula-line span { color:var(--accent);font-weight:700; }
+    .score-table { width:100%;border-collapse:collapse;margin:24px 0;border-radius:10px;overflow:hidden;border:1px solid var(--border); }
+    .score-table th { background:var(--offwhite);padding:10px 16px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted); }
+    .score-table td { padding:12px 16px;font-size:14px;border-top:1px solid var(--border); }
+    .score-table td:first-child { font-family:var(--mono);font-weight:700; }
+    .badge { display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700; }
+    .badge.excellent { background:#EAF4EE;color:#2D6A4F; }
+    .badge.good { background:#E8F4FF;color:#1A5FA8; }
+    .badge.fair { background:#FFF8E7;color:#8A6000; }
+    .badge.nc { background:#FAEAEA;color:#9B2020; }
+    .measure-steps { display:flex;flex-direction:column;gap:16px;margin:24px 0; }
+    .measure-step { display:flex;gap:16px;align-items:flex-start; }
+    .step-num { font-size:20px;font-weight:900;font-family:var(--mono);color:var(--accent);flex-shrink:0;width:32px;line-height:1.4; }
+    .step-body { font-size:14px;line-height:1.6; }
+    .step-body strong { font-weight:700; }
+    .highlight-box { background:var(--offwhite);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;font-size:14px;color:var(--black);line-height:1.6; }
+    .cta-box { background:var(--black);border-radius:12px;padding:32px;text-align:center;margin-top:48px; }
+    .cta-box h3 { font-size:22px;font-weight:800;color:var(--white);margin-bottom:8px; }
+    .cta-box p { font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:20px; }
+    .btn-cta { display:inline-block;padding:12px 28px;background:var(--accent);color:var(--white);font-weight:700;font-size:15px;border-radius:8px;transition:background 0.15s; }
+    .btn-cta:hover { background:#c44e24; }
+    footer { background:var(--black);padding:32px; }
+    .footer-inner { max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between; }
+    .footer-logo { font-size:16px;font-weight:900;color:var(--white);letter-spacing:-0.03em; }
+    .footer-logo span { color:var(--accent); }
+    .footer-copy { font-size:12px;color:rgba(255,255,255,0.3); }
+    @media(max-width:600px){ nav{padding:0 16px;} .page-hero{padding:40px 16px;} .page-hero h1{font-size:28px;} .content{padding:40px 16px;} .footer-inner{flex-direction:column;gap:8px;text-align:center;} }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">FitMy<span>Pack</span></a>
+  <div class="nav-right">
+    <a href="/backpacks/">Hiking Backpacks</a>
+    <a href="/how-it-works/" style="color:var(--white);">How it works</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Transparency first</div>
+  <h1>How FitMyPack Score™ Works</h1>
+  <p>A transparent look at the algorithm behind the scores — and why torso length is the most important measurement for backpack fit.</p>
+</div>
+
+<div class="content">
+
+  <div class="section">
+    <div class="section-label">The problem</div>
+    <h2>Why most hikers buy the wrong size pack</h2>
+    <p>Most backpack size guides tell you to pick a size based on your height. But height alone is a poor predictor of pack fit. Two people of identical height can have very different torso lengths — and it's the torso that determines how a pack actually carries weight.</p>
+    <p>A pack that doesn't match your torso length will transfer weight to your shoulders instead of your hips. This causes pain, fatigue and poor balance on the trail — even on an expensive, well-designed pack.</p>
+    <div class="highlight-box">
+      The single most important measurement for backpack fit is <strong>torso length</strong> — not height, not body weight, not shoulder width.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The measurements</div>
+    <h2>How to measure your torso and waist</h2>
+    <p>You need two measurements. Both take under two minutes with a soft tape measure.</p>
+    <div class="measure-steps">
+      <div class="measure-step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <strong>Torso length — find your C7 vertebra.</strong> Tilt your head forward. Feel the base of your neck — the most prominent bony bump is C7. This is your top measurement point.
+        </div>
+      </div>
+      <div class="measure-step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <strong>Find your iliac crest.</strong> Place your hands on your hips with thumbs pointing backwards. The top edge of your hip bones is the iliac crest. This is your bottom measurement point.
+        </div>
+      </div>
+      <div class="measure-step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <strong>Measure.</strong> Run a soft tape measure from C7 down your spine to the iliac crest. This distance in centimetres is your torso length.
+        </div>
+      </div>
+      <div class="measure-step">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <strong>Waist circumference.</strong> Measure around your torso at the level of your belly button — this is approximately where the pack's hip belt will sit. Record this in centimetres.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The algorithm</div>
+    <h2>How the FitMyPack Score™ is calculated</h2>
+    <p>Every pack in our database has manufacturer-verified fit ranges: a minimum and maximum torso length, and a minimum and maximum waist circumference for each size. When you enter your measurements, we run this calculation for every pack and every size:</p>
+
+    <div class="formula-box">
+      <div class="formula-title">FitMyPack Score™ — v1 formula</div>
+      <div class="formula-line">If torso OR waist is <span>outside the manufacturer range</span> → Score = <span>0 (Not Compatible)</span></div>
+      <div class="formula-line">If both measurements are <span>inside the range</span>:</div>
+      <div class="formula-line">&nbsp;&nbsp;Torso score = 100 − (distance from centre of range ÷ half-range × <span>20</span>)</div>
+      <div class="formula-line">&nbsp;&nbsp;Waist score = 100 − (distance from centre of range ÷ half-range × <span>15</span>)</div>
+      <div class="formula-line">&nbsp;&nbsp;<span>Final score</span> = Torso score × 0.70 + Waist score × 0.30</div>
+    </div>
+
+    <p>The torso score carries 70% of the weight because torso length is the primary determinant of how a pack carries. The waist measurement carries 30% — it determines hip belt fit, which affects load transfer.</p>
+    <p>Scores closer to the centre of the manufacturer's range score higher. A measurement at the very edge of the range will score around 80 — the pack will fit, but with less adjustment range available.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Score interpretation</div>
+    <h2>What each score means</h2>
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th>Score</th>
+          <th>Label</th>
+          <th>What it means</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>90–100</td>
+          <td><span class="badge excellent">Excellent Fit</span></td>
+          <td>Your measurements fall near the centre of this size's range. Maximum adjustment available, optimal load transfer.</td>
+        </tr>
+        <tr>
+          <td>75–89</td>
+          <td><span class="badge good">Good Fit</span></td>
+          <td>Your measurements fit within range but closer to the edges. The pack will fit well with proper adjustment.</td>
+        </tr>
+        <tr>
+          <td>60–74</td>
+          <td><span class="badge fair">Fair Fit</span></td>
+          <td>At the limits of the manufacturer's stated range. May fit with maximum strap adjustment.</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td><span class="badge nc">Not Compatible</span></td>
+          <td>Your torso or waist is outside the manufacturer's stated range. This size is not recommended for your body.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Multi-size packs</div>
+    <h2>How we handle packs with multiple sizes</h2>
+    <p>Most serious hiking packs come in multiple sizes (S/M, L/XL or Small/Medium/Large). In the backpack listing, we calculate the FitMyPack Score™ for every available size and display the <strong>best score</strong> on the card.</p>
+    <p>On the individual pack page, you can see the score breakdown for each size — so you know exactly which size to order.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Our database</div>
+    <h2>How we build and verify our data</h2>
+    <p>Every fit specification in our database is sourced directly from manufacturer product pages — we do not estimate, interpolate or invent data. If a manufacturer does not publish torso or waist fit data for a size, that size is excluded from scoring.</p>
+    <p>Measurements listed in inches are converted to centimetres (× 2.54). Weights in pounds are converted to kilograms (÷ 2.205). All conversions are exact.</p>
+    <p>FitMyPack was built by a team of outdoor enthusiasts frustrated by the lack of body-specific backpack comparison tools. We have no commercial relationship with any brand in our database.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Ready to find your pack?</h3>
+    <p>Enter your measurements and get your FitMyPack Score™ across 50+ packs.</p>
+    <a href="/" class="btn-cta">Find my pack →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">FitMy<span>Pack</span></div>
+    <div class="footer-copy">FitMyPack is reader-supported. We may earn a referral fee at no cost to you.</div>
+  </div>
+</footer>
+</body>
+</html>
