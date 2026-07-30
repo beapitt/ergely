@@ -134,10 +134,7 @@ permalink: "backpacks/{{ pack.id }}/index.html"
         <div class="img-placeholder">🎒</div>
       {% endif %}
     </div>
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-      <img id="lightbox-img" src="" alt="">
-    </div>
+
 
     <div class="price-box">
       <div class="price-label">Price (approx.)</div>
@@ -321,5 +318,9 @@ permalink: "backpacks/{{ pack.id }}/index.html"
   if(params.get('waist')) document.getElementById('fc-waist').value=params.get('waist');
   if(params.get('torso')&&params.get('waist')) window.addEventListener('DOMContentLoaded', checkFit);
 </script>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
 </body>
 </html>
