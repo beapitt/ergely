@@ -257,8 +257,9 @@ permalink: "backpacks/{{ pack.id }}/index.html"
   </div>
 </footer>
 
+<script id="pack-sizes-data" type="application/json">{{ pack.sizes | dump }}</script>
 <script>
-  const PACK_SIZES = {{ pack.sizes | dump }};
+  const PACK_SIZES = JSON.parse(document.getElementById("pack-sizes-data").textContent);
 
   function openLightbox(wrap) { const img=wrap.querySelector('img'); if(!img)return; document.getElementById('lightbox-img').src=img.src; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow='hidden'; }
   function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
