@@ -252,7 +252,7 @@ permalink: "backpacks/index.html"
          data-torso-max="{{ lastSize.torso_max_cm if lastSize.torso_max_cm else '' }}"
          data-waist-min="{{ firstSize.waist_min_cm if firstSize.waist_min_cm else '' }}"
          data-waist-max="{{ lastSize.waist_max_cm if lastSize.waist_max_cm else '' }}"
-         data-sizes="{{ pack.sizes | dump | escape }}">
+         data-sizes='{{ pack.sizes | dump | replace("'", "&#39;") }}'>
         <div class="card-image">
           {% if pack.identity.image_url %}
             <img src="{{ pack.identity.image_url }}" alt="{{ pack.identity.brand }} {{ pack.identity.model }}" loading="lazy">
@@ -330,7 +330,7 @@ permalink: "backpacks/index.html"
   function calcScore(torso, waist, card) {
     // Prova tutte le taglie e prendi il punteggio migliore
     try {
-      const sizes = JSON.parse(card.dataset.sizes.replace(/&quot;/g,'"').replace(/&#34;/g,'"'));
+      const raw=card.dataset.sizes;const sizes=JSON.parse(raw.replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&').replace(/&#34;/g,'"'));
       let best = null;
       sizes.forEach(size => {
         const s = calcSizeScore(torso, waist, size);
