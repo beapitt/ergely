@@ -349,6 +349,782 @@
           "raincover"
         ]
       }
+    },
+    {
+      "id": "gregory-maven-55-womens",
+      "identity": {
+        "brand": "Gregory",
+        "model": "Maven 55",
+        "gender": "Women",
+        "price_usd": 249.95,
+        "price_range": "200_300",
+        "product_url": "https://www.rei.com/product/223456/gregory-maven-55-pack-womens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "Extra Small",
+          "torso_min_cm": 35.56,
+          "torso_max_cm": 40.64,
+          "waist_min_cm": 63.5,
+          "waist_max_cm": 111.76,
+          "volume_liters": 55,
+          "weight_kg": 1.47
+        },
+        {
+          "size": "Small",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 45.72,
+          "waist_min_cm": 68.58,
+          "waist_max_cm": 116.84,
+          "volume_liters": 55,
+          "weight_kg": 1.5
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 45.72,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 73.66,
+          "waist_max_cm": 121.92,
+          "volume_liters": 55,
+          "weight_kg": 1.54
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Women wanting a versatile 55L pack with women-specific Gregory suspension.",
+        "not_recommended_for": "Women with torso outside 36-51 cm.",
+        "tags": [
+          "backpacking",
+          "women",
+          "55L",
+          "raincover",
+          "gregory"
+        ]
+      }
+    },
+    {
+      "id": "deuter-aircontact-lite-35-10-sl-womens",
+      "identity": {
+        "brand": "Deuter",
+        "model": "Aircontact Lite 35+10 SL",
+        "gender": "Women",
+        "price_usd": 219.95,
+        "price_range": "200_300",
+        "product_url": "https://www.rei.com/product/177580/deuter-aircontact-lite-3510-sl-pack-womens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "One Size",
+          "torso_min_cm": 38.0,
+          "torso_max_cm": 50.0,
+          "waist_min_cm": 63.0,
+          "waist_max_cm": 110.0,
+          "volume_liters": 35,
+          "weight_kg": 1.47
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Women wanting a 35L women-specific Deuter pack with SL (Slim Line) fit for shorter torsos.",
+        "not_recommended_for": "Women with torso outside 38-50 cm.",
+        "tags": [
+          "backpacking",
+          "women",
+          "35L",
+          "raincover",
+          "deuter",
+          "slim-fit"
+        ]
+      }
+    },
+    {
+      "id": "osprey-aura-ag-50-womens",
+      "identity": {
+        "brand": "Osprey",
+        "model": "Aura AG 50",
+        "gender": "Women",
+        "price_usd": 320.0,
+        "price_range": "300_plus",
+        "product_url": "https://www.rei.com/product/246207/osprey-aura-ag-50-pack-womens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "XS/S",
+          "torso_min_cm": 35.56,
+          "torso_max_cm": 43.18,
+          "waist_min_cm": 63.5,
+          "waist_max_cm": 134.62,
+          "volume_liters": 50,
+          "weight_kg": 1.85
+        },
+        {
+          "size": "M/L",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 142.24,
+          "volume_liters": 50,
+          "weight_kg": 1.93
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Women wanting Osprey's anti-gravity suspension in a 50L weekend pack with women-specific fit.",
+        "not_recommended_for": "Users needing under 50L or torso outside 36-51 cm.",
+        "tags": [
+          "backpacking",
+          "women",
+          "50L",
+          "anti-gravity",
+          "premium",
+          "raincover"
+        ]
+      }
+    },
+    {
+      "id": "gregory-paragon-58-mens",
+      "identity": {
+        "brand": "Gregory",
+        "model": "Paragon 58",
+        "gender": "Men",
+        "price_usd": 249.95,
+        "price_range": "200_300",
+        "product_url": "https://www.rei.com/product/223450/gregory-paragon-58-pack-mens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "Small",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 45.72,
+          "waist_min_cm": 68.58,
+          "waist_max_cm": 116.84,
+          "volume_liters": 58,
+          "weight_kg": 1.56
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 45.72,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 73.66,
+          "waist_max_cm": 121.92,
+          "volume_liters": 58,
+          "weight_kg": 1.59
+        },
+        {
+          "size": "Large",
+          "torso_min_cm": 50.8,
+          "torso_max_cm": 55.88,
+          "waist_min_cm": 78.74,
+          "waist_max_cm": 127.0,
+          "volume_liters": 58,
+          "weight_kg": 1.63
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Men wanting a versatile 58L backpacking pack with Gregory's Response AFS suspension.",
+        "not_recommended_for": "Men with torso outside 41-56 cm range.",
+        "tags": [
+          "backpacking",
+          "men",
+          "58L",
+          "raincover",
+          "gregory"
+        ]
+      }
+    },
+    {
+      "id": "nemo-ranger-65-mens",
+      "identity": {
+        "brand": "NEMO",
+        "model": "Ranger 65",
+        "gender": "Men",
+        "price_usd": 299.95,
+        "price_range": "200_300",
+        "product_url": "https://www.rei.com/product/223462/nemo-ranger-65-pack-mens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "Small/Medium",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 121.92,
+          "volume_liters": 65,
+          "weight_kg": 2.09
+        },
+        {
+          "size": "Large/XL",
+          "torso_min_cm": 50.8,
+          "torso_max_cm": 60.96,
+          "waist_min_cm": 76.2,
+          "waist_max_cm": 127.0,
+          "volume_liters": 65,
+          "weight_kg": 2.18
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Men wanting a sustainable 65L expedition pack from NEMO with excellent adjustability.",
+        "not_recommended_for": "Men with torso outside 41-61 cm.",
+        "tags": [
+          "backpacking",
+          "men",
+          "65L",
+          "sustainable",
+          "raincover",
+          "nemo"
+        ]
+      }
+    },
+    {
+      "id": "rei-co-op-flash-22-unisex",
+      "identity": {
+        "brand": "REI Co-op",
+        "model": "Flash 22",
+        "gender": "Unisex",
+        "price_usd": 89.95,
+        "price_range": "under_100",
+        "product_url": "https://www.rei.com/product/177573/rei-co-op-flash-22-pack",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "One Size",
+          "torso_min_cm": null,
+          "torso_max_cm": null,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 22,
+          "weight_kg": 0.48
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": false
+      },
+      "editorial": {
+        "best_for_summary": "Budget hikers wanting an ultralight 22L frameless daypack under $100.",
+        "not_recommended_for": "Heavy loads or multi-day trips.",
+        "tags": [
+          "hiking",
+          "unisex",
+          "ultralight",
+          "budget",
+          "daypack",
+          "frameless"
+        ]
+      }
+    },
+    {
+      "id": "patagonia-black-hole-pack-25l-unisex",
+      "identity": {
+        "brand": "Patagonia",
+        "model": "Black Hole Pack 25L",
+        "gender": "Unisex",
+        "price_usd": 149.0,
+        "price_range": "100_200",
+        "product_url": "https://www.patagonia.com/product/black-hole-pack-25-liters/49298.html",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "One Size",
+          "torso_min_cm": null,
+          "torso_max_cm": null,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 25,
+          "weight_kg": 0.68
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": false,
+        "hipbelt_pockets": false
+      },
+      "editorial": {
+        "best_for_summary": "Hikers and travelers wanting a durable 25L pack made from recycled materials.",
+        "not_recommended_for": "Technical backpacking or users needing hip belt support.",
+        "tags": [
+          "hiking",
+          "unisex",
+          "sustainable",
+          "travel",
+          "25L"
+        ]
+      }
+    },
+    {
+      "id": "deuter-aircontact-lite-45-10-mens",
+      "identity": {
+        "brand": "Deuter",
+        "model": "Aircontact Lite 45+10",
+        "gender": "Men",
+        "price_usd": 239.95,
+        "price_range": "200_300",
+        "product_url": "https://www.rei.com/product/177578/deuter-aircontact-lite-4510-pack-mens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "Short",
+          "torso_min_cm": 40.0,
+          "torso_max_cm": 46.0,
+          "waist_min_cm": 68.0,
+          "waist_max_cm": 120.0,
+          "volume_liters": 45,
+          "weight_kg": 1.69
+        },
+        {
+          "size": "Regular",
+          "torso_min_cm": 46.0,
+          "torso_max_cm": 54.0,
+          "waist_min_cm": 73.0,
+          "waist_max_cm": 125.0,
+          "volume_liters": 45,
+          "weight_kg": 1.72
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Men wanting a German-engineered 45L pack with expandable lid for multi-day trips.",
+        "not_recommended_for": "Men with torso under 40 cm or over 54 cm.",
+        "tags": [
+          "backpacking",
+          "men",
+          "45L",
+          "raincover",
+          "deuter"
+        ]
+      }
+    },
+    {
+      "id": "osprey-tempest-20-womens",
+      "identity": {
+        "brand": "Osprey",
+        "model": "Tempest 20",
+        "gender": "Women",
+        "price_usd": 160.0,
+        "price_range": "100_200",
+        "product_url": "https://www.rei.com/product/246228/osprey-tempest-20-pack-womens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "XS/S",
+          "torso_min_cm": 35.56,
+          "torso_max_cm": 43.18,
+          "waist_min_cm": 63.5,
+          "waist_max_cm": 96.52,
+          "volume_liters": 20,
+          "weight_kg": 0.82
+        },
+        {
+          "size": "M/L",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 111.76,
+          "volume_liters": 20,
+          "weight_kg": 0.86
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Women hikers wanting a lightweight 20L trail pack with women-specific fit.",
+        "not_recommended_for": "Multi-day trips or users needing over 20L.",
+        "tags": [
+          "hiking",
+          "women",
+          "daypack",
+          "lightweight"
+        ]
+      }
+    },
+    {
+      "id": "osprey-stratos-24-mens",
+      "identity": {
+        "brand": "Osprey",
+        "model": "Stratos 24",
+        "gender": "Men",
+        "price_usd": 180.0,
+        "price_range": "100_200",
+        "product_url": "https://www.rei.com/product/246201/osprey-stratos-24-pack-mens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "S/M",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 48.26,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 111.76,
+          "volume_liters": 24,
+          "weight_kg": 1.05
+        },
+        {
+          "size": "M/L",
+          "torso_min_cm": 45.72,
+          "torso_max_cm": 55.88,
+          "waist_min_cm": 76.2,
+          "waist_max_cm": 121.92,
+          "volume_liters": 24,
+          "weight_kg": 1.08
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Men wanting a ventilated 24L day hiking pack with AirSpeed suspension.",
+        "not_recommended_for": "Multi-day trips or users needing over 24L.",
+        "tags": [
+          "hiking",
+          "men",
+          "daypack",
+          "ventilated"
+        ]
+      }
+    },
+    {
+      "id": "gregory-deva-60-womens",
+      "identity": {
+        "brand": "Gregory",
+        "model": "Deva 60",
+        "gender": "Women",
+        "price_usd": 299.95,
+        "price_range": "200_300",
+        "product_url": "https://www.rei.com/product/223458/gregory-deva-60-pack-womens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "Extra Small",
+          "torso_min_cm": 35.56,
+          "torso_max_cm": 40.64,
+          "waist_min_cm": 63.5,
+          "waist_max_cm": 111.76,
+          "volume_liters": 60,
+          "weight_kg": 1.95
+        },
+        {
+          "size": "Small",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 45.72,
+          "waist_min_cm": 68.58,
+          "waist_max_cm": 116.84,
+          "volume_liters": 60,
+          "weight_kg": 1.99
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 45.72,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 73.66,
+          "waist_max_cm": 121.92,
+          "volume_liters": 60,
+          "weight_kg": 2.04
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Women wanting a premium 60L backpacking pack with Gregory's women-specific Freeform suspension.",
+        "not_recommended_for": "Women with torso outside 36-51 cm.",
+        "tags": [
+          "backpacking",
+          "women",
+          "60L",
+          "premium",
+          "raincover",
+          "gregory"
+        ]
+      }
+    },
+    {
+      "id": "nemo-sidetrack-19-5-kids",
+      "identity": {
+        "brand": "NEMO",
+        "model": "Sidetrack 19.5L",
+        "gender": "Kids",
+        "price_usd": 89.95,
+        "price_range": "under_100",
+        "product_url": "https://www.rei.com/product/223464/nemo-sidetrack-195-kids-pack",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "One Size",
+          "torso_min_cm": 25.4,
+          "torso_max_cm": 38.1,
+          "waist_min_cm": 50.8,
+          "waist_max_cm": 76.2,
+          "volume_liters": 19.5,
+          "weight_kg": 0.57
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Hiking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": false
+      },
+      "editorial": {
+        "best_for_summary": "Kids needing a properly fitting 19.5L pack with torso adjustment and raincover.",
+        "not_recommended_for": "Kids with torso over 38 cm — consider adult sizes.",
+        "tags": [
+          "hiking",
+          "kids",
+          "19L",
+          "raincover",
+          "nemo"
+        ]
+      }
+    },
+    {
+      "id": "osprey-atmos-ag-50-mens",
+      "identity": {
+        "brand": "Osprey",
+        "model": "Atmos AG 50",
+        "gender": "Men",
+        "price_usd": 320.0,
+        "price_range": "300_plus",
+        "product_url": "https://www.rei.com/product/246199/osprey-atmos-ag-50-pack-mens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "S/M",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 48.26,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 142.24,
+          "volume_liters": 50,
+          "weight_kg": 1.93
+        },
+        {
+          "size": "L/XL",
+          "torso_min_cm": 48.26,
+          "torso_max_cm": 58.42,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 142.24,
+          "volume_liters": 52,
+          "weight_kg": 2.01
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": true,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Men wanting Osprey's anti-gravity suspension in a 50L weekend pack.",
+        "not_recommended_for": "Users needing under 50L or torso outside 41-58 cm.",
+        "tags": [
+          "backpacking",
+          "men",
+          "50L",
+          "anti-gravity",
+          "premium",
+          "raincover"
+        ]
+      }
+    },
+    {
+      "id": "rei-co-op-flash-18-kids",
+      "identity": {
+        "brand": "REI Co-op",
+        "model": "Flash 18 Kids",
+        "gender": "Kids",
+        "price_usd": 49.95,
+        "price_range": "under_100",
+        "product_url": "https://www.rei.com/product/242429/rei-co-op-flash-18-kids-pack",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "One Size",
+          "torso_min_cm": null,
+          "torso_max_cm": null,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 18,
+          "weight_kg": 0.43
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": false
+      },
+      "editorial": {
+        "best_for_summary": "Kids needing an ultralight 18L frameless pack for day hikes.",
+        "not_recommended_for": "Heavy loads or overnight trips.",
+        "tags": [
+          "hiking",
+          "kids",
+          "ultralight",
+          "budget",
+          "daypack"
+        ]
+      }
+    },
+    {
+      "id": "osprey-talon-22-unisex",
+      "identity": {
+        "brand": "Osprey",
+        "model": "Talon 22",
+        "gender": "Unisex",
+        "price_usd": 175.0,
+        "price_range": "100_200",
+        "product_url": "https://www.rei.com/product/237541/osprey-talon-22-pack",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "O/S",
+          "torso_min_cm": null,
+          "torso_max_cm": null,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 22,
+          "weight_kg": 1.08
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Unisex hikers wanting a lightweight 22L frameless daypack.",
+        "not_recommended_for": "Multi-day trips or users needing a structured frame.",
+        "tags": [
+          "hiking",
+          "unisex",
+          "daypack",
+          "lightweight",
+          "frameless"
+        ]
+      }
+    },
+    {
+      "id": "osprey-sirrus-24-womens",
+      "identity": {
+        "brand": "Osprey",
+        "model": "Sirrus 24",
+        "gender": "Women",
+        "price_usd": 180.0,
+        "price_range": "100_200",
+        "product_url": "https://www.rei.com/product/246209/osprey-sirrus-24-pack-womens",
+        "image_url": ""
+      },
+      "sizes": [
+        {
+          "size": "XS/S",
+          "torso_min_cm": 35.56,
+          "torso_max_cm": 43.18,
+          "waist_min_cm": 63.5,
+          "waist_max_cm": 96.52,
+          "volume_liters": 24,
+          "weight_kg": 1.02
+        },
+        {
+          "size": "M/L",
+          "torso_min_cm": 40.64,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 71.12,
+          "waist_max_cm": 111.76,
+          "volume_liters": 24,
+          "weight_kg": 1.05
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Hiking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "Women wanting a ventilated 24L day hiking pack with women-specific AirSpeed suspension.",
+        "not_recommended_for": "Multi-day trips or users needing over 24L.",
+        "tags": [
+          "hiking",
+          "women",
+          "daypack",
+          "ventilated"
+        ]
+      }
     }
   ]
 }
