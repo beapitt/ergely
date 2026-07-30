@@ -235,6 +235,8 @@ permalink: "backpacks/index.html"
     </div>
     <div class="product-grid" id="product-grid">
       {% for pack in packs_page %}
+      {% set firstSize = pack.sizes[0] %}
+      {% set lastSize = pack.sizes[-1] %}
       <a class="product-card"
          href="/backpacks/{{ pack.id }}/"
          data-id="{{ pack.id }}"
@@ -243,13 +245,14 @@ permalink: "backpacks/index.html"
          data-use="{{ pack.specs.best_use }}"
          data-budget="{{ pack.identity.price_range }}"
          data-price="{{ pack.identity.price_usd if pack.identity.price_usd else 0 }}"
-         data-volume-l="{{ pack.specs.volume_liters if pack.specs.volume_liters else 0 }}"
+         data-volume-l="{{ firstSize.volume_liters if firstSize.volume_liters else 0 }}"
          data-raincover="{{ 'true' if pack.specs.raincover_included else 'false' }}"
          data-hipbelt="{{ 'true' if pack.specs.hipbelt_pockets else 'false' }}"
-         data-torso-min="{{ pack.fit.torso_min_cm if pack.fit.torso_min_cm else '' }}"
-         data-torso-max="{{ pack.fit.torso_max_cm if pack.fit.torso_max_cm else '' }}"
-         data-waist-min="{{ pack.fit.waist_min_cm if pack.fit.waist_min_cm else '' }}"
-         data-waist-max="{{ pack.fit.waist_max_cm if pack.fit.waist_max_cm else '' }}">
+         data-torso-min="{{ firstSize.torso_min_cm if firstSize.torso_min_cm else '' }}"
+         data-torso-max="{{ lastSize.torso_max_cm if lastSize.torso_max_cm else '' }}"
+         data-waist-min="{{ firstSize.waist_min_cm if firstSize.waist_min_cm else '' }}"
+         data-waist-max="{{ lastSize.waist_max_cm if lastSize.waist_max_cm else '' }}"
+         data-sizes="{{ pack.sizes | dump | escape }}">
         <div class="card-image">
           {% if pack.identity.image_url %}
             <img src="{{ pack.identity.image_url }}" alt="{{ pack.identity.brand }} {{ pack.identity.model }}" loading="lazy">
@@ -261,12 +264,12 @@ permalink: "backpacks/index.html"
         <div class="card-body">
           <div class="card-brand">{{ pack.identity.brand }}</div>
           <div class="card-model">{{ pack.identity.model }}</div>
-          <span class="card-size">{{ pack.identity.size }}{% if pack.identity.gender %} · {{ pack.identity.gender }}{% endif %}</span>
+          <span class="card-size">{{ pack.sizes | length }} size{% if pack.sizes | length > 1 %}s{% endif %} · {{ pack.identity.gender }}</span>
           <div class="card-summary">{{ pack.editorial.best_for_summary }}</div>
           <div class="card-specs">
-            {% if pack.specs.volume_liters %}<span class="card-spec">{{ pack.specs.volume_liters }}L</span>{% endif %}
-            {% if pack.specs.weight_kg %}<span class="card-spec">{{ pack.specs.weight_kg }} kg</span>{% endif %}
-            {% if pack.fit.torso_min_cm and pack.fit.torso_max_cm %}<span class="card-spec">Torso {{ pack.fit.torso_min_cm | round(0) }}–{{ pack.fit.torso_max_cm | round(0) }} cm</span>{% endif %}
+            {% if firstSize.volume_liters %}<span class="card-spec">{{ firstSize.volume_liters }}L</span>{% endif %}
+            {% if firstSize.weight_kg %}<span class="card-spec">{{ firstSize.weight_kg }} kg</span>{% endif %}
+            {% if firstSize.torso_min_cm and lastSize.torso_max_cm %}<span class="card-spec">Torso {{ firstSize.torso_min_cm | round(0) }}–{{ lastSize.torso_max_cm | round(0) }} cm</span>{% endif %}
             {% if pack.specs.raincover_included %}<span class="card-spec">☂ Raincover</span>{% endif %}
           </div>
         </div>
@@ -312,11 +315,9 @@ permalink: "backpacks/index.html"
     applyFilters();
   }
 
-  function calcScore(torso, waist, card) {
-    const tMin=parseFloat(card.dataset.torsoMin);
-    const tMax=parseFloat(card.dataset.torsoMax);
-    const wMin=parseFloat(card.dataset.waistMin);
-    const wMax=parseFloat(card.dataset.waistMax);
+  function calcSizeScore(torso, waist, size) {
+    const tMin=parseFloat(size.torso_min_cm), tMax=parseFloat(size.torso_max_cm);
+    const wMin=parseFloat(size.waist_min_cm), wMax=parseFloat(size.waist_max_cm);
     if(!tMin||!tMax||!wMin||!wMax) return null;
     if(torso<tMin||torso>tMax) return 0;
     if(waist<wMin||waist>wMax) return 0;
@@ -325,6 +326,33 @@ permalink: "backpacks/index.html"
     const wCenter=(wMin+wMax)/2, wRange=(wMax-wMin)/2;
     const wScore=Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15);
     return Math.round(tScore*0.70+wScore*0.30);
+  }
+  function calcScore(torso, waist, card) {
+    // Prova tutte le taglie e prendi il punteggio migliore
+    try {
+      const sizes = JSON.parse(card.dataset.sizes.replace(/&quot;/g,'"').replace(/&#34;/g,'"'));
+      let best = null;
+      sizes.forEach(size => {
+        const s = calcSizeScore(torso, waist, size);
+        if(s === null) return;
+        if(best === null || s > best) best = s;
+      });
+      return best;
+    } catch(e) {
+      // Fallback vecchia struttura
+      const tMin=parseFloat(card.dataset.torsoMin);
+      const tMax=parseFloat(card.dataset.torsoMax);
+      const wMin=parseFloat(card.dataset.waistMin);
+      const wMax=parseFloat(card.dataset.waistMax);
+      if(!tMin||!tMax||!wMin||!wMax) return null;
+      if(torso<tMin||torso>tMax) return 0;
+      if(waist<wMin||waist>wMax) return 0;
+      const tCenter=(tMin+tMax)/2, tRange=(tMax-tMin)/2;
+      const tScore=Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20);
+      const wCenter=(wMin+wMax)/2, wRange=(wMax-wMin)/2;
+      const wScore=Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15);
+      return Math.round(tScore*0.70+wScore*0.30);
+    }
   }
 
   function scoreClass(s){ if(s===null)return null; if(s===0)return'incompatible'; if(s>=90)return'excellent'; if(s>=75)return'good'; return'fair'; }
