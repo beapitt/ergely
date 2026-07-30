@@ -10,8 +10,8 @@ permalink: "backpacks/{{ pack.id }}/index.html"
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {%- set pageDesc -%}{{ pack.identity.brand }} {{ pack.identity.model }} ({{ pack.identity.size }}). {{ pack.editorial.best_for_summary }}.{% if pack.fit.torso_min_cm %} Fits torso {{ pack.fit.torso_min_cm | round(0) }}–{{ pack.fit.torso_max_cm | round(0) }} cm.{% endif %}{% if pack.identity.price_usd %} From ${{ pack.identity.price_usd }}.{% endif %}{%- endset -%}
-  <title>{{ pack.identity.brand }} {{ pack.identity.model }} {{ pack.identity.size }} Review | FitMyPack</title>
+  {%- set firstSize = pack.sizes[0] -%}{%- set pageDesc -%}{{ pack.identity.brand }} {{ pack.identity.model }}. {{ pack.editorial.best_for_summary }}.{% if firstSize.torso_min_cm %} Fits torso {{ firstSize.torso_min_cm | round(0) }}–{{ pack.sizes[-1].torso_max_cm | round(0) }} cm.{% endif %}{% if pack.identity.price_usd %} From ${{ pack.identity.price_usd }}.{% endif %}{%- endset -%}
+  <title>{{ pack.identity.brand }} {{ pack.identity.model }} Review | FitMyPack</title>
   <meta name="description" content="{{ pageDesc }}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://fitmypack.com/backpacks/{{ pack.id }}/">
@@ -148,12 +148,12 @@ permalink: "backpacks/{{ pack.id }}/index.html"
     </div>
 
     <div class="quick-specs">
-      {% if pack.specs.volume_liters %}<div class="quick-spec"><span class="qs-label">Volume</span><span class="qs-value">{{ pack.specs.volume_liters }}L</span></div>{% endif %}
-      {% if pack.specs.weight_kg %}<div class="quick-spec"><span class="qs-label">Weight</span><span class="qs-value">{{ pack.specs.weight_kg }} kg</span></div>{% endif %}
-      {% if pack.fit.torso_min_cm and pack.fit.torso_max_cm %}<div class="quick-spec"><span class="qs-label">Fits torso</span><span class="qs-value">{{ pack.fit.torso_min_cm | round(0) }}–{{ pack.fit.torso_max_cm | round(0) }} cm</span></div>{% endif %}
-      {% if pack.fit.waist_min_cm and pack.fit.waist_max_cm %}<div class="quick-spec"><span class="qs-label">Fits waist</span><span class="qs-value">{{ pack.fit.waist_min_cm | round(0) }}–{{ pack.fit.waist_max_cm | round(0) }} cm</span></div>{% endif %}
+      {% set s0 = pack.sizes[0] %}
+      {% if s0.volume_liters %}<div class="quick-spec"><span class="qs-label">Volume</span><span class="qs-value">{{ s0.volume_liters }}L</span></div>{% endif %}
+      {% if s0.weight_kg %}<div class="quick-spec"><span class="qs-label">Weight</span><span class="qs-value">{{ s0.weight_kg }} kg</span></div>{% endif %}
       {% if pack.specs.frame_type %}<div class="quick-spec"><span class="qs-label">Frame</span><span class="qs-value">{{ pack.specs.frame_type }}</span></div>{% endif %}
       {% if pack.specs.raincover_included is not none %}<div class="quick-spec"><span class="qs-label">Raincover</span><span class="qs-value">{{ 'Included' if pack.specs.raincover_included else 'Not included' }}</span></div>{% endif %}
+      <div class="quick-spec"><span class="qs-label">Sizes available</span><span class="qs-value">{{ pack.sizes | length }}</span></div>
     </div>
   </aside>
 
@@ -192,6 +192,23 @@ permalink: "backpacks/{{ pack.id }}/index.html"
       <div class="fit-result-box" id="fit-result"></div>
     </div>
 
+    <!-- TAGLIE -->
+    <div style="margin-top:8px;">
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:8px;">Available sizes</div>
+      <div style="display:flex;flex-direction:column;gap:6px;" id="sizes-list">
+        {% for size in pack.sizes %}
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;" id="size-row-{{ loop.index }}">
+          <span style="font-weight:700;font-family:var(--mono);">{{ size.size }}</span>
+          <span style="color:var(--muted);font-size:11px;">
+            {% if size.torso_min_cm %}Torso {{ size.torso_min_cm | round(0) }}–{{ size.torso_max_cm | round(0) }} cm{% endif %}
+            {% if size.waist_min_cm %} · Waist {{ size.waist_min_cm | round(0) }}–{{ size.waist_max_cm | round(0) }} cm{% endif %}
+          </span>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--muted);" id="size-score-{{ loop.index }}"></span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
     <div class="score-box" id="score-box">
       <div class="score-title">FitMyPack Score™</div>
       <div class="score-number" id="score-number">—</div>
@@ -208,17 +225,24 @@ permalink: "backpacks/{{ pack.id }}/index.html"
 <div class="specs-section">
   <div class="specs-title">Full specifications</div>
   <div class="specs-group">
-    <button class="specs-group-header" onclick="toggleSpecs(this)">Fit dimensions <span>▲</span></button>
+    <button class="specs-group-header" onclick="toggleSpecs(this)">Sizes & fit dimensions <span>▲</span></button>
     <div class="specs-group-body">
-      {% if pack.fit.torso_min_cm and pack.fit.torso_max_cm %}<div class="spec-row"><span class="spec-label">Fits torso length</span><span class="spec-value">{{ pack.fit.torso_min_cm | round(1) }}–{{ pack.fit.torso_max_cm | round(1) }} cm</span></div>{% endif %}
-      {% if pack.fit.waist_min_cm and pack.fit.waist_max_cm %}<div class="spec-row"><span class="spec-label">Fits waist circumference</span><span class="spec-value">{{ pack.fit.waist_min_cm | round(1) }}–{{ pack.fit.waist_max_cm | round(1) }} cm</span></div>{% endif %}
+      {% for size in pack.sizes %}
+      <div class="spec-row" style="flex-direction:column;align-items:flex-start;gap:4px;padding:12px 0;">
+        <span style="font-weight:700;font-family:var(--mono);font-size:13px;">{{ size.size }}</span>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          {% if size.torso_min_cm %}<span style="font-size:12px;color:var(--muted);">Torso: {{ size.torso_min_cm | round(1) }}–{{ size.torso_max_cm | round(1) }} cm</span>{% endif %}
+          {% if size.waist_min_cm %}<span style="font-size:12px;color:var(--muted);">Waist: {{ size.waist_min_cm | round(1) }}–{{ size.waist_max_cm | round(1) }} cm</span>{% endif %}
+          {% if size.volume_liters %}<span style="font-size:12px;color:var(--muted);">Volume: {{ size.volume_liters }}L</span>{% endif %}
+          {% if size.weight_kg %}<span style="font-size:12px;color:var(--muted);">Weight: {{ size.weight_kg }} kg</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
   <div class="specs-group">
     <button class="specs-group-header" onclick="toggleSpecs(this)">Pack specs <span>▾</span></button>
     <div class="specs-group-body hidden">
-      {% if pack.specs.volume_liters %}<div class="spec-row"><span class="spec-label">Volume</span><span class="spec-value">{{ pack.specs.volume_liters }}L</span></div>{% endif %}
-      {% if pack.specs.weight_kg %}<div class="spec-row"><span class="spec-label">Weight</span><span class="spec-value">{{ pack.specs.weight_kg }} kg</span></div>{% endif %}
       {% if pack.specs.frame_type %}<div class="spec-row"><span class="spec-label">Frame type</span><span class="spec-value">{{ pack.specs.frame_type }}</span></div>{% endif %}
       {% if pack.specs.best_use %}<div class="spec-row"><span class="spec-label">Best use</span><span class="spec-value">{{ pack.specs.best_use }}</span></div>{% endif %}
       {% if pack.specs.raincover_included is not none %}<div class="spec-row"><span class="spec-label">Raincover included</span><span class="spec-value">{{ 'Yes' if pack.specs.raincover_included else 'No' }}</span></div>{% endif %}
@@ -237,52 +261,57 @@ permalink: "backpacks/{{ pack.id }}/index.html"
 </footer>
 
 <script>
-  const TORSO_MIN = {{ pack.fit.torso_min_cm if pack.fit.torso_min_cm else 'null' }};
-  const TORSO_MAX = {{ pack.fit.torso_max_cm if pack.fit.torso_max_cm else 'null' }};
-  const WAIST_MIN = {{ pack.fit.waist_min_cm if pack.fit.waist_min_cm else 'null' }};
-  const WAIST_MAX = {{ pack.fit.waist_max_cm if pack.fit.waist_max_cm else 'null' }};
+  const PACK_SIZES = {{ pack.sizes | dump }};
 
   function openLightbox(wrap) { const img=wrap.querySelector('img'); if(!img)return; document.getElementById('lightbox-img').src=img.src; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow='hidden'; }
   function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
   document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
   function toggleSpecs(btn) { const body=btn.nextElementSibling; const arrow=btn.querySelector('span'); const hidden=body.classList.toggle('hidden'); arrow.textContent=hidden?'▾':'▲'; }
 
+  function calcSizeScore(torso, waist, size) {
+    const tMin=parseFloat(size.torso_min_cm), tMax=parseFloat(size.torso_max_cm);
+    const wMin=parseFloat(size.waist_min_cm), wMax=parseFloat(size.waist_max_cm);
+    if(!tMin||!tMax||!wMin||!wMax) return null;
+    if(torso<tMin||torso>tMax||waist<wMin||waist>wMax) return 0;
+    const tCenter=(tMin+tMax)/2, tRange=(tMax-tMin)/2;
+    const tScore=Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20);
+    const wCenter=(wMin+wMax)/2, wRange=(wMax-wMin)/2;
+    const wScore=Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15);
+    return {total:Math.round(tScore*0.70+wScore*0.30), tScore:Math.round(tScore), wScore:Math.round(wScore)};
+  }
+
   function checkFit() {
     const torso = parseFloat(document.getElementById('fc-torso').value);
     const waist = parseFloat(document.getElementById('fc-waist').value);
     if(!torso||!waist) { alert('Please enter both torso length and waist circumference.'); return; }
-    if(!TORSO_MIN||!TORSO_MAX||!WAIST_MIN||!WAIST_MAX) {
-      document.getElementById('fit-result').className='fit-result-box poor active';
-      document.getElementById('fit-result').textContent='Fit data not available for this pack.';
-      return;
-    }
-    const torsoOut = torso < TORSO_MIN || torso > TORSO_MAX;
-    const waistOut = waist < WAIST_MIN || waist > WAIST_MAX;
+
+    // Calcola score per ogni taglia
+    let bestScore = null, bestSize = null, bestResult = null;
+    PACK_SIZES.forEach((size, i) => {
+      const r = calcSizeScore(torso, waist, size);
+      const row = document.getElementById('size-score-'+(i+1));
+      if(r === null) { if(row) row.textContent=''; return; }
+      if(r === 0) { if(row) row.textContent='Not compatible'; if(row) row.style.color='var(--red)'; return; }
+      if(row) { row.textContent=r.total+'/100'; row.style.color=r.total>=90?'var(--excellent)':r.total>=75?'var(--good)':'var(--fair)'; }
+      if(bestScore===null||r.total>bestScore) { bestScore=r.total; bestSize=size; bestResult=r; }
+    });
+
     const result = document.getElementById('fit-result');
-    if(torsoOut || waistOut) {
+    if(bestScore===null||bestScore===0) {
       result.className='fit-result-box poor active';
-      let msg = '<strong>Not Compatible.</strong> ';
-      if(torsoOut) msg += 'Your torso ('+torso+' cm) is outside this pack\'s range of '+TORSO_MIN+'–'+TORSO_MAX+' cm. ';
-      if(waistOut) msg += 'Your waist ('+waist+' cm) is outside this pack\'s range of '+WAIST_MIN+'–'+WAIST_MAX+' cm.';
-      msg += '<br><a href="/backpacks/?torso='+torso+'&waist='+waist+'" style="color:inherit;text-decoration:underline;font-size:12px;display:block;margin-top:6px;">← Find a compatible pack</a>';
-      result.innerHTML = msg;
+      result.innerHTML='<strong>Not Compatible.</strong> Your measurements (torso '+torso+' cm, waist '+waist+' cm) are outside all available sizes for this pack.<br><a href="/backpacks/?torso='+torso+'&waist='+waist+'" style="color:inherit;text-decoration:underline;font-size:12px;display:block;margin-top:6px;">← Find a compatible pack</a>';
       document.getElementById('score-box').classList.remove('active');
     } else {
-      const tCenter=(TORSO_MIN+TORSO_MAX)/2, tRange=(TORSO_MAX-TORSO_MIN)/2;
-      const tScore=Math.round(Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20));
-      const wCenter=(WAIST_MIN+WAIST_MAX)/2, wRange=(WAIST_MAX-WAIST_MIN)/2;
-      const wScore=Math.round(Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15));
-      const total=Math.round(tScore*0.70+wScore*0.30);
-      const label=total>=90?'Excellent Fit':total>=75?'Good Fit':'Fair Fit';
+      const label=bestScore>=90?'Excellent Fit':bestScore>=75?'Good Fit':'Fair Fit';
       result.className='fit-result-box good active';
-      result.innerHTML='<strong>'+label+'.</strong> Your torso ('+torso+' cm) and waist ('+waist+' cm) fit within this pack\'s range.<br><a href="/backpacks/?torso='+torso+'&waist='+waist+'" style="color:inherit;text-decoration:underline;font-size:12px;display:block;margin-top:6px;">← Compare with other packs</a>';
+      result.innerHTML='<strong>'+label+' in size '+bestSize.size+'.</strong> Your torso ('+torso+' cm) and waist ('+waist+' cm) fit this size.<br><a href="/backpacks/?torso='+torso+'&waist='+waist+'" style="color:inherit;text-decoration:underline;font-size:12px;display:block;margin-top:6px;">← Compare with other packs</a>';
       const box=document.getElementById('score-box');
       box.classList.add('active');
-      document.getElementById('score-number').textContent=total+'/100';
-      document.getElementById('score-label').textContent=label;
-      document.getElementById('score-torso').textContent=tScore+'/100';
-      document.getElementById('score-waist').textContent=wScore+'/100';
-      document.getElementById('score-total').textContent=total+'/100';
+      document.getElementById('score-number').textContent=bestScore+'/100';
+      document.getElementById('score-label').textContent=label+' — Size '+bestSize.size;
+      document.getElementById('score-torso').textContent=bestResult.tScore+'/100';
+      document.getElementById('score-waist').textContent=bestResult.wScore+'/100';
+      document.getElementById('score-total').textContent=bestScore+'/100';
     }
   }
 
