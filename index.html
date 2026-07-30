@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitMyPack — Find a Backpack That Fits Your Body</title>
-  <meta name="description" content="Find a hiking or backpacking pack that fits your torso and waist. FitMyPack Score™ calculates compatibility from verified manufacturer specs. No sponsored rankings.">
+  <title>FitMyPack — Find the Best Hiking Backpack for Your Body Size</title>
+  <meta name="description" content="Stop guessing your pack size. Enter your torso and waist to compare 50+ hiking backpacks and get your custom FitMyPack Score™. Verified specs, no sponsored rankings.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://fitmypack.com/">
+  <meta property="og:title" content="FitMyPack — Find the Best Hiking Backpack for Your Body Size">
+  <meta property="og:description" content="Enter your torso and waist measurements. FitMyPack Score™ shows which packs fit your body.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fitmypack.com/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,8 +25,8 @@
     .nav-right a:hover { color:var(--white); }
     .hero { flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 32px;text-align:center; }
     .hero-eyebrow { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--accent);margin-bottom:20px; }
-    .hero h1 { font-size:52px;font-weight:900;color:var(--black);letter-spacing:-0.04em;line-height:1.05;margin-bottom:16px;max-width:640px; }
-    .hero-sub { font-size:18px;color:var(--muted);margin-bottom:48px;max-width:480px; }
+    .hero h1 { font-size:48px;font-weight:900;color:var(--black);letter-spacing:-0.04em;line-height:1.05;margin-bottom:16px;max-width:680px; }
+    .hero-sub { font-size:17px;color:var(--muted);margin-bottom:48px;max-width:520px;line-height:1.6; }
     .hero-form { background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:32px;max-width:500px;width:100%;box-shadow:0 4px 24px rgba(0,0,0,0.07); }
     .form-title { font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:16px;text-align:left; }
     .form-inputs { display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px; }
@@ -31,7 +35,7 @@
     .form-field input { padding:11px 12px;border:1.5px solid var(--border);border-radius:8px;font-size:16px;font-family:var(--font);color:var(--black);background:var(--white);transition:border-color 0.15s; }
     .form-field input:focus { outline:none;border-color:var(--black); }
     .form-hint { font-size:12px;color:var(--muted);text-align:left;margin-bottom:16px;font-family:var(--mono); }
-    .form-hint a { color:var(--accent);text-decoration:underline; }
+    .form-hint button { color:var(--accent);text-decoration:underline;background:none;border:none;cursor:pointer;font-family:var(--mono);font-size:12px;padding:0; }
     .btn-find { width:100%;padding:14px;background:var(--black);color:var(--white);font-weight:700;font-size:15px;border:none;border-radius:8px;cursor:pointer;font-family:var(--font);transition:background 0.15s; }
     .btn-find:hover { background:#333; }
     .how { background:var(--offwhite);border-top:1px solid var(--border);padding:64px 32px; }
@@ -42,27 +46,41 @@
     .how-step-num { font-size:28px;font-weight:900;font-family:var(--mono);color:var(--accent);margin-bottom:10px; }
     .how-step-title { font-size:15px;font-weight:700;margin-bottom:6px; }
     .how-step-body { font-size:13px;color:var(--muted);line-height:1.55; }
-    footer { background:var(--black);padding:28px 32px; }
-    .footer-inner { max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between; }
-    .footer-logo { font-size:16px;font-weight:900;color:var(--white);letter-spacing:-0.03em; }
+    footer { background:var(--black);padding:48px 32px 24px; }
+    .footer-inner { max-width:1100px;margin:0 auto; }
+    .footer-top { display:grid;grid-template-columns:1fr 2fr;gap:48px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:24px; }
+    .footer-logo { font-size:18px;font-weight:900;color:var(--white);letter-spacing:-0.03em;margin-bottom:8px; }
     .footer-logo span { color:var(--accent); }
-    .footer-copy { font-size:12px;color:rgba(255,255,255,0.3); }
-    @media(max-width:600px){ nav{padding:0 16px;} .hero{padding:48px 16px;} .hero h1{font-size:36px;} .hero-sub{font-size:16px;} .form-inputs{grid-template-columns:1fr;} .how{padding:48px 16px;} .how-steps{grid-template-columns:1fr;gap:24px;} .footer-inner{flex-direction:column;gap:8px;text-align:center;} }
+    .footer-tagline { font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6; }
+    .footer-cols { display:grid;grid-template-columns:repeat(4,1fr);gap:24px; }
+    .footer-col h4 { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.5);margin-bottom:12px; }
+    .footer-col a { display:block;font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:7px;transition:color 0.12s; }
+    .footer-col a:hover { color:var(--white); }
+    .footer-bottom { display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.3); }
+    .measure-popup { display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:1000;align-items:center;justify-content:center; }
+    .measure-popup.open { display:flex; }
+    .measure-box { background:var(--white);border-radius:16px;padding:32px;max-width:480px;width:90%;position:relative; }
+    .measure-close { position:absolute;top:16px;right:20px;font-size:24px;cursor:pointer;background:none;border:none;color:var(--muted); }
+    .measure-box h3 { font-size:18px;font-weight:800;margin-bottom:16px; }
+    .measure-step { display:flex;gap:12px;margin-bottom:14px;font-size:14px;line-height:1.5; }
+    .measure-num { font-size:16px;font-weight:900;color:var(--accent);font-family:var(--mono);flex-shrink:0;width:24px; }
+    @media(max-width:900px){ .footer-top{grid-template-columns:1fr;gap:24px;} .footer-cols{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:600px){ nav{padding:0 16px;} .hero{padding:48px 16px;} .hero h1{font-size:34px;} .hero-sub{font-size:16px;} .form-inputs{grid-template-columns:1fr;} .how{padding:48px 16px;} .how-steps{grid-template-columns:1fr;gap:24px;} .footer-cols{grid-template-columns:1fr;} .footer-bottom{flex-direction:column;gap:4px;} }
   </style>
 </head>
 <body>
 <nav>
   <a href="/" class="logo">FitMy<span>Pack</span></a>
   <div class="nav-right">
-    <a href="/backpacks/">Browse packs</a>
+    <a href="/backpacks/">Hiking Backpacks</a>
     <a href="/how-it-works/">How it works</a>
   </div>
 </nav>
 
 <div class="hero">
-  <div class="hero-eyebrow">Body-first backpack finder</div>
-  <h1>Find a pack that actually fits.</h1>
-  <p class="hero-sub">Enter your torso and waist measurements. We calculate which packs fit your body.</p>
+  <div class="hero-eyebrow">FitMyPack Score™</div>
+  <h1>Find the Best Hiking Backpack for Your Body Size</h1>
+  <p class="hero-sub">Stop guessing your pack size. Enter your torso and waist measurements to get your custom FitMyPack Score™ across 50+ verified hiking and backpacking packs.</p>
   <div class="hero-form">
     <div class="form-title">Your measurements</div>
     <div class="form-inputs">
@@ -75,7 +93,7 @@
         <input type="number" id="ff-waist" placeholder="e.g. 85" min="50" max="180" inputmode="numeric">
       </div>
     </div>
-    <div class="form-hint">Don't know your torso length? <a href="/how-to-measure/">How to measure →</a></div>
+    <div class="form-hint">Don't know your torso length? <button onclick="showMeasureGuide()">How to measure →</button></div>
     <button class="btn-find" onclick="findMyPack()">Find my pack →</button>
   </div>
 </div>
@@ -86,18 +104,18 @@
     <div class="how-steps">
       <div class="how-step">
         <div class="how-step-num">01</div>
-        <div class="how-step-title">Enter your measurements</div>
-        <div class="how-step-body">Torso length and waist circumference. Two numbers that determine if a pack will actually fit your body.</div>
+        <div class="how-step-title">Measure your torso & waist</div>
+        <div class="how-step-body">Two body measurements determine if a hiking backpack will actually fit and carry weight correctly.</div>
       </div>
       <div class="how-step">
         <div class="how-step-num">02</div>
-        <div class="how-step-title">We calculate your score</div>
-        <div class="how-step-body">FitMyPack Score™ compares your measurements against verified manufacturer specs for every pack in our database.</div>
+        <div class="how-step-title">Get your FitMyPack Score™</div>
+        <div class="how-step-body">Our algorithm compares your measurements against verified manufacturer specs for every pack in our database.</div>
       </div>
       <div class="how-step">
         <div class="how-step-num">03</div>
         <div class="how-step-title">Find your Excellent Fit</div>
-        <div class="how-step-body">Packs are ranked from Excellent to Not Compatible. Filter by volume, budget and brand. Go straight to the brand to buy.</div>
+        <div class="how-step-body">Packs are ranked from Excellent Fit to Not Compatible. Filter by volume, budget and brand. Buy direct from the brand.</div>
       </div>
     </div>
   </div>
@@ -105,10 +123,55 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">FitMy<span>Pack</span></div>
-    <div class="footer-copy">FitMyPack is reader-supported. We may earn a referral fee at no cost to you.</div>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">FitMy<span>Pack</span></div>
+        <div class="footer-tagline">Body-first backpack finder.<br>Verified specs, no sponsored rankings.</div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Popular sizes</h4>
+          <a href="/backpacks/?volume=small">Daypacks (Under 30L)</a>
+          <a href="/backpacks/?volume=medium">30–50L Hiking Packs</a>
+          <a href="/backpacks/?volume=large">50L+ Backpacking Packs</a>
+        </div>
+        <div class="footer-col">
+          <h4>By fit</h4>
+          <a href="/backpacks/?gender=Women">Women's Backpacks</a>
+          <a href="/backpacks/?gender=Men">Men's Backpacks</a>
+          <a href="/backpacks/?gender=Kids">Kids' Backpacks</a>
+        </div>
+        <div class="footer-col">
+          <h4>Top brands</h4>
+          <a href="/backpacks/?brand=Osprey">Osprey Backpacks</a>
+          <a href="/backpacks/?brand=Gregory">Gregory Backpacks</a>
+          <a href="/backpacks/?brand=REI+Co-op">REI Co-op Backpacks</a>
+          <a href="/backpacks/?brand=NEMO">NEMO Backpacks</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="/how-it-works/">How FitMyPack Score™ Works</a>
+          <a href="/backpacks/">Hiking Backpack Database</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>FitMyPack is reader-supported. We may earn a referral fee at no cost to you.</span>
+      <span>© 2026 FitMyPack. Independent.</span>
+    </div>
   </div>
 </footer>
+
+<div class="measure-popup" id="measure-popup" onclick="hideMeasureGuide(event)">
+  <div class="measure-box">
+    <button class="measure-close" onclick="hideMeasureGuide()">✕</button>
+    <h3>How to measure your torso</h3>
+    <div class="measure-step"><span class="measure-num">01</span><span>Find your <strong>C7 vertebra</strong> — the bony bump at the base of your neck where it meets your shoulders.</span></div>
+    <div class="measure-step"><span class="measure-num">02</span><span>Place your hands on your hips, thumbs pointing back. Find the <strong>iliac crest</strong> — the top of your hip bones.</span></div>
+    <div class="measure-step"><span class="measure-num">03</span><span>Measure the distance from C7 down your spine to the iliac crest. This is your <strong>torso length in cm</strong>.</span></div>
+    <div class="measure-step"><span class="measure-num">04</span><span>For <strong>waist</strong>: measure around your torso at belly button level — where the hip belt will sit.</span></div>
+  </div>
+</div>
 
 <script>
   function findMyPack() {
@@ -120,8 +183,15 @@
     }
     window.location.href = '/backpacks/?torso=' + encodeURIComponent(torso) + '&waist=' + encodeURIComponent(waist);
   }
+  function showMeasureGuide() { document.getElementById('measure-popup').classList.add('open'); }
+  function hideMeasureGuide(e) {
+    if (!e || e.target === document.getElementById('measure-popup')) {
+      document.getElementById('measure-popup').classList.remove('open');
+    }
+  }
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') findMyPack();
+    if (e.key === 'Escape') hideMeasureGuide();
   });
 </script>
 </body>
