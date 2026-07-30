@@ -29,6 +29,7 @@ permalink: "how-it-works/index.html"
     .content { max-width:760px;margin:0 auto;padding:64px 32px; }
     .section { margin-bottom:56px; }
     .section-label { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:12px; }
+    .section-label-h2 { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:12px; }
     .section h2 { font-size:24px;font-weight:800;letter-spacing:-0.02em;margin-bottom:16px; }
     .section p { font-size:15px;color:var(--black);line-height:1.7;margin-bottom:16px; }
     .section p:last-child { margin-bottom:0; }
@@ -82,8 +83,8 @@ permalink: "how-it-works/index.html"
 <div class="content">
 
   <div class="section">
-    <div class="section-label">The problem</div>
-    <h2>Why most hikers buy the wrong size pack</h2>
+    <h2 class="section-label-h2">The problem</h2>
+    <h3>Why most hikers buy the wrong size pack</h3>
     <p>Most backpack size guides tell you to pick a size based on your height. But height alone is a poor predictor of pack fit. Two people of identical height can have very different torso lengths — and it's the torso that determines how a pack actually carries weight.</p>
     <p>A pack that doesn't match your torso length will transfer weight to your shoulders instead of your hips. This causes pain, fatigue and poor balance on the trail — even on an expensive, well-designed pack.</p>
     <div class="highlight-box">
@@ -92,9 +93,10 @@ permalink: "how-it-works/index.html"
   </div>
 
   <div class="section">
-    <div class="section-label">The measurements</div>
-    <h2>How to measure your torso and waist</h2>
+    <h2 class="section-label-h2">The measurements</h2>
+    <h3>How to measure your torso and waist</h3>
     <p>You need two measurements. Both take under two minutes with a soft tape measure.</p>
+    <div style="display:grid;grid-template-columns:1fr 160px;gap:24px;align-items:start;">
     <div class="measure-steps">
       <div class="measure-step">
         <span class="step-num">01</span>
@@ -111,22 +113,22 @@ permalink: "how-it-works/index.html"
       <div class="measure-step">
         <span class="step-num">03</span>
         <div class="step-body">
-          <strong>Measure.</strong> Run a soft tape measure from C7 down your spine to the iliac crest. This distance in centimetres is your torso length.
+          <strong>Measure.</strong> Run a soft tape measure from C7 down your spine to the iliac crest. Record this distance in <strong>inches or centimetres</strong> — FitMyPack accepts both.
         </div>
       </div>
       <div class="measure-step">
         <span class="step-num">04</span>
         <div class="step-body">
-          <strong>Waist circumference.</strong> Measure around your torso at the level of your belly button — this is approximately where the pack's hip belt will sit. Record this in centimetres.
+          <strong>Waist circumference.</strong> Measure around your torso at the level of your belly button — this is approximately where the pack's hip belt will sit. Record this in <strong>inches or centimetres</strong>.
         </div>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-label">The algorithm</div>
-    <h2>How the FitMyPack Score™ is calculated</h2>
-    <p>Every pack in our database has manufacturer-verified fit ranges: a minimum and maximum torso length, and a minimum and maximum waist circumference for each size. When you enter your measurements, we run this calculation for every pack and every size:</p>
+    <h2 class="section-label-h2">The algorithm</h2>
+    <h3>How the FitMyPack Score™ is calculated</h3>
+    <p>Every <a href="/backpacks/" style="color:var(--accent);text-decoration:underline;">hiking backpack in our database</a> has manufacturer-verified fit ranges: a minimum and maximum torso length, and a minimum and maximum waist circumference for each size. When you enter your measurements, we run this calculation for every pack and every size:</p>
 
     <div class="formula-box">
       <div class="formula-title">FitMyPack Score™ — v1 formula</div>
@@ -142,8 +144,8 @@ permalink: "how-it-works/index.html"
   </div>
 
   <div class="section">
-    <div class="section-label">Score interpretation</div>
-    <h2>What each score means</h2>
+    <h2 class="section-label-h2">Score interpretation</h2>
+    <h3>What each score means</h3>
     <table class="score-table">
       <thead>
         <tr>
@@ -178,15 +180,15 @@ permalink: "how-it-works/index.html"
   </div>
 
   <div class="section">
-    <div class="section-label">Multi-size packs</div>
-    <h2>How we handle packs with multiple sizes</h2>
+    <h2 class="section-label-h2">Multi-size packs</h2>
+    <h3>How we handle packs with multiple sizes</h3>
     <p>Most serious hiking packs come in multiple sizes (S/M, L/XL or Small/Medium/Large). In the backpack listing, we calculate the FitMyPack Score™ for every available size and display the <strong>best score</strong> on the card.</p>
     <p>On the individual pack page, you can see the score breakdown for each size — so you know exactly which size to order.</p>
   </div>
 
   <div class="section">
-    <div class="section-label">Our database</div>
-    <h2>How we build and verify our data</h2>
+    <h2 class="section-label-h2">Our database</h2>
+    <h3>How we build and verify our data</h3>
     <p>Every fit specification in our database is sourced directly from manufacturer product pages — we do not estimate, interpolate or invent data. If a manufacturer does not publish torso or waist fit data for a size, that size is excluded from scoring.</p>
     <p>Measurements listed in inches are converted to centimetres (× 2.54). Weights in pounds are converted to kilograms (÷ 2.205). All conversions are exact.</p>
     <p>FitMyPack was built by a team of outdoor enthusiasts frustrated by the lack of body-specific backpack comparison tools. We have no commercial relationship with any brand in our database.</p>
