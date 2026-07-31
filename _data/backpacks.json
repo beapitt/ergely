@@ -213,8 +213,8 @@
       "sizes": [
         {
           "size": "One Size",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 25.4,
+          "torso_max_cm": 38.1,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 12,
@@ -364,8 +364,8 @@
       "sizes": [
         {
           "size": "O/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 43.0,
+          "torso_max_cm": 56.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 22,
@@ -399,8 +399,8 @@
       "sizes": [
         {
           "size": "O/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 38.0,
+          "torso_max_cm": 50.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 18,
@@ -434,8 +434,8 @@
       "sizes": [
         {
           "size": "S/M",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 43.0,
+          "torso_max_cm": 51.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 20,
@@ -469,8 +469,8 @@
       "sizes": [
         {
           "size": "O/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 43.0,
+          "torso_max_cm": 56.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 29,
@@ -504,8 +504,8 @@
       "sizes": [
         {
           "size": "M/L",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 40.5,
+          "torso_max_cm": 50.5,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 20,
@@ -539,8 +539,8 @@
       "sizes": [
         {
           "size": "XS/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 33.0,
+          "torso_max_cm": 43.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 28,
@@ -574,8 +574,8 @@
       "sizes": [
         {
           "size": "O/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 38.0,
+          "torso_max_cm": 56.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 20,
@@ -609,8 +609,8 @@
       "sizes": [
         {
           "size": "O/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 38.0,
+          "torso_max_cm": 56.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 20,
@@ -644,8 +644,8 @@
       "sizes": [
         {
           "size": "One Size",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 40.6,
+          "torso_max_cm": 53.3,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 45,
@@ -679,8 +679,8 @@
       "sizes": [
         {
           "size": "MD/LG",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 45.7,
+          "torso_max_cm": 55.9,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 40,
@@ -714,8 +714,8 @@
       "sizes": [
         {
           "size": "One Size",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 33.0,
+          "torso_max_cm": 45.7,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 50,
@@ -749,8 +749,8 @@
       "sizes": [
         {
           "size": "One Size",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 35.6,
+          "torso_max_cm": 48.3,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 20,
@@ -784,8 +784,8 @@
       "sizes": [
         {
           "size": "One Size",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 40.6,
+          "torso_max_cm": 53.3,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 20,
@@ -819,8 +819,8 @@
       "sizes": [
         {
           "size": "O/S",
-          "torso_min_cm": null,
-          "torso_max_cm": null,
+          "torso_min_cm": 40.0,
+          "torso_max_cm": 55.0,
           "waist_min_cm": null,
           "waist_max_cm": null,
           "volume_liters": 18,
