@@ -839,6 +839,376 @@
         "not_recommended_for": "",
         "tags": []
       }
+    },
+    {
+      "id": "gossamergear-mariposa-60",
+      "identity": {
+        "brand": "Gossamer Gear",
+        "model": "Mariposa 60",
+        "gender": "Unisex",
+        "price_usd": 315.00,
+        "price_range": "300_plus",
+        "product_url": "https://www.gossamergear.com/products/mariposa-60-lightweight-backpack?variant=42131330760758",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Small",
+          "torso_min_cm": 40.6,
+          "torso_max_cm": 45.7,
+          "waist_min_cm": 72.4,
+          "waist_max_cm": 142.2,
+          "volume_liters": 60,
+          "weight_kg": 0.946
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 45.7,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 76.2,
+          "waist_max_cm": 146.0,
+          "volume_liters": 60,
+          "weight_kg": 0.968
+        },
+        {
+          "size": "Large",
+          "torso_min_cm": 50.8,
+          "torso_max_cm": 55.9,
+          "waist_min_cm": 86.3,
+          "waist_max_cm": 156.2,
+          "volume_liters": 60,
+          "weight_kg": 1.077
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "gossamergear-kumo-36",
+      "identity": {
+        "brand": "Gossamer Gear",
+        "model": "Kumo 36",
+        "gender": "Unisex",
+        "price_usd": 180.00,
+        "price_range": "100_200",
+        "product_url": "https://www.gossamergear.com/products/kumo-36-superlight-backpack",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Small",
+          "torso_min_cm": 43.2,
+          "torso_max_cm": 48.3,
+          "waist_min_cm": 57.2,
+          "waist_max_cm": 109.2,
+          "volume_liters": 36,
+          "weight_kg": 0.536
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 49.5,
+          "torso_max_cm": 54.6,
+          "waist_min_cm": 57.2,
+          "waist_max_cm": 109.2,
+          "volume_liters": 36,
+          "weight_kg": 0.567
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": null,
+        "hipbelt_pockets": null
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "gossamergear-gorilla-50",
+      "identity": {
+        "brand": "Gossamer Gear",
+        "model": "Gorilla 50",
+        "gender": "Unisex",
+        "price_usd": 275.00,
+        "price_range": "200_300",
+        "product_url": "https://www.gossamergear.com/products/gorilla-50",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Small",
+          "torso_min_cm": 40.6,
+          "torso_max_cm": 45.7,
+          "waist_min_cm": 72.4,
+          "waist_max_cm": 142.2,
+          "volume_liters": 50,
+          "weight_kg": 0.885
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 45.7,
+          "torso_max_cm": 50.8,
+          "waist_min_cm": 76.2,
+          "waist_max_cm": 146.0,
+          "volume_liters": 50,
+          "weight_kg": 0.905
+        },
+        {
+          "size": "Large",
+          "torso_min_cm": 50.8,
+          "torso_max_cm": 55.9,
+          "waist_min_cm": 76.2,
+          "waist_max_cm": 146.0,
+          "volume_liters": 50,
+          "weight_kg": 0.934
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "gossamergear-loris-25",
+      "identity": {
+        "brand": "Gossamer Gear",
+        "model": "Loris 25",
+        "gender": "Unisex",
+        "price_usd": 135.00,
+        "price_range": "100_200",
+        "product_url": "https://www.gossamergear.com/products/loris",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "One Size",
+          "torso_min_cm": null,
+          "torso_max_cm": null,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 25,
+          "weight_kg": 0.553
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Daypack",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": false
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "gossamergear-kumo-36-yellow",
+      "identity": {
+        "brand": "Gossamer Gear",
+        "model": "Kumo 36 Yellow",
+        "gender": "Unisex",
+        "price_usd": 135.00,
+        "price_range": "100_200",
+        "product_url": "https://www.gossamergear.com/products/kumo-36-backpack-yellow",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Small",
+          "torso_min_cm": 43.2,
+          "torso_max_cm": 48.3,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 36,
+          "weight_kg": 0.536
+        },
+        {
+          "size": "Medium",
+          "torso_min_cm": 49.5,
+          "torso_max_cm": 54.6,
+          "waist_min_cm": null,
+          "waist_max_cm": null,
+          "volume_liters": 36,
+          "weight_kg": 0.536
+        }
+      ],
+      "specs": {
+        "frame_type": "Frameless",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": null,
+        "hipbelt_pockets": null
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "granitegear-perimeter-50-unisex",
+      "identity": {
+        "brand": "Granite Gear",
+        "model": "Perimeter 50",
+        "gender": "Unisex",
+        "price_usd": null,
+        "price_range": null,
+        "product_url": "https://www.granitegear.com/outlet/perimeter-50-unisex.html",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Regular",
+          "torso_min_cm": 45.7,
+          "torso_max_cm": 53.3,
+          "waist_min_cm": 66.0,
+          "waist_max_cm": 132.1,
+          "volume_liters": 50,
+          "weight_kg": 1.400
+        },
+        {
+          "size": "Long",
+          "torso_min_cm": 53.3,
+          "torso_max_cm": 63.5,
+          "waist_min_cm": 66.0,
+          "waist_max_cm": 132.1,
+          "volume_liters": 50,
+          "weight_kg": 1.440
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "granitegear-blaze-60-womens",
+      "identity": {
+        "brand": "Granite Gear",
+        "model": "Blaze 60",
+        "gender": "Women",
+        "price_usd": null,
+        "price_range": null,
+        "product_url": "https://www.granitegear.com/outlet/blaze-60-women-s-fit.html",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Short",
+          "torso_min_cm": 38.1,
+          "torso_max_cm": 45.7,
+          "waist_min_cm": 61.0,
+          "waist_max_cm": 101.6,
+          "volume_liters": 60,
+          "weight_kg": 1.310
+        },
+        {
+          "size": "Regular",
+          "torso_min_cm": 45.7,
+          "torso_max_cm": 53.3,
+          "waist_min_cm": 61.0,
+          "waist_max_cm": 101.6,
+          "volume_liters": 60,
+          "weight_kg": 1.360
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
+    },
+    {
+      "id": "granitegear-blaze-60-unisex",
+      "identity": {
+        "brand": "Granite Gear",
+        "model": "Blaze 60",
+        "gender": "Unisex",
+        "price_usd": null,
+        "price_range": null,
+        "product_url": "https://www.granitegear.com/outlet/blaze-60-unisex.html",
+        "image_url": null
+      },
+      "sizes": [
+        {
+          "size": "Short",
+          "torso_min_cm": 38.1,
+          "torso_max_cm": 45.7,
+          "waist_min_cm": 66.0,
+          "waist_max_cm": 106.7,
+          "volume_liters": 60,
+          "weight_kg": 1.310
+        },
+        {
+          "size": "Regular",
+          "torso_min_cm": 45.7,
+          "torso_max_cm": 53.3,
+          "waist_min_cm": 66.0,
+          "waist_max_cm": 106.7,
+          "volume_liters": 60,
+          "weight_kg": 1.360
+        },
+        {
+          "size": "Long",
+          "torso_min_cm": 53.3,
+          "torso_max_cm": 61.0,
+          "waist_min_cm": 66.0,
+          "waist_max_cm": 106.7,
+          "volume_liters": 60,
+          "weight_kg": 1.410
+        }
+      ],
+      "specs": {
+        "frame_type": "Internal",
+        "best_use": "Backpacking",
+        "raincover_included": false,
+        "reservoir_compatible": true,
+        "hipbelt_pockets": true
+      },
+      "editorial": {
+        "best_for_summary": "",
+        "not_recommended_for": "",
+        "tags": []
+      }
     }
   ]
 }
