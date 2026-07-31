@@ -268,14 +268,17 @@ permalink: "backpacks/{{ pack.id }}/index.html"
 
   function calcSizeScore(torso, waist, size) {
     const tMin=parseFloat(size.torso_min_cm), tMax=parseFloat(size.torso_max_cm);
-    const wMin=parseFloat(size.waist_min_cm), wMax=parseFloat(size.waist_max_cm);
-    if(!tMin||!tMax||!wMin||!wMax) return null;
-    if(torso<tMin||torso>tMax||waist<wMin||waist>wMax) return 0;
+    if(!tMin||!tMax) return null;
+    if(torso<tMin||torso>tMax) return {total:0, tScore:0, wScore:null};
     const tCenter=(tMin+tMax)/2, tRange=(tMax-tMin)/2;
-    const tScore=Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20);
+    const tScore=Math.round(Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20));
+    // Se waist null -> score basato solo su torso (100%)
+    const wMin=parseFloat(size.waist_min_cm), wMax=parseFloat(size.waist_max_cm);
+    if(!wMin||!wMax) return {total:tScore, tScore, wScore:null};
+    if(waist<wMin||waist>wMax) return {total:0, tScore, wScore:0};
     const wCenter=(wMin+wMax)/2, wRange=(wMax-wMin)/2;
-    const wScore=Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15);
-    return {total:Math.round(tScore*0.70+wScore*0.30), tScore:Math.round(tScore), wScore:Math.round(wScore)};
+    const wScore=Math.round(Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15));
+    return {total:Math.round(tScore*0.70+wScore*0.30), tScore, wScore};
   }
 
   function checkFit() {
@@ -289,7 +292,7 @@ permalink: "backpacks/{{ pack.id }}/index.html"
       const r = calcSizeScore(torso, waist, size);
       const row = document.getElementById('size-score-'+(i+1));
       if(r === null) { if(row) row.textContent=''; return; }
-      if(r === 0) { if(row) row.textContent='Not compatible'; if(row) row.style.color='var(--red)'; return; }
+      if(r.total === 0) { if(row) row.textContent='Not compatible'; if(row) row.style.color='var(--red)'; return; }
       if(row) { row.textContent=r.total+'/100'; row.style.color=r.total>=90?'var(--excellent)':r.total>=75?'var(--good)':'var(--fair)'; }
       if(bestScore===null||r.total>bestScore) { bestScore=r.total; bestSize=size; bestResult=r; }
     });
@@ -308,7 +311,7 @@ permalink: "backpacks/{{ pack.id }}/index.html"
       document.getElementById('score-number').textContent=bestScore+'/100';
       document.getElementById('score-label').textContent=label+' — Size '+bestSize.size;
       document.getElementById('score-torso').textContent=bestResult.tScore+'/100';
-      document.getElementById('score-waist').textContent=bestResult.wScore+'/100';
+      document.getElementById('score-waist').textContent=bestResult.wScore!==null?bestResult.wScore+'/100':'N/A';
       document.getElementById('score-total').textContent=bestScore+'/100';
     }
   }
