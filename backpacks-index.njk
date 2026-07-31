@@ -317,12 +317,14 @@ permalink: "backpacks/index.html"
 
   function calcSizeScore(torso, waist, size) {
     const tMin=parseFloat(size.torso_min_cm), tMax=parseFloat(size.torso_max_cm);
-    const wMin=parseFloat(size.waist_min_cm), wMax=parseFloat(size.waist_max_cm);
-    if(!tMin||!tMax||!wMin||!wMax) return null;
+    if(!tMin||!tMax) return null;
     if(torso<tMin||torso>tMax) return 0;
-    if(waist<wMin||waist>wMax) return 0;
     const tCenter=(tMin+tMax)/2, tRange=(tMax-tMin)/2;
     const tScore=Math.max(0,100-(Math.abs(torso-tCenter)/tRange)*20);
+    // Se waist data non disponibile -> score basato solo su torso (100%)
+    const wMin=parseFloat(size.waist_min_cm), wMax=parseFloat(size.waist_max_cm);
+    if(!wMin||!wMax) return Math.round(tScore);
+    if(waist<wMin||waist>wMax) return 0;
     const wCenter=(wMin+wMax)/2, wRange=(wMax-wMin)/2;
     const wScore=Math.max(0,100-(Math.abs(waist-wCenter)/wRange)*15);
     return Math.round(tScore*0.70+wScore*0.30);
